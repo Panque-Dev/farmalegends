@@ -242,8 +242,12 @@ nav a {
   h1{font-size:clamp(1.75rem,8vw,2.5rem)!important;line-height:1.12!important}
   h2{line-height:1.2}
   button,select,input,textarea{max-width:100%}
+  button,select,input[type="search"],input[type="text"]{min-height:44px}
+  .footer-social-link{width:44px;height:44px}
+  .mobile-aula-nav a{min-height:44px;display:flex;align-items:center}
   .interaction-lab{margin:1rem auto 2rem;padding:1rem}
   .interaction-controls{grid-template-columns:minmax(0,1fr)}
+  .overflow-x-auto{-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain}
 }
 
 /* Mantiene toda la navegación visible en escritorio sin depender del zoom. */
