@@ -216,7 +216,7 @@ nav a {
 
 /* Adaptación móvil global */
 .mobile-nav-toggle,.mobile-aula-nav{display:none}
-@media(max-width:1023px){
+@media(max-width:1279px){
   body{overflow-x:hidden}
   header{min-height:64px}
   header>div.h-20{height:64px;padding-left:12px;padding-right:64px;gap:8px}
@@ -244,4 +244,17 @@ nav a {
   button,select,input,textarea{max-width:100%}
   .interaction-lab{margin:1rem auto 2rem;padding:1rem}
   .interaction-controls{grid-template-columns:minmax(0,1fr)}
+}
+
+/* Mantiene toda la navegación visible en escritorio sin depender del zoom. */
+@media(min-width:1280px) and (max-width:1920px){
+  header>div.h-20{gap:clamp(8px,1vw,16px);padding-left:clamp(12px,1.5vw,28px);padding-right:clamp(12px,1.5vw,28px)}
+  header>div>a{flex:0 1 25%;min-width:240px;gap:10px}
+  header>div>a img{height:30px}
+  header>div>a .font-headline-md{font-size:clamp(20px,1.5vw,28px);letter-spacing:.055em}
+  header>div>nav[data-active-classes]{flex:1 1 0%;min-width:0;justify-content:space-between;gap:2px}
+  header>div>nav[data-active-classes]>a{flex:0 1 auto;min-width:0;padding:8px clamp(5px,.55vw,11px);font-size:clamp(10px,.72vw,13px);line-height:1.2;letter-spacing:.035em;text-align:center;white-space:normal}
+  header>div>nav[data-active-classes]+div,
+  header>div>nav[data-active-classes]+div+div,
+  header>div>div:last-child{display:none!important}
 }
