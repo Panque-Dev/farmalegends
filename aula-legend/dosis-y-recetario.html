@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<title>Dosis &amp; Recetario - Farmacología Médica Arcana</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/style.css"/><link rel="stylesheet" href="css/dosis-y-recetario.css"/><script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind.config.js"></script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none min-h-screen relative overflow-x-hidden"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_4px_24px_rgba(4,14,32,0.8)]"><div class="h-20 w-full px-margin-lg flex items-center justify-between gap-gutter"><a href="index.html" aria-label="Ir al inicio de Academia Arcana" class="flex items-center gap-space-md shrink-0 text-inherit no-underline"><img alt="Hextech Academia Farmacológica Crest" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT4OmPRP4g0KujxswBAoNwzBNHXLbM9S1nMftMjc-P7tX56Nbf0jPH-LD9-UvINSRXhBSLKDv0VoYZZ3lg8Kcu2nRWnLK43S5TA5YNVyzcLK_6Voizwf9VzmaS0v5RevDfOzq0lDF4DCsH2bujgNk3CUmuV4IAFkxhvWbLEnlgj1CiPZjucqGRXsoc7X380wkVmyW_qMVEuqo5r1QLp18cBKGt5-H1x9W1jft-2y01"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-primary uppercase leading-tight">Academia Arcana</span><span class="font-label-sm text-label-sm tracking-widest text-secondary uppercase">Farmacología Médica</span></div></a><nav class="hidden lg:flex items-center gap-space-xs h-full" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-[0_0_12px_rgba(200,170,110,0.35)]"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="aula-magna" href="index.html">AULA MAGNA (Cátedra)</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="compendio-farmacologico" href="medicamentos.html">COMPENDIO FARMACOLÓGICO</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="laboratorio-de-simulacion" href="receptores.html">LABORATORIO DE SIMULACIÓN</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="dosis-y-recetario" href="dosis-y-recetario.html">DOSIS &amp; RECETARIO</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="casos-clinicos" href="casos-clínicos.html">CASOS CLÍNICOS</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="farmalegends-epilepsia" href="epilepsia.html">EPILEPSIA</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="moduladores-dopaminergicos" href="dopamina.html">DOPAMINA</a></nav><div class="flex items-center gap-space-lg shrink-0"><div class="hidden md:flex items-center gap-space-md px-space-md py-space-xs rounded bg-surface-container-low shadow-[inset_0_0_8px_rgba(67,226,210,0.15)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">neurology</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Fármacos del tema</span><span class="font-label-md text-label-md text-secondary font-semibold">7</span></div></div><div class="w-px h-6 bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">science</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Lecturas PDF</span><span class="font-label-md text-label-md text-primary font-semibold">3</span></div></div></div><div class="hidden lg:flex items-center gap-space-sm pl-space-sm"><div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center"><span class="font-label-sm text-label-sm text-secondary font-bold">58</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sección</span><span class="font-label-md text-label-md text-on-surface uppercase">Farmacología Médica</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Ajustes de Hextech" class="p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 px-margin-lg bg-surface min-h-screen relative overflow-hidden"><div class="flex flex-col w-full pb-16 relative">
+<!-- Dynamic Arcane Magic Particles Canvas with Mouse Reactivity & Aura Layers -->
+<canvas class="pointer-events-none absolute inset-0 w-full h-full z-0 transition-opacity duration-700" id="magic-particles"></canvas>
+<!-- Ambient Arcane Aura Gradients that pulse subtly with particle load -->
+<div class="pointer-events-none absolute -top-40 right-1/4 w-[600px] h-[600px] rounded-full bg-secondary/5 blur-[120px] transition-all duration-1000 z-0" id="ambient-aura-cyan"></div>
+<div class="pointer-events-none absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] transition-all duration-1000 z-0" id="ambient-aura-gold"></div>
+<div class="relative z-10 flex flex-col w-full">
+<!-- HUD Header Sub-bar: Status and Arcane Conduit -->
+<div class="w-full flex items-center justify-between py-space-sm mb-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-3 h-3 rotate-45 bg-secondary shadow-[0_0_12px_rgba(67,226,210,0.8)]"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">LABORATORIO DE CALIBRACIÓN HEXTECH // NIVEL IV</span>
+<span class="font-headline-md text-headline-md text-primary tracking-wide">Protocolo de Resucitación Hemodinámica en Shock Séptico</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg bg-surface-container-low px-space-md py-space-xs rounded shadow-inner">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Reactor de Fusión:</span>
+<span class="font-label-md text-label-md text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> ESTABLE
+        </span>
+</div>
+<div class="w-px h-5 bg-surface-variant"></div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Buffer Sérico:</span>
+<span class="font-label-md text-label-md text-primary font-bold">pH 7.28 (Acidosis)</span>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- SINTONIZADOR DE RESONANCIA ARCANA & PARTÍCULAS (Consola Táctica Hextech) -->
+<!-- ========================================================================= -->
+<section class="bg-surface-container-low/95 border border-primary/30 rounded-lg p-space-md shadow-[0_0_20px_rgba(4,14,32,0.8)] backdrop-blur-md relative overflow-hidden mb-space-md" id="arcane-tuner-panel">
+<div class="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-secondary border border-secondary/30 shadow-[0_0_10px_rgba(67,226,210,0.3)]">
+<span class="material-symbols-outlined text-[20px] animate-pulse">auto_awesome</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md uppercase tracking-wider text-secondary font-bold">Consola Arcana Hextech</span>
+<span class="text-[10px] px-1.5 py-0.2 rounded bg-secondary/15 text-secondary border border-secondary/30 font-label-sm font-semibold">RESONANCIA ACTIVA</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">Sintonizador de flujo de maná, motas alquímicas y pulso rúnico dinámico para simulación hemodinámica.</p>
+</div>
+</div>
+<!-- Controls Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Density Selector Buttons -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded border border-outline-variant/40">
+<span class="text-on-surface-variant font-label-sm uppercase tracking-wider px-2 text-[10px] hidden sm:inline">Densidad:</span>
+<button class="tuner-density-btn px-2.5 py-1 rounded font-label-sm uppercase tracking-wider text-[11px] text-on-surface-variant hover:text-on-surface transition-all" data-density="subtle">Rúnico Sutil</button>
+<button class="tuner-density-btn px-2.5 py-1 rounded font-label-sm uppercase tracking-wider text-[11px] bg-primary text-on-primary font-bold shadow-[0_0_10px_rgba(229,197,135,0.4)] transition-all" data-density="medium">Maná Intenso</button>
+<button class="tuner-density-btn px-2.5 py-1 rounded font-label-sm uppercase tracking-wider text-[11px] text-on-surface-variant hover:text-on-surface transition-all" data-density="overload">Sobrecarga</button>
+</div>
+<!-- Toggles for Gold Dust & Runic Pulse Aura -->
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded bg-surface-container border border-primary/30 text-primary font-label-sm hover:border-primary transition-all shadow-sm" id="btn-toggle-gold">
+<span class="material-symbols-outlined text-[16px] text-primary" id="icon-toggle-gold">check_box</span>
+<span class="text-[11px] uppercase tracking-wider">Motas Doradas</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded bg-surface-container border border-secondary/30 text-secondary font-label-sm hover:border-secondary transition-all shadow-sm" id="btn-toggle-pulse">
+<span class="material-symbols-outlined text-[16px] text-secondary" id="icon-toggle-pulse">check_box</span>
+<span class="text-[11px] uppercase tracking-wider">Aura Rúnica</span>
+</button>
+<div class="hidden xl:flex items-center gap-2 pl-space-xs text-on-surface-variant font-label-sm text-[11px]">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span id="particle-counter-display">55 Orbes Activos</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main 12-Column Blueprint Grid -->
+<div class="grid grid-cols-12 gap-gutter w-full">
+<!-- LEFT PANEL: Drug & Subject Calibration (3 Cols) -->
+<div class="col-span-12 xl:col-span-3 flex flex-col gap-space-md">
+<!-- Patient Dossier Apparatus -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<h3 class="font-title-md text-title-md text-primary uppercase tracking-wider">Sujeto de Prueba</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-space-xs py-0.5 bg-surface-container-highest rounded">ID: HK-9402</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs text-left">
+<div class="p-space-xs bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Edad &amp; Sexo</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">62 Años / M</span>
+</div>
+<div class="p-space-xs bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Masa Corporal</span>
+<span class="font-label-md text-label-md text-primary font-semibold" id="label-weight">75.0 kg</span>
+</div>
+<div class="p-space-xs bg-surface-container rounded col-span-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Aclaramiento Cr (eGFR)</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">Mod. Afectado</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">45.0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">mL/min/1.73m²</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-error-container/20 rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">Diagnóstico Clínico Crítico</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight mt-0.5">Shock Séptico de origen pulmonar. Hipotensión refractaria a cristaloides.</span>
+</div>
+</div>
+</div>
+<!-- Drug Formulation Slate -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">science</span>
+<h3 class="font-title-md text-title-md text-secondary uppercase tracking-wider">Vector Vasoactivo</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Ampolla Grado Arcana</span>
+</div>
+<!-- Drug Selection Matrix -->
+<div class="flex flex-col gap-space-xs" id="drug-selector">
+<button class="drug-btn w-full p-space-sm text-left rounded bg-primary-container text-on-primary-container shadow-md flex items-center justify-between transition-all" data-drug="noradrenalina">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold uppercase">Noradrenalina</span>
+<span class="font-label-sm text-label-sm opacity-90">Agonista α1 &gt; β1 // Vasopresor 1ª Línea</span>
+</div>
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</button>
+<button class="drug-btn w-full p-space-sm text-left rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-between" data-drug="dopamina">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold uppercase">Dopamina</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">D1 (baja) / β1 (media) / α1 (alta)</span>
+</div>
+<span class="material-symbols-outlined text-[20px] opacity-20">radio_button_unchecked</span>
+</button>
+<button class="drug-btn w-full p-space-sm text-left rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-between" data-drug="dobutamina">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold uppercase">Dobutamina</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Inotrópico β1 selectivo (Gasto Cardíaco)</span>
+</div>
+<span class="material-symbols-outlined text-[20px] opacity-20">radio_button_unchecked</span>
+</button>
+</div>
+<!-- Dosage Calibration Sliders -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Tasa Infusión Continua</span>
+<span class="font-label-lg text-label-lg text-primary font-bold" id="val-rate">0.10 <span class="font-label-sm text-label-sm">mcg/kg/min</span></span>
+</div>
+<input class="w-full accent-primary h-2 bg-surface-container-highest rounded cursor-pointer" id="slider-rate" max="1.00" min="0.01" step="0.01" type="range" value="0.10"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>0.01 (Mín)</span>
+<span class="text-secondary font-semibold">0.1 - 0.3 (Óptima)</span>
+<span class="text-tertiary font-semibold">&gt; 0.5 (Tóxica)</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Bolo de Rescate Primario</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold" id="val-bolus">8 <span class="font-label-sm text-label-sm">mcg IV</span></span>
+</div>
+<input class="w-full accent-secondary h-2 bg-surface-container-highest rounded cursor-pointer" id="slider-bolus" max="30" min="0" step="2" type="range" value="8"/>
+</div>
+</div>
+<!-- Vial Reagent Chamber -->
+<div class="mt-space-xs p-space-sm bg-surface-container rounded flex items-center gap-space-md">
+<div class="w-10 h-20 bg-surface-container-lowest rounded-full relative overflow-hidden flex items-end justify-center shadow-inner">
+<div class="w-full bg-gradient-to-t from-secondary to-primary transition-all duration-300 h-[65%]" id="vial-level"></div>
+<div class="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.2)_50%,transparent_100%)] pointer-events-none"></div>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Solución en Y-Infusora</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">4 mg en 250 mL Dextrosa 5%</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Concentración: 16 mcg/mL</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CENTER PANEL: Holographic Simulation & PK/PD Engine (6 Cols) -->
+<div class="col-span-12 xl:col-span-6 flex flex-col gap-space-md">
+<!-- Real-Time Hemodynamic Core HUD (League-Inspired Bars) -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] animate-pulse">cardiology</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase">Telemetría Hemodinámica</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Sincronía Rúnica 100 Hz</span>
+</div>
+</div>
+<!-- Dynamic Vitals Bars Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm mt-space-xs">
+<!-- PAM (Mean Arterial Pressure) -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">PAM Objetivo</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">&gt;65</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="display-pam">60</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">mmHg</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-primary transition-all duration-300 w-[60%]" id="bar-pam"></div>
+</div>
+</div>
+<!-- Cardiac Output -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Gasto Cardíaco</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">4.0 - 8.0</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="display-gc">3.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">L/min</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-secondary transition-all duration-300 w-[48%]" id="bar-gc"></div>
+</div>
+</div>
+<!-- Heart Rate -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Freq. Cardíaca</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">60 - 100</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="display-fc">112</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">BPM</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-tertiary transition-all duration-300 w-[74%]" id="bar-fc"></div>
+</div>
+</div>
+<!-- Peripheral Resistance (RVS) -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Resistencia (RVS)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">800 - 1200</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-secondary font-bold" id="display-rvs">620</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">dyn·s/cm⁵</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-secondary transition-all duration-300 w-[52%]" id="bar-rvs"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Holographic Chart Canvas: Concentration vs Time Curve -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">stacked_line_chart</span>
+<span class="font-title-md text-title-md text-primary uppercase tracking-wide">Concentración Plasmática vs Tiempo (Cp vs t)</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-secondary rounded-sm"></span>
+<span class="text-on-surface-variant">Ventana Terapéutica</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-error rounded-sm"></span>
+<span class="text-on-surface-variant">Zona Isquemia / Necrosis</span>
+</div>
+</div>
+</div>
+<!-- SVG Curve Display -->
+<div class="relative w-full h-72 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center shadow-inner">
+<!-- Background Grid Overlay -->
+<svg class="absolute inset-0 w-full h-full text-surface-variant/40" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="30" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 30" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+<!-- Zone Shading (Toxicity & Therapeutic) -->
+<div class="absolute top-0 left-0 right-0 h-16 bg-error/10 pointer-events-none flex items-center justify-end px-3">
+<span class="font-label-sm text-label-sm text-error uppercase font-bold tracking-widest opacity-75">UMBRAL TÓXICO: &gt; 12 ng/mL</span>
+</div>
+<div class="absolute top-16 left-0 right-0 h-32 bg-secondary/10 pointer-events-none flex items-center justify-end px-3">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest opacity-75">VENTANA ÓPTIMA: 3 - 10 ng/mL</span>
+</div>
+<!-- Dynamic Curve SVG -->
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 600 240">
+<defs>
+<lineargradient id="curveGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#e5c587" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#e5c587" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Area under curve -->
+<path d="M 0 240 Q 80 200, 180 120 T 360 80 T 600 70 L 600 240 Z" fill="url(#curveGradient)" id="curve-area"></path>
+<!-- Line Curve -->
+<path class="filter drop-shadow-[0_0_8px_rgba(229,197,135,0.8)]" d="M 0 240 Q 80 200, 180 120 T 360 80 T 600 70" fill="none" id="curve-line" stroke="#e5c587" stroke-linecap="round" stroke-width="3"></path>
+<!-- Real-time Animated Point -->
+<circle class="animate-ping" cx="360" cy="80" fill="#43e2d2" id="curve-node" r="5"></circle>
+<circle cx="360" cy="80" fill="#ffffff" r="4"></circle>
+</svg>
+<!-- Current Point Floating Pill -->
+<div class="absolute top-12 left-1/2 -translate-x-1/2 bg-surface-container px-space-sm py-space-xs rounded shadow-lg flex items-center gap-space-xs pointer-events-none" id="chart-marker">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase">Cp Estimada:</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="label-cp">7.4 ng/mL</span>
+</div>
+<!-- Time Ticks -->
+<div class="absolute bottom-2 left-4 right-4 flex justify-between font-label-sm text-label-sm text-on-surface-variant pointer-events-none">
+<span>0 min</span>
+<span>15 min</span>
+<span>30 min</span>
+<span>45 min</span>
+<span>60 min (Estado Estacionario)</span>
+</div>
+</div>
+<!-- Receptor Affinity Diagram -->
+<div class="grid grid-cols-3 gap-space-xs mt-space-xs">
+<div class="p-space-xs bg-surface-container rounded flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase">Receptor α-1</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold" id="aff-alpha">95% (Agonista)</span>
+</div>
+<div class="p-space-xs bg-surface-container rounded flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase">Receptor β-1</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="aff-beta1">35% (Débil)</span>
+</div>
+<div class="p-space-xs bg-surface-container rounded flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-surface-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase">Receptor β-2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold" id="aff-beta2">5% (Nulo)</span>
+</div>
+</div>
+</div>
+<!-- Golden Actuator Bar (League Hextech Action Button) -->
+<div class="grid grid-cols-2 gap-space-md">
+<button class="w-full py-space-md px-space-lg rounded bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary transition-all duration-200 shadow-[0_0_18px_rgba(200,170,110,0.4)] flex items-center justify-center gap-space-sm font-label-lg text-label-lg tracking-widest uppercase font-bold active:scale-[0.98]" id="btn-infuse">
+<span class="material-symbols-outlined text-[22px]">play_arrow</span>
+<span>Inundar Vía (Infusión Continua)</span>
+</button>
+<button class="w-full py-space-md px-space-lg rounded bg-surface-container hover:bg-error-container text-primary hover:text-on-error-container transition-all duration-200 shadow-md flex items-center justify-center gap-space-sm font-label-lg text-label-lg tracking-widest uppercase font-bold active:scale-[0.98]" id="btn-purge">
+<span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+<span>Purgar Sistema (Antídoto)</span>
+</button>
+</div>
+</div>
+<!-- RIGHT PANEL: Combat Log Telemetry & Antidote Apothecary (3 Cols) -->
+<div class="col-span-12 xl:col-span-3 flex flex-col gap-space-md">
+<!-- Apothecary & Coadjuvant Reagents -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">prescriptions</span>
+<h3 class="font-title-md text-title-md text-primary uppercase tracking-wider">Botica &amp; Antídotos</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Acceso Rápido</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<!-- Antidote 1 -->
+<div class="p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors rounded flex items-center justify-between group cursor-pointer" role="button" tabindex="0" data-aula-action="inject-item" data-item-name="Fentolamina" data-item-description="Antagonista Alfa Adrenérgico No Selectivo">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[18px]">vaccines</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Fentolamina (Regitina)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 mg IV // Vasodilatador Alfa</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">add</span>
+</div>
+<!-- Antidote 2 -->
+<div class="p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors rounded flex items-center justify-between group cursor-pointer" role="button" tabindex="0" data-aula-action="inject-item" data-item-name="Vasopresina" data-item-description="Agonista Receptor V1 Vascular">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Vasopresina Arg-8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">0.03 UI/min // Sinergia en Shock</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">add</span>
+</div>
+<!-- Antidote 3 -->
+<div class="p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors rounded flex items-center justify-between group cursor-pointer" role="button" tabindex="0" data-aula-action="inject-item" data-item-name="Hidrocortisona" data-item-description="Corticosteroide Sensibilizador">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[18px]">healing</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Hidrocortisona</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">100 mg IV // Recupera Sensibilidad</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">add</span>
+</div>
+</div>
+</div>
+<!-- Arcane Combat Log Telemetry Feed -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col flex-1 gap-space-sm relative">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">terminal</span>
+<h3 class="font-title-md text-title-md text-secondary uppercase tracking-wider">Bitácora Farmacológica</h3>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<!-- Terminal Output Stream -->
+<div class="flex flex-col gap-space-xs font-mono text-body-sm text-on-surface-variant h-80 overflow-y-auto pr-1" id="telemetry-log">
+<div class="p-space-xs bg-surface-container-lowest rounded text-on-surface">
+<span class="text-primary font-bold">[00:00]</span> Sesión de simulación iniciada. Estado del paciente: PAM 60 mmHg. Shock Séptico descompensado.
+          </div>
+<div class="p-space-xs bg-surface-container-lowest rounded text-on-surface">
+<span class="text-secondary font-bold">[00:01]</span> Calibrando vía periférica con protector extravasación activado.
+          </div>
+<div class="p-space-xs bg-surface-container-lowest rounded text-on-surface">
+<span class="text-primary font-bold">[00:03]</span> Noradrenalina cargada a 0.10 mcg/kg/min.
+          </div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface uppercase transition-colors" data-aula-action="clear-log">Limpiar Registro</button>
+<span class="font-label-sm text-label-sm text-secondary">Motor Farmacodinámico Activo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Apothecary Visual Assets & Chemical Showcase -->
+<div class="w-full mt-gutter grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Visual Asset 1: Microscopic Hextech Binding -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Cristalografía Receptora</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Alfa-1 Adrenérgico</span>
+</div>
+<div class="w-full h-36 rounded overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Microscopic 3D scientific visualization of a luminous cyan Hextech crystal drug molecule docking into a golden alchemical receptor site on a cell membrane, bioluminescent particles, Piltover aesthetic, ornate brass filigree frame, dark cinematic oceanic navy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwToJIByO-28cVorDYnymRcWJpkTi-xX-joEwnCy65fMDwwZ5kx2RnW1Ed-MJvW_lcJ8Womn6wRItx5lh7KocJOPTsKxNs5hA0Wo8poramVdvHwa9pteVas5WhqKCKz0G2gIUgODLPpudB0-wga_5JMd7SiY4DxPs8Ezof-syNjogxkY-MYbA8sHdan78tOIXpNsh4EzC-NdoY64OfnvfUJNy9_buPZBlnI3sS2rLj"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Afinidad nanomolar (Ki: 1.4 nM) que induce activación masiva de la cascada Gq-fosfolipasa C, elevando IP3 y calcio intracelular en miocitos vasculares.
+      </p>
+</div>
+<!-- Visual Asset 2: Hextech Infusion Manifold -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Dispositivo de Microgoteo</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bomba Peristáltica</span>
+</div>
+<div class="w-full h-36 rounded overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Close up of an ornate Hextech medical infusion pump with glowing golden gears, precision glass chamber filled with luminous cyan medicinal liquid, brass calibration dials, fantasy scientific laboratory Piltover aesthetic, dark navy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUgDqsA_aaz1G7LAtBeoIw_gteankoJ1LPQBfROLK0KgNd6D7g9g89VdNjga-8pqlPRi2V3Z2fZdNSlTK3ST77Rkb3niojc-8vTs30CIwCHUdEqaARTnxvIAtJbb9yZfcyz5k4M9XuXgisLpDlKD17jAGhdIx2xa9csZhC0mLFDlyXWaiRU35kMbrzINpECNqb0TTYp-WFzalnFu2qh1rOUtww7USHu4HzQ2gs6dvI"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Tasa de titulación con tolerancia nanométrica. Reduce fluctuaciones paroxísticas de la PAM y previene picos plasmáticos supraterapéuticos.
+      </p>
+</div>
+<!-- Visual Asset 3: Organ Perfusion Synthesis -->
+<div class="bg-surface-container-low p-space-md rounded shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Resonancia Tisular</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Perfusión Esplácnica</span>
+</div>
+<div class="w-full h-36 rounded overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Holographic medical scan visualization of arterial microcirculation and vascular tree glowing with cyan and gold energy lines in human organ tissue, high tech fantasy alchemical HUD, dark navy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE3BRuM-t5Vq5GU4Q6Hey9peFy1TwFNghIT0wVi240iskMmjues0dtnJWCMUV-4ivp_DvFk-7_5zn11iH8aMoOby1O17vaz_915dfIHUVhOCvnbb3VLBPEzZkYmKCDMaWUnJlvBNefSzIcH-JlaoWgsSAHqn1XSS-g4wg08tNmMuSgEZTmOEKoT2CXx_mnyAVNYVb1ZQ3kfIupFNuatehIFsjmwbHqo5lJ_QLxCCFu"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Equilibrio crítico: optimizar la presión de perfusión renal sin comprometer la microcirculación mesentérica por vasoconstricción excesiva.
+      </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Particle Engine & Console Logic -->
+<!-- Interactive Clinical Engine Logic -->
+</main><script src="js/main.js" defer></script>
+<script src="js/dosis-y-recetario.js" defer></script>
+</body></html>
+
+

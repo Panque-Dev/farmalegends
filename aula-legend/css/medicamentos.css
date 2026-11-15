@@ -1,0 +1,24 @@
+﻿/* ==========================================================================
+   COMPENDIO FARMACOLÓGICO - CODEX MEDICAMENTORUM
+   ========================================================================== */
+
+.drug-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drug-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(4, 14, 32, 0.8), 0 0 16px rgba(67, 226, 210, 0.2);
+}
+
+.drug-card.active-selected {
+  border-color: #e5c587 !important;
+  box-shadow: 0 0 16px rgba(229, 197, 135, 0.35);
+}
+
+.badge-affinity {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: monospace;
+}

@@ -1,0 +1,603 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<title>Compendio Farmacológico - Codex Medicamentorum</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/style.css"/><link rel="stylesheet" href="css/medicamentos.css"/><script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind.config.js"></script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_4px_24px_rgba(4,14,32,0.8)]"><div class="h-20 w-full px-margin-lg flex items-center justify-between gap-gutter"><a href="index.html" aria-label="Ir al inicio de Academia Arcana" class="flex items-center gap-space-md shrink-0 text-inherit no-underline"><img alt="Hextech Academia Farmacológica Crest" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT4OmPRP4g0KujxswBAoNwzBNHXLbM9S1nMftMjc-P7tX56Nbf0jPH-LD9-UvINSRXhBSLKDv0VoYZZ3lg8Kcu2nRWnLK43S5TA5YNVyzcLK_6Voizwf9VzmaS0v5RevDfOzq0lDF4DCsH2bujgNk3CUmuV4IAFkxhvWbLEnlgj1CiPZjucqGRXsoc7X380wkVmyW_qMVEuqo5r1QLp18cBKGt5-H1x9W1jft-2y01"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-primary uppercase leading-tight">Academia Arcana</span><span class="font-label-sm text-label-sm tracking-widest text-secondary uppercase">Farmacología Médica</span></div></a><nav class="hidden lg:flex items-center gap-space-xs h-full" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-[0_0_12px_rgba(200,170,110,0.35)]"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="aula-magna" href="index.html">AULA MAGNA (Cátedra)</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="compendio-farmacologico" href="medicamentos.html">COMPENDIO FARMACOLÓGICO</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="laboratorio-de-simulacion" href="receptores.html">LABORATORIO DE SIMULACIÓN</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="dosis-y-recetario" href="dosis-y-recetario.html">DOSIS &amp; RECETARIO</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="casos-clinicos" href="casos-clínicos.html">CASOS CLÍNICOS</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="farmalegends-epilepsia" href="epilepsia.html">EPILEPSIA</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg tracking-wider uppercase" data-path="moduladores-dopaminergicos" href="dopamina.html">DOPAMINA</a></nav><div class="flex items-center gap-space-lg shrink-0"><div class="hidden md:flex items-center gap-space-md px-space-md py-space-xs rounded bg-surface-container-low shadow-[inset_0_0_8px_rgba(67,226,210,0.15)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">neurology</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Fármacos del tema</span><span class="font-label-md text-label-md text-secondary font-semibold">7</span></div></div><div class="w-px h-6 bg-surface-container-high"></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">science</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Lecturas PDF</span><span class="font-label-md text-label-md text-primary font-semibold">3</span></div></div></div><div class="hidden lg:flex items-center gap-space-sm pl-space-sm"><div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center"><span class="font-label-sm text-label-sm text-secondary font-bold">58</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sección</span><span class="font-label-md text-label-md text-on-surface uppercase">Farmacología Médica</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Ajustes de Hextech" class="p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 px-margin-lg bg-surface min-h-screen"><div class="flex flex-col w-full pb-16 relative">
+<!-- Atmospheric Arcane Glows & Dust Background Particles -->
+<div class="pointer-events-none absolute inset-0 overflow-hidden -z-10">
+<div class="absolute -top-32 left-1/4 w-[500px] h-[500px] rounded-full bg-secondary/5 blur-[120px]"></div>
+<div class="absolute top-1/3 -right-24 w-[450px] h-[450px] rounded-full bg-primary/5 blur-[140px]"></div>
+<div class="absolute bottom-10 left-10 w-[600px] h-[400px] rounded-full bg-secondary-container/5 blur-[150px]"></div>
+</div>
+<!-- Header Section / Hextech Grimorio Title -->
+<div class="w-full flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center shadow-[0_0_16px_rgba(229,197,135,0.25)] shrink-0">
+<span class="material-symbols-outlined text-primary text-[28px]">auto_stories</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Codex Medicamentorum</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Edición Rúnica XI</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-wide">Compendio Farmacológico Arcana</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-0.5">
+          Grimorio alquímico de precisión molecular. Consulta receptores diana, cinética de absorción <span class="text-primary font-medium">ADME</span> y titulación rúnica en tiempo real.
+        </p>
+</div>
+</div>
+<!-- Quick Stats Capsule -->
+<div class="flex items-center gap-space-md px-space-md py-space-sm rounded bg-surface-container-low shadow-[inset_0_0_12px_rgba(0,0,0,0.5)] shrink-0">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Reactivos Registrados</span>
+<span class="font-label-lg text-label-lg text-primary" id="registered-counter">22 / 22 Moléculas</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+<span class="font-label-md text-label-md tracking-wider uppercase">Grado Cátedra</span>
+</div>
+</div>
+</div>
+<!-- Search & Arcane Filter Bar -->
+<div class="w-full flex flex-col gap-space-md p-space-md rounded bg-surface-container-low shadow-[0_8px_30px_rgba(4,14,32,0.8)] mb-space-xl">
+<!-- Row 1: Search & Sorting -->
+<div class="flex flex-col lg:flex-row items-center gap-space-md justify-between">
+<!-- Search Input with Hextech Chamfered Style -->
+<div class="relative w-full lg:max-w-xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-primary text-[20px] pointer-events-none">travel_explore</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-all shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)]" id="drug-search" placeholder="Buscar por fármaco, mecanismo de acción o patología..." type="text"/>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">⌘</kbd>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">K</kbd>
+</div>
+</div>
+<!-- Quick Metrics View & View Switcher -->
+<div class="flex items-center gap-space-md w-full lg:w-auto justify-end">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
+<span class="uppercase">Orden:</span>
+<select class="bg-surface-container-lowest text-primary py-1.5 px-3 rounded font-label-md text-label-md focus:outline-none cursor-pointer" id="sort-selector">
+<option value="name">Alfabético (A - Z)</option>
+<option value="alert">Nivel de Toxicidad / Riesgo</option>
+<option value="action">Rapidez de Acción</option>
+</select>
+</div>
+<button class="px-space-md py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" id="reset-filters">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Restablecer</span>
+</button>
+</div>
+</div>
+<!-- Row 2: League Store Styled Category Tab Buttons -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none" id="category-tabs">
+<button class="cat-btn active-tab shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-primary-container text-on-primary-container shadow-[0_0_12px_rgba(200,170,110,0.35)]" data-cat="all">
+<span class="material-symbols-outlined text-[16px]">apps</span>
+<span>Todos los Fármacos</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-primary">22</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="cardiovascular">
+<span class="material-symbols-outlined text-[16px] text-tertiary">cardiology</span>
+<span>Cardiovascular</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">2</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="snc">
+<span class="material-symbols-outlined text-[16px] text-secondary">psychology</span>
+<span>SNC &amp; Anestesia</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">1</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="antimicrobianos">
+<span class="material-symbols-outlined text-[16px] text-primary">shield_with_heart</span>
+<span>Antibióticos</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">1</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="endocrino">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">metabolism</span>
+<span>Endocrinología</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">1</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="urgencias">
+<span class="material-symbols-outlined text-[16px] text-error">bolt</span>
+<span>Shock &amp; Emergencia</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">2</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="gastro">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">gastroenterology</span>
+<span>Gastrointestinal</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">1</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="epilepsia">
+<span class="material-symbols-outlined text-[16px] text-secondary">neurology</span>
+<span>Anticrisis · Epilepsia</span>
+<span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">7</span>
+</button>
+<button class="cat-btn shrink-0 px-space-md py-2 rounded font-label-md text-label-md tracking-wider uppercase transition-all flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary" data-cat="dopamina">
+<span class="material-symbols-outlined text-[16px] text-secondary">neurology</span><span>Parkinson &amp; Esquizofrenia</span><span class="text-[10px] py-0.5 px-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant">7</span>
+</button>
+</div>
+</div>
+<!-- Banner de Acceso al Esquema Interactivo 3D de Dopamina -->
+<div class="mb-space-md p-space-sm rounded bg-surface-container-low border border-secondary/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-lg">
+  <div class="flex items-center gap-space-sm">
+    <div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0 shadow-inner">
+      <span class="material-symbols-outlined text-[24px]">balance</span>
+    </div>
+    <div>
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-secondary uppercase font-bold tracking-wider">Módulo 3D • Interacciones Dopaminérgicas</span>
+        <span class="text-[10px] px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-semibold border border-secondary/30">Nuevo</span>
+      </div>
+      <p class="font-body-sm text-on-surface-variant text-[12px] mt-0.5">
+        Simulador de choque farmacológico y sitios de unión sináptica 3D: Parkinson (Agonistas D₂/↑DA) vs. Esquizofrenia (Antagonistas D₂).
+      </p>
+    </div>
+  </div>
+  <a href="dopamina-interacciones.html" target="_blank" class="px-space-md py-1.5 rounded bg-secondary text-on-secondary font-label-md font-bold uppercase tracking-wider hover:bg-secondary-fixed-dim transition-all shadow-[0_0_12px_rgba(67,226,210,0.35)] shrink-0 flex items-center gap-1.5 self-end sm:self-center">
+    <span>Explorar Esquema 3D</span>
+    <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+  </a>
+</div>
+
+<!-- Master Layout: 12-Column Blueprint Grid (7 Cols Item Grid + 5 Cols Inspector Slate) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT PANEL: Champions / Item Store Runic Grid (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-primary">Matriz de Formulación Arcana</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase">15 fármacos · 7 anticrisis</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase" id="items-found-label">Mostrando 22 ítems</span>
+</div>
+<p class="px-space-xs text-xs text-on-surface-variant">Las siete fichas anticrisis siguen las lecturas del módulo de epilepsia. *Las bandas de embarazo son una guía didáctica compartida, no categorías FDA ni recomendaciones clínicas; los datos ausentes en las lecturas se indican como no especificados.</p>
+<!-- Item Card Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" id="drugs-grid">
+<!-- CARD 1: Epinefrina (Default Selected) -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="urgencias cardiovascular" data-id="epinefrina" data-risk="high">
+<!-- Active Highlight Aura -->
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold uppercase tracking-wider">Alto Riesgo</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<!-- Hextech Reagent Flask Icon with glowing frame -->
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(67,226,210,0.3)]">
+<img class="w-full h-full object-cover" data-alt="A glowing hextech alchemical vial filled with electric cyan and red adrenaline reagent, framed with delicate brass filigree gears, cinematic dark fantasy concept art for pharmacological laboratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqbACASSlCR36GkyxGCHq8oA3zaWezO20HzO-N2JDPMyP1yKkUHfZPRzzd2p83R04uWZyNrcenRMhn24lVbesyNeEQu6q1gHfRgahuulgbPmwxcJ_jg7ul3jn624mnw814-2Xp1bMzcYBkMnPxVv2BMjZasdwtAQChyKHlzyU7fO1nb5lRZbeXj7H0g5RV-lZco864xPV_z_ZWATJAU9-MWI3e6a-hoh1v71lAMHAN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-[24px] absolute bottom-1 right-1">bolt</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Catecolamina Endógena</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Epinefrina</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Agonista adrenérgico α1, β1, β2</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Diana: <strong class="text-secondary font-medium">Receptores GPCR</strong></span>
+<span>Acción: <strong class="text-primary font-medium">&lt; 1 min (IV)</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">ecg_heart</span> Shock Anafiláctico
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 2: Digoxina -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="cardiovascular" data-id="digoxina" data-risk="high">
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold uppercase tracking-wider">Margen Estrecho</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(200,170,110,0.3)]">
+<img class="w-full h-full object-cover" data-alt="An ornate dark crystal flask containing a viscous golden-amber cardiotonic essence with tiny clockwork gears suspended in the solution, fantasy medical alchemy artifact." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8RJdkUMATveEEUk0ndZ3TL4J1uPKCn5bmGhd3TvxRAjpTYOX89dyYGZ720zc398cdClWbTrGs4ibNlMfZW47R-vJm_BCyJdxNAkFhCJTAGDw9r0TuQLvXj6fJQNiOgNkQilPeGa4Goc2PNT9Jz3RHW2p-9G4grUh5pcp55x6RJGHMEUNfeVIS6nF5jK9b3sznJUpJ31yVBJSAr6CWbE2yjc6R2Iycb-pSRF5OvC0A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-[24px] absolute bottom-1 right-1">monitor_heart</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Glucósido Cardíaco</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Digoxina</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Inhibidor bomba Na+/K+ ATPasa</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Rango: <strong class="text-tertiary font-medium">0.8 - 2.0 ng/mL</strong></span>
+<span>t½: <strong class="text-primary font-medium">36 - 48 h</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">vital_signs</span> Fibrilación Auricular
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 3: Propofol -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc urgencias" data-id="propofol" data-risk="moderate">
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">Sedación UCI</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(67,226,210,0.3)]">
+<img class="w-full h-full object-cover" data-alt="Milky white alchemical infusion solution inside an ethereal glass syringe surrounded by hextech filigree runes, hypnotic soft cyan mist aura." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZoTPrKngre9yGJY3Hb9c8fsh6gZ0-nmAj5SOm3W828ZS95vsVji3XN5dU8etiM25L_zQgSWGTipYT0Yg8Ld-2YqksQvVONphrsw2McEndCB1n_AV0uCaDkMHySJHzV_l7VRBW3jHVgHynaA2EnTwoPJGw8_mNym11PpwjEfF9mpU_Zf2QlZSnzJHhllo_d0KE8VWpu_l44Ce2VZnuS7g9xrNjUz5gHRo1e7S42_BS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-secondary text-[24px] absolute bottom-1 right-1">bedtime</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Agonista GABA-A</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Propofol</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Hipnótico e inductor anestésico</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Latencia: <strong class="text-secondary font-medium">30 - 45 seg</strong></span>
+<span>Metabolismo: <strong class="text-primary font-medium">Hepático 98%</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">psychology</span> Inducción Anestésica
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 4: Metformina -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="endocrino" data-id="metformina" data-risk="low">
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-primary font-semibold uppercase tracking-wider">1ª Línea DM2</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(200,170,110,0.3)]">
+<img class="w-full h-full object-cover" data-alt="Geometric crystalline tablet engraved with alchemical glycemic symbols, surrounded by glowing golden hextech circuitry on dark blue marble." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa-UCnD0nuSS2jQokSkbO8r68cjJ18qbgGugY6jNr-7o6FqILXF5i4t8TPM-veWjxamQ2Sj8gr5pyvPLi9M2KEHoqanfGgJaHptLBhPWEkVfakcpIFnycIiQIkv1Mv04-aZFuBLmfRenTzkz0oTjSrL-Fas80GlGx2gL2k6eN2rP62YIPGmSMLoiW_86MOLSJ1m6C0tUk1O5uTIkwxWzCOeHNT__1Vv9ap2ATT0u1I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-[24px] absolute bottom-1 right-1">metabolism</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Biguanida Alquímica</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Metformina</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Activador quinasa AMPK hepática</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Gluconeogénesis: <strong class="text-secondary font-medium">Inhibición</strong></span>
+<span>Aclaramiento: <strong class="text-primary font-medium">Renal 100%</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">blood_pressure</span> Diabetes Mellitus 2
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 5: Ceftriaxona -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="antimicrobianos" data-id="ceftriaxona" data-risk="moderate">
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">Amplio Espectro</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(67,226,210,0.3)]">
+<img class="w-full h-full object-cover" data-alt="A crystal phial with luminescent teal antimicrobial powder, arcane runic wards inscribed on the glass to destroy bacterial membranes, fantasy medicine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYT9hxgx14i9LUk7PUWLpBdBgg6MTqWrKB28XTGp4TrGexHqbphlvUGjDV73_ScnUJYyAnOdyWH1rVYzIEkVyx6es5GX-wTIk_T0uyDTXB6raEc8DRkxg4YFBEfu0XA9z3RSsFF6vs4yrVTJ2_F4t4TpsfPPZCQV744mq1dgBwG5IuuXqkwK9WeLCZV0-UrSI23lCWJDVFfFoQHvfoo236uf8orU7UA7C9EdW_t6HE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-secondary text-[24px] absolute bottom-1 right-1">coronavirus</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Cefalosporina 3ª Gen</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Ceftriaxona</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Inhibe transpeptidasa bacteriana</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Paso BHE: <strong class="text-secondary font-medium">Excelente</strong></span>
+<span>t½ plasmática: <strong class="text-primary font-medium">8 horas</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">shield</span> Meningitis bacteriana
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 6: Warfarina -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="cardiovascular" data-id="warfarina" data-risk="high">
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold uppercase tracking-wider">Requiere INR</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(200,170,110,0.3)]">
+<img class="w-full h-full object-cover" data-alt="Blood ruby red elixir in an apothecary dropper bottle with brass calibration rings, preventing arcane thrombosis, deep navy backdrop with gold sparkles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1SM1Sih4cmAX29HNxcCthmWroRe3N7n-v4G15N9XQzIWgJCnpZclQp1_Fx_t6tXA9-bdGJWpZRUIbxDOLIwjuVTE7mx5Q920goFMv788OurmwfmMo_Mm_Cq9etoF5EhMu1ihzBQpLafFvERHBYL5YHd1ARhfLzquXkPjj9os7JL7ScF-I_k1psY2OJQqDf32aK3wNavIOv4u5QEnrjmykI-krOa0Kje3NM4TDbkjZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-tertiary text-[24px] absolute bottom-1 right-1">water_drop</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Antagonista Vitamina K</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Warfarina</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Inhibidor VKORC1 (II, VII, IX, X)</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Objetivo INR: <strong class="text-tertiary font-medium">2.0 - 3.0</strong></span>
+<span>Unión Proteica: <strong class="text-primary font-medium">99% Albúmina</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span> Prevención TVP / TEP
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 7: Omeprazol -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="gastro" data-id="omeprazol" data-risk="low">
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-primary font-semibold uppercase tracking-wider">Profármaco IBP</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(200,170,110,0.3)]">
+<img class="w-full h-full object-cover" data-alt="An ornate gastric barrier amulet containing a neutralising golden fluid, protected with gold filigree casing against digestive acid corrosion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyKNkyA0jPrOqK_0eV8lT5iM3TB1vABmRzkYN3F_kntbU0xfdn7DQ_3O66_IHYSs2DppVtUvXraMUL4Vfi1SEw01ouMCZQ5ZmzLtbGQF59mBUQtL8ut3BspfAK6uj10X-34fKPStMYjV9eo-tmITg5E1zBSijlB_Y-WCaJYEelE2unwqPg5XZ0dvyZ_mqSvXKsaNx4cuJu7oZG7b4SmW027ZjAViMv68l9pdoAgsRX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-[24px] absolute bottom-1 right-1">health_and_safety</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Bloqueador de Protones</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Omeprazol</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Inhibidor irreversible H+/K+ ATPasa</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>pH Óptimo: <strong class="text-secondary font-medium">&lt; 5.0 (Cél. Parietal)</strong></span>
+<span>Biodisponibilidad: <strong class="text-primary font-medium">40 - 65%</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span> Úlcera Péptica / ERGE
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- CARD 8: Salbutamol -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="urgencias" data-id="salbutamol" data-risk="low">
+<div class="card-indicator absolute top-3 right-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">SABA Rescate</span>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden shadow-[inset_0_0_12px_rgba(67,226,210,0.3)]">
+<img class="w-full h-full object-cover" data-alt="Brass pneumatic inhaler cartridge glowing with luminous cyan aero-vapors, League of Legends Zaunite apothecary respiratory technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzTK0ZUgzl0IAmwkvGy9n_kFMIO2HfwrPrQJjLdHpBOvQnWYxzzMPvSEarfr2QLEh3gJbfY7lM426Z2fTIVX2OVIVIZa_IJJ-l_SEAuRivjnqN3Zb6P-WxCe9e-yS2Cz8x2FI5qf19lBnVFC4-TkTmSdnQqMQCBo3sgnsF8zu9BXPX_wmfh_-zr7Cvxraw6QVrp_Y2u_jHR_ldICgYedqnM2zMqAoEkQMh5_w3TLhP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-secondary text-[24px] absolute bottom-1 right-1">air</span>
+</div>
+<div class="flex flex-col min-w-0 pr-8">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Agonista Beta-2</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Salbutamol</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Relajante músculo liso bronquial</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Inicio Acción: <strong class="text-secondary font-medium">3 - 5 min</strong></span>
+<span>Efecto Pico: <strong class="text-primary font-medium">1.5 - 2 h</strong></span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">respiratory_rate</span> Crisis Asmática Aguda
+            </span>
+<span class="text-primary uppercase tracking-wider font-semibold group-hover:translate-x-1 transition-transform flex items-center gap-0.5">
+              Inspeccionar <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- FARMACOS ANTICRISIS: información enlazada al material de epilepsia -->
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc epilepsia" data-id="fenitoina" data-risk="moderate">
+<div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-container font-semibold uppercase tracking-wider">Precaución*</span></div>
+<div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[28px]">bolt</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Hidantoína</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Fenitoína</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Bloquea canales Naᵥ en estado inactivado.</p></div></div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm">Diana: <strong class="text-secondary">Canal Naᵥ</strong><br/>Uso en lecturas: crisis focales y tónico-clónicas; no eficaz en ausencias.</div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Embarazo: precaución*</span><span class="text-primary uppercase">Inspeccionar →</span></div>
+</div>
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc epilepsia" data-id="carbamazepina" data-risk="moderate">
+<div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-container font-semibold uppercase tracking-wider">Precaución*</span></div>
+<div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[28px]">bolt</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Iminoestilbeno</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Carbamazepina</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Bloquea canales Naᵥ y prolonga el periodo refractario.</p></div></div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm">Diana: <strong class="text-secondary">Canal Naᵥ</strong><br/>Uso en lecturas: crisis focales y focales a bilaterales.</div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Embarazo: precaución*</span><span class="text-primary uppercase">Inspeccionar →</span></div>
+</div>
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc epilepsia" data-id="levetiracetam" data-risk="low">
+<div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">Menor riesgo relativo*</span></div>
+<div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Pirrolidina</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Levetiracetam</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Ligando de la proteína vesicular SV2A.</p></div></div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm">Diana: <strong class="text-secondary">SV2A</strong><br/>Uso en lecturas: crisis focales, tónico-clónicas y mioclónicas.</div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Menor riesgo relativo*</span><span class="text-primary uppercase">Inspeccionar →</span></div>
+</div>
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc epilepsia" data-id="etosuximida" data-risk="moderate">
+<div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-container font-semibold uppercase tracking-wider">Precaución*</span></div>
+<div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Succinimida</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Etosuximida</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Inhibe corrientes de calcio tipo T talámicas.</p></div></div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm">Diana: <strong class="text-secondary">Canal Caᵥ-T</strong><br/>Uso en lecturas: crisis generalizadas de ausencia típicas.</div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Precaución · evidencia limitada*</span><span class="text-primary uppercase">Inspeccionar →</span></div>
+</div>
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc epilepsia" data-id="diazepam" data-risk="moderate">
+<div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-container font-semibold uppercase tracking-wider">Precaución*</span></div>
+<div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Benzodiazepina</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Diazepam</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Modulador alostérico positivo de GABA-A.</p></div></div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm">Diana: <strong class="text-secondary">Receptor GABA-A</strong><br/>Uso en lecturas: rescate agudo; sedación, tolerancia y abstinencia.</div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Precaución especial en 3.er trimestre*</span><span class="text-primary uppercase">Inspeccionar →</span></div>
+</div>
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc epilepsia" data-id="lamotrigina" data-risk="low">
+<div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">Menor riesgo relativo*</span></div>
+<div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Feniltriazina</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Lamotrigina</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Modula canales Naᵥ y conductancias Caᵥ presinápticas.</p></div></div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm">Diana: <strong class="text-secondary">Naᵥ + Caᵥ presinápticos</strong><br/>Uso en lecturas: crisis focales y varios tipos generalizados.</div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Menor riesgo relativo*</span><span class="text-primary uppercase">Inspeccionar →</span></div>
+</div>
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc epilepsia" data-id="valproato" data-risk="high">
+<div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold uppercase tracking-wider">Riesgo alto</span></div>
+<div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-error text-[28px]">warning</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Ácido carboxílico</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Valproato</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Fármaco anticrisis de mecanismo multimodal.</p></div></div>
+<div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm">Diana: <strong class="text-secondary">Naᵥ, Caᵥ-T y vías de GABA</strong><br/>Lecturas: teratógeno humano; 6–9% de malformaciones mayores en exposición del primer trimestre.</div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-error">Riesgo alto en embarazo</span><span class="text-primary uppercase">Inspeccionar →</span></div>
+</div>
+<div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc dopamina" data-id="levodopa_carbidopa" data-risk="moderate"><div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">MÓDULO PARKINSON</span></div><div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Farmacología dopaminérgica</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Levodopa-carbidopa</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Precursor + dopa-descarboxilasa</p></div></div><div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>Grupo: <strong class="text-secondary">Precursor + dopa-descarboxilasa</strong></span></div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Levodopa: mejora síntomas motores</span><span class="text-primary uppercase">Inspeccionar →</span></div></div><div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc dopamina" data-id="rasagilina" data-risk="moderate"><div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">MÓDULO PARKINSON</span></div><div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Farmacología dopaminérgica</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Rasagilina</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Inhibidor selectivo de MAO-B</p></div></div><div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>Grupo: <strong class="text-secondary">Inhibidor selectivo de MAO-B</strong></span></div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Adyuvante a levodopa</span><span class="text-primary uppercase">Inspeccionar →</span></div></div><div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc dopamina" data-id="selegilina" data-risk="moderate"><div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">MÓDULO PARKINSON</span></div><div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Farmacología dopaminérgica</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Selegilina</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Inhibidor selectivo de MAO-B</p></div></div><div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>Grupo: <strong class="text-secondary">Inhibidor selectivo de MAO-B</strong></span></div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Adyuvante a levodopa</span><span class="text-primary uppercase">Inspeccionar →</span></div></div><div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc dopamina" data-id="pramipexol" data-risk="moderate"><div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">MÓDULO PARKINSON</span></div><div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Farmacología dopaminérgica</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Pramipexol</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Agonista dopaminérgico D₂/D₃/D₄</p></div></div><div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>Grupo: <strong class="text-secondary">Agonista dopaminérgico D₂/D₃/D₄</strong></span></div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Monoterapia Parkinson leve / adyuvante</span><span class="text-primary uppercase">Inspeccionar →</span></div></div><div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc dopamina" data-id="haloperidol" data-risk="high"><div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">MÓDULO ESQUIZOFRENIA</span></div><div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Farmacología dopaminérgica</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Haloperidol</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Antagonista de receptor D₂</p></div></div><div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>Grupo: <strong class="text-secondary">Antagonista de receptor D₂</strong></span></div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Esquizofrenia</span><span class="text-primary uppercase">Inspeccionar →</span></div></div><div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc dopamina" data-id="risperidona" data-risk="high"><div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">MÓDULO ESQUIZOFRENIA</span></div><div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Farmacología dopaminérgica</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Risperidona</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Antagonista D₂ / 5-HT₂A</p></div></div><div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>Grupo: <strong class="text-secondary">Antagonista D₂ / 5-HT₂A</strong></span></div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Esquizofrenia</span><span class="text-primary uppercase">Inspeccionar →</span></div></div><div class="drug-card group relative p-space-md rounded bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-[0_4px_20px_rgba(4,14,32,0.6)] flex flex-col justify-between" data-category="snc dopamina" data-id="clozapina" data-risk="high"><div class="card-indicator absolute top-3 right-3"><span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">MÓDULO ESQUIZOFRENIA</span></div><div class="flex items-start gap-space-md mb-space-md"><div class="w-16 h-16 rounded bg-surface-container-highest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[28px]">neurology</span></div><div class="flex flex-col min-w-0 pr-8"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Farmacología dopaminérgica</span><h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">Clozapina</h3><p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Antagonista D₂ / 5-HT₂A</p></div></div><div class="bg-surface-container-lowest p-space-sm rounded mb-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>Grupo: <strong class="text-secondary">Antagonista D₂ / 5-HT₂A</strong></span></div><div class="flex justify-between pt-space-xs font-label-sm text-label-sm"><span class="text-secondary">Esquizofrenia resistente</span><span class="text-primary uppercase">Inspeccionar →</span></div></div></div>
+</div>
+</div>
+<!-- RIGHT PANEL: LoL Champion / Item Inspector View (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-24">
+<!-- Main Inspector Slate -->
+<div class="w-full rounded bg-surface-container-low shadow-[0_12px_40px_rgba(0,0,0,0.85)] p-space-lg flex flex-col gap-space-lg relative overflow-hidden" id="inspector-card">
+<!-- Decorative Top Rune Header Ribbon -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-80"></div>
+<div class="absolute -right-16 -top-16 w-36 h-36 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<!-- Drug Title & Champion Ability Hero Header -->
+<div class="flex items-start justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded bg-surface-container-highest flex items-center justify-center shrink-0 shadow-[0_0_18px_rgba(200,170,110,0.35)] relative overflow-hidden" id="inspector-icon-chassis">
+<img class="w-full h-full object-cover" data-alt="Hero shot of epinephrine adrenal crystal reacting inside a hextech glass beaker, cyan spark emissions, fantasy high-stakes pharmacology laboratory equipment." id="inspector-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZve_ji3Gk9eHwRVDTZV5DqGhDIQ9488mjFBGiZuKzK4lO5K-0-0LAikkcbRfT-NlO-OUdlyL5j2HNW4IPBUfQGm-0nj2bT-gD2Yc10mulPyg10R6vt_FUObv7DkYQULfjYl11GL7GF0qu-mfyICg6gwpsPQ6vCFkNPbBXGikJ5Rqybx0Ih2TG7GGWC_1FdK1TQihB1cBkHvqa8nfKwf1JTmG6DUfbztvLtyuDg34L"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-[28px] absolute bottom-1 right-1" id="inspector-badge-icon">bolt</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest" id="inspector-class">Catecolamina Simpaticomimética</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold" id="inspector-code">ATC C01CA24</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-semibold leading-tight" id="inspector-name">Epinefrina</h2>
+<span class="font-label-md text-label-md text-on-surface-variant" id="inspector-formula">C₉H₁₃NO₃ • PM: 183.2 g/mol</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="px-space-md py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm tracking-widest font-bold uppercase shadow-[0_0_10px_rgba(147,0,10,0.5)]" id="inspector-alert-pill">
+              ALTO IMPACTO
+            </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Status: Prioritario</span>
+</div>
+</div>
+<!-- SECTION 1: Pharmacokinetics Bar Matrix (ADME) -->
+<div class="flex flex-col gap-space-sm p-space-md rounded bg-surface-container-lowest shadow-[inset_0_0_12px_rgba(0,0,0,0.6)]">
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">biotech</span>
+<span class="font-label-md text-label-md tracking-wider text-primary uppercase">Farmacocinética Cuántica (ADME)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Vector IV</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-1">
+<div class="p-space-xs rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Biodisponibilidad (F)</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold" id="adme-bio">100% (Infusión IV)</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Semivida (t½)</span>
+<span class="font-label-lg text-label-lg text-primary font-bold" id="adme-t12">2 - 3 Minutos</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Biotransformación</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate" id="adme-meta">MAO / COMT Tisular</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Eliminación</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate" id="adme-elim">Renal (Metabolitos)</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Dynamic Receptor Cascade (Farmacodinamia) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">schema</span>
+<span class="font-label-md text-label-md tracking-wider text-primary uppercase">Farmacodinamia &amp; Receptores</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Afinidad Relativa</span>
+</div>
+<div class="flex flex-col gap-2" id="receptors-container">
+<!-- Receptor 1 -->
+<div class="p-space-sm rounded bg-surface-container-high/60 flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Receptor Alfa-1 (α1)
+                </span>
+<span class="text-secondary font-label-sm text-label-sm font-semibold">Vasoconstricción Periférica</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container to-secondary w-[85%]"></div>
+</div>
+</div>
+<!-- Receptor 2 -->
+<div class="p-space-sm rounded bg-surface-container-high/60 flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Receptor Beta-1 (β1)
+                </span>
+<span class="text-primary font-label-sm text-label-sm font-semibold">Inotropismo &amp; Cronotropismo (+)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-fixed w-[95%]"></div>
+</div>
+</div>
+<!-- Receptor 3 -->
+<div class="p-space-sm rounded bg-surface-container-high/60 flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Receptor Beta-2 (β2)
+                </span>
+<span class="text-tertiary font-label-sm text-label-sm font-semibold">Broncodilatación Muscular Lisa</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary-container to-tertiary w-[70%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Clinical Warnings / Adverse Reactions -->
+<div class="p-space-md rounded bg-error-container/20 flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-label-md text-label-md tracking-wider font-bold uppercase">Contraindicaciones &amp; Toxicidad</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface" id="inspector-warnings">
+            Riesgo crítico de arritmias ventriculares, taquicardia severa e isquemia miocárdica en cardiopatía subyacente. Monitoreo ECG continuo obligatorio en infusión continua.
+          </p>
+</div>
+<!-- SECTION 4: Interactive Titration & Dosing Calculator Widget -->
+<div class="p-space-md rounded bg-surface-container-lowest shadow-[inset_0_0_12px_rgba(0,0,0,0.7)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">calculate</span>
+<span class="font-label-md text-label-md text-primary tracking-wider uppercase font-semibold">Calculadora de Dosis Arcana</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Titulación Rápida</span>
+</div>
+<!-- Weight Slider & Input -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Masa Corporal del Paciente:</span>
+<span class="font-label-lg text-label-lg text-primary font-bold" id="weight-display">70 kg</span>
+</div>
+<input class="w-full accent-secondary bg-surface-container-high h-2 rounded cursor-pointer mt-1" id="weight-slider" max="140" min="3" type="range" value="70"/>
+</div>
+<!-- Calculated Output Box -->
+<div class="mt-2 p-space-sm rounded bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Dosis Recomendada:</span>
+<span class="font-title-lg text-title-lg text-secondary font-bold" id="calculated-dose">0.50 mg IM (1:1,000)</span>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Vía Preferente:</span>
+<span class="font-label-md text-label-md text-primary uppercase font-bold" id="calculated-route">Intramuscular Vasto Ext.</span>
+</div>
+</div>
+</div>
+<!-- Bottom Actions (Runes & Prescription) -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<button class="flex-1 py-3 px-space-md rounded bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-bold hover:shadow-[0_0_20px_rgba(200,170,110,0.5)] transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">prescriptions</span>
+<span>Añadir a Recetario Hex</span>
+</button>
+<button class="p-3 rounded bg-surface-container hover:bg-surface-container-high text-primary transition-colors flex items-center justify-center" title="Descargar Ficha Farmacológica">
+<span class="material-symbols-outlined text-[20px]">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Interactivity Script -->
+</main>
+<script src="js/main.js" defer></script>
+<script src="js/medicamentos.js" defer></script>
+</body></html>
+

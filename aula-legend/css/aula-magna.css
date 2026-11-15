@@ -1,0 +1,26 @@
+﻿/* ==========================================================================
+   AULA MAGNA - CÁTEDRA & MÓDULOS TEÓRICOS
+   ========================================================================== */
+
+.quiz-option-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-option-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(229, 197, 135, 0.4);
+}
+
+.quiz-option-btn.selected-correct {
+  border-color: #43e2d2 !important;
+  background-color: rgba(0, 198, 183, 0.15) !important;
+}
+
+.quiz-option-btn.selected-incorrect {
+  border-color: #ff8c93 !important;
+  background-color: rgba(147, 0, 10, 0.2) !important;
+}
+
+[data-progress] {
+  transition: width 0.45s ease;
+}

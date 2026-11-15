@@ -1,0 +1,175 @@
+﻿/* ==========================================================================
+   HEXTECH APOTHECARY - DESIGN SYSTEM & ARCANE ANIMATIONS
+   Academia Arcana de Farmacología Médica (FacMed)
+   ========================================================================== */
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Ocultar barra de desplazamiento manteniendo scroll nativo */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================================
+   ANIMACIONES HEXTECH & ARCANE PULSE
+   ========================================================================== */
+
+@keyframes hextechSpinClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hextechSpinCounter {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes arcanePulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(67, 226, 210, 0.45)) drop-shadow(0 0 25px rgba(229, 197, 135, 0.25));
+  }
+  50% {
+    filter: drop-shadow(0 0 22px rgba(67, 226, 210, 0.85)) drop-shadow(0 0 35px rgba(229, 197, 135, 0.5));
+  }
+}
+
+@keyframes radarSweep {
+  0% {
+    stroke-dashoffset: 600;
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.3;
+  }
+}
+
+@keyframes shimmerPass {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  100% { transform: translateX(200%) skewX(-20deg); }
+}
+
+@keyframes pulseGlowCyan {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(67, 226, 210, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(67, 226, 210, 0.65), inset 0 0 8px rgba(67, 226, 210, 0.3);
+  }
+}
+
+@keyframes pulseGlowGold {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(200, 170, 110, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(200, 170, 110, 0.7), inset 0 0 6px rgba(200, 170, 110, 0.25);
+  }
+}
+
+/* ==========================================================================
+   CLASES DE UTILIDAD HEXTECH
+   ========================================================================== */
+
+.spin-slow {
+  animation: hextechSpinClockwise 32s linear infinite;
+  transform-origin: center;
+}
+
+.spin-reverse-slow {
+  animation: hextechSpinCounter 24s linear infinite;
+  transform-origin: center;
+}
+
+.crest-glow {
+  animation: arcanePulseGlow 3.5s ease-in-out infinite;
+}
+
+.radar-sweep-line {
+  stroke-dasharray: 120 180;
+  animation: radarSweep 6s linear infinite;
+}
+
+.shimmer-active {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(67, 226, 210, 0.12), rgba(229, 197, 135, 0.18), transparent);
+  animation: shimmerPass 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  pointer-events: none;
+}
+
+/* Chamfers (Esquinas biseladas estilo Hextech) */
+.chamfer-sm {
+  clip-path: polygon(
+    4px 0%, calc(100% - 4px) 0%,
+    100% 4px, 100% calc(100% - 4px),
+    calc(100% - 4px) 100%, 4px 100%,
+    0% calc(100% - 4px), 0% 4px
+  );
+}
+
+.chamfer-md {
+  clip-path: polygon(
+    8px 0%, calc(100% - 8px) 0%,
+    100% 8px, 100% calc(100% - 8px),
+    calc(100% - 8px) 100%, 8px 100%,
+    0% calc(100% - 8px), 0% 8px
+  );
+}
+
+/* Resplandores reactivos */
+.hextech-glow-gold {
+  animation: pulseGlowGold 3s infinite ease-in-out;
+}
+
+.hextech-glow-cyan {
+  animation: pulseGlowCyan 2.8s infinite ease-in-out;
+}
+
+/* Transiciones de navegación */
+nav a {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Accesibilidad: Reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .spin-slow,
+  .spin-reverse-slow,
+  .crest-glow,
+  .radar-sweep-line,
+  .shimmer-active::after,
+  .hextech-glow-gold,
+  .hextech-glow-cyan {
+    animation: none !important;
+  }
+}

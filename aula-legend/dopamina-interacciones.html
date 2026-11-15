@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esquema Interactivo 3D: Moduladores de Dopamina (Parkinson &amp; Esquizofrenia)</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* Estilos de realce nítido sin difuminar ni engrosar las fuentes tipográficas */
+    .target-highlight {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .target-highlight rect,
+    .target-highlight circle,
+    .target-highlight path.target-shape {
+      stroke: #38bdf8 !important;
+      stroke-width: 3px !important;
+      stroke-dasharray: none !important;
+      filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.55));
+    }
+    .target-highlight text,
+    .target-highlight tspan,
+    svg text,
+    svg tspan {
+      stroke: none !important;
+      stroke-width: 0 !important;
+      filter: none !important;
+      text-shadow: none !important;
+      paint-order: fill !important;
+    }
+    .active-pill-parkinson {
+      background-color: #0284c7 !important;
+      color: #ffffff !important;
+      border-color: #0369a1 !important;
+      box-shadow: 0 0 12px rgba(2, 132, 199, 0.45);
+    }
+    .active-pill-psych {
+      background-color: #7c3aed !important;
+      color: #ffffff !important;
+      border-color: #6d28d9 !important;
+      box-shadow: 0 0 12px rgba(124, 58, 237, 0.45);
+    }
+    .badge-fda {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-[var(--background,#081325)] text-[var(--foreground,#d8e2fc)] antialiased p-2 sm:p-4 font-sans">
+  <div class="bg-[var(--card,#111c2e)] text-[var(--foreground,#d8e2fc)] border border-[var(--border,#2b3548)] rounded-2xl p-4 sm:p-5 shadow-2xl max-w-5xl mx-auto space-y-4">
+    
+    <!-- Encabezado Principal y Modo de Visualización -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-[var(--border,#2b3548)] pb-3">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-[11px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded bg-sky-950 text-sky-400 border border-sky-800/50">
+            FacMed UNAM • Farmacología del SNC
+          </span>
+          <span class="text-[11px] font-bold text-amber-400 flex items-center gap-1">
+            ⚖️ Balancín Dopaminérgico
+          </span>
+        </div>
+        <h1 class="text-lg sm:text-xl font-black text-amber-200 mt-1 flex items-center gap-2">
+          Interacción 3D: Dianas de Dopamina en Parkinson y Esquizofrenia
+        </h1>
+        <p class="text-xs text-slate-300">
+          Explora los sitios de unión sinápticos, el dilema neuroquímico (Vía Nigroestriada vs. Mesolímbica) y la coadministración clínica.
+        </p>
+      </div>
+
+      <!-- Selector de Modo de Interacción -->
+      <div class="flex items-center gap-1.5 bg-slate-900/90 p-1 rounded-xl border border-slate-700">
+        <button onclick="setMode('inspect')" id="mode-inspect-btn" class="px-3 py-1 text-xs rounded-lg font-bold bg-sky-600 text-white transition">
+          🔍 Inspección de Fármaco
+        </button>
+        <button onclick="setMode('compare')" id="mode-compare-btn" class="px-3 py-1 text-xs rounded-lg font-semibold text-slate-400 hover:text-white transition">
+          ⚔️ Simulador de Choque / Coadministración
+        </button>
+      </div>
+    </div>
+
+    <!-- Barra de Píldoras Farmacológicas (Modo Inspección) -->
+    <div id="pills-container" class="space-y-2">
+      <!-- Grupo Parkinson -->
+      <div class="flex flex-wrap items-center gap-1.5">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-sky-400 min-w-[125px] flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-sky-400"></span> Parkinson (Agonistas/↑DA):
+        </span>
+        <button onclick="selectDrug('ldopa')" id="btn-ldopa" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition active-pill-parkinson">
+          Levodopa / Carbidopa
+        </button>
+        <button onclick="selectDrug('prami')" id="btn-prami" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Pramipexol
+        </button>
+        <button onclick="selectDrug('seleg')" id="btn-seleg" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Selegilina (iMAO-B)
+        </button>
+        <button onclick="selectDrug('entac')" id="btn-entac" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Entacapona (iCOMT)
+        </button>
+        <button onclick="selectDrug('amant')" id="btn-amant" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Amantadina
+        </button>
+      </div>
+
+      <!-- Grupo Esquizofrenia -->
+      <div class="flex flex-wrap items-center gap-1.5">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-purple-400 min-w-[125px] flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-purple-400"></span> Esquizofrenia (Antag. D₂):
+        </span>
+        <button onclick="selectDrug('halo')" id="btn-halo" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Haloperidol (Típico D₂)
+        </button>
+        <button onclick="selectDrug('risper')" id="btn-risper" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Risperidona (D₂ / 5-HT₂A)
+        </button>
+        <button onclick="selectDrug('cloza')" id="btn-cloza" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Clozapina (Atípico Seguro)
+        </button>
+        <button onclick="selectDrug('pimav')" id="btn-pimav" class="drug-pill px-2.5 py-1 text-xs rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
+          Pimavanserina (5-HT₂A Puro)
+        </button>
+      </div>
+    </div>
+
+    <!-- Barra de Selección Doble (Modo Choque / Coadministración - Inicialmente Oculta) -->
+    <div id="compare-bar" class="hidden bg-slate-900/90 border border-amber-500/30 p-3 rounded-xl flex flex-col md:flex-row items-center justify-between gap-3">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-xs font-bold text-sky-400 uppercase">1. Antiparkinsoniano:</span>
+        <select id="cmp-parkinson" onchange="runComparison()" class="bg-slate-800 text-sky-300 border border-sky-600/50 rounded-lg px-2.5 py-1 text-xs font-semibold focus:outline-none">
+          <option value="ldopa">Levodopa / Carbidopa</option>
+          <option value="prami">Pramipexol</option>
+          <option value="seleg">Selegilina</option>
+          <option value="entac">Entacapona</option>
+          <option value="amant">Amantadina</option>
+        </select>
+        
+        <span class="text-sm font-black text-amber-400">⚡ vs ⚡</span>
+
+        <span class="text-xs font-bold text-purple-400 uppercase">2. Antipsicótico:</span>
+        <select id="cmp-psych" onchange="runComparison()" class="bg-slate-800 text-purple-300 border border-purple-600/50 rounded-lg px-2.5 py-1 text-xs font-semibold focus:outline-none">
+          <option value="halo">Haloperidol</option>
+          <option value="risper">Risperidona</option>
+          <option value="cloza">Clozapina</option>
+          <option value="pimav">Pimavanserina</option>
+        </select>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span id="cmp-badge-compat" class="text-xs font-bold px-2.5 py-1 rounded-full bg-red-900/80 text-red-200 border border-red-500">
+          ⛔ ANTAGONISMO D₂ SEVERO
+        </span>
+      </div>
+    </div>
+
+    <!-- Grilla Principal: Esquema Sináptico 3D (SVG) + Slate de Farmacología Clínica -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+
+      <!-- Lienzo Sináptico Dopaminérgico 3D (7 Columnas) -->
+      <div class="lg:col-span-7 bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 relative overflow-hidden shadow-inner">
+        
+        <!-- Indicador de Vía Activa -->
+        <div class="flex items-center justify-between text-[11px] font-semibold text-slate-400 mb-2 px-1">
+          <span class="flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            Sinapsis Dopaminérgica: <strong class="text-sky-300" id="pathway-indicator">Vía Nigroestriada &amp; Mesolímbica</strong>
+          </span>
+          <span class="text-amber-400 font-mono text-[10px] bg-slate-900 px-2 py-0.5 rounded border border-slate-700" id="active-target-lbl">
+            Diana: Síntesis / LAT-1 / AADC
+          </span>
+        </div>
+
+        <!-- SVG Sinapsis Dopaminérgica con perspectiva 3D isométrica y gradientes -->
+        <svg viewBox="0 0 560 410" class="w-full h-auto rounded-lg select-none" style="background: radial-gradient(ellipse at 50% 20%, #0d1e38 0%, #050b14 100%);">
+          <defs>
+            <!-- Gradiente de Terminal Presináptica -->
+            <linearGradient id="preGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+              <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+              <stop offset="50%" stop-color="#0f172a" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="#0369a1" stop-opacity="0.4"/>
+            </linearGradient>
+
+            <!-- Gradiente Membrana Postsináptica -->
+            <linearGradient id="postGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#312e81" stop-opacity="0.5"/>
+              <stop offset="40%" stop-color="#1e1b4b" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+            </linearGradient>
+
+            <!-- Gradiente de Mitocondria (MAO-B) -->
+            <radialGradient id="mitoGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#fb7185" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#9f1239" stop-opacity="0.8"/>
+            </radialGradient>
+
+            <!-- Gradiente Vesicular -->
+            <radialGradient id="vesGrad" cx="40%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#0369a1" stop-opacity="0.6"/>
+            </radialGradient>
+
+            <!-- Marcador Flecha -->
+            <marker id="arrowDa" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+            </marker>
+          </defs>
+
+          <!-- 1. TERMINAL AXONAL PRESINÁPTICA (NEURONA DOPAMINÉRGICA NIGROESTRIADA) -->
+          <path d="M 40,20 C 180,15 360,15 480,20 C 510,120 510,210 420,225 C 280,235 160,235 70,225 C 20,200 20,110 40,20 Z" 
+                fill="url(#preGrad)" stroke="#0284c7" stroke-width="2.2"/>
+          <text x="60" y="42" font-size="11" font-weight="bold" fill="#7dd3fc" letter-spacing="1">TERMINAL PRESINÁPTICA DOPAMINÉRGICA</text>
+
+          <!-- TARGET 1: Transportador LAT-1 (Barrera Hematoencefálica y Membrana) -->
+          <g id="target-lat1" class="cursor-pointer target-shape" onclick="selectDrug('ldopa')">
+            <rect x="35" y="65" width="28" height="50" rx="5" fill="#0284c7" stroke="#38bdf8" stroke-width="1.8" class="target-shape"/>
+            <text x="38" y="93" font-size="9" font-weight="bold" fill="#ffffff">LAT-1</text>
+            <!-- Levodopa molecule entering -->
+            <circle cx="20" cy="90" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="1"/>
+            <text x="10" y="80" font-size="7.5" font-weight="bold" fill="#fbbf24">L-DOPA</text>
+            <path d="M 18,90 L 35,90" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#arrowDa)"/>
+            <text x="12" y="128" font-size="8" fill="#94a3b8">Entrada BHE</text>
+          </g>
+
+          <!-- TARGET 2: Síntesis Enzimática (AADC / Dopa-Descarboxilasa) -->
+          <g id="target-aadc" class="cursor-pointer" onclick="selectDrug('ldopa')">
+            <rect x="90" y="70" width="70" height="34" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,2" class="target-shape"/>
+            <text x="96" y="86" font-size="8.5" font-weight="bold" fill="#fbbf24">Dopa-Descarboxilasa</text>
+            <text x="102" y="97" font-size="7.5" fill="#94a3b8">L-DOPA ➔ Dopamina</text>
+            <text x="76" y="118" font-size="7.5" fill="#ef4444" font-weight="bold">Carbidopa: Inhibe AADC periférica</text>
+          </g>
+
+          <!-- TARGET 3: Mitocondria Presináptica & Enzima MAO-B -->
+          <g id="target-maob" class="cursor-pointer" onclick="selectDrug('seleg')">
+            <ellipse cx="230" cy="85" rx="36" ry="22" fill="url(#mitoGrad)" stroke="#e11d48" stroke-width="2" class="target-shape"/>
+            <!-- Cristas mitocondriales -->
+            <path d="M 210,85 Q 220,78 230,85 T 250,85" stroke="#fecdd3" stroke-width="1.5" fill="none"/>
+            <text x="212" y="88" font-size="9.5" font-weight="bold" fill="#ffffff">MAO-B</text>
+            <text x="185" y="118" font-size="8" font-weight="bold" fill="#f43f5e">Selegilina / Rasagilina</text>
+            <text x="195" y="128" font-size="7.5" fill="#cbd5e1">Degradación de DA ↓</text>
+          </g>
+
+          <!-- TARGET 4: Vesículas de Dopamina (VMAT-2) y Exocitosis -->
+          <g id="target-vmat2" class="cursor-pointer" onclick="selectDrug('amant')">
+            <!-- Vesícula 1 -->
+            <circle cx="160" cy="155" r="20" fill="url(#vesGrad)" stroke="#0ea5e9" stroke-width="1.8" class="target-shape"/>
+            <circle cx="160" cy="155" r="14" fill="#082f49" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2"/>
+            <circle cx="156" cy="152" r="2.5" fill="#facc15"/>
+            <circle cx="164" cy="154" r="2.5" fill="#facc15"/>
+            <circle cx="160" cy="160" r="2.5" fill="#facc15"/>
+            <text x="146" y="142" font-size="8" font-weight="bold" fill="#7dd3fc">VMAT-2</text>
+            
+            <!-- Vesícula en fusión exocítica -->
+            <circle cx="240" cy="180" r="18" fill="url(#vesGrad)" stroke="#38bdf8" stroke-width="1.8"/>
+            <text x="228" y="183" font-size="7.5" font-weight="bold" fill="#ffffff">DA Pool</text>
+            <text x="150" y="188" font-size="8" fill="#e0f2fe" font-weight="semibold">Amantadina: Facilita Liberación</text>
+          </g>
+
+          <!-- TARGET 5: Transportador de Recaptura DAT -->
+          <g id="target-dat" class="cursor-pointer" onclick="selectDrug('amant')">
+            <rect x="300" y="200" width="30" height="25" rx="4" fill="#047857" stroke="#10b981" stroke-width="1.8" class="target-shape"/>
+            <text x="306" y="216" font-size="9" font-weight="bold" fill="#ffffff">DAT</text>
+            <!-- Flecha de recaptura -->
+            <path d="M 315,235 L 315,225" stroke="#34d399" stroke-width="2" marker-end="url(#arrowDa)"/>
+            <text x="280" y="248" font-size="7.5" fill="#6ee7b7">Recaptura presináptica</text>
+          </g>
+
+          <!-- TARGET 6: Degradación Extraneuronal por COMT -->
+          <g id="target-comt" class="cursor-pointer" onclick="selectDrug('entac')">
+            <rect x="40" y="240" width="75" height="28" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.8" class="target-shape"/>
+            <text x="47" y="255" font-size="9" font-weight="bold" fill="#a5b4fc">COMT Periférica</text>
+            <text x="48" y="264" font-size="7" fill="#c7d2fe">Entacapona (Bloqueo)</text>
+            <text x="40" y="280" font-size="7.5" fill="#818cf8">Protege Levodopa oral</text>
+          </g>
+
+          <!-- 2. HENDIDURA SINÁPTICA Y PULSO DE DOPAMINA -->
+          <g id="synaptic-cleft">
+            <text x="220" y="245" font-size="8.5" font-weight="bold" fill="#38bdf8" letter-spacing="1">HENDIDURA SINÁPTICA [DA]</text>
+            <!-- Moléculas de Dopamina flotantes -->
+            <circle cx="180" cy="235" r="3" fill="#facc15" stroke="#713f12" stroke-width="0.5"/>
+            <circle cx="210" cy="255" r="3" fill="#facc15" stroke="#713f12" stroke-width="0.5"/>
+            <circle cx="260" cy="248" r="3" fill="#facc15" stroke="#713f12" stroke-width="0.5"/>
+            <circle cx="360" cy="245" r="3" fill="#facc15" stroke="#713f12" stroke-width="0.5"/>
+            <circle cx="430" cy="250" r="3" fill="#facc15" stroke="#713f12" stroke-width="0.5"/>
+          </g>
+
+          <!-- 3. MEMBRANA POSTSINÁPTICA (CUERPO ESTRIADO / CORTEZA LÍMBICA) -->
+          <path d="M 20,285 C 160,275 380,275 540,285 L 540,395 C 380,385 160,385 20,395 Z" 
+                fill="url(#postGrad)" stroke="#4338ca" stroke-width="2"/>
+          <text x="40" y="385" font-size="10.5" font-weight="bold" fill="#c7d2fe" letter-spacing="1">MEMBRANA NEURONAL POSTSINÁPTICA</text>
+
+          <!-- TARGET 7: RECEPTOR D2 POSTSINÁPTICO (EL NODO CENTRAL DEL CONFLICTO) -->
+          <g id="target-d2" class="cursor-pointer" onclick="selectDrug('prami')">
+            <!-- Cuerpo del Receptor D2 (GPCR Gi/o) -->
+            <rect x="180" y="270" width="70" height="42" rx="8" fill="#4338ca" stroke="#818cf8" stroke-width="2" class="target-shape"/>
+            <text x="187" y="290" font-size="11" font-weight="black" fill="#ffffff">Receptor D₂</text>
+            <text x="190" y="303" font-size="7.5" fill="#c7d2fe">Acoplado a Gi/o</text>
+            
+            <!-- Sitio de Agonismo (Pramipexol / DA) -->
+            <circle cx="190" cy="268" r="6" fill="#0284c7" stroke="#e0f2fe" stroke-width="1.2"/>
+            <text x="160" y="325" font-size="8" font-weight="bold" fill="#38bdf8">Agonista: Pramipexol (+)</text>
+            
+            <!-- Sitio de Antagonismo (Haloperidol / Risperidona) -->
+            <rect x="235" y="264" width="10" height="10" rx="2" fill="#7c3aed" stroke="#ffffff" stroke-width="1"/>
+            <text x="160" y="337" font-size="8" font-weight="bold" fill="#c084fc">Antagonista: Haloperidol (-)</text>
+            
+            <!-- Vía de transducción Gi -->
+            <path d="M 215,312 L 215,345" stroke="#818cf8" stroke-width="1.8" stroke-dasharray="2,2"/>
+            <text x="175" y="358" font-size="7.5" fill="#a5b4fc">Efecto Motor Nigroestriado</text>
+          </g>
+
+          <!-- TARGET 8: RECEPTOR D1 POSTSINÁPTICO (VÍA DIRECTA ESTIMULATORIA Gs) -->
+          <g id="target-d1" class="cursor-pointer" onclick="selectDrug('ldopa')">
+            <rect x="300" y="272" width="60" height="38" rx="7" fill="#0369a1" stroke="#38bdf8" stroke-width="1.8" class="target-shape"/>
+            <text x="310" y="291" font-size="10" font-weight="bold" fill="#ffffff">Receptor D₁</text>
+            <text x="313" y="303" font-size="7.5" fill="#e0f2fe">Vía Gs/cAMP</text>
+            <text x="290" y="325" font-size="8" fill="#7dd3fc" font-weight="semibold">Vía Directa Motora</text>
+          </g>
+
+          <!-- TARGET 9: RECEPTOR SEROTONINÉRGICO 5-HT2A (MODULACIÓN DE PSICOSIS) -->
+          <g id="target-5ht2a" class="cursor-pointer" onclick="selectDrug('pimav')">
+            <rect x="400" y="268" width="85" height="44" rx="8" fill="#581c87" stroke="#c084fc" stroke-width="2" class="target-shape"/>
+            <text x="407" y="287" font-size="10.5" font-weight="black" fill="#ffffff">5-HT₂A Serot.</text>
+            <text x="408" y="299" font-size="7.5" fill="#e9d5ff">Acoplado a Gq / PLC</text>
+            
+            <circle cx="465" cy="265" r="5" fill="#ec4899" stroke="#ffffff" stroke-width="1"/>
+            <text x="380" y="325" font-size="8" font-weight="bold" fill="#f472b6">Pimavanserina (Agonista Inv.)</text>
+            <text x="380" y="337" font-size="8" font-weight="bold" fill="#c084fc">Clozapina / Risperidona (-)</text>
+            <text x="380" y="350" font-size="7.5" fill="#e9d5ff">Trata Psicosis SIN bloquear D₂</text>
+          </g>
+        </svg>
+
+        <!-- Leyenda Táctica Inferior -->
+        <div class="mt-2 grid grid-cols-3 gap-2 text-[10px] text-slate-300 bg-slate-900/60 p-2 rounded-lg border border-slate-800">
+          <div class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded bg-sky-600 shrink-0"></span>
+            <span><strong>Azul:</strong> Estimulación dopaminérgica (Parkinson)</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded bg-purple-600 shrink-0"></span>
+            <span><strong>Morado:</strong> Bloqueo D₂ / 5-HT₂A (Psicosis)</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded bg-amber-500 shrink-0"></span>
+            <span><strong>Ámbar:</strong> Diana seleccionada en tiempo real</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel de Farmacología Clínica y Seguridad (5 Columnas) -->
+      <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-xl p-3.5 sm:p-4 text-xs flex flex-col justify-between min-h-[460px] shadow-xl">
+        
+        <!-- Vista 1: Detalle de Fármaco (Modo Inspección) -->
+        <div id="inspector-view" class="space-y-3">
+          
+          <!-- Encabezado del Fármaco -->
+          <div class="flex items-start justify-between border-b border-slate-800 pb-2.5">
+            <div>
+              <span id="d-badge-group" class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800">
+                ANTIPARKINSONIANO • PRECURSOR
+              </span>
+              <h2 id="d-name" class="text-base sm:text-lg font-black text-amber-300 mt-1">
+                Levodopa / Carbidopa
+              </h2>
+              <span id="d-class" class="text-[11px] text-slate-400">
+                Precursor dopaminérgico + Inhibidor de DDC periférica
+              </span>
+            </div>
+            
+            <div class="text-right">
+              <span id="d-target-badge" class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-sky-900 text-sky-200">
+                Diana: LAT-1 / AADC
+              </span>
+              <div class="mt-1">
+                <span id="d-fda-badge" class="badge-fda bg-amber-900/60 text-amber-200 border border-amber-600/50">
+                  FDA: Categoría C
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mecanismo y Sitio de Unión Exacto -->
+          <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800/80">
+            <span class="font-bold text-sky-400 text-[11px] uppercase tracking-wider block mb-1 flex items-center gap-1">
+              🎯 Mecanismo y Sitio de Unión Molecular:
+            </span>
+            <p id="d-mechanism" class="text-slate-300 text-[11px] leading-relaxed">
+              La <strong>Levodopa</strong> atraviesa la BHE por transporte facilitado via transportador de aminoácidos neutros <strong>LAT-1</strong>. En las neuronas residuales de la sustancia negra es descarboxilada a Dopamina por la L-aminoácido aromático descarboxilasa (AADC). La <strong>Carbidopa</strong> no cruza la BHE e inhibe la AADC periférica, elevando la fracción que llega al SNC de 1–3% a más del 10%.
+            </p>
+          </div>
+
+          <!-- Indicaciones y Contraindicaciones -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+            <div class="p-2 rounded bg-emerald-950/30 border border-emerald-900/50">
+              <span class="font-bold text-emerald-400 block mb-0.5">✅ Indicaciones:</span>
+              <span id="d-indications" class="text-slate-300">
+                Tratamiento estándar de oro para los síntomas motores de la Enfermedad de Parkinson (bradicinesia, rigidez, temblor).
+              </span>
+            </div>
+            <div class="p-2 rounded bg-rose-950/30 border border-rose-900/50">
+              <span class="font-bold text-rose-400 block mb-0.5">⛔ Contraindicaciones:</span>
+              <span id="d-contraindications" class="text-slate-300">
+                Glaucoma de ángulo cerrado, psicosis activa grave, melanoma no diagnosticado, coadministración con IMAO no selectivos.
+              </span>
+            </div>
+          </div>
+
+          <!-- Interacción Cruzada con el Grupo Contrario (El Conflicto Dopamina) -->
+          <div class="p-2.5 rounded-lg bg-amber-950/20 border border-amber-700/40">
+            <span class="font-bold text-amber-300 text-[11px] uppercase tracking-wider block mb-0.5 flex items-center gap-1">
+              ⚡ Interacción Dopaminérgica Cruzada (Parkinson ⇄ Esquizofrenia):
+            </span>
+            <p id="d-interaction" class="text-amber-100/90 text-[11px] leading-relaxed">
+              Los antipsicóticos con bloqueo D₂ potente (Haloperidol, Risperidona) <strong>bloquean por completo la respuesta a la Levodopa</strong> y precipitan acinesia severa. Si un paciente con Parkinson presenta psicosis secundaria, el tratamiento exige antipsicóticos sin afinidad D₂ estriatal: <strong>Pimavanserina</strong> o <strong>Clozapina</strong>.
+            </p>
+          </div>
+
+          <!-- Seguridad en el Embarazo (FDA / PLLR) -->
+          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[11px] flex items-center justify-between">
+            <span class="text-slate-400">Seguridad Materno-Fetal (FDA):</span>
+            <span id="d-fda-desc" class="font-semibold text-amber-300">Cat. C • Usar solo si beneficio supera riesgo</span>
+          </div>
+        </div>
+
+        <!-- Vista 2: Resultado de Coadministración / Choque (Modo Comparación) -->
+        <div id="compare-view" class="hidden space-y-3">
+          <div class="border-b border-slate-800 pb-2">
+            <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">
+              ANÁLISIS DE INTERACCIÓN FARMACOLÓGICA
+            </span>
+            <h3 id="cmp-title" class="text-base font-black text-white mt-1">
+              Levodopa + Haloperidol
+            </h3>
+            <span id="cmp-type" class="text-[11px] text-rose-400 font-semibold">
+              Antagonismo Farmacodinámico Competitivo Puro en Receptores D₂
+            </span>
+          </div>
+
+          <!-- Diagrama de Conflicto de Vías Cerebrales -->
+          <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 space-y-2">
+            <span class="text-[11px] font-bold text-sky-400 uppercase tracking-wider block">
+              🧠 Vías Cerebrales en Conflicto:
+            </span>
+            <div class="space-y-1.5 text-[11px]">
+              <div class="flex items-center justify-between p-1.5 rounded bg-slate-900 border border-slate-800">
+                <span class="text-slate-300">Vía Nigroestriada (Control Motor):</span>
+                <span id="cmp-nigro" class="font-bold text-rose-400">BLOQUEO TOTAL ➔ Acinesia Severa</span>
+              </div>
+              <div class="flex items-center justify-between p-1.5 rounded bg-slate-900 border border-slate-800">
+                <span class="text-slate-300">Vía Mesolímbica (Control de Psicosis):</span>
+                <span id="cmp-meso" class="font-bold text-amber-400">Fuerzas Contrapuestas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consecuencia Clínica Crítica -->
+          <div class="p-2.5 rounded-lg bg-rose-950/30 border border-rose-800/60">
+            <span class="font-bold text-rose-400 text-[11px] uppercase tracking-wider block mb-1">
+              ⚠️ Consecuencia Fisiopatológica en el Paciente:
+            </span>
+            <p id="cmp-consequence" class="text-slate-200 text-[11px] leading-relaxed">
+              El Haloperidol bloquea más del 80% de los receptores D₂ estriatales, anulando completamente el efecto antiparkinsoniano de la Levodopa y provocando un síndrome acinético agudo, distonías severas y riesgo de Síndrome Neuroléptico Maligno por retiro funcional dopaminérgico.
+            </p>
+          </div>
+
+          <!-- Conducta Médica Basada en Evidencia (UNAM FacMed) -->
+          <div class="p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-800/60">
+            <span class="font-bold text-emerald-400 text-[11px] uppercase tracking-wider block mb-1">
+              🩺 Conducta Médica Correcta (Katzung / Goodman):
+            </span>
+            <p id="cmp-solution" class="text-emerald-100 text-[11px] leading-relaxed">
+              Suspender inmediatamente el antipsicótico típico. Para la psicosis inducida por levodopa o parkinsonismo avanzado, el tratamiento de elección es <strong>Pimavanserina</strong> (agonista inverso 5-HT₂A) o <strong>Clozapina / Quetiapina</strong> a dosis bajas, las cuales respetan los receptores D₂ estriatales.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pie Informativo -->
+        <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[10px] text-slate-400">
+          <span>Fuente: Temario Farmacología FacMed UNAM • Katzung Cap. 28 y 29</span>
+          <span class="text-amber-400 font-semibold">Semana 12</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Script Lógico de Selección, Resalte SVG e Interacción Farmacológica -->
+  <script>
+    // Base de Datos Farmacológica Integral (Parkinson & Esquizofrenia)
+    const DRUG_DATA = {
+      ldopa: {
+        name: "Levodopa / Carbidopa",
+        classTitle: "Precursor dopaminérgico + Inhibidor periférico de AADC",
+        badgeGroup: "ANTIPARKINSONIANO • 1ª LÍNEA",
+        groupColor: "bg-sky-950 text-sky-300 border-sky-800",
+        targetId: "target-lat1",
+        targetSubId: "target-aadc",
+        targetName: "Diana: LAT-1 (BHE) y AADC",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Atraviesa placenta; usar solo bajo estricta indicación",
+        mechanism: "La Levodopa cruza la barrera hematoencefálica a través del transportador de aminoácidos neutros LAT-1. Dentro de las neuronas dopaminérgicas estriatales residuales se convierte en Dopamina por acción de la Dopa-Descarboxilasa (AADC). La Carbidopa no atraviesa la BHE e inhibe la AADC en sangre periférica, evitando náuseas, hipotensión y aumentando 10 veces la biodisponibilidad cerebral.",
+        indications: "Tratamiento estándar de oro para los síntomas cardinales de la Enfermedad de Parkinson (bradicinesia, rigidez muscular, temblor de reposo).",
+        contraindications: "Glaucoma de ángulo cerrado, psicosis activa descompensada, melanoma activo no diagnosticado, uso conjunto con inhibidores de MAO no selectivos.",
+        interaction: "Los antipsicóticos antagonistas D₂ (Haloperidol, Risperidona) anulan totalmente el beneficio motor de la Levodopa y provocan crisis acinéticas. Si aparece psicosis, usar únicamente Pimavanserina o Clozapina."
+      },
+      prami: {
+        name: "Pramipexol",
+        classTitle: "Agonista dopaminérgico selectivo no ergolínico (D₂ / D₃)",
+        badgeGroup: "ANTIPARKINSONIANO • AGONISTA DIRECTO",
+        groupColor: "bg-sky-950 text-sky-300 border-sky-800",
+        targetId: "target-d2",
+        targetSubId: null,
+        targetName: "Diana: Receptores D₂ y D₃ Postsinápticos",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Excreción renal elevada; vigilar función materna",
+        mechanism: "Ejerce agonismo directo con alta afinidad intrínseca sobre la familia de receptores D₂ (especialmente D₃ y D₂), activando la vía de proteína Gi y disminuyendo los niveles intracelulares de AMPc. Al no requerir transformación enzimática por neuronas degeneradas, es eficaz aun con pérdida neuronal avanzada de la sustancia negra.",
+        indications: "Monoterapia inicial en pacientes jóvenes (<60-65 años) con Parkinson para retrasar el inicio de discinesias por Levodopa; Síndrome de Piernas Inquietas.",
+        contraindications: "Trastornos graves del control de impulsos (ludopatía, hipersexualidad, compras compulsivas), somnolencia súbita al conducir, psicosis activa.",
+        interaction: "Compromiso competitivo en el receptor D₂ con antipsicóticos típicos. Puede desencadenar alucinaciones y cuadros psicóticos por hiperestimulación mesolímbica D₃."
+      },
+      seleg: {
+        name: "Selegilina",
+        classTitle: "Inhibidor irreversible selectivo de Monoaminooxidasa B (MAO-B)",
+        badgeGroup: "ANTIPARKINSONIANO • INHIBIDOR ENZIMÁTICO",
+        groupColor: "bg-sky-950 text-sky-300 border-sky-800",
+        targetId: "target-maob",
+        targetSubId: null,
+        targetName: "Diana: MAO-B Mitocondrial Presináptica",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Precaución con preeclampsia y fármacos simpáticos",
+        mechanism: "Se une irreversiblemente al sitio catalítico de la isoenzima MAO-B en las mitocondrias neuronales y gliales, impidiendo la desaminación oxidativa de la dopamina y prolongando su tiempo de acción en la hendidura sináptica. A dosis de 5-10 mg/día conserva selectividad por MAO-B, sin causar el 'efecto queso' tiramínico.",
+        indications: "Coadyuvante de Levodopa/Carbidopa para aminorar las fluctuaciones motoras ('wearing-off' o deterioro de fin de dosis); monoterapia muy temprana.",
+        contraindications: "Uso concurrente con meperidina (petidina), tramadol, dextrometorfano, ISRS o antidepresivos tricíclicos por riesgo mortal de Síndrome Serotoninérgico.",
+        interaction: "Pérdida de selectividad MAO-B si se superan 10 mg/día, convirtiéndose en inhibidor MAO-A con riesgo de crisis hipertensiva simpaticomimética."
+      },
+      entac: {
+        name: "Entacapona",
+        classTitle: "Inhibidor selectivo y reversible de COMT periférica",
+        badgeGroup: "ANTIPARKINSONIANO • AHORRADOR DE DOPA",
+        groupColor: "bg-sky-950 text-sky-300 border-sky-800",
+        targetId: "target-comt",
+        targetSubId: null,
+        targetName: "Diana: Catecol-O-Metiltransferasa (COMT)",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Causa cromaturia naranja benigna",
+        mechanism: "Inhibe de forma reversible la enzima COMT en tejidos periféricos (hígado y tracto digestivo). Al bloquear la conversión de Levodopa en 3-O-metildopa (3-OMD), disminuye la competencia de 3-OMD por el transportador LAT-1 en la BHE y eleva sustancialmente el área bajo la curva (AUC) de Levodopa en el cerebro.",
+        indications: "Siempre en combinación obligada con Levodopa/Carbidopa en pacientes que experimentan fluctuaciones motoras o desgaste de fin de dosis.",
+        contraindications: "Uso con IMAO no selectivos, antecedentes de rabdomiólisis o Síndrome Neuroléptico Maligno.",
+        interaction: "Aumenta los niveles plasmáticos de fármacos metabolizados por COMT (isoproterenol, adrenalina). No interactúa negativamente con antipsicóticos a nivel cerebral porque no cruza la BHE."
+      },
+      amant: {
+        name: "Amantadina",
+        classTitle: "Antagonista del receptor NMDA y facilitador dopaminérgico",
+        badgeGroup: "ANTIPARKINSONIANO • MULTIMODAL",
+        groupColor: "bg-sky-950 text-sky-300 border-sky-800",
+        targetId: "target-vmat2",
+        targetSubId: "target-dat",
+        targetName: "Diana: NMDA, DAT y Liberación Vesicular",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Reportes de teratogénesis cardiovascular",
+        mechanism: "Bloquea los canales iónicos del receptor glutamatérgico NMDA, disminuyendo la toxicidad excitotóxica y la hiperactividad subtalámica; simultáneamente estimula la exocitosis de dopamina desde vesículas presinápticas e inhibe levemente la recaptura por DAT.",
+        indications: "Fármaco de elección para el tratamiento y control de las discinesias inducidas por Levodopa en Parkinson avanzado; síntomas leves en fase temprana.",
+        contraindications: "Insuficiencia cardíaca congestiva grave, antecedentes de crisis convulsivas, edema periférico preexistente e insuficiencia renal severa.",
+        interaction: "Potencia los efectos anticolinérgicos y alucinatorios si se combina con fármacos psicotrópicos o antihistamínicos. Causa Livedo Reticularis en miembros inferiores."
+      },
+      halo: {
+        name: "Haloperidol",
+        classTitle: "Antipsicótico típico de primera generación (Butirofenona)",
+        badgeGroup: "ANTIPSICÓTICO TÍPICO • D₂ POTENTE",
+        groupColor: "bg-purple-950 text-purple-300 border-purple-800",
+        targetId: "target-d2",
+        targetSubId: null,
+        targetName: "Diana: Bloqueo de Receptores D₂ Postsinápticos",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Riesgo de síntomas extrapiramidales neonatales",
+        mechanism: "Antagonismo competitivo de altísima potencia sobre los receptores dopaminérgicos D₂ en las vías mesolímbica y mesocortical, aliviando las alucinaciones y delirios (síntomas positivos). Al bloquear simultáneamente los receptores D₂ de la vía nigroestriada, desinhibe la vía indirecta y produce parkinsonismo farmacológico severo.",
+        indications: "Esquizofrenia y psicosis aguda, agitación psicomotriz en urgencias, corea de Huntington, tics graves en Síndrome de Gilles de la Tourette.",
+        contraindications: "ENFERMEDAD DE PARKINSON (CONTRAINDICACIÓN ABSOLUTA), depresión del SNC, coma, intervalo QTc prolongado (riesgo de Torsades de Pointes).",
+        interaction: "ANTAGONISMO TOTAL CON LEVODOPA Y PRAMIPEXOL. Anula la terapia antiparkinsoniana y puede precipitar crisis distónicas agudas, parkinsonismo y Síndrome Neuroléptico Maligno."
+      },
+      risper: {
+        name: "Risperidona",
+        classTitle: "Antipsicótico atípico de segunda generación (Benzisoxazol)",
+        badgeGroup: "ANTIPSICÓTICO ATÍPICO • D₂ / 5-HT₂A",
+        groupColor: "bg-purple-950 text-purple-300 border-purple-800",
+        targetId: "target-d2",
+        targetSubId: "target-5ht2a",
+        targetName: "Diana: Receptores D₂ y 5-HT₂A",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Monitorear hiperprolactinemia y peso materno",
+        mechanism: "Bloquea potentemente los receptores serotoninérgicos 5-HT₂A y los receptores dopaminérgicos D₂. El antagonismo 5-HT₂A en la vía nigroestriada promueve una liberación local compensatoria de dopamina, reduciendo el riesgo de extrapiramidalismo a dosis bajas (<4 mg/día). A dosis más altas (>6 mg/día) se comporta clínicamente como un neuroléptico típico.",
+        indications: "Esquizofrenia en adultos y adolescentes (síntomas positivos y negativos), manía bipolar, irritabilidad en trastorno del espectro autista.",
+        contraindications: "Demencia en adultos mayores (riesgo aumentado de eventos vasculares cerebrales y muerte), hiperprolactinemia sintomática grave.",
+        interaction: "A dosis intermedias-altas antagoniza el beneficio de Levodopa y Pramipexol. Provoca hiperprolactinemia marcada por bloqueo D₂ en la vía tuberoinfundibular."
+      },
+      cloza: {
+        name: "Clozapina",
+        classTitle: "Antipsicótico atípico dibenzodiazepínico (Multirreceptor)",
+        badgeGroup: "ANTIPSICÓTICO ATÍPICO • BAJA AFINIDAD D₂",
+        groupColor: "bg-purple-950 text-purple-300 border-purple-800",
+        targetId: "target-5ht2a",
+        targetSubId: "target-d2",
+        targetName: "Diana: 5-HT₂A, D₄ y D₂ Transitorio",
+        fda: "FDA: Cat. B",
+        fdaDesc: "Cat. B • Sin teratogénesis mayor demostrada; vigilar neutrófilos",
+        mechanism: "Bloquea con muy alta afinidad los receptores 5-HT₂A y D₄, mientras presenta una afinidad débil y una disociación sumamente rápida sobre los receptores D₂ estriatales (ocupación <50%). Debido a esto, alivia la psicosis sin inducir parkinsonismo ni interferir con la función motora nigroestriada.",
+        indications: "Esquizofrenia refractaria al tratamiento (resistencia a ≥2 antipsicóticos convencionales); conducta suicida recurrente; PSICOSIS EN ENFERMEDAD DE PARKINSON.",
+        contraindications: "Antecedentes de agranulocitosis inducida por fármacos, neutropenia (<1,500/mm³), íleo paralítico, epilepsia no controlada.",
+        interaction: "FÁRMACO DE ELECCIÓN EN PSICOSIS POR PARKINSON. Puede coadministrarse con Levodopa sin anular el control motor. Requiere hemograma y recuento absoluto de neutrófilos (RAN) estricto."
+      },
+      pimav: {
+        name: "Pimavanserina",
+        classTitle: "Agonista inverso y antagonista selectivo del receptor 5-HT₂A",
+        badgeGroup: "ANTIPSICÓTICO ESPECÍFICO DE PARKINSON",
+        groupColor: "bg-purple-950 text-purple-300 border-purple-800",
+        targetId: "target-5ht2a",
+        targetSubId: null,
+        targetName: "Diana: Receptor 5-HT₂A Puro (Cero Afinidad D₂)",
+        fda: "FDA: Cat. C",
+        fdaDesc: "Cat. C • Evaluar riesgo-beneficio específico",
+        mechanism: "Agonista inverso potente y selectivo para los receptores de serotonina 5-HT₂A (y en menor medida 5-HT₂C). Carece por completo de afinidad o actividad intrínseca sobre receptores dopaminérgicos D₂, adrenérgicos, histaminérgicos o muscarínicos, eliminando la base molecular del deterioro motor.",
+        indications: "Aprobada específicamente por la FDA para el tratamiento de las alucinaciones y delirios asociados con la psicosis de la Enfermedad de Parkinson.",
+        contraindications: "Hipersensibilidad, intervalo QTc prolongado significativo o uso concomitante con antiarrítmicos de clase IA y III.",
+        interaction: "COMPATIBILIDAD PERFECTA CON LEVODOPA Y PRAMIPEXOL. Al no poseer bloqueo de receptores D₂, no interfiere en lo absoluto con la respuesta terapéutica motora."
+      }
+    };
+
+    // Matriz de Interacciones Cruzadas (Parkinson ⇄ Esquizofrenia)
+    const PAIR_INTERACTIONS = {
+      "ldopa-halo": {
+        title: "Levodopa/Carbidopa + Haloperidol",
+        compat: "⛔ ANTAGONISMO D₂ SEVERO",
+        compatClass: "bg-rose-950 text-rose-200 border-rose-500",
+        type: "Antagonismo farmacodinámico competitivo puro en receptores D₂",
+        nigro: "BLOQUEO COMPLETO ➔ Parálisis motora y crisis acinética",
+        meso: "Efecto antipsicótico comprometido por exceso de DA",
+        consequence: "El Haloperidol satura más del 80% de los receptores D₂ en el cuerpo estriado, cancelando la acción de la dopamina formada a partir de Levodopa. El paciente experimenta acinesia súbita, rigidez 'en tubo de plomo' y alto riesgo de Síndrome Neuroléptico Maligno.",
+        solution: "Contraindicación absoluta. Suspender Haloperidol. Si el paciente con Parkinson presenta psicosis, usar Pimavanserina o Clozapina."
+      },
+      "ldopa-risper": {
+        title: "Levodopa/Carbidopa + Risperidona",
+        compat: "⚠️ ANTAGONISMO DOSIS-DEPENDIENTE",
+        compatClass: "bg-amber-950 text-amber-200 border-amber-500",
+        type: "Antagonismo D₂ moderado-alto con componente 5-HT₂A",
+        nigro: "Bloqueo D₂ parcial a dosis bajas (<2 mg); bloqueo total a >4 mg/día",
+        meso: "Control de psicosis con riesgo de fluctuaciones motoras",
+        consequence: "A dosis habituales de esquizofrenia (>4 mg/día), la Risperidona deteriora severamente el control motor de la Levodopa y eleva prolactina.",
+        solution: "Evitar en pacientes parkinsonianos. Sustituir por Clozapina, Quetiapina o Pimavanserina."
+      },
+      "ldopa-cloza": {
+        title: "Levodopa/Carbidopa + Clozapina",
+        compat: "✅ COMBINACIÓN DE ELECCIÓN",
+        compatClass: "bg-emerald-950 text-emerald-200 border-emerald-500",
+        type: "Sinergia terapéutica por disociación rápida D₂ y bloqueo 5-HT₂A",
+        nigro: "PRESERVADO: Ocupación D₂ estriatal <40%",
+        meso: "Control excelente de psicosis y alucinaciones",
+        consequence: "La Clozapina controla los delirios y alucinaciones causados por Levodopa sin restar eficacia motora al tratamiento del Parkinson.",
+        solution: "Tratamiento de referencia hospitalaria en psicosis parkinsoniana. Requiere control hematológico semanal de neutrófilos."
+      },
+      "ldopa-pimav": {
+        title: "Levodopa/Carbidopa + Pimavanserina",
+        compat: "⭐ COMBINACIÓN ÓPTIMA (GOLD STANDARD)",
+        compatClass: "bg-sky-950 text-sky-200 border-sky-400",
+        type: "Modulación 5-HT₂A pura sin intervención sobre el eje D₂",
+        nigro: "100% INTACTO: Cero afinidad por receptores D₂",
+        meso: "Reducción selectiva de psicosis mediada por 5-HT",
+        consequence: "Pimavanserina es el único fármaco aprobado para tratar la psicosis en Parkinson que no empeora los síntomas motores en ninguna medida.",
+        solution: "Pauta recomendada de primera línea en guías internacionales (34 mg una vez al día)."
+      },
+      "prami-halo": {
+        title: "Pramipexol + Haloperidol",
+        compat: "⛔ ANTAGONISMO DIRECTO EN DIANA D₂/D₃",
+        compatClass: "bg-rose-950 text-rose-200 border-rose-500",
+        type: "Desplazamiento competitivo directo en el sitio ortostérico de D₂",
+        nigro: "Haloperidol desplaza al Pramipexol del receptor D₂",
+        meso: "Riesgo de rebote de delirios y acatisia extrema",
+        consequence: "Ambos fármacos compiten exactamente por el mismo sitio receptor. El Haloperidol anula el Pramipexol y precipita distonía aguda y temblor incontrolable.",
+        solution: "Combinación totalmente irracional y contraindicada."
+      },
+      "prami-cloza": {
+        title: "Pramipexol + Clozapina",
+        compat: "✅ COMPATIBLE Y SEGURA",
+        compatClass: "bg-emerald-950 text-emerald-200 border-emerald-500",
+        type: "Preservación del agonismo D₂/D₃ estriatal",
+        nigro: "Pramipexol mantiene la estimulación motora",
+        meso: "Clozapina suprime las alucinaciones por D₃",
+        consequence: "Permite mantener el agonista dopaminérgico mientras se resuelven las alteraciones conductuales.",
+        solution: "Mantener dosis bajas de Clozapina (12.5 - 25 mg/día)."
+      },
+      "seleg-halo": {
+        title: "Selegilina + Haloperidol",
+        compat: "⛔ INEFICAZ Y RIESGOSA",
+        compatClass: "bg-rose-950 text-rose-200 border-rose-500",
+        type: "Falta de respuesta motora por bloqueo postsináptico de DA acumulada",
+        nigro: "DA aumentada por iMAO-B pero bloqueada en receptor D₂",
+        meso: "Interferencia en recaptura",
+        consequence: "La acumulación presináptica de dopamina inducida por Selegilina no surte efecto porque los receptores efectores están saturados por Haloperidol.",
+        solution: "Suspender Haloperidol. Reevaluar necesidad de antipsicóticos de perfil serotoninérgico."
+      }
+    };
+
+    let activeDrugKey = "ldopa";
+    let currentMode = "inspect";
+
+    // Función de Selección de Fármaco e Iluminación en Diagrama 3D
+    function selectDrug(key) {
+      activeDrugKey = key;
+      const data = DRUG_DATA[key];
+      if (!data) return;
+
+      // 1. Actualizar estado de las píldoras
+      document.querySelectorAll(".drug-pill").forEach(btn => {
+        btn.classList.remove("active-pill-parkinson", "active-pill-psych");
+      });
+      const activeBtn = document.getElementById("btn-" + key);
+      if (activeBtn) {
+        if (["ldopa", "prami", "seleg", "entac", "amant"].includes(key)) {
+          activeBtn.classList.add("active-pill-parkinson");
+        } else {
+          activeBtn.classList.add("active-pill-psych");
+        }
+      }
+
+      // 2. Resaltar las dianas en el SVG sináptico 3D
+      document.querySelectorAll(".target-shape, #target-lat1, #target-aadc, #target-maob, #target-vmat2, #target-dat, #target-comt, #target-d2, #target-d1, #target-5ht2a").forEach(el => {
+        el.classList.remove("target-highlight");
+      });
+
+      if (data.targetId) {
+        const el = document.getElementById(data.targetId);
+        if (el) el.classList.add("target-highlight");
+      }
+      if (data.targetSubId) {
+        const elSub = document.getElementById(data.targetSubId);
+        if (elSub) elSub.classList.add("target-highlight");
+      }
+
+      // 3. Actualizar textos en el diagrama
+      document.getElementById("active-target-lbl").textContent = data.targetName;
+      const pathwayInd = document.getElementById("pathway-indicator");
+      if (["ldopa", "prami", "seleg", "entac", "amant"].includes(key)) {
+        pathwayInd.textContent = "Vía Nigroestriada (Movimiento / Déficit de DA)";
+        pathwayInd.className = "text-sky-300 font-bold";
+      } else {
+        pathwayInd.textContent = "Vía Mesolímbica (Psicosis) vs. Nigroestriada";
+        pathwayInd.className = "text-purple-300 font-bold";
+      }
+
+      // 4. Actualizar ficha clínica de inspección
+      document.getElementById("d-name").textContent = data.name;
+      document.getElementById("d-class").textContent = data.classTitle;
+      document.getElementById("d-badge-group").textContent = data.badgeGroup;
+      document.getElementById("d-target-badge").textContent = data.targetName;
+      document.getElementById("d-fda-badge").textContent = data.fda;
+      document.getElementById("d-fda-desc").textContent = data.fdaDesc;
+      document.getElementById("d-mechanism").innerHTML = data.mechanism;
+      document.getElementById("d-indications").textContent = data.indications;
+      document.getElementById("d-contraindications").textContent = data.contraindications;
+      document.getElementById("d-interaction").innerHTML = data.interaction;
+    }
+
+    // Alternar entre Modo Inspección y Modo Coadministración
+    function setMode(mode) {
+      currentMode = mode;
+      const inspBtn = document.getElementById("mode-inspect-btn");
+      const compBtn = document.getElementById("mode-compare-btn");
+      const pillsBox = document.getElementById("pills-container");
+      const compBar = document.getElementById("compare-bar");
+      const inspView = document.getElementById("inspector-view");
+      const compView = document.getElementById("compare-view");
+
+      if (mode === "inspect") {
+        inspBtn.className = "px-3 py-1 text-xs rounded-lg font-bold bg-sky-600 text-white transition";
+        compBtn.className = "px-3 py-1 text-xs rounded-lg font-semibold text-slate-400 hover:text-white transition";
+        pillsBox.classList.remove("hidden");
+        compBar.classList.add("hidden");
+        inspView.classList.remove("hidden");
+        compView.classList.add("hidden");
+        selectDrug(activeDrugKey);
+      } else {
+        compBtn.className = "px-3 py-1 text-xs rounded-lg font-bold bg-purple-600 text-white transition";
+        inspBtn.className = "px-3 py-1 text-xs rounded-lg font-semibold text-slate-400 hover:text-white transition";
+        pillsBox.classList.add("hidden");
+        compBar.classList.remove("hidden");
+        inspView.classList.add("hidden");
+        compView.classList.remove("hidden");
+        runComparison();
+      }
+    }
+
+    // Ejecutar Comparación de Interacción Cruzada (Modo Choque)
+    function runComparison() {
+      const park = document.getElementById("cmp-parkinson").value;
+      const psych = document.getElementById("cmp-psych").value;
+      const pairKey = park + "-" + psych;
+      
+      const fallback = {
+        title: DRUG_DATA[park].name + " + " + DRUG_DATA[psych].name,
+        compat: (psych === "halo" || psych === "risper") ? "⛔ ANTAGONISMO D₂ SEVERO" : "✅ COADMINISTRACIÓN SEGURA",
+        compatClass: (psych === "halo" || psych === "risper") ? "bg-rose-950 text-rose-200 border-rose-500" : "bg-emerald-950 text-emerald-200 border-emerald-500",
+        type: (psych === "halo" || psych === "risper") ? "Bloqueo farmacodinámico de la respuesta dopaminérgica" : "Disociación D₂ rápida o modulación serotoninérgica",
+        nigro: (psych === "halo" || psych === "risper") ? "Deterioro motor inmediato" : "Función motora estriatal preservada",
+        meso: "Control de síntomas psicóticos",
+        consequence: (psych === "halo" || psych === "risper") ? "El antipsicótico bloquea los receptores dopaminérgicos y neutraliza la acción del tratamiento antiparkinsoniano." : "El antipsicótico atípico o modulador 5-HT₂A respeta la transmisión motora estriatal.",
+        solution: (psych === "halo" || psych === "risper") ? "Evitar coadministración. Usar Clozapina o Pimavanserina si el paciente requiere antipsicótico." : "Pauta segura aprobada en guías clínicas de la FacMed."
+      };
+
+      const result = PAIR_INTERACTIONS[pairKey] || fallback;
+
+      // Resaltar en el SVG ambos objetivos simultáneamente
+      document.querySelectorAll(".target-shape, #target-lat1, #target-aadc, #target-maob, #target-vmat2, #target-dat, #target-comt, #target-d2, #target-d1, #target-5ht2a").forEach(el => {
+        el.classList.remove("target-highlight");
+      });
+      const t1 = document.getElementById(DRUG_DATA[park].targetId);
+      const t2 = document.getElementById(DRUG_DATA[psych].targetId);
+      if (t1) t1.classList.add("target-highlight");
+      if (t2) t2.classList.add("target-highlight");
+
+      // Actualizar tarjeta de comparación
+      document.getElementById("cmp-title").textContent = result.title;
+      document.getElementById("cmp-type").textContent = result.type;
+      document.getElementById("cmp-nigro").textContent = result.nigro;
+      document.getElementById("cmp-meso").textContent = result.meso;
+      document.getElementById("cmp-consequence").textContent = result.consequence;
+      document.getElementById("cmp-solution").innerHTML = result.solution;
+
+      const badge = document.getElementById("cmp-badge-compat");
+      badge.textContent = result.compat;
+      badge.className = "text-xs font-bold px-2.5 py-1 rounded-full border " + result.compatClass;
+    }
+
+    // Inicializar con Levodopa seleccionada
+    document.addEventListener("DOMContentLoaded", () => {
+      selectDrug("ldopa");
+    });
+  </script>
+</body>
+</html>
