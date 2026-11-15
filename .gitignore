@@ -1,2 +1,3 @@
-# Lecturas y documentos fuente (se conservan localmente)
-*.pdf
+node_modules/
+dist/
+.netlify/

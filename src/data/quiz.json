@@ -1,0 +1,114 @@
+[
+  {
+    "id": "quiz-dopa-01",
+    "tema": "Dopamina",
+    "pregunta": "1. ¿Qué fármaco cruza la barrera hematoencefálica como precursor de dopamina mediante el transportador LAT1?",
+    "opciones": ["Dopamina", "Levodopa", "Carbidopa"],
+    "correcta": 1,
+    "explicacion": "La levodopa cruza la BHE mediante el transportador de aminoácidos neutros grandes (LAT1) y se descarboxila a dopamina en la terminal estriatal. La dopamina periférica no atraviesa la BHE. Katzung 16.ª ed., cap. 28, p. 5."
+  },
+  {
+    "id": "quiz-dopa-02",
+    "tema": "Dopamina",
+    "pregunta": "2. ¿Cuál es el papel fundamental de asociar carbidopa con levodopa?",
+    "opciones": ["Inhibir la dopa-descarboxilasa (DDC) periférica", "Antagonizar receptores D2", "Inhibir selectivamente MAO-B"],
+    "correcta": 0,
+    "explicacion": "La carbidopa no cruza la BHE; inhibe la DDC periférica, multiplicando por 4 la llegada de levodopa al cerebro y previniendo náuseas y arritmias. Katzung 28, pp. 8–9."
+  },
+  {
+    "id": "quiz-dopa-03",
+    "tema": "Dopamina",
+    "pregunta": "3. ¿Cuál de los siguientes fármacos es un agonista directo con alta afinidad por receptores D3 y D2?",
+    "opciones": ["Haloperidol", "Pramipexol", "Risperidona"],
+    "correcta": 1,
+    "explicacion": "El pramipexol es un agonista no ergolínico sintético con selectividad D3/D2 que estimula directamente el cuerpo estriado. Programa p. 26; Katzung 28, p. 15."
+  },
+  {
+    "id": "quiz-dopa-04",
+    "tema": "Dopamina",
+    "pregunta": "4. ¿Qué mecanismo corresponde a la rasagilina y la selegilina a dosis terapéuticas?",
+    "opciones": ["Antagonismo D2 estriatal", "Inhibición selectiva e irreversible de MAO-B", "Agonismo adrenérgico alfa-2"],
+    "correcta": 1,
+    "explicacion": "Inhiben selectivamente la monoaminooxidasa tipo B en los ganglios basales, prolongando la vida media de la dopamina sin causar efecto queso. Katzung 28, p. 17."
+  },
+  {
+    "id": "quiz-dopa-05",
+    "tema": "Dopamina",
+    "pregunta": "5. ¿Cuál reacción adversa neuropsiquiátrica y autonómica se asocia característicamente con pramipexol?",
+    "opciones": ["Somnolencia diurna, ataques de sueño y trastornos del control de impulsos", "Agranulocitosis fulminante", "Hiperplasia gingival"],
+    "correcta": 0,
+    "explicacion": "El pramipexol estimula receptores D3 en el sistema límbico, asociándose a somnolencia súbita al volante y juego patológico compulsivo. Katzung 28, pp. 15–16."
+  },
+  {
+    "id": "quiz-dopa-06",
+    "tema": "Dopamina",
+    "pregunta": "6. ¿Qué blanco molecular antagoniza el haloperidol con alta potencia?",
+    "opciones": ["Receptores D2 postsinápticos", "Transportador de vesículas SV2A", "Enzima MAO-B"],
+    "correcta": 0,
+    "explicacion": "El haloperidol es un antipsicótico típico de 1.ª generación que actúa bloqueando con gran afinidad los receptores D2 mesolímbicos y estriatales. Katzung 19, p. 9."
+  },
+  {
+    "id": "quiz-dopa-07",
+    "tema": "Dopamina",
+    "pregunta": "7. ¿Qué perfil de bloqueo receptor define a los antipsicóticos atípicos como risperidona y clozapina según el temario?",
+    "opciones": ["Antagonismo dual D2 y 5-HT2A", "Agonismo D1 y GABA-A", "Inhibición de DAT y MAO-B"],
+    "correcta": 0,
+    "explicacion": "El antagonismo 5-HT2A promueve la liberación compensatoria de dopamina en estriado y corteza, reduciendo los síntomas extrapiramidales. Katzung 19, pp. 13 y 23."
+  },
+  {
+    "id": "quiz-dopa-08",
+    "tema": "Dopamina",
+    "pregunta": "8. ¿Qué vigilancia paraclínica periódica obligatoria exige el tratamiento con clozapina?",
+    "opciones": ["Recuento absoluto de neutrófilos (RAN) por riesgo de agranulocitosis", "Medición de niveles séricos de levodopa", "Perfil tiroideo semanal"],
+    "correcta": 0,
+    "explicacion": "La clozapina puede inducir agranulocitosis letal (1-2%); requiere hemograma semanal los primeros 6 meses y quincenal posterior. Katzung 19, pp. 53 y 72."
+  },
+  {
+    "id": "quiz-dopa-09",
+    "tema": "Dopamina",
+    "pregunta": "9. ¿Qué efecto endocrino adverso es especialmente marcado con risperidona frente a otros atípicos?",
+    "opciones": ["Hiperprolactinemia marcada con galactorrea y amenorrea", "Discinesias por fin de dosis", "Cetoacidosis diabética fulminante"],
+    "correcta": 0,
+    "explicacion": "La risperidona bloquea fuertemente los receptores D2 de las células lactotropas hipofisarias fuera de la BHE, elevando marcadamente la prolactina. Katzung 19, pp. 48 y 73."
+  },
+  {
+    "id": "quiz-dopa-10",
+    "tema": "Dopamina",
+    "pregunta": "10. ¿Cuál combinación farmacológica puede elevar el riesgo de interacción serotoninérgica con rasagilina o selegilina?",
+    "opciones": ["Antidepresivos ISRS o tricíclicos", "Carbidopa en monoterapia", "Levodopa administrada con alimentos"],
+    "correcta": 0,
+    "explicacion": "La combinación de inhibidores de MAO con inhibidores de la recaptura de serotonina (ISRS) puede precipitar un síndrome serotoninérgico tóxico. Katzung 28, p. 19."
+  },
+  {
+    "id": "quiz-epi-01",
+    "tema": "Epilepsia",
+    "pregunta": "11. ¿Por qué la carbamazepina reduce la eficacia de los anticonceptivos orales y muestra disminución de sus propios niveles en la semana 3?",
+    "opciones": ["Por inducción potente del citocromo CYP3A4 y autoinducción metabólica", "Por bloqueo competitivo del receptor GABA-A", "Por excreción biliar acelerada"],
+    "correcta": 0,
+    "explicacion": "La carbamazepina induce CYP3A4 (degradando estrógenos sintéticos) y sufre autoinducción de su propio aclaramiento. Goodman & Gilman cap. 20, p. 31."
+  },
+  {
+    "id": "quiz-epi-02",
+    "tema": "Epilepsia",
+    "pregunta": "12. ¿Cuál es el riesgo de asociar ácido valproico con lamotrigina sin realizar ajuste posológico?",
+    "opciones": ["Inhibición de UGT1A4 que duplica la t½ de lamotrigina con riesgo extremo de Síndrome de Stevens-Johnson", "Inducción masiva que anula el efecto de la lamotrigina", "Hiponatremia por SIADH"],
+    "correcta": 0,
+    "explicacion": "El valproato inhibe la glucuronidación de lamotrigina duplicando su vida media a >60 h; exige iniciar con 25 mg en días alternos. Goodman & Gilman cap. 20, p. 61."
+  },
+  {
+    "id": "quiz-epi-03",
+    "tema": "Epilepsia",
+    "pregunta": "13. ¿Cuál es la principal ventaja farmacocinética del levetiracetam en pacientes con polifarmacia?",
+    "opciones": ["Cero metabolismo hepático por CYP450 y eliminación renal casi exclusiva (66% inalterado)", "Vida media de 72 horas que permite dosis mensual", "Unión del 99% a proteínas plasmáticas"],
+    "correcta": 0,
+    "explicacion": "No induce ni inhibe enzimas microsomales hepáticas ni compite por unión a proteínas plasmáticas, siendo ideal en polimedicados. Katzung 24, p. 29."
+  },
+  {
+    "id": "quiz-epi-04",
+    "tema": "Epilepsia",
+    "pregunta": "14. ¿En qué grupo poblacional el ácido valproico presenta el riesgo máximo de hepatotoxicidad fulminante microvesicular?",
+    "opciones": ["Niños menores de 2 años en politerapia antiepiléptica", "Adultos mayores de 65 años en monoterapia", "Mujeres posmenopáusicas"],
+    "correcta": 0,
+    "explicacion": "El riesgo de falla hepática mortal por esteatosis microvesicular por valproato es máximo en menores de 2 años en politerapia. Goodman & Gilman cap. 20, p. 50."
+  }
+]

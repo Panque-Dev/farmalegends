@@ -1,0 +1,117 @@
+[
+  {
+    "id": "valproato-lamotrigina",
+    "farmacoA": "Ácido Valproico",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Lamotrigina",
+    "tipoFarmacoB": "Fármaco del temario",
+    "severidad": "Interacción Farmacocinética de Alto Riesgo",
+    "mecanismo": "El ácido valproico inhibe de forma potente la glucuronidación hepática mediada por UGT1A4, la principal vía metabólica de la lamotrigina. La lectura documenta que duplica la vida media de la lamotrigina a más de 60 horas.",
+    "consecuencia": "Aumento drástico de las concentraciones plasmáticas de lamotrigina con riesgo elevado de erupción cutánea grave y Síndrome de Stevens-Johnson / NET.",
+    "conducta": "La lectura recomienda iniciar con menor dosis de lamotrigina (25 mg en días alternos) y realizar una titulación muy lenta cuando se coadministran.",
+    "fuentes": "Goodman & Gilman 14.ª ed., cap. 20, p. 61; Katzung 16.ª ed., cap. 24, pp. 28–29."
+  },
+  {
+    "id": "carbamazepina-anticonceptivos",
+    "farmacoA": "Carbamazepina",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Anticonceptivos Hormonales Orales",
+    "tipoFarmacoB": "Acompañante externo al programa",
+    "severidad": "Interacción Mayor • Inducción Enzimática",
+    "mecanismo": "La carbamazepina induce de forma potente el citocromo CYP3A4 y enzimas de conjugación hepática responsables de metabolizar los estrógenos y progestágenos sintéticos.",
+    "consecuencia": "Aceleración del aclaramiento de los esteroides anticonceptivos con caída de niveles séricos y riesgo de falla anticonceptiva.",
+    "conducta": "Recomendar métodos anticonceptivos no enzimáticos (ej. DIU de cobre o levonorgestrel) o valorar cambiar a un antiepiléptico no inductor como Levetiracetam.",
+    "fuentes": "Goodman & Gilman 14.ª ed., cap. 20, p. 31; Katzung 16.ª ed., cap. 24, p. 16."
+  },
+  {
+    "id": "fenitoina-valproato",
+    "farmacoA": "Fenitoína",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Ácido Valproico",
+    "tipoFarmacoB": "Fármaco del temario",
+    "severidad": "Interacción Farmacocinética Compleja de Fracción Libre",
+    "mecanismo": "El ácido valproico desplaza competitivamente a la fenitoína de sus sitios de fijación a la albúmina plasmática e inhibe su metabolismo oxidativo mediado por CYP2C9.",
+    "consecuencia": "Incremento de la fracción libre activa de fenitoína que puede desencadenar síntomas de toxicidad (nistagmo, ataxia) aun con niveles séricos de fenitoína total aparentemente normales.",
+    "conducta": "Medir y monitorear la concentración de fenitoína libre sérica y reducir la dosis de fenitoína ante síntomas clínicos de toxicidad.",
+    "fuentes": "Goodman & Gilman 14.ª ed., cap. 20, p. 25; Katzung 16.ª ed., cap. 24, p. 22."
+  },
+  {
+    "id": "levodopa-imao-no-selectivos",
+    "farmacoA": "Levodopa / Carbidopa",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Inhibidores no selectivos de la MAO (ej. Fenelzina, Tranilcipromina)",
+    "tipoFarmacoB": "Acompañante externo al programa",
+    "severidad": "Contraindicación Expresa en Lecturas",
+    "mecanismo": "La levodopa aporta sustrato para la síntesis de catecolaminas, mientras que el bloqueo irreversible de MAO-A y MAO-B impide su catabolismo.",
+    "consecuencia": "Acumulación masiva de catecolaminas que puede precipitar crisis hipertensiva grave y complicaciones cardiovasculares.",
+    "conducta": "No administrar concomitantemente; suspender los IMAO no selectivos al menos 14 días antes de iniciar levodopa. Nota: Sí se pueden asociar inhibidores selectivos de MAO-B (Rasagilina/Selegilina) a dosis recomendadas.",
+    "fuentes": "Katzung 16.ª ed., cap. 28, pp. 8, 19."
+  },
+  {
+    "id": "haloperidol-levodopa",
+    "farmacoA": "Haloperidol",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Levodopa / Carbidopa",
+    "tipoFarmacoB": "Fármaco del temario",
+    "severidad": "Antagonismo Terapéutico en Receptores D2",
+    "mecanismo": "Antagonismo competitivo directo en los receptores dopaminérgicos D2 postsinápticos estriatales.",
+    "consecuencia": "El haloperidol bloquea los receptores dopaminérgicos, anulando el beneficio antiparkinsoniano de la levodopa y agravando la rigidez motora.",
+    "conducta": "Evitar antipsicóticos típicos de alta afinidad D2 en pacientes con Parkinson; si se requiere tratamiento antipsicótico, el texto describe fármacos con bajo bloqueo motor como clozapina o quetiapina.",
+    "fuentes": "Katzung 16.ª ed., cap. 19, p. 9 y cap. 28, p. 14."
+  },
+  {
+    "id": "rasagilina-selegilina-isrs",
+    "farmacoA": "Rasagilina / Selegilina",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Antidepresivos ISRS / Tricíclicos (ej. Fluoxetina, Sertralina)",
+    "tipoFarmacoB": "Acompañante externo al programa",
+    "severidad": "Precaución por Riesgo Teórico Serotoninérgico",
+    "mecanismo": "Inhibición de la recaptación de serotonina combinada con la alteración en el metabolismo de monoaminas.",
+    "consecuencia": "La lectura advierte un riesgo teórico de toxicidad serotoninérica o síndrome serotoninérgico.",
+    "conducta": "El capítulo recomienda precaución clínica y evitar dosis excesivas al asociar inhibidores de MAO-B con antidepresivos serotoninérgicos.",
+    "fuentes": "Katzung 16.ª ed., cap. 28, pp. 18–19."
+  },
+  {
+    "id": "haloperidol-iv-farmacos-qt",
+    "farmacoA": "Haloperidol (Formulación Intravenosa)",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Fármacos que prolongan el intervalo QT (Macrólidos, Antiarrítmicos)",
+    "tipoFarmacoB": "Acompañante externo al programa",
+    "severidad": "Alerta de Seguridad • Advertencia de Vía",
+    "mecanismo": "Efecto aditivo sobre los canales cardíacos de potasio hERG, retrasando la repolarización ventricular.",
+    "consecuencia": "Prolongación del intervalo QTc con riesgo de taquicardia ventricular y arritmias ventriculares graves.",
+    "conducta": "La lectura advierte contra el uso de haloperidol por vía IV según tabla de farmacología clínica citada; utilizar vías IM u oral y monitorear ECG.",
+    "fuentes": "Katzung 16.ª ed., cap. 19, pp. 24, 38."
+  },
+  {
+    "id": "clozapina-carbamazepina",
+    "farmacoA": "Clozapina",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Carbamazepina",
+    "tipoFarmacoB": "Fármaco del temario",
+    "severidad": "Interacción Hematológica Crítica",
+    "mecanismo": "Toxicidad celular e inmunológica aditiva sobre los precursores mieloides de la médula ósea.",
+    "consecuencia": "Aumento del riesgo de depresión medular ósea y agranulocitosis grave.",
+    "conducta": "No asociar clozapina con carbamazepina ni con otros fármacos con potencial supresor medular conocido.",
+    "fuentes": "Katzung 16.ª ed., cap. 19, p. 53; Goodman & Gilman cap. 20, p. 32."
+  },
+  {
+    "id": "haloperidol-risperidona",
+    "farmacoA": "Haloperidol",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Risperidona",
+    "tipoFarmacoB": "Fármaco del temario",
+    "severidad": "Interacción Mayor • Doble Bloqueo D2 (Polifarmacia)",
+    "mecanismo": "Suma farmacodinámica por doble bloqueo de receptores dopaminérgicos D2 (vías nigroestriatal, mesolímbica y tuberoinfundibular) y antagonismo adrenérgico alfa-1 con carga anticolinérgica y sedante sobre el SNC.",
+    "consecuencia": "Riesgo aumentado de Síndrome Neuroléptico Maligno (SNM), sedación e hipotensión ortostática (riesgo de caídas), hiperprolactinemia marcada (galactorrea, amenorrea, disfunción sexual), efectos anticolinérgicos/deterioro cognitivo en ancianos y mayor mortalidad/ictus en ancianos con demencia.",
+    "puntosClave": [
+      "Síndrome neuroléptico maligno: riesgo aumentado por doble bloqueo dopaminérgico.",
+      "Sedación y hipotensión ortostática: especialmente al inicio o con dosis altas.",
+      "Hiperprolactinemia: ambos pueden elevarla; riesgo de galactorrea, amenorrea, disfunción sexual.",
+      "Efectos anticolinérgicos y cognitivos: más relevantes en ancianos.",
+      "Mayor mortalidad en ancianos con demencia: los antipsicóticos aumentan el riesgo de ictus y muerte; evitar esta combinación en ese contexto."
+    ],
+    "conducta": "Evitar la combinación rutinaria de dos antipsicóticos. Evitar esta combinación en ancianos con psicosis asociada a demencia (Boxed Warning por ictus y muerte). En transiciones, realizar titulación cruzada gradual y monitorizar temperatura, rigidez muscular, presión ortostática, estado cognitivo y prolactina sérica.",
+    "fuentes": "Katzung 16.ª ed., cap. 19, pp. 20–25, 48–54; FDA Boxed Warning; Criterios AGS Beers."
+  }
+]

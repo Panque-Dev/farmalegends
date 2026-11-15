@@ -1,0 +1,114 @@
+[
+  {
+    "id": "parkinson",
+    "titulo": "Fisiopatología de la Enfermedad de Parkinson: El Colapso de los Ganglios Basales",
+    "sistema": "Sistema Nervioso Central • Control Motor Extrapiramidal",
+    "etiopatogenia": {
+      "lesionCentral": "Muerte selectiva y progresiva (>60–70%) de neuronas dopaminérgicas pigmentadas neuromelanínicas de la sustancia negra pars compacta (SNpc) que proyectan al estriado (núcleo caudado y putamen).",
+      "marcaHistopatologica": "Presencia de cuerpos de Lewy intracitoplasmáticos compuestos por agregados fibrilares de proteína alfa-sinucleína mal plegada y ubiquitinada.",
+      "desbalanceNeuroquimico": "La pérdida de dopamina desinhibe a las interneuronas colinérgicas gigantes del estriado, generando un estado de hiperactividad colinérgica relativa responsable del temblor de reposo."
+    },
+    "circuitosMotores": {
+      "viaDirecta": "Dopamina actuando sobre receptores D1 activa la vía directa (pro-cinética), facilitando el movimiento al desinhibir el tálamo motor. Al perderse DA, la vía directa se apaga.",
+      "viaIndirecta": "Dopamina actuando sobre receptores D2 inhibe la vía indirecta (freno motor). Al perderse DA, la vía indirecta se hiperactiva, descargando sobre el núcleo subtalámico y globo pálido interno (GPi), bloqueando masivamente la salida talámica hacia la corteza motora.",
+      "manifestacionClinica": "Tétrada motora clásica: Bradicinesia (acinesia), rigidez plástica en rueda dentada, temblor de reposo en cuenta de monedas (4–6 Hz) e inestabilidad postural tardía."
+    },
+    "racionalTerapeutico": [
+      {
+        "objetivo": "1. Suplir el déficit presináptico de dopamina estriatal",
+        "farmacos": ["levodopa-carbidopa"],
+        "explicacion": "Aprovecha que las neuronas sobrevivientes retienen descarboxilasa para convertir L-DOPA en dopamina activa dentro de la terminal nerviosa."
+      },
+      {
+        "objetivo": "2. Estimular receptores D2/D3 postsinápticos sin depender de neuronas presinápticas",
+        "farmacos": ["pramipexol"],
+        "explicacion": "Mantiene la estimulación estriatal aun en estadios avanzados de neurodegeneración cuando ya casi no quedan neuronas nigroestriatales presinápticas."
+      },
+      {
+        "objetivo": "3. Frenar la degradación enzimática central y periférica",
+        "farmacos": ["entacapona", "rasagilina"],
+        "explicacion": "Inhiben COMT y MAO-B, prolongando la biodisponibilidad y vida media de la dopamina sináptica y evitando las fluctuaciones motoras de fin de dosis."
+      }
+    ]
+  },
+  {
+    "id": "esquizofrenia",
+    "titulo": "Fisiopatología de la Esquizofrenia: La Hipótesis Dopaminérgica Dual y Vías Centrales",
+    "sistema": "Sistema Nervioso Central • Circuitos Límbicos, Corticales y Extrapiramidales",
+    "etiopatogenia": {
+      "lesionCentral": "Desregulación funcional en múltiples vías dopaminérgicas cerebrales asociadas a disfunción de interneuronas GABAérgicas corticales y receptores NMDA.",
+      "viaMesolimbica": "Hiperactividad dopaminérgica en la proyección desde el área tegmental ventral (VTA) hacia el núcleo accumbens y amígdala. Responsable de los SÍNTOMAS POSITIVOS (delirios de persecución, alucinaciones auditivas, pensamiento desorganizado, hostilidad).",
+      "viaMesocortical": "Hipoactividad dopaminérgica en la proyección desde el VTA hacia la corteza prefrontal dorsolateral. Responsable de los SÍNTOMAS NEGATIVOS (apatía, anhedonia, aplanamiento afectivo, alogia) y DÉFICIT COGNITIVO."
+    },
+    "viasColateralesRelevantes": {
+      "viaNigroestriatal": "Fisiológicamente normal. Si un fármaco bloquea más del 75–80% de sus receptores D2, desencadena síntomas extrapiramidales (parkinsonismo farmacológico, distonía aguda, acatisia y discinesia tardía).",
+      "viaTuberoinfundibular": "La dopamina actúa como factor inhibidor de prolactina (PIH). El bloqueo D2 causa hiperprolactinemia sostenida (galactorrea, amenorrea, ginecomastia, impotencia sexual)."
+    },
+    "racionalTerapeutico": [
+      {
+        "objetivo": "Antipsicóticos Típicos (Haloperidol)",
+        "farmacos": ["haloperidol"],
+        "explicacion": "Bloqueo D2 de alta afinidad. Muy eficaz para suprimir delirios y alucinaciones (vía mesolímbica), pero empeora síntomas negativos y produce alto riesgo extrapiramidal por bloqueo estriatal."
+      },
+      {
+        "objetivo": "Antipsicóticos Atípicos (Risperidona, Clozapina)",
+        "farmacos": ["risperidona", "clozapina"],
+        "explicacion": "Antagonismo dual 5-HT2A + D2. El bloqueo 5-HT2A estimula la liberación de dopamina en corteza (mejorando síntomas negativos) y en el estriado (protegiendo contra efectos extrapiramidales)."
+      }
+    ]
+  },
+  {
+    "id": "epilepsia",
+    "titulo": "Bases Fisiopatológicas y Biofísicas de las Crisis Epilépticas",
+    "sistema": "Sistema Nervioso Central • Excitabilidad de Redes Corticales y Tálamo",
+    "etiopatogenia": {
+      "lesionCentral": "Hipersincronía y paroxismos neuronales desencadenados por una ruptura del equilibrio entre los mecanismos de inhibición (GABAérgicos) y los de excitación (Glutamatérgicos e iónicos).",
+      "cambioDespolarizanteParoxistico": "Evento biofísico característico (PDS): Despolarización neuronal sostenida de 20 a 40 mV que dura 100 a 200 ms, mediada por corrientes de calcio dependientes de voltaje y receptores NMDA, sobre la cual se montan trenes de potenciales de acción de alta frecuencia generados por canales de sodio NaV.",
+      "circuitoTalamicoAusencias": "En las crisis de ausencia típicas infantiles, las neuronas del núcleo reticular talámico y de relevo tálamo-cortical entran en una oscilación rítmica sincrónica a 3 Hz mediada por canales de calcio de bajo umbral tipo T (CaV3.1, CaV3.2)."
+    },
+    "racionalTerapeutico": [
+      {
+        "objetivo": "1. Bloqueo dependiente de uso de Canales de Sodio (NaV)",
+        "farmacos": ["fenitoina", "carbamazepina", "lamotrigina"],
+        "explicacion": "Se unen selectivamente al canal en su estado inactivado prolongando el periodo refractario; silencian trenes paroxísticos de alta frecuencia sin interferir con la función basal."
+      },
+      {
+        "objetivo": "2. Supresión del marcapasos tálamo-cortical a 3 Hz (Canales CaV tipo T)",
+        "farmacos": ["etosuximida", "valproato"],
+        "explicacion": "Inhiben las corrientes de calcio de bajo umbral talámicas, aboliendo selectivamente el patrón de punta-onda característico de las ausencias."
+      },
+      {
+        "objetivo": "3. Modulación de la exocitosis presináptica vesicular (SV2A)",
+        "farmacos": ["levetiracetam"],
+        "explicacion": "La unión a SV2A restringe la liberación sináptica coordinada de glutamato durante las descargas rápidas continuas."
+      },
+      {
+        "objetivo": "4. Potenciación de la transmisión inhibitoria GABAérgica",
+        "farmacos": ["diazepam", "valproato"],
+        "explicacion": "Aumentan la conductancia de cloruro en el receptor GABA-A o frenan la degradación de GABA cerebral, restaurando el freno inhibitorio."
+      }
+    ]
+  },
+  {
+    "id": "teratogenia-embarazo",
+    "titulo": "Embarazo, Teratogénesis y Lactancia en Farmacoterapia Neurológica",
+    "sistema": "Farmacología Materno-Fetal y Teratogénesis",
+    "etiopatogenia": {
+      "mecanismoTeratogenico": "Múltiples antiepilépticos interfieren con el metabolismo del ácido fólico, inducen estrés oxidativo mitocondrial o alteran la acetilación de histonas y la migración celular de la cresta neural durante el primer trimestre.",
+      "estratificacionRiesgo": "El Ácido Valproico presenta una tasa de malformaciones mayores de 10–11% (defectos del tubo neural como mielomeningocele/espina bífida en 1–2%, cardiopatías congénitas, hipospadias) y causa un deterioro cognitivo comprobado en el coeficiente intelectual de 8–10 puntos con mayor riesgo de trastorno del espectro autista.",
+      "farmacosMasSeguros": "La Lamotrigina y el Levetiracetam presentan las tasas de malformaciones basales más bajas (~2–3%, equiparables a la población general no expuesta en registros internacionales EURAP)."
+    },
+    "conductaClinica": [
+      {
+        "objetivo": "Planificación y Suplementación de Ácido Fólico",
+        "farmacos": ["Acido Folico 4-5 mg/dia"],
+        "explicacion": "Toda mujer en edad fértil bajo antiepilépticos debe recibir 4 a 5 mg/día de ácido fólico (dosis alta) al menos 3 meses antes de la concepción y durante todo el primer trimestre."
+      },
+      {
+        "objetivo": "Monitoreo Estricto de Niveles de Lamotrigina",
+        "farmacos": ["lamotrigina"],
+        "explicacion": "Durante el embarazo, la inducción estrogénica de la enzima UGT1A4 hace caer los niveles de lamotrigina hasta un 70%, requiriendo monitoreo mensual y duplicación de dosis para prevenir crisis gestacionales."
+      }
+    ]
+  }
+]

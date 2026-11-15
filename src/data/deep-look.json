@@ -1,0 +1,844 @@
+[
+  {
+    "farmacoId": "fenitoina",
+    "titulo": "Inmersión Molecular: Cinética de Saturación no lineal y Canales NaV",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Variable según formulación oral (cápsula ácida vs sal sódica); absorción gástrica incompleta por precipitación ácida.",
+      "unionProteinas": "Aproximadamente 90% a albúmina sérica. En estados de uremia o hipoalbuminemia, la fracción libre activa aumenta drásticamente sin elevar los niveles totales medidos.",
+      "cinetica": "Cinética no lineal de Michaelis-Menten (Vmax ~7 mg/kg/día, Km ~4 mcg/mL). Por encima de 10 mcg/mL, las enzimas hepáticas CYP2C9 se saturan y la velocidad de eliminación se vuelve constante (orden cero).",
+      "vidaMedia": "Aproximadamente 22 horas a niveles bajos, pero puede prolongarse a más de 60 horas en intoxicaciones."
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismoCanal": "El canal NaV oscila entre tres estados: reposo (cerrado), abierto (despolarizado) e inactivado (refractario). La fenitoína se une selectivamente a la conformación inactivada rápida, estabilizando la compuerta de inactivación e impidiendo que el canal regrese al estado de reposo para disparar de nuevo.",
+      "dependenciaUso": "Cuanto más alta es la frecuencia de descarga de la neurona epileptógena, mayor es el número de canales en estado inactivado y más potente es el bloqueo de la fenitoína, dejando casi intacta la neurotransmisión fisiológica basal."
+    },
+    "perlasClinicas": [
+      "Fórmula de corrección de Sheiner-Tozer para hipoalbuminemia: Fenitoína_Corregida = Medida / [(0.2 × Albúmina) + 0.1].",
+      "La fosfenitoína es un profármaco hidrosoluble para administración IV/IM que no causa el temido 'síndrome del guante púrpura' ni la flebitis asociada al vehículo propilenglicol de la fenitoína sódica.",
+      "Nunca aumentar más de 25 a 50 mg/día cuando el paciente ya está cerca de 300 mg/día."
+    ]
+  },
+  {
+    "farmacoId": "carbamazepina",
+    "titulo": "Inmersión Molecular: Autoinducción Metabólica y Metabolito Activo",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "70-80%; absorción lenta y errática.",
+      "metabolismo": "Oxidación por CYP3A4 al metabolito 10,11-epóxido carbamazepina, que posee potente actividad antiepiléptica y es responsable de parte de la neurotoxicidad. El epóxido se hidroliza por la enzima microsomal epóxido hidrolasa a metabolitos inactivos.",
+      "autoinduccion": "Induce su propia expresión de CYP3A4 y UGT. Durante las primeras semanas de tratamiento, la tasa de aclaramiento aumenta progresivamente y su vida media cae de 36 h a menos de 15 h."
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismo": "Inhibición dependiente de voltaje de los canales NaV, similar a la fenitoína, pero con propiedades químicas que permiten además actuar sobre receptores de adenosina y modular la transmisión monoaminérgica, explicando su eficacia en el dolor neuropático y el trastorno bipolar."
+    },
+    "perlasClinicas": [
+      "Si un paciente que estaba bien controlado empieza a tener crisis en la semana 3 sin haber cambiado la dosis, la causa es la autoinducción: sus niveles séricos cayeron y requiere ajuste hacia arriba.",
+      "La hiponatremia inducida por carbamazepina se debe a sensibilización del túbulo renal colector a la hormona antidiurética (SIADH símil); monitorear sodio sérico ante confusión.",
+      "En pacientes de ascendencia asiática, el alelo HLA-B*1502 confiere un riesgo relativo mayor a 100 veces de Stevens-Johnson."
+    ]
+  },
+  {
+    "farmacoId": "levetiracetam",
+    "titulo": "Inmersión Molecular: La Dianas Vesicular SV2A",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "100%; absorción oral rápida e insensible a alimentos.",
+      "metabolismo": "66% se elimina inalterado por filtración glomerular y secreción tubular. El 24% se hidroliza enzimáticamente en la sangre por esterasas citosólicas sin intervención de ningún citocromo P450.",
+      "vidaMedia": "6 a 8 horas (se prolonga a más de 18 horas en falla renal terminal)."
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismoSV2A": "La proteína SV2A es una glucoproteína transmembrana de 12 pasos presente en todas las vesículas de neurotransmisores del SNC. El levetiracetam se une al lumen intravesicular de SV2A e inhibe la fusión exocítica vesicular durante la estimulación repetitiva de alta frecuencia, disminuyendo el vaciamiento presináptico de glutamato sin afectar la liberación basal."
+    },
+    "perlasClinicas": [
+      "No interactúa con anticonceptivos orales, warfarina, quimioterapia ni antirretrovirales: es el fármaco de elección en pacientes hospitalizados con cáncer o polifarmacia.",
+      "En el 10-15% de pacientes produce cambios conductuales (ansiedad, hostilidad, irritabilidad); interrogar activamente al cónyuge o familiares.",
+      "La suplementación con piridoxina (vitamina B6, 50-100 mg/día) puede revertir o mitigar la irritabilidad conductual inducida por levetiracetam."
+    ]
+  },
+  {
+    "farmacoId": "etosuximida",
+    "titulo": "Inmersión Molecular: El Marcapasos Talámico de Espiga-Onda a 3 Hz",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Completamente absorbida; baja unión a proteínas.",
+      "vidaMedia": "40 a 60 horas en adultos; aproximadamente 30 horas en niños (lo que permite dosificación una o dos veces al día en pediatría).",
+      "metabolismo": "80% hidroxilación hepática por CYP3A4 a metabolito inactivo hidroxietilsuccinimida."
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismo": "El circuito tálamo-cortical normal genera ritmos de sueño. En las crisis de ausencia, las neuronas del núcleo reticular talámico disparan descargas en salvas sincronizadas a 3 Hz mediadas por canales de calcio de bajo umbral activados por despolarizaciones sutiles (canales CaV3.1 y CaV3.2 tipo T). La etosuximida bloquea selectivamente estas corrientes T sin afectar los canales de calcio tipo L o N."
+    },
+    "perlasClinicas": [
+      "Si un niño tiene crisis de ausencia pero en el EEG o la clínica también presenta crisis tónico-clónicas generalizadas, la etosuximida sola NO sirve y puede dejar desprotegido al paciente; en ese caso se prefiere Ácido Valproico o Lamotrigina.",
+      "El malestar gástrico es la queja más común: dividir la dosis con los alimentos o administrar con leche para mejorar la tolerancia."
+    ]
+  },
+  {
+    "farmacoId": "diazepam",
+    "titulo": "Inmersión Molecular: Receptor GABA-A y Redistribución Tisular",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "IV inmediata; vía rectal absorción rápida y útil en pediatría.",
+      "redistribucion": "Su altísima liposolubilidad le permite ingresar de golpe al tejido cerebral lipídico en 60 segundos; sin embargo, en 30 a 60 minutos se redistribuye masivamente hacia el tejido adiposo periférico y muscular, provocando que los niveles cerebrales caigan por debajo del umbral anticonvulsivo.",
+      "metabolismo": "Hepático extenso por CYP2C19 y CYP3A4 produciendo desmetildiazepam (nordazepam), temazepam y oxazepam, con semividas acumulativas de eliminación de hasta 100 horas."
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismoGABA": "Se une a la interfaz entre las subunidades alfa (alfa1, alfa2, alfa3, alfa5) y gamma2 del receptor pentamérico GABA-A. No abre el canal directamente, sino que actúa como modulador alostérico positivo, aumentando la frecuencia de apertura del canal de Cloro en respuesta al GABA endógeno."
+    },
+    "perlasClinicas": [
+      "En el estado epiléptico, administrar diazepam IV detiene la convulsión en el minuto 5, pero la crisis reaparecerá en el minuto 45 si no se infundió simultáneamente el fármaco de carga de fase 2 (Levetiracetam, Fosfenitoína o Valproato).",
+      "Evitar la administración IM de diazepam por absorción errática y lenta debido a la precipitación del propilenglicol en el músculo."
+    ]
+  },
+  {
+    "farmacoId": "lamotrigina",
+    "titulo": "Inmersión Molecular: Glucuronidación por UGT1A4 y Síndrome de Stevens-Johnson",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "98%; unión a proteínas moderada (55%).",
+      "metabolismo": "Glucuronidación hepática exclusiva por UDP-glucuronosiltransferasa (UGT1A4 y UGT2B7) al metabolito inactivo 2-N-glucurónido.",
+      "vidaMedia": "Monoterapia: ~25-30 horas. Con inductores (carbamazepina): ~12-15 horas. Con inhibidores (ácido valproico): ~60-70 horas!"
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismo": "Bloqueo dependiente de uso de canales NaV inactivados, acompañado de inhibición de canales de calcio dependientes de voltaje de alto umbral (tipo N y P/Q), lo que bloquea de forma potente la liberación de glutamato y aspartato."
+    },
+    "perlasClinicas": [
+      "El riesgo de Síndrome de Stevens-Johnson / NET se multiplica por 10 si se comete cualquiera de estos dos errores: 1) Titular la dosis demasiado rápido; 2) No reducir la dosis a la mitad cuando se coadministra con ácido valproico.",
+      "Durante el embarazo, los altos niveles de estrógenos inducen potentemente la enzima UGT1A4: los niveles plasmáticos de lamotrigina caen hasta un 60-70%, requiriendo doblar la dosis para evitar crisis durante la gestación y reducirla inmediatamente tras el parto."
+    ]
+  },
+  {
+    "farmacoId": "valproato",
+    "titulo": "Inmersión Molecular: Toxicidad Mitocondrial, Teratogenia y UGT",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Prácticamente 100%.",
+      "unionProteinas": "90% a albúmina sérica (saturable por encima de 100 mcg/mL).",
+      "metabolismo": "50% glucuronidación directa por UGT; 40% beta-oxidación mitocondrial hepática y omega-oxidación citocromal a metabolitos reactivos como el 4-eno-VPA, implicado en la hepatotoxicidad fulminante."
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismoMultidiana": "1) Prolonga la inactivación de canales NaV; 2) Bloquea canales de calcio tipo T en el tálamo; 3) Inhibe la enzima GABA transaminasa (GABA-T) y la semialdehído succínico deshidrogenasa (SSADH), bloqueando la degradación de GABA; 4) Actúa como inhibidor de histona desacetilasas (HDAC), alterando la transcripción génica (base molecular de su teratogenicidad y efecto sobre el neurodesarrollo)."
+    },
+    "perlasClinicas": [
+      "Nunca prescribir a mujeres en edad fértil si existe otra alternativa razonable. La incidencia de defectos del tubo neural (espina bífida) es del 1-2%, malformaciones mayores 10%, y causa una pérdida comprobada de 8-10 puntos de coeficiente intelectual en el hijo.",
+      "En caso de hiperamonemia inducida por valproato (por inhibición de la carbamil fosfato sintetasa I del ciclo de la urea), el antídoto específico es la L-Carnitina intravenosa."
+    ]
+  },
+  {
+    "farmacoId": "levodopa-carbidopa",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Levodopa / Carbidopa",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Absorción en intestino delgado mediante transportadores activos de aminoácidos saturables (LAT1). Formulación inhalada (Inbrija): biodisponibilidad relativa del 70% frente a tabletas orales.",
+      "tmax": "Vía oral convencional: 0.5 a 2 horas (muy influenciada por vaciamiento gástrico y comidas ricas en proteínas). Inbrija (inhalada): Tmax ultrarrápido de 0.5 horas (rango 0.17 a 2 horas).",
+      "inicioYDuracion": "Inicio oral: 20 a 30 min. Duración: 2 a 5 horas (se reduce de forma crítica con la progresión de la enfermedad por pérdida de neuronas estriatales capaces de almacenar dopamina vesicular).",
+      "distribucion": "Unión a proteínas plasmáticas mínima. Volumen de distribución (Vd): ~168 L (inhalada). Cruza activamente la barrera hematoencefálica (BHE) mediante el transportador de aminoácidos neutros grandes LAT1 (SLC7A5). Carbidopa no atraviesa la BHE a dosis terapéuticas (molécula polar e hidrofílica). Eliminación extracorpórea (hemodiálisis): ineficaz.",
+      "metabolismo": "Doble vía metabólica mayor: 1) Descarboxilación periférica y central por dopa-descarboxilasa (L-AAAD) a dopamina (luego catabolizada a DOPAC y ácido homovanílico [HVA]); 2) O-metilación por catecol-O-metiltransferasa (COMT) a 3-O-metildopa (3-OMD). El 3-OMD tiene una vida media prolongada (~15 h), se acumula en plasma y compite con la levodopa por LAT1 en la BHE. Carbidopa inhibe de forma selectiva e irreversible la L-AAAD periférica (requiere 70 a 100 mg/día para saturación enzimática, máx 200 mg/día).",
+      "vidaMedia": "Levodopa sola: 0.75 a 1.5 horas. En combinación con carbidopa: ~2.3 horas.",
+      "eliminacion": "Excreción urinaria principal de metabolitos; eliminación fecal menor al 2%. Aclaramiento corporal total: ~14 mL/min/kg en ancianos (la carbidopa reduce el aclaramiento de levodopa en un 50%).",
+      "transporteLAT1": "Transportador de aminoácidos neutros de gran tamaño tipo L (LAT1 / SLC7A5). Las dietas hiperproteicas compiten tanto por la absorción en enterocitos como por el paso a través de la BHE (se aconseja redistribuir la ingesta proteica hacia la cena)."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Transportador LAT1 (SLC7A5) en BHE / L-aminoácido aromático descarboxilasa (L-AAAD / DDC) central / Receptores dopaminérgicos D1 y D2 estriatales.",
+      "efectoTerapeutico": "Repone los almacenes agotados de dopamina estriatal (putamen y núcleo caudado) tras la descarboxilación enzimática por L-AAAD en neuronas estriatales supervivientes, reequilibrando las vías motora directa e indirecta para suprimir bradicinesia, rigidez y temblor.",
+      "fundamentoCombinacion": "Sin carbidopa, cerca del 95% de la levodopa se descarboxila precozmente a nivel periférico (intestino, hígado, endotelio vascular y riñón). La dopamina periférica no cruza la BHE y desencadena náusea y vómito intenso por estimulación del área postrema (carece de BHE) y taquiarritmias por receptores adrenérgicos periféricos. Carbidopa no cruza la BHE, bloquea la descarboxilación periférica, cuadruplica la biodisponibilidad cerebral de levodopa, reduce la dosis oral en un 75-80% y mitiga efectos adversos periféricos. Carbidopa sola carece de cualquier efecto antiparkinsoniano.",
+      "bheTransporte": "Cruza activamente la BHE como aminoácido aromático neutro inerte vía LAT1; la dopamina nativa no cruza la BHE debido a su carga ionizada a pH fisiológico.",
+      "reaccionesTipoA": "Discinesias coreoatetoides de pico de dosis por hipersensibilidad y pulsos no fisiológicos de dopamina; náuseas por estimulación del área postrema; hipotensión ortostática por vasodilatación dopaminérgica esplácnica y renal."
+    },
+    "farmacodinamiaAvanzada": {
+      "ocupacionReceptores": "Estimulación combinada de receptores D1 (vía directa motora, acoplada a Gs/cAMP) y D2 (vía indirecta motora, acoplada a Gi/reducción de cAMP) en el estriado.",
+      "bheTransporte": "LAT1 (SLC7A5) saturable. Competencia estérica con aminoácidos de cadena ramificada y fenilalanina."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Enfermedad de Parkinson idiopática (Estándar de Oro de Reemplazo Dopaminérgico)",
+        "poblacion": "Adultos. Vía oral (comprimidos convencionales o liberación prolongada 25/100 mg, 25/250 mg).",
+        "criterio": "Pilar farmacológico más eficaz para control sintomático de bradicinesia, rigidez, temblor y micrografía. Asegurar un aporte de al menos 70 a 100 mg/día de carbidopa."
+      },
+      {
+        "indicacion": "Tratamiento intermitente de episodios 'Off' motores (Inbrija)",
+        "poblacion": "Adultos bajo régimen basal con carbidopa/levodopa oral. Vía inhalación oral (cápsulas de 42 mg; dosis de 84 mg por episodio 'off', hasta 5 veces al día; máx 420 mg/día).",
+        "criterio": "Alivio sintomático rápido y episódico de fluctuaciones motoras entre dosis. No sustituye la terapia oral de mantenimiento."
+      },
+      {
+        "indicacion": "Carbidopa sola como monoterapia adyuvante (Lodosyn)",
+        "poblacion": "Adultos con dosis fija de carbidopa <70 mg/día que presentan náuseas intensas, o para titulación individualizada.",
+        "criterio": "Coadministrar siempre con levodopa; carece de efecto antiparkinsoniano propio."
+      },
+      {
+        "indicacion": "Parkinsonismo sintomático, postencefalítico o neurotóxico (CO / Manganeso)",
+        "poblacion": "Adultos. Vía oral coadministrada.",
+        "criterio": "Alivio sintomático del síndrome extrapiramidal secundario a daño encefálico."
+      }
+    ],
+    "precauciones": {
+      "titulacionYRetirada": "Síndrome similar al Neuroléptico Maligno por retirada brusca (Parkinsonian Hyperpyrexia Syndrome): la reducción rápida o suspensión abrupta desencadena hipertermia extrema, rigidez muscular 'en tubo de plomo', inestabilidad autonómica (taquicardia, labilidad tensional), confusión y elevación masiva de CPK con rabdomiólisis. Retirar siempre de forma escalonada.",
+      "manejoPerioperatorio": "Mantener la administración durante el periodo preoperatorio, incluyendo la misma mañana de la intervención quirúrgica, para evitar crisis acinéticas agudas y descompensación ventilatoria.",
+      "respiratoriasEPOC": "La formulación de inhalación oral (Inbrija) está desaconsejada en pacientes con antecedentes de asma, EPOC u otra patología bronquial activa por riesgo de broncoespasmo agudo y tos paroxística.",
+      "dermatologicasMelanoma": "Los pacientes con enfermedad de Parkinson presentan un riesgo de 2 a 6 veces mayor de desarrollar melanoma cutáneo maligno frente a la población general; se recomienda vigilancia dermatológica periódica.",
+      "neurologicas": "Ataques súbitos de sueño (Sleep Attacks): episodios repentinos e irresistibles de somnolencia durante actividades de la vida diaria (incluyendo la conducción de vehículos) sin pródromos previos.",
+      "interaccionesClave": "Contraindicación absoluta con IMAO no selectivos dentro de 14 días (crisis hipertensivas mortales). Antagonismo mutuo severo con antipsicóticos bloqueadores D2 (haloperidol, risperidona)."
+    },
+    "reaccionesAdversas": {
+      "discinesiasMotoras": "Discinesias coreiformes, balísticas y distónicas de pico de dosis (hasta 4% en ensayos iniciales, >50-80% tras 3 a 5 años de tratamiento por pulsos dopaminérgicos intermitentes y denervación estriatal). Fluctuaciones motoras de fin de dosis (wearing-off) y fenómeno oscilatorio on-off (cambios impredecibles entre movilidad y acinesia severa).",
+      "ataquesSueno": "Somnolencia diurna profunda y ataques súbitos de sueño irresistibles durante actividades cotidianas.",
+      "controlImpulsosPsiquiatricas": "Alucinaciones visuales vívidas (5-15%), pesadillas, delirio, confusión mental y psicosis paranoide. Trastornos del control de impulsos (ludopatía compulsiva, hipersexualidad, compras descontroladas, atracones de comida).",
+      "gastrointestinales": "Náusea y vómito (hasta 5% aun con formulación inhalada y >50% si no se aporta suficiente carbidopa) por estimulación del área postrema. Xerostomía, estreñimiento y dispepsia.",
+      "cardiovasculares": "Hipotensión ortostática sintomática (2-10%), mareo postural, síncope, palpitaciones y arritmias cardiacas ocasionales por estimulación adrenérgica.",
+      "dermatologicasUrinarias": "Coloración oscura o negruzca de la orina al contacto con el aire/agentes oxidantes; depósito inocuo de pigmento oscuro en cartílagos tras terapias muy prolongadas. Tos (15% con Inbrija inhalada)."
+    },
+    "contraindicaciones": {
+      "generales": [
+        "Uso concomitante con inhibidores de la monoaminooxidasa (IMAO) no selectivos (ej. tranilcipromina, fenelzina) o dentro de los 14 días posteriores a su retiro (riesgo de crisis hipertensiva potencialmente mortal).",
+        "Glaucoma de ángulo cerrado (riesgo de midriasis e incremento agudo catastrófico de la presión intraocular).",
+        "Hipersensibilidad conocida a la levodopa, a la carbidopa o a cualquier excipiente de la fórmula.",
+        "Psicosis mayor preexistente o esquizofrenia activa (exacerbación severa de delirios/alucinaciones y antagonismo mutuo con antipsicóticos)."
+      ],
+      "porFormulacion": [
+        "Inbrija (inhalación oral): contraindicada en pacientes con asma activa, EPOC descompensada o enfermedad obstructiva de la vía aérea por riesgo de broncoespasmo severo."
+      ]
+    },
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "May cause fetal harm (Puede causar daño fetal). Criterio de uso restrictivo: administrar únicamente si el beneficio materno potencial supera con claridad los riesgos para el feto.",
+      "pasoTransplacentario": "Sí atraviesa la barrera placentaria de forma activa mediante transportadores de aminoácidos; penetra al feto y es metabolizada por tejidos fetales.",
+      "evidenciaTeratogenica": "En estudios preclínicos de reproducción en conejos, la combinación carbidopa/levodopa produjo malformaciones viscerales y esqueléticas a dosis aproximadamente 7 veces superiores a la dosis máxima humana recomendada. En ratas disminuyó la viabilidad de crías vivas. No existen ensayos clínicos controlados en mujeres gestantes.",
+      "lactancia": "OMS: Evitar la lactancia materna. Micromedex: Infant risk cannot be ruled out. La levodopa se excreta activamente en la leche materna humana. Al convertirse en dopamina en la hipófisis anterior, inhibe de forma potente la secreción de prolactina por los lactótrofos, pudiendo suprimir por completo la lactogénesis. Se desconoce la tasa de excreción de carbidopa. Se desaconseja amamantar durante el tratamiento."
+    },
+    "toxicologia": {
+      "mecanismo": "Hiperestimulación dopaminérgica estriatal, límbica y periférica masiva por exceso agudo de dopamina libre y metabolitos adrenérgicos.",
+      "manifestaciones": {
+        "levesModeradas": "Náusea, vómito incoercible, mareo postural marcado, palpitaciones, midriasis, insomnio y agitación psicomotriz.",
+        "severasMortales": "Discinesias coreoatetoides generalizadas graves, hipotensión ortostática severa o colapso hemodinámico, arritmias ventriculares y auriculares, confusión delirante, manía aguda y convulsiones."
+      },
+      "manejoSoporte": [
+        "No existe antídoto específico para levodopa ni para carbidopa.",
+        "Monitoreo electrocardiográfico continuo inmediato para detección y tratamiento oportuno de arritmias.",
+        "Soporte hemodinámico intensivo con infusión de soluciones cristaloides intravenosas para la hipotensión arterial; evitar dopamina o adrenalina exógena.",
+        "Soporte respiratorio y protección de la vía aérea si hay alteración del estado de conciencia o vómito recurrente.",
+        "Hemodiálisis y hemoperfusión ineficaces debido a su rápido aclaramiento metabólico y volumen de distribución tisular."
+      ]
+    },
+    "perlasClinicas": [
+      "La competencia por el transportador LAT1 ocurre tanto en enterocitos como en la BHE: redistribuir la ingesta de proteínas hacia la cena optimiza el control motor diurno sin interferir con la movilidad matutina.",
+      "Se requieren al menos 70 a 100 mg/día de carbidopa para inhibir adecuadamente la dopa-descarboxilasa periférica; si se usan dosis bajas de levodopa/carbidopa (ej. 10/100 mg), el paciente sufrirá náusea por carbidopa insuficiente.",
+      "El metabolito 3-OMD generado por COMT tiene una vida media de 15 horas (frente a 2.3 h de levodopa); al acumularse en plasma compite directamente con levodopa por el paso al SNC.",
+      "El retiro súbito de levodopa no solo causa acinesia, sino que puede desencadenar el potencialmente mortal 'Parkinsonian Hyperpyrexia Syndrome', indistinguible clínicamente del síndrome neuroléptico maligno."
+    ]
+  },
+  {
+    "farmacoId": "pramipexol",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Pramipexol",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Biodisponibilidad oral muy alta, superior al 90%. Los alimentos retrasan el Tmax entre 1 y 2 horas, pero no alteran la magnitud global de la absorción (se aconseja tomar con alimentos para reducir náuseas).",
+      "tmax": "Formulación de liberación inmediata (IR): ~2 horas. Formulación de liberación prolongada (ER): ~6 horas.",
+      "inicioYDuracion": "Estimulación dopaminérgica directa postsináptica independiente de las terminales presinápticas en degeneración. Duración sostenida que permite dosificación una vez al día en forma ER.",
+      "distribucion": "Volumen de distribución (Vd) sumamente amplio: ~500 L, indicando una penetración tisular intracelular masiva. Unión a proteínas plasmáticas muy baja: apenas ~15%. Se distribuye en eritrocitos (relación eritrocito/plasma 2:1). Eliminación extracorpórea (hemodiálisis): completamente ineficaz debido a su enorme Vd.",
+      "metabolismo": "Metabolismo hepático mínimo (menos del 10%). No sufre biotransformación significativa por enzimas del citocromo P450 ni genera metabolitos activos.",
+      "vidaMedia": "Vida media de eliminación (t½): ~8 horas en adultos jóvenes sanos y se prolonga hasta 12 horas en adultos mayores debido a la reducción fisiológica del filtrado glomerular.",
+      "eliminacion": "Excreción renal casi exclusiva: el 90% se elimina por vía renal como fármaco inalterado en orina. Aclaramiento renal de aproximadamente 400 mL/min, superando con creces la filtración glomerular, lo que demuestra una importante secreción tubular activa mediada por el sistema transportador de cationes orgánicos (OCT).",
+      "transporteLAT1": "No depende de LAT1 ni compite con aminoácidos de la dieta. Compite a nivel renal con sustratos catiónicos de secreción tubular (ej. cimetidina)."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Receptores dopaminérgicos D3 (preferencial) y D2 postsinápticos estriatales y del sistema límbico.",
+      "efectoTerapeutico": "Agonista dopaminérgico no ergotamínico sintético con actividad intrínseca completa sobre la subfamilia D2. Estimula directamente los receptores dopaminérgicos del núcleo caudado y putamen, aliviando rigidez, bradicinesia y temblor sin requerir la conversión metabólica presináptica necesaria para levodopa.",
+      "selectividadSubtipo": "Selectividad preferencial marcada D3 > D2 > D4: presenta una afinidad nanomolar 7 a 10 veces más potente por el receptor D3 (Ki ~0.5 nM) frente al D2 (Ki ~3.5 nM). Dado que el receptor D3 se expresa preferentemente en el sistema límbico (núcleo accumbens), esta propiedad explica tanto su eficacia motivacional como la alta frecuencia de trastornos del control de impulsos (ludopatía, hipersexualidad, compras).",
+      "reaccionesTipoA": "Ataques súbitos de sueño (sleep attacks) sin advertencia; hipotensión ortostática grave en escalamiento de dosis; edema periférico refractario a diuréticos; náusea por estimulación de la zona gatillo quimiorreceptora."
+    },
+    "farmacodinamiaAvanzada": {
+      "ocupacionReceptores": "Agonismo pleno D3/D2 con afinidad Ki de 0.5 nM (D3) y 3.5 nM (D2); suprime la secreción basal y estimulada de prolactina sérica.",
+      "fastOff": "Agonista no ergotamínico: no induce fibrosis pleuropulmonar o valvular retroperitoneal típica de ergolinas como pergolida o cabergolina."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Enfermedad de Parkinson idiopática temprana (Monoterapia)",
+        "poblacion": "Adultos. Vía oral (formulaciones IR tres veces al día o ER una vez al día).",
+        "criterio": "Aprobado para retrasar el inicio de levodopa y reducir la incidencia temprana de discinesias motoras."
+      },
+      {
+        "indicacion": "Enfermedad de Parkinson avanzada (Coadyuvante con Levodopa)",
+        "poblacion": "Adultos con fluctuaciones motoras. Vía oral (IR o ER).",
+        "criterio": "Permite reducir la dosis diaria de levodopa en un 27% a 30% y mitigar los periodos 'Off'."
+      },
+      {
+        "indicacion": "Síndrome de Piernas Inquietas idiopático (SPI / RLS)",
+        "poblacion": "Adultos con SPI moderado a severo. Vía oral (únicamente formulación IR: 0.125 a 0.5 mg tomados 2 a 3 horas antes de acostarse).",
+        "criterio": "Formulación ER NO está aprobada para SPI por riesgo de incremento diurno precoz de síntomas."
+      }
+    ],
+    "precauciones": {
+      "titulacionYRetirada": "Retirada escalonada obligatoria: la supresión súbita puede desencadenar el potencialmente letal Parkinsonian Hyperpyrexia Syndrome (hipertermia, rigidez muscular severa, inestabilidad autonómica y CPK elevada).",
+      "abstinenciaDAWS": "Síndrome de Abstinencia a Agonistas Dopaminérgicos (DAWS): durante la reducción o tras la suspensión pueden emerger síntomas severos como apatía profunda, pánico, depresión refractaria, astenia extrema, dolor generalizado e insomnio, los cuales NO responden a dosis suplementarias de levodopa.",
+      "manejoPerioperatorio": "Mantener la dosis habitual el día de la cirugía para evitar abstinencia y crisis acinéticas agudas (excepto si el paciente se somete a cirugía con estimulador cerebral profundo).",
+      "neurologicas": "Ataques súbitos de sueño (Sleep attacks): quedarse dormido de forma fulminante durante actividades cotidianas (incluyendo conducción de automóviles). Advertir a pacientes y familiares.",
+      "interaccionesClave": "Fármacos catiónicos que se eliminan por secreción tubular activa (como la cimetidina) compiten por el transportador OCT y elevan las concentraciones plasmáticas de pramipexol hasta en un 50%. Ajustar dosis en insuficiencia renal.",
+      "dermatologicasMelanoma": "Vigilancia dermatológica periódica debido a que los pacientes con Parkinson tienen un riesgo de 2 a 6 veces mayor de melanoma.",
+      "poblacionesEspeciales": {
+        "adultosMayoresBeers": "Criterios de Beers: riesgo elevado de alucinaciones visuales (hasta 17%), delirio, caídas e hipotensión ortostática marcada (hasta 53% con levodopa).",
+        "riesgoCaidas": "Muy elevado por hipotensión ortostática, sedación súbita y debilidad motora.",
+        "pediatriaKids": "Seguridad y eficacia no establecidas en pacientes pediátricos."
+      }
+    },
+    "reaccionesAdversas": {
+      "ataquesSueno": "Somnolencia diurna (6% a 36%) y ataques repentinos de sueño irresistible de aparición abrupta sin signos prodrómicos de alerta.",
+      "controlImpulsosPsiquiatricas": "Trastornos del control de impulsos por hiperestimulación del receptor D3 en el núcleo accumbens: ludopatía patológica compulsiva, hipersexualidad incontrolable, compras desenfrenadas y atracones de comida (binge eating). Alucinaciones visuales (5% a 17%), confusión mental y delirio paranoide.",
+      "discinesiasMotoras": "Discinesias involuntarias (17% a 47% al combinarse con levodopa; se corrigen disminuyendo la dosis de levodopa). Fenómeno de aumento (augmentation) y rebote diurno en síndrome de piernas inquietas.",
+      "cardiovasculares": "Hipotensión ortostática sintomática severa (hasta 53% en combinación con levodopa durante titulación). Edema periférico de miembros inferiores (2% a 8%, bilateral en tobillos y pantorrillas, refractario a diuréticos y reversible solo al retirar el fármaco). Riesgo incrementado de insuficiencia cardiaca.",
+      "musculoesqueleticas": "Deformidades posturales subagudas: antecollis (flexión cervical anterior extrema involuntaria), camptocormia (síndrome de columna doblada hacia adelante) y pleurotótonos (síndrome de Pisa, inclinación lateral del tronco) tras semanas o meses de tratamiento. Rabdomiólisis infrecuente.",
+      "gastrointestinales": "Náusea (11% a 28%), estreñimiento (4% a 14%), boca seca (xerostomía) y dispepsia."
+    },
+    "contraindicaciones": {
+      "generales": [
+        "Hipersensibilidad previa confirmada al pramipexol o a los excipientes de la fórmula.",
+        "Trastornos psicóticos mayores o antecedentes de psicosis paranoide activa (los agonistas dopaminérgicos provocan descompensación psicótica grave)."
+      ],
+      "porFormulacion": [
+        "Formulación de liberación prolongada (Pramipexol ER): contraindicada en pacientes con aclaramiento de creatinina (ClCr) menor a 30 mL/min o sometidos a hemodiálisis.",
+        "Formulación ER contraindicada en Síndrome de Piernas Inquietas (SPI/RLS)."
+      ]
+    },
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "May cause fetal harm (Puede causar daño fetal). Criterio de uso restrictivo: administrar únicamente si el beneficio clínico potencial materno supera con certeza el riesgo para el feto.",
+      "pasoTransplacentario": "Desconocido en humanos.",
+      "evidenciaTeratogenica": "No existen estudios clínicos controlados en mujeres embarazadas. En modelos de reproducción animal en ratas, dosis equivalentes o superiores a la dosis máxima humana produjeron inhibición completa de la implantación embrionaria, pérdida y resorción embrionaria completa e inhibición del desarrollo postnatal debido a la profunda supresión de prolactina inducida por el agonismo D2/D3.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Se desconoce si pasa a la leche materna humana (en ratas lactantes se concentra en la leche de 3 a 6 veces más que en el plasma materno). Al actuar como potente agonista dopaminérgico hipofisario, inhibe la secreción de prolactina en la mujer y puede suprimir por completo la lactogénesis y la producción de leche materna. Se desaconseja amamantar durante el tratamiento."
+    },
+    "toxicologia": {
+      "mecanismo": "Hiperactivación dopaminérgica masiva en receptores postsinápticos D3 y D2 en ganglios basales, sistema límbico, hipotálamo y área postrema.",
+      "manifestaciones": {
+        "levesModeradas": "Náusea incoercible, vómito profuso, mareo postural intenso, somnolencia profunda y temblores.",
+        "severasMortales": "Hipotensión arterial severa o colapso vascular sincopal, agitación psicomotriz extrema, alucinaciones visuales floridas, discinesias generalizadas y arritmias cardiacas (taquicardia sinusal)."
+      },
+      "manejoSoporte": [
+        "No existe un antídoto farmacológico específico para pramipexol.",
+        "Mantenimiento de la vía aérea permeable y soporte ventilatorio si hay deterioro del estado de conciencia.",
+        "Estabilización hemodinámica mediante administración enérgica de soluciones cristaloides intravenosas para la hipotensión ortostática.",
+        "Monitorización electrocardiográfica continua para detección de arritmias.",
+        "La hemodiálisis no es eficaz para depurar el fármaco debido a su volumen de distribución tisular de 500 L."
+      ]
+    },
+    "perlasClinicas": [
+      "Pramipexol tiene una marcada selectividad nanomolar por el receptor D3 frente al D2 (Ki 0.5 vs 3.5 nM); al expresarse D3 en el núcleo accumbens límbico, explica la elevada incidencia de adicciones conductuales (ludopatía, hipersexualidad, compras compulsivas).",
+      "El 90% del pramipexol se elimina inalterado por la orina a través de secreción tubular activa por transportadores catiónicos; fármacos como la cimetidina compiten por su excreción y aumentan sus niveles plasmáticos.",
+      "El edema periférico en miembros inferiores inducido por pramipexol es bilateral, refractario a diuréticos de asa y solo cede al suspender el agonista.",
+      "La formulación de liberación prolongada (ER) está contraindicada con filtrado glomerular menor a 30 mL/min y no debe emplearse en síndrome de piernas inquietas."
+    ]
+  },
+  {
+    "farmacoId": "entacapona",
+    "titulo": "Inmersión Molecular: Inhibición de COMT Periférica y 3-OMD",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "35%; no cruza la BHE de forma significativa.",
+      "vidaMedia": "1.5 a 2 horas (requiere administrarse exactamente junto con cada toma de levodopa).",
+      "eliminacion": "90% biliar/fecal y 10% renal."
+    },
+    "farmacodinamiaAvanzada": {
+      "mecanismo": "Al bloquear la DDC con carbidopa, la principal vía metabólica restante para la levodopa en la periferia es la COMT, que la convierte en 3-O-metildopa (3-OMD). La 3-OMD compite con la levodopa por el transportador LAT1. La entacapona suprime la síntesis de 3-OMD, aumentando la biodisponibilidad cerebral de L-DOPA."
+    },
+    "perlasClinicas": [
+      "Informa siempre al paciente que su orina se teñirá de color naranja o marrón rojizo inocuo para evitar que acuda asustado a urgencias por sospecha de hematuria.",
+      "Si el paciente presenta diarrea explosiva meses después de haber iniciado entacapona, debe suspenderse."
+    ]
+  },
+  {
+    "farmacoId": "rasagilina",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Rasagilina",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Biodisponibilidad oral absoluta aproximada del 36%. Las comidas con alto contenido en grasas no alteran el Tmax, pero reducen la Cmax en un 60% y el AUC en un 20% (puede tomarse con o sin alimentos).",
+      "tmax": "Rápido: de 30 minutos a 1 hora (0.5 a 1 h).",
+      "inicioYDuracion": "Inhibición enzimática irreversible selectiva: la inhibición completa de la MAO-B plaquetaria se alcanza tras 1 semana de administración diaria continua de 1 mg/día.",
+      "distribucion": "Volumen de distribución (Vd): ~87 L, lo que refleja una amplia penetración tisular superando a las proteínas plasmáticas. Unión a proteínas plasmáticas del 88% al 94% (albúmina 61% a 63%). Atraviesa libremente la barrera hematoencefálica hacia el tejido cerebral.",
+      "metabolismo": "Biotransformación hepática casi completa mediada principalmente por el citocromo CYP1A2 mediante desalquilación e hidroxilación. Su metabolito primario es el 1(R)-aminoindano. Diferencia crucial: el 1(R)-aminoindano NO es un derivado anfetamínico, carece de acción estimulante simpaticomimética y carece de actividad inhibidora sobre la MAO-B.",
+      "vidaMedia": "Vida media plasmática de eliminación (t½): ~1.5 a 3.5 horas. Sin embargo, debido a la inhibición suicida irreversible de la MAO-B, su efecto farmacodinámico se prolonga por semanas hasta la resíntesis de novo de la enzima.",
+      "eliminacion": "Excreción urinaria principal del 62% (menos del 1% inalterado) y fecal del 7% a lo largo de 7 días.",
+      "transporteLAT1": "A dosis terapéuticas recomendadas (≤1 mg/día) es ~100 veces más potente inhibiendo MAO-B que MAO-A, y entre 3 y 15 veces más potente que la selegilina in vivo. No potencia la respuesta presora a tiramina oral dentro del rango terapéutico."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Monoaminooxidasa tipo B (MAO-B) cerebral irreversible / Cofactor FAD.",
+      "efectoTerapeutico": "Inhibidor irreversible de 2.ª generación de la MAO-B. Al inactivar la enzima encargada del catabolismo de dopamina en el cuerpo estriado, incrementa de manera sostenida las concentraciones de dopamina extracelular sináptica, mejorando la función motora tanto en monoterapia temprana como en terapia adyuvante con levodopa o agonistas.",
+      "selectividadSubtipo": "Muestra una selectividad ~100:1 por MAO-B frente a MAO-A. A la dosis autorizada de 1 mg una vez al día no requiere restricción rutinaria de tiramina dietética; no obstante, si se excede dicha dosis, se pierde la selectividad y surge riesgo de crisis hipertensiva.",
+      "metabolitosAnfetaminicos": "Ausencia total de metabolitos anfetamínicos: se metaboliza a 1(R)-aminoindano, evitando el insomnio, la hiperactividad adrenérgica y la irritabilidad neuropsiquiátrica características de la selegilina.",
+      "reaccionesTipoA": "Discinesias por sobreestimulación dopaminérgica estriatal al combinarse con levodopa; hipotensión ortostática postural; elevación hipertensiva si se sobrepasa la dosis límite de 1 mg/día."
+    },
+    "farmacodinamiaAvanzada": {
+      "ocupacionReceptores": "Inhibición irreversible casi completa de MAO-B estriatal a dosis de 1 mg/día.",
+      "fastOff": "Inhibición irreversible suicida con unión covalente; recuperación funcional dependiente exclusivamente del recambio proteico enzimático."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Enfermedad de Parkinson en monoterapia inicial",
+        "poblacion": "Adultos en fases tempranas. Vía oral (comprimidos de 1 mg una vez al día).",
+        "criterio": "Retrasa la necesidad de iniciar levodopa en etapas iniciales."
+      },
+      {
+        "indicacion": "Terapia adyuvante con agonistas dopaminérgicos (sin levodopa)",
+        "poblacion": "Adultos. Vía oral (comprimidos de 1 mg una vez al día coadministrada con pramipexol o ropinirol).",
+        "criterio": "Potencia el control motor sin recurrir a levodopa."
+      },
+      {
+        "indicacion": "Terapia coadyuvante con levodopa en fluctuaciones motoras (Wearing-Off)",
+        "poblacion": "Adultos con enfermedad avanzada. Vía oral (0.5 a 1 mg una vez al día).",
+        "criterio": "Reduce significativamente el tiempo diario en fase 'Off' y permite disminuir la dosis de levodopa."
+      }
+    ],
+    "precauciones": {
+      "periodosLavadoWashout": "Periodos de lavado estrictos (Washout): esperar al menos 14 días tras suspender rasagilina antes de iniciar opioides contraindicados o antidepresivos (ISRS, IRSN, tricíclicos). Es obligatorio dejar transcurrir al menos 5 semanas tras la suspensión de fluoxetina antes de comenzar rasagilina.",
+      "restriccionTiramina": "Aunque a dosis recomendadas (≤1 mg/día) no induce efecto queso, se debe advertir evitar alimentos con concentraciones muy elevadas de tiramina (>150 mg: quesos maduros, carnes curadas añejadas) para prevenir crisis hipertensivas.",
+      "titulacionYRetirada": "La interrupción abrupta puede desencadenar un cuadro hiperpirético similar al síndrome neuroléptico maligno; debe retirarse siempre de forma escalonada.",
+      "interaccionesClave": "Interacción crítica con inhibidores de CYP1A2: fármacos como ciprofloxacino elevan drásticamente la concentración de rasagilina (AUC x 2); la dosis máxima diaria debe reducirse a 0.5 mg/día. Contraindicación mortal con meperidina, tramadol, metadona, dextrometorfano y ciclobenzaprina.",
+      "poblacionesEspeciales": {
+        "adultosMayoresBeers": "Hipotensión ortostática frecuente (3% a 44%), especialmente notable en los primeros 2 meses de tratamiento y en combinación con levodopa; riesgo de síncope y caídas (5% a 12%).",
+        "riesgoCaidas": "Elevado por la combinación de caídas mecánicas (5% a 12%) e hipotensión ortostática.",
+        "pediatriaKids": "Seguridad y eficacia no establecidas en pacientes pediátricos."
+      }
+    },
+    "reaccionesAdversas": {
+      "discinesiasMotoras": "Discinesias coreiformes involuntarias (18% cuando se asocia a levodopa; requiere ajuste a la baja de levodopa).",
+      "ataquesSueno": "Somnolencia diurna y ataques súbitos e irresistibles de sueño durante la vigilia sin previo aviso.",
+      "controlImpulsosPsiquiatricas": "Alucinaciones visuales (1.2% a 5%), alteraciones del pensamiento, confusión, delirio y trastornos del control de impulsos (ludopatía, compras compulsivas, hipersexualidad). Depresión (5%).",
+      "cardiovasculares": "Hipotensión ortostática sintomática (3% a 44%), hipertensión arterial severa (4%, con registros >180/100 mmHg si se supera 1 mg/día) y edema periférico (7%).",
+      "musculoesqueleticas": "Artralgias (5% a 11%), dolor cervical, artritis, caídas accidentales y traumatismos musculoesqueléticos (5% a 12%).",
+      "gastrointestinales": "Náusea (6% a 12%), dispepsia (4% a 7%), estreñimiento (4% a 9%), dolor abdominal y xerostomía."
+    },
+    "contraindicaciones": {
+      "generales": [
+        "Uso concomitante con otros inhibidores de la monoaminooxidasa (IMAO), incluidos otros inhibidores de MAO-B (riesgo inminente de crisis hipertensiva severa).",
+        "Uso concomitante con analgésicos opioides: meperidina, tramadol, metadona o propoxifeno (contraindicación absoluta por síndrome serotoninérgico potencialmente mortal).",
+        "Uso concomitante con ciclobenzaprina o hierba de San Juan (Hypericum perforatum).",
+        "Uso simultáneo con dextrometorfano (riesgo de episodios psicóticos agudos y labilidad hemodinámica).",
+        "Insuficiencia hepática moderada a severa (Child-Pugh 7 a 15): contraindicada por metabolismo hepático exclusivo."
+      ],
+      "porCondicion": [
+        "Insuficiencia hepática leve (Child-Pugh 5 a 6): no exceder la dosis máxima de 0.5 mg una vez al día."
+      ]
+    },
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "Fetal risk cannot be ruled out (No se puede descartar riesgo fetal). Criterio de uso restrictivo: utilizar durante la gestación únicamente si la condición clínica materna justifica con claridad el riesgo potencial fetal.",
+      "pasoTransplacentario": "Desconocido en humanos.",
+      "evidenciaTeratogenica": "No existen ensayos clínicos adecuados ni controlados en mujeres embarazadas. En modelos de reproducción animal en ratas con exposiciones hasta 30 veces la dosis humana terapéutica (3 mg/kg/día), no se evidenciaron efectos adversos directos sobre el desarrollo embriofetal.",
+      "lactancia": "Micromedex: Milk effects are possible. Se desconoce si la rasagilina se excreta en la leche materna humana. Sin embargo, en estudios preclínicos con animales, la rasagilina inhibe la secreción de prolactina por estimulación dopaminérgica, por lo que puede suprimir activamente la secreción y producción de leche materna. Se aconseja extrema precaución o valorar el cese de la lactancia si es indispensable para la madre."
+    },
+    "toxicologia": {
+      "mecanismo": "Pérdida absoluta de la selectividad por MAO-B e inhibición masiva de la isoforma MAO-A, resultando en acumulación tóxica de aminas biógenas (serotonina, noradrenalina, dopamina).",
+      "manifestaciones": {
+        "levesModeradas": "Cefalea frontal u occipital intensa, diaforesis, mareo, náusea, hiperreflexia y mioclonías leves.",
+        "severasMortales": "Emergencia hipertensiva grave (cifras tensionales extremas con riesgo de encefalopatía o hemorragia intracraneal), síndrome serotoninérgico completo (hipertermia extrema, clonus ocular e inducible, agitación psicomotriz, rigidez) y colapso cardiovascular."
+      },
+      "manejoSoporte": [
+        "No existe un antídoto específico para la sobredosis de rasagilina.",
+        "Manejo inmediato de la emergencia hipertensiva mediante vasodilatadores parenterales de acción rápida: nitroprusiato de sodio, labetalol o fentolamina intravenosa.",
+        "Manejo agresivo de la hipertermia y agitación con enfriamiento físico continuo y soporte con benzodiazepinas intravenosas.",
+        "Monitorización intensiva continua durante un mínimo de 24 a 48 horas debido a la prolongada duración de la inhibición enzimática irreversible."
+      ]
+    },
+    "perlasClinicas": [
+      "Rasagilina no genera metabolitos anfetamínicos: su biotransformación rinde 1(R)-aminoindano, lo que reduce drásticamente el riesgo de insomnio y sobreactivación autonómica frente a selegilina.",
+      "La dosis máxima es de 1 mg una vez al día: superar esta dosis rompe la selectividad MAO-B e incrementa exponencialmente el riesgo de crisis hipertensiva.",
+      "El ciprofloxacino es un potente inhibidor de CYP1A2 que duplica el AUC de la rasagilina; en caso de coadministración, la dosis máxima debe reducirse obligatoriamente a 0.5 mg/día.",
+      "Al igual que con selegilina, el lavado previo para iniciar rasagilina tras la suspensión de fluoxetina es de al menos 5 semanas (35 días)."
+    ]
+  },
+  {
+    "farmacoId": "selegilina",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Selegilina",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Comprimidos orales estándar: biodisponibilidad baja por extenso metabolismo de primer paso; los alimentos aumentan su biodisponibilidad de 3 a 4 veces. Tableta orodispersable (Zelapar): absorción pregástrica bucal que evita parcialmente el primer paso; los alimentos disminuyen la Cmax y el AUC en un 40% (tomar en ayuno estricto). Parche transdérmico (Emsam): absorbe entre el 25% y 30% de la carga en 24 horas sorteando por completo el metabolismo de primer paso hepático.",
+      "tmax": "Oral estándar: 0.5 a 2 horas. Tableta orodispersable (Zelapar): 10 a 20 minutos. Parche transdérmico: niveles meseta estables a las 18 a 24 horas de aplicación continua.",
+      "inicioYDuracion": "Inhibición enzimática de MAO-B irreversible: el efecto biológico persiste mucho después de que el fármaco desaparece del plasma; la recuperación de la actividad de MAO-B requiere síntesis proteica de novo.",
+      "distribucion": "Unión a proteínas plasmáticas elevada: 85% (clorhidrato oral) al 90% (vía transdérmica). Cruza rápidamente la barrera hematoencefálica con amplia distribución tisular cerebral.",
+      "metabolismo": "Biotransformación hepática muy extensa mediada por las isoformas CYP2B6, CYP3A4/5 y CYP2C9. Se metaboliza en tres derivados principales: 1) R(-)-N-desmetilselegilina (único metabolito con actividad inhibidora sobre MAO-B); 2) L-metanfetamina; y 3) L-anfetamina. Los metabolitos anfetamínicos alcanzan concentraciones plasmáticas muy superiores a las del fármaco original y son responsables directos de insomnio, inquietud psicomotriz y taquicardia.",
+      "vidaMedia": "Vida media plasmática de eliminación (t½): ~10 horas en estado de equilibrio (clorhidrato oral) y de 18 a 25 horas para la vía transdérmica. La vida media de resíntesis enzimática de MAO-B es de aproximadamente 40 días (recuperación plaquetaria a razón de ~10% por día).",
+      "eliminacion": "Excreción principalmente renal en forma de metabolitos conjugados e inactivos.",
+      "transporteLAT1": "A dosis terapéuticas orales estándar para Parkinson (hasta 10 mg/día) mantiene selectividad estricta por MAO-B sin inhibir MAO-A intestinal o hepática."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Monoaminooxidasa tipo B (MAO-B) intraneuronal y glial / Cofactor FAD (dinucleótido de flavina y adenina).",
+      "efectoTerapeutico": "Inhibidor irreversible que actúa como 'sustrato suicida': se une covalentemente al sitio activo y cofactor FAD de la MAO-B estriatal humana, inactivándola de por vida. Bloquea el catabolismo de la dopamina, prolonga su tiempo de residencia en la hendidura sináptica e inhibe secundariamente la recaptación dopaminérgica, reduciendo las fluctuaciones motoras (wearing-off) en combinación con levodopa.",
+      "selectividadSubtipo": "A dosis orales de hasta 10 mg/día inhibe selectivamente la MAO-B. La selectividad se pierde por completo a dosis mayores de 30 mg/día o con parches transdérmicos de 9 a 12 mg/24 h, provocando inhibición masiva de la MAO-A intestinal y hepática, exponiendo al paciente al 'efecto queso' (crisis hipertensiva por tiramina dietética no degradada).",
+      "metabolitosAnfetaminicos": "Produce L-metanfetamina y L-anfetamina. Provocan estimulación adrenérgica central, insomnio de conciliación, agitación y exacerbación de taquicardia (motivo por el cual la segunda dosis oral diaria debe administrarse al mediodía con el almuerzo y nunca en la cena o noche).",
+      "reaccionesTipoA": "Exacerbación de discinesias inducidas por levodopa por elevación de dopamina sináptica; insomnio y ansiedad por metabolitos anfetamínicos; hipotensión ortostática por modulación autonómica."
+    },
+    "farmacodinamiaAvanzada": {
+      "ocupacionReceptores": "Inhibición irreversible de MAO-B >90% en plaquetas y tejido cerebral estriatal con 10 mg/día.",
+      "fastOff": "Inhibición irreversible de tipo covalente (no competitiva, no dependiente de equilibrio dinámico; requiere recambio de novo)."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Enfermedad de Parkinson con fluctuaciones motoras (Wearing-Off)",
+        "poblacion": "Adultos. Vía oral (clorhidrato de selegilina 5 mg dos veces al día: desayuno y comida; o tabletas orodispersables Zelapar 1.25 a 2.5 mg/día en ayuno).",
+        "criterio": "Terapia coadyuvante con levodopa/carbidopa cuando hay deterioro de fin de dosis. Permite reducir la dosis de levodopa entre un 10% y 30%."
+      },
+      {
+        "indicacion": "Trastorno Depresivo Mayor (Emsam)",
+        "poblacion": "Adultos. Vía transdérmica (parche de 6 mg/24 h, 9 mg/24 h o 12 mg/24 h).",
+        "criterio": "Dosis de 6 mg/24 h no requiere restricción de tiramina; dosis de 9 y 12 mg/24 h exigen restricción estricta de tiramina dietética."
+      }
+    ],
+    "precauciones": {
+      "periodosLavadoWashout": "Periodos de lavado obligatorios (Washout): esperar al menos 14 días tras suspender selegilina antes de iniciar antidepresivos (ISRS, IRSN, tricíclicos) u opioides contraindicados. Al cambiar desde fluoxetina hacia selegilina, deben transcurrir al menos 5 semanas (35 días) tras el cese de fluoxetina debido a la prolongada vida media de norfluoxetina.",
+      "restriccionTiramina": "Restricción de alimentos ricos en tiramina (quesos curados, embutidos, cerveza de barril, vino tinto, levaduras concentradas) si se superan los 10 mg/día orales o con parches de 9 a 12 mg/24 h para prevenir crisis hipertensivas letales.",
+      "titulacionYRetirada": "La suspensión abrupta puede desencadenar un cuadro hiperpirético agudo similar a síndrome neuroléptico maligno; retirar de forma gradual.",
+      "neurologicas": "Administrar la última dosis oral con el almuerzo (máximo a las 14:00 h); nunca administrar por la noche debido al riesgo de insomnio grave por sus metabolitos anfetamínicos.",
+      "interaccionesClave": "Contraindicación mortal con meperidina, tramadol, metadona, dextrometorfano y fármacos serotoninérgicos (hiperpirexia, convulsiones, síndrome serotoninérgico colapsante).",
+      "poblacionesEspeciales": {
+        "adultosMayoresBeers": "Criterios de Beers: riesgo elevado de hipotensión ortostática severa (hasta 21% en mayores de 65 años), caídas, confusión y alucinaciones.",
+        "riesgoCaidas": "Elevado por combinación de hipotensión ortostática postural e inestabilidad motora.",
+        "pediatriaKids": "Estrictamente contraindicada la vía transdérmica en menores de 12 años por riesgo extremo de crisis hipertensiva."
+      }
+    },
+    "reaccionesAdversas": {
+      "discinesiasMotoras": "Exacerbación o aparición de discinesias coreiformes involuntarias (2% a 6% en monoterapia adyuvante, mucho mayor con levodopa; se alivia reduciendo la dosis de levodopa).",
+      "ataquesSueno": "Episodios de somnolencia diurna y ataques súbitos de sueño sin previo aviso durante actividades de la vida diaria.",
+      "controlImpulsosPsiquiatricas": "Insomnio de conciliación (hasta 7%), agitación psicomotriz, pesadillas, alucinaciones visuales (3% a 4%), confusión mental y conductas impulsivas compulsivas (ludopatía, hipersexualidad).",
+      "cardiovasculares": "Hipotensión ortostática sintomática (hasta 21% en adultos mayores), mareos (11%), hipertensión arterial si se consume tiramina dietética o si se sobrepasan los 10 mg/día.",
+      "gastrointestinales": "Náusea (10% a 11%), sequedad bucal (xerostomía), estreñimiento y dispepsia. Con tabletas orodispersables (Zelapar): estomatitis, úlceras orales e irritación faríngea (10%)."
+    },
+    "contraindicaciones": {
+      "generales": [
+        "Uso concomitante con analgésicos opioides: meperidina, tramadol, metadona, propoxifeno o pentazocina (contraindicación absoluta por toxicidad del SNC, hiperpirexia y colapso cardiovascular mortal).",
+        "Uso concomitante con antidepresivos inhibidores de la recaptación de serotonina (ISRS como fluoxetina, sertralina, paroxetina), IRSN (venlafaxina, duloxetina), tricíclicos, otros IMAO o hierba de San Juan (riesgo inminente de síndrome serotoninérgico fatal).",
+        "Uso conjunto con dextrometorfano (riesgo de conducta psicótica y colapso autonómico).",
+        "Feocromocitoma (riesgo de crisis hipertensiva fulminante por exceso de catecolaminas)."
+      ],
+      "porFormulacion": [
+        "Tabletas orodispersables (Zelapar): contraindicadas en insuficiencia hepática severa (Child-Pugh >9) e insuficiencia renal terminal o ClCr <30 mL/min.",
+        "Parches transdérmicos (Emsam): estrictamente contraindicados en menores de 12 años por alto riesgo de crisis hipertensiva.",
+        "Zelapar contiene aspartamo: contraindicado en fenilcetonuria."
+      ]
+    },
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "May cause fetal harm (Puede causar daño fetal). Criterio de uso: administrar únicamente si el beneficio clínico materno potencial justifica con creces el riesgo potencial para el feto.",
+      "pasoTransplacentario": "En estudios preclínicos se demostró paso transplacentario; no existen ensayos controlados en mujeres gestantes.",
+      "evidenciaTeratogenica": "En modelos animales se evidenció toxicidad en el desarrollo embrionario y fetal a dosis elevadas: retraso marcado en la osificación esquelética, disminución del peso corporal fetal y aumento en resorciones y letalidad postimplantación. Adicionalmente, el riesgo materno de crisis hipertensiva compromete de forma crítica la perfusión útero-placentaria.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Se desconoce si pasa a la leche materna humana. En estudios animales con ratas lactantes, las concentraciones de selegilina y sus metabolitos en leche fueron de 5 a 15 veces superiores a las concentraciones plasmáticas maternas, observándose retraso en el crecimiento ponderal de las crías. Se aconseja suspender la lactancia materna durante el tratamiento y hasta 5 días después del cese de parches transdérmicos o 7 días después de la suspensión de la vía oral."
+    },
+    "toxicologia": {
+      "mecanismo": "Pérdida absoluta de selectividad por MAO-B con inhibición masiva de MAO-A a nivel sistémico, provocando acumulación tóxica de catecolaminas, tiramina, serotonina y metabolitos anfetamínicos.",
+      "manifestaciones": {
+        "levesModeradas": "Cefalea occipital pulsátil, mareo, midriasis, diaforesis profusa, agitación psicomotriz, temblores e hiperreflexia.",
+        "severasMortales": "Crisis hipertensiva maligna (presión sistólica >200 mmHg con riesgo inminente de hemorragia intracraneal y edema agudo pulmonar), hiperpirexia severa (>41 °C), rigidez muscular en rueda dentada, síndrome serotoninérgico, coma y colapso cardiovascular."
+      },
+      "manejoSoporte": [
+        "No existe un antídoto farmacológico específico.",
+        "Control de la crisis hipertensiva: infusión parenteral inmediata de antagonistas alfa-adrenérgicos de acción rápida como fentolamina, labetalol intravenoso o nitroprusiato de sodio.",
+        "Enfriamiento externo agresivo para la hiperpirexia maligna (mantas de enfriamiento, compresas heladas, cristaloides fríos).",
+        "Control de agitación y convulsiones mediante infusión de benzodiazepinas intravenosas (lorazepam o diazepam).",
+        "Monitorización intensiva continua durante al menos 24 a 48 horas tras la ingesta debido a la latencia de toxicidad propia de la inhibición enzimática irreversible."
+      ]
+    },
+    "perlasClinicas": [
+      "A dosis antiparkinsonianas habituales (≤10 mg/día orales), la selegilina no requiere restricción dietética de tiramina porque preserva la MAO-A intestinal encargada de degradarla.",
+      "La selegilina se metaboliza a L-metanfetamina y L-anfetamina; si el paciente toma la segunda dosis por la tarde o noche, desarrollará insomnio refractario y agitación. Siempre dosificar al desayuno y al almuerzo.",
+      "Para rotar de fluoxetina a selegilina es obligatorio un periodo de lavado de 5 semanas (35 días) por la persistencia de norfluoxetina; pasar directamente provoca un síndrome serotoninérgico potencialmente mortal.",
+      "La tableta orodispersable Zelapar evita parcialmente el primer paso hepático; los alimentos disminuyen su AUC un 40%, por lo que debe tomarse en ayunas sin agua 5 minutos antes ni después."
+    ]
+  },
+  {
+    "farmacoId": "haloperidol",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Haloperidol",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "86.1% oral; 60% a 70% intramuscular (lactato de haloperidol).",
+      "tmax": "Vía oral: 3 a 6 horas. Decanoato IM (depósito): pico plasmático a los 6 días tras dosis única.",
+      "inicioYDuracion": "Oral: 60 a 120 min. IM lactato: 15 a 60 min. Duración de dosis única (IV/IM): mantiene efecto por 24 horas.",
+      "distribucion": "Unión a proteínas plasmáticas >90%. Volumen de distribución (Vd) sumamente amplio: ~1260 L en adultos (9.5 a 21.7 L/kg para lactato). Eliminación extracorpórea (hemodiálisis/hemoperfusión) ineficaz. Paso transplacentario con relación cordón/materna de 0.66.",
+      "metabolismo": "Hepático extenso vía citocromo P450, principalmente CYP2D6 y CYP3A4. Inductores enzimáticos potentes (rifampicina, carbamazepina) aceleran su aclaramiento y reducen niveles plasmáticos hasta 70%. Produce un hidroximetabolito activo (haloperidol reducido).",
+      "vidaMedia": "Lactato / formulaciones agudas: 10 a 37 horas (media prolongada que perpetúa toxicidad). Decanoato de haloperidol (depósito): ~3 semanas tras inyección IM.",
+      "eliminacion": "Fecal aprox. 15%. Aclaramiento corporal total estimado: aprox. 29.3 L/h.",
+      "estadoEquilibrio": "Decanoato mensual: alcanza steady-state entre 2 y 4 meses.",
+      "ventanaTerapeutica": "Rango terapéutico: 5 a 15 ng/mL (ventana de referencia: 4 a 26 ng/mL). Concentraciones >18 ng/mL no aportan mayor eficacia y disparan riesgo de síntomas extrapiramidales y cardiotoxicidad."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Antagonista de receptores dopaminérgicos D2 postsinápticos (antipsicótico típico de 1.ª generación de alta potencia).",
+      "efectoTerapeutico": "Bloqueo de la neurotransmisión dopaminérgica en la vía mesolímbica suprimiendo síntomas psicóticos positivos (alucinaciones, delirios).",
+      "reaccionesTipoA": "El potente bloqueo D2 en la vía nigroestriatal y tuberoinfundibular explica las manifestaciones extrapiramidales (distonías agudas, parkinsonismo), hiperprolactinemia y riesgo de Síndrome Neuroléptico Maligno (SNM).",
+      "interferenciaOtrosReceptores": {
+        "alfa1Adrenergico": "Antagonismo alfa-1 (menor afinidad): vasodilatación periférica e hipotensión ortostática con taquicardia refleja.",
+        "colinergicoMuscarinico": "Interferencia mínima M1 y M2: xerostomía (boca seca), estreñimiento y visión borrosa.",
+        "histaminergicoH1": "Interferencia mínima H1: somnolencia y sedación."
+      },
+      "canalesIonicosCardiacos": "Bloqueo de la corriente rectificadora tardía de potasio IKr (canales hERG): retrasa la repolarización ventricular, prolongando el intervalo QTc con riesgo de arritmias ventriculares letales (Torsades de Pointes)."
+    },
+    "farmacodinamiaAvanzada": {
+      "ocupacionReceptores": "La eficacia antipsicótica requiere entre 65% y 70% de ocupación de receptores D2 mesolímbicos. Al sobrepasar el 78-80% de bloqueo D2 en el estriado, la probabilidad de desarrollar síntomas extrapiramidales (acatisia, distonía, parkinsonismo) se incrementa de forma exponencial."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Esquizofrenia y trastornos psicóticos",
+        "poblacion": "Adultos y pediátricos ≥3 años (vía oral). Formulación inyectable (lactato) indicada para control rápido de agitación aguda severa.",
+        "deposito": "Decanoato de haloperidol (acción prolongada): Mantenimiento en esquizofrenia en adultos con dosis estable previa oral. Sin aprobación pediátrica."
+      },
+      {
+        "indicacion": "Síndrome de Tourette",
+        "poblacion": "Adultos y niños a partir de 3 años: Control de tics motores y vocalizaciones involuntarias."
+      },
+      {
+        "indicacion": "Conducta hiperactiva grave en niños",
+        "poblacion": "Aprobación FDA exclusivamente pediátrica (≥3 años; vía oral; no aprobado en adultos).",
+        "criterio": "Tratamiento a corto plazo para hiperactividad con actividad motora excesiva e impulsividad únicamente tras fracaso a psicoterapia o fármacos no antipsicóticos."
+      },
+      {
+        "indicacion": "Problemas graves de conducta en niños (no psicóticos)",
+        "poblacion": "Aprobación FDA exclusivamente pediátrica (≥3 años; vía oral; no aprobado en adultos).",
+        "criterio": "Tratamiento a corto plazo en niños con conductas combativas o explosivas tras refractariedad a psicoterapia o medicamentos no antipsicóticos."
+      }
+    ],
+    "precauciones": {
+      "cardiovasculares": "Prolongación del QTc y Torsades de Pointes (mayor riesgo con dosis altas y vía IV no aprobada). Factores de riesgo: QT largo congénito, cardiopatías subyacentes, IAM reciente, hipopotasemia, hipomagnesemia e hipotiroidismo. Vigilar hipotensión ortostática.",
+      "neurologicas": "Síndrome Neuroléptico Maligno (SNM: emergencia médica con suspensión inmediata); discinesia tardía potencialmente irreversible (asociada a dosis acumulada y duración del tratamiento); disminución del umbral convulsivo; alteración psicomotriz (no conducir); neurotoxicidad severa con tirotoxicosis.",
+      "poblacionesEspeciales": {
+        "adultosMayoresBeers": "Criterios AGS Beers: Evitar uso rutinario por aumento de riesgo de ictus (ACV), deterioro cognitivo y mayor mortalidad en psicosis asociada a demencia; mayor susceptibilidad a discinesia tardía (especialmente mujeres adultas mayores); contraindicado en Parkinson; vigilar hiponatremia/SIADH.",
+        "riesgoCaidas": "Elevado riesgo de caídas y fracturas por sinergia de sedación, inestabilidad motora e hipotensión ortostática.",
+        "pediatriaKids": "Lista KIDs: Evitar en menores de 18 años salvo indicaciones autorizadas por alto riesgo de reacciones distónicas agudas e hiperprolactinemia."
+      },
+      "hematologicasRespiratorias": "Leucopenia, neutropenia y agranulocitosis (exige biometría hemática periódica). Bronconeumonía, broncoespasmo y laringoespasmo distónico.",
+      "interaccionesClave": "Depresores del SNC y opioides (sedación profunda y depresión respiratoria); Litio (síndrome encefalopático con daño cerebral irreversible). Manejo de hipotensión: CONTRAINDICADA la epinefrina (el bloqueo alfa-1 deja libre la vasodilatación beta-2, provocando caída paradójica fatal de presión arterial; usar norepinefrina o fenilefrina)."
+    },
+    "reaccionesAdversas": {
+      "extrapiramidales": "Distonías agudas (espasmos de cuello, lengua, crisis oculógiras; manejo con anticolinérgicos como difenhidramina o benztropina), acatisia motora subjetiva, parkinsonismo farmacológico (temblor de reposo, rigidez en rueda dentada, bradicinesia), discinesia tardía por tratamiento crónico y disminución del umbral convulsivo.",
+      "snm": "Tétrada clínica potencialmente mortal: hipertermia extrema, rigidez muscular severa, inestabilidad autonómica y alteración del estado mental, con rabdomiólisis y elevación de CPK.",
+      "cardiovasculares": "Prolongación del QTc, Torsades de Pointes, hipotensión ortostática.",
+      "endocrinasMetabolicas": "Hiperprolactinemia por bloqueo D2 tuberoinfundibular (amenorrea, galactorrea, irregularidades menstruales en mujeres; ginecomastia, disfunción eréctil y menor libido en hombres; reducción de densidad mineral ósea a largo plazo). Aumento de peso leve.",
+      "anticolinergicas": "Xerostomía (boca seca), estreñimiento y visión borrosa por leve interferencia M1/M2."
+    },
+    "contraindicaciones": {
+      "generales": [
+        "Estado de coma por cualquier etiología o causa.",
+        "Depresión tóxica severa del Sistema Nervioso Central (SNC).",
+        "Enfermedad de Parkinson (empeoramiento motor crítico por antagonismo D2 estriatal).",
+        "Antecedente de hipersensibilidad al haloperidol."
+      ],
+      "porFormulacion": [
+        "Decanoato de haloperidol (depósito): Coma, depresión tóxica severa, hipersensibilidad, Enfermedad de Parkinson y Demencia con cuerpos de Lewy.",
+        "Lactato de haloperidol: Coma, depresión tóxica severa, hipersensibilidad, Enfermedad de Parkinson y Demencia con cuerpos de Lewy (específicamente por vía intramuscular)."
+      ]
+    },
+    "embarazoYPerinatal": {
+      "pasoTransplacentario": "Atraviesa la barrera placentaria de forma significativa, con una relación en sangre de cordón umbilical/materna documentada de 0.65 a 0.66.",
+      "complicacionesTercerTrimestre": "La exposición materna durante el tercer trimestre se asocia con un riesgo elevado de síntomas extrapiramidales y/o síndrome de abstinencia neonatal tras el parto. Las manifestaciones en el recién nacido incluyen: agitación, temblores, hipertonía, hipotonía, somnolencia, dificultad respiratoria y trastornos de la alimentación.",
+      "criterioUsoClinico": "No se recomienda de rutina en el embarazo; su uso se restringe a situaciones donde el beneficio materno justifique claramente el riesgo potencial para el feto.",
+      "lactancia": "Se excreta en leche materna; vigilar somnolencia, sedación y síntomas motores en el lactante."
+    },
+    "toxicologia": {
+      "mecanismo": "Bloqueo simultáneo potente D2, bloqueo alfa-1 adrenérgico vasodilatador, bloqueo de canales cardíacos IKr (hERG) y mínima interferencia M1/M2 y H1.",
+      "manifestaciones": {
+        "levesModeradas": "Somnolencia, sedación, distonías agudas tempranas, boca seca, estreñimiento y visión borrosa.",
+        "severasMortales": "Coma y depresión profunda del SNC, hipotensión refractaria, Torsades de Pointes, Síndrome Neuroléptico Maligno, agitación psicomotriz extrema y convulsiones."
+      },
+      "manejoSoporte": [
+        "No existe antídoto específico.",
+        "Vía aérea: Intubación endotraqueal precoz si hay coma o pérdida de reflejos de protección.",
+        "Hipotensión: Expansión con cristaloides intravenosos (NaCl 0.9%); si es refractaria, vasopresores selectivos como norepinefrina o fenilefrina. ¡NUNCA usar epinefrina!",
+        "Distonías agudas: Anticolinérgicos centrales parenterales (Benztropina 1 a 2 mg o Difenhidramina 50 mg IV/IM).",
+        "Agitación y delirio: Benzodiazepinas.",
+        "Prolongación de QTc / Arritmias: Monitorización electrocardiográfica continua y corrección rigurosa de potasio y magnesio séricos.",
+        "Técnicas de eliminación extracorpórea: Hemodiálisis y hemoperfusión totalmente ineficaces debido al enorme volumen de distribución (~1260 L)."
+      ]
+    },
+    "perlasClinicas": [
+      "Para la distonía aguda (tortícolis espasmódica, crisis oculógiras), el tratamiento de rescate es un anticolinérgico central IV o IM: Biperideno 5 mg o Difenhidramina 50 mg.",
+      "El haloperidol bloquea los canales de potasio cardíacos hERG (IKr), retrasando la repolarización ventricular y prolongando el QTc; nunca usar vía intravenosa continua sin telemetría cardíaca.",
+      "Inversión vasopresora de la epinefrina: Si un paciente bajo haloperidol sufre hipotensión severa, la epinefrina está contraindicada porque el bloqueo alfa-1 desenmascara la vasodilatación beta-2 y empeora el colapso vascular. El vasopresor indicado es norepinefrina.",
+      "Ineficacia de la hemodiálisis: En intoxicación aguda, la hemodiálisis y la hemoperfusión son inútiles por el gigantesco volumen de distribución (1260 L / >9.5 L/kg); la clave es el soporte ventilatorio y hemodinámico."
+    ]
+  },
+  {
+    "farmacoId": "risperidona",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Risperidona",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "70% oral (biodisponibilidad relativa en comprimidos 94% vs solución oral). Efecto de los alimentos: nulo (no alteran velocidad ni cantidad absorbida).",
+      "tmax": "Vía oral en adultos: ~1 hora (su metabolito 9-OH tarda ~3 h en metabolizadores extensos y ~17 h en lentos). Oral en pediatría: ~2 horas. IM depósito (Risperdal Consta): picos a los 29–31 días; mensual (Risvan): perfil bifásico a las 24–48 h y días 18–25. SC depósito (Perseris/Uzedy): picos a las 4–6 h y días 8–14.",
+      "inicioYDuracion": "Oral: absorción rápida. Formulaciones IM/SC de depósito proporcionan cobertura terapéutica sostenida de 2 semanas a 1 mes.",
+      "distribucion": "Volumen de distribución (Vd): 1 a 2 L/kg (distribución tisular rápida y amplia). Unión a proteínas plasmáticas: 90% para risperidona y 77% para 9-hidroxirisperidona (albúmina y alfa-1 glucoproteína ácida). En hepatopatías la fracción libre aumenta 35% por hipoalbuminemia. Paso transplacentario (relación cordón/materna 0.49). Lactancia: dosis infantil relativa de 2.3% a 4.7%.",
+      "metabolismo": "Hepático extenso: Hidroxilación principal por CYP2D6 para formar el metabolito activo equipotente 9-hidroxirisperidona (paliperidona). Vía secundaria por CYP3A4 (N-desalquilación). Inhibidores de CYP2D6 (fluoxetina, paroxetina) elevan niveles 2.5 a 9 veces; inductores de CYP3A4 (carbamazepina, fenitoína, rifampicina) reducen la fracción activa hasta un 50%.",
+      "vidaMedia": "Vía oral: risperidona t½ de 3 horas (metabolizadores extensos) y 20 horas (lentos); 9-hidroxirisperidona t½ de 21 a 30 horas. IM depósito t½ aparente de 3 a 8 días; SC depósito t½ prolongado de 14 a 22 días.",
+      "eliminacion": "Renal principal (70%) y fecal (14%). En insuficiencia renal moderada a grave el aclaramiento de la fracción activa cae un 60% (requiere ajuste posológico).",
+      "fraccionActiva": "La fracción activa total (Active Moiety) corresponde a la suma plasmática de risperidona y 9-hidroxirisperidona (paliperidona), ambos con idéntica potencia sobre el receptor D2."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Derivado de benzisoxazol catalogado como antipsicótico atípico (2.ª generación). Antagonismo dual potente sobre receptores serotoninérgicos 5-HT2A y afinidad potente por receptores dopaminérgicos D2.",
+      "efectoTerapeutico": "El bloqueo 5-HT2A cortical desinhibe la liberación de dopamina en el estriado (reduciendo síntomas extrapiramidales) y en la corteza prefrontal (aliviando síntomas negativos y cognitivos). El bloqueo D2 mesolímbico controla los síntomas psicóticos positivos.",
+      "reaccionesTipoA": "Perfil extrapiramidal dosis-dependiente: a dosis >6 mg/día satura el balance 5-HT2A/D2 y se comporta clínicamente como un antipsicótico típico. En la eminencia media hipofisaria (fuera de la BHE y desprovista de receptores 5-HT2A protectores), el bloqueo D2 puro causa hiperprolactinemia marcada y constante.",
+      "interferenciaOtrosReceptores": {
+        "alfa1Adrenergico": "Afinidad moderada alfa-1 y alfa-2 adrenérgica: responsable de vasodilatación periférica, hipotensión ortostática y taquicardia refleja.",
+        "colinergicoMuscarinico": "Afinidad insignificante o nula: prácticamente carece de bloqueo sobre receptores colinérgicos muscarínicos, beta-adrenérgicos, D1, 5-HT1B y 5-HT3.",
+        "histaminergicoH1": "Afinidad moderada H1: involucrada en la somnolencia, sedación marcada, aumento del apetito y ganancia ponderal."
+      },
+      "canalesIonicosCardiacos": "Prolongación del intervalo QTc dosis-dependiente, taquicardia refleja y riesgo potencial de muerte súbita de origen cardíaco."
+    },
+    "farmacodinamiaAvanzada": {
+      "ocupacionReceptores": "A dosis habituales (2 a 4 mg/día) alcanza ocupación D2 mesolímbica del 60-70% con perfil atípico protegido por el antagonismo 5-HT2A. A dosis superiores a 6 mg/día supera el umbral del 78-80% de bloqueo D2 estriatal, aumentando exponencialmente el riesgo de síntomas extrapiramidales."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Esquizofrenia",
+        "poblacion": "Adultos: Vía oral, intramuscular de liberación prolongada (Risperdal Consta, Rykindo, Risvan) y subcutánea de liberación prolongada (Perseris, Uzedy). Pediátricos (13 a 17 años): Aprobado únicamente por vía oral.",
+        "deposito": "Formulaciones IM (cada 2 semanas o mensual) y SC (mensual) para mantenimiento y optimización de adherencia terapéutica."
+      },
+      {
+        "indicacion": "Trastorno Bipolar I (Episodios maníacos agudos o mixtos)",
+        "poblacion": "Adultos: Vía oral (monoterapia o adyuvante con litio o valproato) y formulaciones IM/SC de depósito como terapia de mantenimiento. Pediátricos (10 a 17 años): Aprobado únicamente vía oral en monoterapia."
+      },
+      {
+        "indicacion": "Irritabilidad asociada al trastorno del espectro autista",
+        "poblacion": "Población pediátrica (5 a 17 años): Aprobado exclusivamente por vía oral para el tratamiento de conductas disruptivas graves (agresividad hacia terceros, autolesiones deliberadas, rabietas intensas y cambios rápidos de humor). No está aprobado en adultos para esta indicación.",
+        "criterio": "Uso específico pediátrico bajo supervisión médica continua con reevaluaciones periódicas."
+      }
+    ],
+    "precauciones": {
+      "cardiovasculares": "Hipotensión ortostática y síncope (frecuente al inicio de la titulación por antagonismo alfa-1). Prolongación del intervalo QTc y riesgo de arritmias ventriculares; indispensable medir y corregir hipopotasemia e hipomagnesemia antes de iniciar el tratamiento.",
+      "neurologicas": "Síndrome Neuroléptico Maligno (SNM: emergencia médica), discinesia tardía potencialmente irreversible (asociada a dosis acumulada y duración del tratamiento), disminución del umbral convulsivo (convulsiones en 0.3%) y sedación.",
+      "poblacionesEspeciales": {
+        "adultosMayoresBeers": "Advertencia en recuadro negro (Boxed Warning) y Criterios AGS Beers: Incremento de la mortalidad y de eventos cerebrovasculares (ictus / ACV e isquemia transitoria) en ancianos con psicosis asociada a demencia (uso no aprobado). Contraindicado prácticamente en enfermedad de Parkinson (empeoramiento motor severo) y en ancianos con riesgo de caídas/fracturas. Vigilar hiponatremia o SIADH.",
+        "riesgoCaidas": "Elevado riesgo de caídas y fracturas por la tríada de somnolencia, hipotensión ortostática e inestabilidad motora.",
+        "pediatriaKids": "Lista KIDs (menores de 18 años): Uso cauteloso por alto riesgo de distonías agudas, hiperprolactinemia (49% a 87%), aumento de peso importante y síndrome metabólico. Evitar la suspensión abrupta por riesgo de discinesias de retirada."
+      },
+      "hematologicasRespiratorias": "Monitoreo metabólico y lipídico riguroso. Precaución en fenilcetonuria: las tabletas de desintegración oral contienen fenilalanina (componente del aspartamo).",
+      "interaccionesClave": "Inhibidores de CYP2D6 (fluoxetina, paroxetina) elevan niveles plasmáticos de 2.5 a 9 veces; inductores de CYP3A4 (carbamazepina, fenitoína, rifampicina) reducen la fracción activa en un 50%. En caso de hipotensión inducida: CONTRAINDICADO el uso de epinefrina o dopamina (inversión vasopresora mediada por estimulación beta en presencia del bloqueo alfa-1; vasopresor de elección: norepinefrina o fenilefrina)."
+    },
+    "reaccionesAdversas": {
+      "extrapiramidales": "Dosis-dependientes (>6 mg/día): parkinsonismo (rigidez en rueda dentada, bradicinesia, temblor: 6% a 28%), acatisia (inquietud motora: hasta 11%), distonías agudas (espasmos musculares, crisis oculógiras, tortícolis: hasta 6%), sedación/somnolencia (5% a 63%) y discinesia tardía con uso crónico prolongado.",
+      "snm": "Síndrome Neuroléptico Maligno (SNM): reacción idiosincrática grave con hipertermia, rigidez muscular extrema, inestabilidad hemodinámica y elevación de creatina cinasa (CPK).",
+      "endocrinasMetabolicas": "Ganancia ponderal importante (hasta 32.6% vía oral y >40% en formulaciones SC; aumento de apetito en niños hasta 47%). Desregulación hidrocarbonada y lipídica (hiperglucemia, debut de diabetes mellitus tipo 2, cetoacidosis diabética DKA, coma hiperosmolar, hipercolesterolemia y triglicéridos). Hiperprolactinemia persistente (49% a 87% en pediatría/adolescentes: amenorrea, galactorrea, ginecomastia, disfunción eréctil y reducción de densidad mineral ósea con riesgo de fracturas a largo plazo).",
+      "cardiovasculares": "Hipotensión ortostática y síncope (bloqueo alfa-1), taquicardia refleja y prolongación del intervalo QTc.",
+      "anticolinergicas": "Carece de afinidad muscarínica, pero produce constipación (8% a 21%), hipersecreción salival/sialorrea (1% a 10%), náusea, vómito y raramente priapismo con riesgo de daño tisular."
+    },
+    "contraindicaciones": {
+      "generales": [
+        "Antecedente confirmado de alergia o hipersensibilidad a la risperidona.",
+        "Hipersensibilidad a la paliperidona (9-hidroxirisperidona, su metabolito activo equipotente).",
+        "Hipersensibilidad a cualquiera de los excipientes de la fórmula comercial."
+      ],
+      "porFormulacion": [
+        "Tabletas de desintegración oral: Pacientes con fenilcetonuria (contienen fenilalanina como excipiente del aspartamo).",
+        "Formulaciones de depósito parenterales IM/SC: Hipersensibilidad conocida a los vehículos poliméricos de liberación prolongada."
+      ]
+    },
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "May cause fetal harm (Puede causar daño fetal).",
+      "pasoTransplacentario": "Penetración transplacentaria del 49.2%, con una relación cordón umbilical/plasma materno para 9-hidroxirisperidona de 0.49.",
+      "evidenciaTeratogenica": "Los estudios observacionales y registros generales no muestran asociación clara con malformaciones congénitas mayores o abortos espontáneos. En una cohorte retrospectiva de Medicaid (n=9258), se observó un ligero incremento del riesgo relativo de malformaciones mayores (RR 1.26; IC 95%: 1.02–1.56) y cardíacas (RR 1.26; IC 95%: 0.88–1.81) en expuestas en primer trimestre. En ratones a dosis maternotóxicas se observó paladar hendido.",
+      "complicacionesTercerTrimestre": "Incrementa el riesgo de síntomas extrapiramidales y síndrome de abstinencia/descontinuación neonatal tras el parto (hipertonía, hipotonía, temblores, somnolencia, dificultad respiratoria y problemas de succión), con casos que van desde leves hasta hospitalización prolongada en UCIN.",
+      "recomendacionesACOG": "Tamizaje temprano de diabetes mellitus gestacional (riesgo metabólico). Registro en el National Pregnancy Registry for Atypical Antipsychotics. Si la paciente ya se encuentra estable con risperidona al concebir, se aconseja continuar con el mismo esquema a la menor dosis eficaz antes de suspender bruscamente (que triplica el riesgo de recaída psicótica o maníaca materna).",
+      "lactancia": "Se excreta en leche materna con una dosis infantil relativa de 2.3% a 4.7%. Compatible en general si es indispensable, monitoreando sedación y síntomas motores en el lactante."
+    },
+    "toxicologia": {
+      "mecanismo": "Exacerbación aguda del bloqueo D2 (síntomas extrapiramidales severos, SNM, rigidez), bloqueo alfa-1 (hipotensión severa y vasodilatación periférica), bloqueo histaminérgico H1 (depresión del SNC, coma) y modulación de canales cardíacos (prolongación del QTc y arritmias).",
+      "manifestaciones": {
+        "levesModeradas": "Somnolencia, letargia, taquicardia sinusal, hipotensión ortostática y distonías musculares agudas.",
+        "severasMortales": "Coma, depresión respiratoria, crisis convulsivas, arritmias ventriculares (taquicardia supraventricular, flúter auricular, prolongación de QTc), rabdomiólisis y Síndrome Neuroléptico Maligno."
+      },
+      "rangosToxicidad": "En pacientes pediátricos vírgenes a tratamiento: ingestas >1 mg (<12 años) o >5 mg (≥12 años) son potencialmente tóxicas. En uso crónico, ingestas superiores a 5 veces la dosis habitual única requieren valoración hospitalaria inmediata.",
+      "manejoSoporte": [
+        "No existe antídoto específico.",
+        "Vía aérea y ventilación: Soporte ventilatorio inmediato e intubación endotraqueal si hay coma o compromiso respiratorio.",
+        "Manejo de hipotensión: Expansión de volumen con cristaloides IV (solución salina 0.9%). Vasopresor de elección: Norepinefrina o Fenilefrina. ¡CONTRAINDICADA la epinefrina o dopamina porque la estimulación beta en presencia del bloqueo alfa-1 induce vasodilatación paradójica que agrava severamente el colapso vascular!",
+        "Distonías agudas y síntomas extrapiramidales: Anticolinérgicos parenterales (Difenhidramina 50 mg o Benztropina 1 a 2 mg IV/IM).",
+        "Arritmias y ensanchamiento del QRS: Monitorización electrocardiográfica continua y administración de bicarbonato de sodio intravenoso si hay ensanchamiento del QRS; corregir de inmediato potasio y magnesio séricos.",
+        "Eliminación extracorpórea: Hemodiálisis y hemoperfusión totalmente inútiles debido a su gran volumen de distribución (1 a 2 L/kg) y su elevada unión a proteínas plasmáticas (90%)."
+      ]
+    },
+    "perlasClinicas": [
+      "A dosis bajas (2 a 4 mg/día) tiene perfil atípico con baja tasa de EPS gracias al bloqueo 5-HT2A. A dosis superiores a 6 mg/día, pierde su ventaja atípica y se comporta clínicamente como un antipsicótico típico de alta potencia.",
+      "En la eminencia media hipofisaria (fuera de la BHE y sin receptores 5-HT2A protectores), la risperidona induce hiperprolactinemia marcada y persistente (hasta 87% en adolescentes); vigilar amenorrea, galactorrea y desmineralización ósea precoz.",
+      "Contraindicación de epinefrina: Ante una sobredosis con hipotensión severa por risperidona, la epinefrina está contraindicada porque el bloqueo alfa-1 desenmascara la vasodilatación beta-2 y profundiza el choque. El vasopresor de elección es norepinefrina.",
+      "Fracción activa total (Active Moiety): El efecto terapéutico in vivo resulta de la suma de risperidona y su metabolito activo paliperidona (9-hidroxirisperidona, biotransformado por CYP2D6)."
+    ]
+  },
+  {
+    "farmacoId": "clozapina",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Clozapina",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "50% al 60% por vía oral. Efecto de los alimentos: nulo sobre la biodisponibilidad de comprimidos convencionales.",
+      "tmax": "2.2 a 2.5 horas tras la administración oral. La respuesta clínica inicial puede tardar hasta 3 meses (y hasta 12 meses en un subgrupo de pacientes).",
+      "inicioYDuracion": "Inicio de respuesta gradual. Requiere titulación lenta obligatoria desde 12.5 mg para mitigar hipotensión ortostática, síncope y convulsiones.",
+      "distribucion": "Volumen de distribución (Vd) sumamente amplio: ~6 L/kg. Unión a proteínas plasmáticas muy elevada (~97%, albúmina y glucoproteínas). Paso transplacentario (relación cordón/materna: 0.49); excreción en leche materna acumulándose con relación leche/plasma de 3.19 por alta liposolubilidad.",
+      "metabolismo": "Metabolismo hepático casi completo (tasa de extracción de 0.2). Sustrato primario de CYP1A2, con participación de CYP2D6 y CYP3A4. Metabolito principal: N-desmetilclozapina (norclozapina), con actividad farmacológica limitada y precursora de intermediarios inestables tóxicos para la médula ósea. Interacción clave con tabaco: los hidrocarburos del humo inducen potentemente CYP1A2 (dejar de fumar puede duplicar niveles séricos y causar toxicidad severa); inhibidores como fluvoxamina y ciprofloxacino elevan drásticamente sus concentraciones.",
+      "vidaMedia": "8 a 12 horas (rango en estado de equilibrio de 4 a 66 horas); norclozapina t½ de 13.2 horas.",
+      "eliminacion": "Urinaria (50%) y fecal (30%), casi en su totalidad como metabolitos inactivos (solo trazas inalteradas).",
+      "ventanaTerapeutica": "Umbral plasmático terapéutico: 350 a 420 mcg/L (o ng/mL). Concentraciones séricas superiores a 600–1000 ng/mL incrementan exponencialmente el riesgo convulsivo y la cardiotoxicidad."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Derivado de dibenzodiazepina, antipsicótico atípico prototípico. Antagonismo dual de receptores dopaminérgicos D2 y serotoninérgicos 5-HT2A con perfil de unión multirreceptorial único.",
+      "efectoTerapeutico": "Acción antipsicótica selectiva sobre vías mesolímbicas y mesocorticales, eficaz en esquizofrenia resistente y reducción del comportamiento suicida. Prácticamente nula interferencia en la vía nigroestriada, lo que explica su bajísima incidencia de síntomas extrapiramidales y ausencia de discinesia tardía.",
+      "reaccionesTipoA": "Potente antagonismo alfa-1 (hipotensión ortostática severa, síncope, colapso), antagonismo colinérgico muscarínico masivo (hipomotilidad gastrointestinal severa, íleo paralítico fatal, retención urinaria) y antagonismo histaminérgico H1 (sedación intensa y ganancia masiva de peso). No suele elevar prolactina por débil antagonismo D2 hipofisario.",
+      "interferenciaOtrosReceptores": {
+        "dopaminergicosD1D4": "Bloqueo D2 bajo in vivo con disociación ultra-rápida ('fast-off' <60 s); afinidad y bloqueo preferencial sobre receptores D1 y especialmente D4 (mayor afinidad que cualquier otro antipsicótico).",
+        "alfa1Adrenergico": "Potente antagonismo alfa-1: hipotensión postural severa, síncope y taquicardia sinusal refleja.",
+        "colinergicoMuscarinico": "Potente antagonismo muscarínico: cuadruplica el tiempo de tránsito colónico, causando estreñimiento severo e íleo paralítico.",
+        "histaminergicoH1": "Potente antagonismo H1: sedación profunda (hasta 46%) y marcada ganancia ponderal con desregulación metabólica."
+      },
+      "canalesIonicosCardiacos": "Prolongación del intervalo QTc, riesgo de Torsades de Pointes, miocarditis aguda y miocardiopatía dilatada potencialmente letales."
+    },
+    "farmacodinamiaAvanzada": {
+      "fastOff": "Se disocia con extrema rapidez del receptor D2 ('fast-off', en menos de 60 segundos vs horas con haloperidol), lo que preserva la señalización fisiológica pulsátil en el estriado y explica por qué prácticamente NUNCA produce discinesia tardía y mínimos EPS.",
+      "mecanismoInmunotoxico": "La agranulocitosis idiopática se debe a la bioactivación de clozapina a un ion nitrenio químicamente reactivo por la enzima mieloperoxidasa de los neutrófilos, lo que desencadena una respuesta inmunológica destructiva contra los precursores hematopoyéticos en la médula ósea."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Esquizofrenia resistente al tratamiento",
+        "poblacion": "Adultos gravemente enfermos que no responden adecuadamente a tratamientos antipsicóticos estándar tras el fracaso de al menos 2 ensayos terapéuticos previos con fármacos distintos. Sin aprobación pediátrica.",
+        "criterio": "Fármaco de reserva de última línea; requiere inscripción obligatoria en el sistema de vigilancia hematológica REMS."
+      },
+      {
+        "indicacion": "Reducción del riesgo de conducta suicida recurrente",
+        "poblacion": "Adultos con esquizofrenia o trastorno esquizoafectivo con riesgo crónico de reexperimentar comportamiento suicida.",
+        "criterio": "Único antipsicótico con indicación específica aprobada por la FDA para reducción de conducta suicida."
+      },
+      {
+        "indicacion": "Psicosis en Enfermedad de Parkinson (Uso Off-label)",
+        "poblacion": "Pacientes con enfermedad de Parkinson y psicosis inducida por dopaminérgicos o por la enfermedad, a dosis bajas (6.25 a 50 mg/día).",
+        "criterio": "De elección porque no empeora el parkinsonismo motor debido a su mínimo bloqueo D2 nigroestriatal y su disociación rápida."
+      }
+    ],
+    "precauciones": {
+      "hematologicasMonitoreoANC": "Sistema REMS de monitoreo estricto del Conteo Absoluto de Neutrófilos (ANC): Obligatorio antes de iniciar, semanal durante los primeros 6 meses, quincenal de los 6 a 12 meses y mensual después. Si ANC cae a 500-999/mcL: interconsulta hematológica urgente con monitoreo estrecho. Si ANC <500/mcL: SUSPENSIÓN INMEDIATA y contraindicación de por vida.",
+      "cardiovasculares": "Riesgo de miocarditis potencialmente letal (mayor incidencia en los primeros 2 meses; vigilar fiebre, dolor torácico, taquicardia persistente o disnea con troponinas y PCR). Prolongación del QTc, hipotensión ortostática y síncope (incluso con dosis inicial de 12.5 mg).",
+      "gastrointestinales": "Hipomotilidad colónica severa por bloqueo anticolinérgico: cuadruplica el tiempo de tránsito colónico; prevenir activamente el estreñimiento para evitar íleo paralítico, fecaloma, isquemia y perforación intestinal fatal.",
+      "habitoTabaquico": "Manejo del tabaquismo: El humo del tabaco induce potentemente CYP1A2; si el paciente deja de fumar de golpe, los niveles de clozapina pueden duplicarse y causar toxicidad severa; si comienza a fumar, requiere aumento de dosis.",
+      "titulacionYRetirada": "Titulación gradual obligatoria desde 12.5 mg. Si el tratamiento se interrumpe por más de 2 días, DEBE reiniciarse desde 12.5 mg para evitar colapso cardiovascular y convulsiones. Evitar suspensión brusca por grave rebote colinérgico (diaforesis, cefalea, diarrea, náuseas) y psicosis de rebote.",
+      "neurologicas": "Disminución del umbral convulsivo dosis-dependiente (3%-5% a dosis terapéuticas; mayor a >600 mg/día o niveles >600 ng/mL); sedación intensa."
+    },
+    "reaccionesAdversas": {
+      "hematologicas": "Agranulocitosis (neutrófilos <500/mcL en 0.4%–0.73% de pacientes, con letalidad de hasta 10%; pico en primeras 18 semanas). Leucopenia y neutropenia leve-moderada (~3%). Eosinofilia (1%). Tromboembolismo venoso (TEV) y tromboembolia pulmonar (TEP fatal).",
+      "cardiovasculares": "Miocarditis y miocardiopatía dilatada (primeros 2 meses). Hipotensión ortostática, síncope y colapso hemodinámico (incluso a dosis iniciales de 12.5 mg). Taquicardia sinusal sostenida (17% a 25%). Prolongación del QTc.",
+      "gastrointestinales": "Hipomotilidad gastrointestinal severa con estreñimiento refractario (14% a 25%), íleo paralítico, fecaloma, isquemia y perforación intestinal mortal. Hipersalivación / Sialorrea paradójica (13% a 48%), sobre todo nocturna (riesgo de neumonía por aspiración).",
+      "endocrinasMetabolicas": "Ganancia masiva de peso (marcada junto con olanzapina), hiperglucemia severa, debut de diabetes tipo 2, cetoacidosis diabética (DKA), coma hiperosmolar e hiperlipidemia grave (triglicéridos y colesterol).",
+      "neurologicas": "Convulsiones tónico-clónicas dosis-dependientes (3% a 5% a dosis estándar, marcadamente mayor >600 mg/día), sedación profunda y somnolencia (hasta 46%), Síndrome Neuroléptico Maligno (SNM). Incidencia sumamente baja de síntomas extrapiramidales y discinesia tardía.",
+      "otras": "Fiebre benigna autolimitada en las primeras 3 semanas, incontinencia urinaria y enuresis nocturna."
+    },
+    "contraindicaciones": {
+      "generales": [
+        "Hipersensibilidad severa previa confirmada a clozapina o excipientes (antecedente de eritema multiforme, síndrome de Stevens-Johnson, vasculitis).",
+        "Antecedente de agranulocitosis inducida por clozapina o toxicidad hematológica grave previa.",
+        "Criterio hematológico de inicio (población general): Conteo absoluto de neutrófilos (ANC) menor a 1500/mcL.",
+        "Criterio hematológico de inicio (Neutropenia Étnica Benigna - BEN): ANC basal menor a 1000/mcL."
+      ],
+      "porCondicion": [
+        "Trastornos convulsivos no controlados.",
+        "Íleo paralítico o hipomotilidad gastrointestinal grave activa.",
+        "Depresión severa del SNC o estado de coma."
+      ]
+    },
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "Fetal harm has been demonstrated (Se ha demostrado daño fetal). Uso en el embarazo únicamente si es estrictamente indispensable.",
+      "pasoTransplacentario": "Atraviesa activamente la placenta (líquido amniótico: relación media 0.56; sangre de cordón: 0.49). Tiende a acumularse en el plasma fetal alcanzando concentraciones superiores a las maternas debido a la mayor fijación por albúmina fetal y al fenómeno de atrapamiento iónico por gradiente de pH fetal.",
+      "riesgosMetabolicosMaternos": "Alto riesgo de inducir diabetes mellitus gestacional (asociada a complicaciones fetales severas como macrosomía, distocia de hombros y asfixia perinatal).",
+      "complicacionesNeonatales": "Síndrome de exposición en tercer trimestre: síntomas extrapiramidales y de abstinencia (temblor, floppy infant syndrome / hipotonía severa, hipertonía, distrés respiratorio y dificultad para alimentarse).",
+      "desarrolloNeuroconductual": "Lactantes expuestos in utero han mostrado puntuaciones significativamente más bajas de comportamiento adaptativo en escalas de Bayley (BSID-III), así como mayor labilidad y trastornos del sueño a los 2 y 6 meses de edad (suelen igualarse hacia los 12 meses frente a otros atípicos).",
+      "recomendacionesClinicas": "Tamizaje temprano y continuo de diabetes gestacional. Monitoreo hematológico estricto (ANC) materno y en el recién nacido (vigilancia de agranulocitosis y neutropenia). Registro en el registro nacional de embarazo para antipsicóticos atípicos.",
+      "lactancia": "Paso muy elevado a la leche humana con un ratio leche/plasma de 3.19 por su alta liposolubilidad. SE DESACONSEJA LA LACTANCIA MATERNA debido a reportes de sedación marcada y riesgo potencial de agranulocitosis neonatal."
+    },
+    "toxicologia": {
+      "mecanismo": "Bloqueo alfa-1 masivo (hipotensión refractaria y vasodilatación periférica), bloqueo anticolinérgico colosal (delirio anticolinérgico, íleo paralítico, taquicardia), depresión profunda del SNC (somnolencia, coma, depresión respiratoria), neurotoxicidad epileptógena (convulsiones, estatus epiléptico) y cardiotoxicidad por prolongación del QTc.",
+      "manifestaciones": {
+        "levesModeradas": "Sedación marcada, somnolencia, confusión, taquicardia sinusal, sialorrea profusa, visión borrosa y estreñimiento.",
+        "severasMortales": "Coma, depresión respiratoria severa, hipotensión refractaria, convulsiones tónico-clónicas, íleo paralítico, arritmias ventriculares y paro cardiorrespiratorio."
+      },
+      "manejoSoporte": [
+        "No existe antídoto específico.",
+        "Vía aérea y ventilación: Intubación endotraqueal precoz ante depresión del SNC o coma; alto riesgo de broncoaspiración fatal agravada por la sialorrea masiva.",
+        "Soporte hemodinámico / Hipotensión: Expansión de volumen con cristaloides IV (solución salina 0.9%). Si no responde, vasopresores como Norepinefrina o Fenilefrina. ¡ESTÁ CONTRAINDICADO EL USO DE EPINEFRINA debido al efecto de inversión vasopresora mediado por receptores beta-2 ante el bloqueo alfa-1 periférico!",
+        "Manejo de crisis convulsivas: Administrar benzodiazepinas intravenosas (Diazepam o Lorazepam); si persisten, infusión de propofol o barbitúricos (evitar antipsicóticos adicionales).",
+        "Cardiotoxicidad y QTc: Monitorización electrocardiográfica continua; corrección agresiva de potasio y magnesio séricos; administrar bicarbonato de sodio IV si se documenta ensanchamiento del complejo QRS.",
+        "Técnicas de eliminación extracorpórea: Hemodiálisis, hemoperfusión y diálisis peritoneal no tienen ninguna utilidad debido a su gigantesco volumen de distribución (~6 L/kg) y unión a proteínas plasmáticas del 97%."
+      ]
+    },
+    "perlasClinicas": [
+      "Protocolo hematológico estricto REMS: Registro obligatorio de ANC antes de iniciar, semanal durante los primeros 6 meses, quincenal de los 6 a 12 meses y mensual después. Si ANC < 500/mcL (agranulocitosis), suspender de inmediato y contraindicar de por vida.",
+      "Hipomotilidad gastrointestinal severa: El estreñimiento inducido por clozapina no es un efecto menor; cuadruplica el tiempo de tránsito colónico y puede progresar a íleo paralítico, necrosis y perforación intestinal letal si no se trata activamente con laxantes osmóticos.",
+      "La paradoja de la sialorrea nocturna: A pesar de su potente efecto anticolinérgico periférico, induce salivación profusa nocturna (agonismo parcial M4 y compromiso del reflejo de deglución durante el sueño); se maneja con atropina sublingual al 1% o bromuro de ipratropio.",
+      "Interacción crítica con el tabaco: Los hidrocarburos del humo inducen fuertemente CYP1A2; si un paciente hospitalizado deja de fumar, los niveles séricos de clozapina pueden duplicarse en pocos días y desencadenar convulsiones y colapso cardiovascular.",
+      "Contraindicación de epinefrina: Ante choque o hipotensión severa inducida por clozapina, la epinefrina está formalmente contraindicada porque el bloqueo alfa-1 desenmascara la vasodilatación beta-2, profundizando el colapso vascular. El vasopresor de elección es norepinefrina."
+    ]
+  }
+]

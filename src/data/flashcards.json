@@ -1,0 +1,122 @@
+[
+  {
+    "id": "fc-01",
+    "modulo": "Dopamina",
+    "pregunta": "¿Cuál es la alteración anatomopatológica central en la Enfermedad de Parkinson?",
+    "respuesta": "Pérdida selectiva de más del 60-70% de las neuronas dopaminérgicas pigmentadas en la sustancia negra pars compacta (SNpc) con presencia de cuerpos de Lewy (alfa-sinucleína)."
+  },
+  {
+    "id": "fc-02",
+    "modulo": "Dopamina",
+    "pregunta": "¿Por qué se administra levodopa y no dopamina por vía oral?",
+    "respuesta": "La dopamina es hidrofílica con carga neta y no atraviesa la barrera hematoencefálica. La levodopa sí cruza la BHE utilizando el transportador de aminoácidos neutros grandes (LAT1)."
+  },
+  {
+    "id": "fc-03",
+    "modulo": "Dopamina",
+    "pregunta": "¿Cuál es la función exacta de la carbidopa?",
+    "respuesta": "Inhibe la enzima dopa-descarboxilasa (DDC) únicamente en los tejidos periféricos sin cruzar la BHE, multiplicando la llegada central de levodopa y previniendo náuseas y arritmias."
+  },
+  {
+    "id": "fc-04",
+    "modulo": "Dopamina",
+    "pregunta": "¿Qué receptores estimula el pramipexol y qué ventaja ofrece sobre la levodopa en jóvenes?",
+    "respuesta": "Agonista selectivo de receptores D3 y D2; no requiere transformación metabólica presináptica y genera significativamente menor incidencia de discinesias motoras a corto plazo."
+  },
+  {
+    "id": "fc-05",
+    "modulo": "Dopamina",
+    "pregunta": "¿Cuál es el mecanismo de acción de rasagilina y selegilina?",
+    "respuesta": "Inhibición irreversible y selectiva de la monoaminooxidasa tipo B (MAO-B) en el cuerpo estriado, prolongando la duración de la dopamina sináptica sin provocar efecto queso a dosis habituales."
+  },
+  {
+    "id": "fc-06",
+    "modulo": "Dopamina",
+    "pregunta": "¿Por qué el haloperidol produce alta incidencia de síntomas extrapiramidales (parkinsonismo)?",
+    "respuesta": "Por su bloqueo potente y no selectivo de receptores D2 en la vía nigroestriatal (sobrepasando el 78% de ocupación estriatal)."
+  },
+  {
+    "id": "fc-07",
+    "modulo": "Dopamina",
+    "pregunta": "¿Qué ventaja aporta el antagonismo 5-HT2A en risperidona y clozapina?",
+    "respuesta": "El bloqueo 5-HT2A desinhibe la liberación de dopamina en el estriado (protegiendo contra efectos extrapiramidales) y en la corteza (mejorando síntomas negativos)."
+  },
+  {
+    "id": "fc-08",
+    "modulo": "Dopamina",
+    "pregunta": "¿Cuál es la alerta de seguridad más crítica de la clozapina?",
+    "respuesta": "Agranulocitosis potencialmente mortal (1-2%); exige monitoreo obligatorio regular del recuento absoluto de neutrófilos (RAN)."
+  },
+  {
+    "id": "fc-09",
+    "modulo": "Dopamina",
+    "pregunta": "¿Qué antipsicótico atípico presenta el mayor riesgo de hiperprolactinemia?",
+    "respuesta": "La Risperidona, debido a su penetración en la hipófisis anterior fuera de la BHE y potente bloqueo D2 en la vía tuberoinfundibular."
+  },
+  {
+    "id": "fc-10",
+    "modulo": "Dopamina",
+    "pregunta": "¿Por qué nunca debe suspenderse bruscamente la terapia dopaminérgica en Parkinson?",
+    "respuesta": "Riesgo de desencadenar un Síndrome Tipo Neuroléptico Maligno por abstinencia aguda de dopamina (hipertermia, rigidez muscular severa y colapso autonómico)."
+  },
+  {
+    "id": "fc-11",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Cuál es el mecanismo biofísico de la fenitoína y carbamazepina sobre el canal NaV?",
+    "respuesta": "Bloqueo dependiente de uso y voltaje del canal de sodio en su conformación inactivada rápida, prolongando el periodo refractario relativo neuronal."
+  },
+  {
+    "id": "fc-12",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Por qué la fenitoína tiene una farmacocinética tan delicada (orden cero)?",
+    "respuesta": "Porque las enzimas hepáticas CYP2C9 se saturan a concentraciones terapéuticas (cinética de Michaelis-Menten); pequeños aumentos de dosis diaria provocan saltos desmedidos en la concentración sérica."
+  },
+  {
+    "id": "fc-13",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Cuál es la diana molecular y la ventaja principal del levetiracetam?",
+    "respuesta": "Se une a la proteína vesicular SV2A modulando la exocitosis de glutamato. No se metaboliza por el citocromo P450, careciendo de interacciones farmacológicas hepáticas."
+  },
+  {
+    "id": "fc-14",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Cuál es el fármaco de elección exclusiva para crisis de ausencia típicas infantiles?",
+    "respuesta": "La Etosuximida, que bloquea específicamente las corrientes de calcio tipo T en neuronas talámicas marcapasos a 3 Hz."
+  },
+  {
+    "id": "fc-15",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Cuál es la conducta inicial ante un Estado Epiléptico Convulsivo en los primeros 5-20 minutos?",
+    "respuesta": "Fase 1: Benzodiacepina intravenosa de acción rápida (Diazepam 10 mg o Lorazepam 4 mg) para hiperpolarización inmediata por apertura de canales GABA-A."
+  },
+  {
+    "id": "fc-16",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Por qué el diazepam debe acompañarse de un fármaco de carga prolongada en el estado epiléptico?",
+    "respuesta": "Porque se redistribuye a la grasa corporal en 30-60 minutos, haciendo caer la concentración cerebral por debajo del umbral de control de crisis."
+  },
+  {
+    "id": "fc-17",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Cuál es la regla de titulación de la lamotrigina y por qué es tan estricta?",
+    "respuesta": "'Iniciar bajo e ir despacio' (Start low, go slow) para prevenir el Síndrome de Stevens-Johnson / Necrólisis Epidérmica Tóxica."
+  },
+  {
+    "id": "fc-18",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Qué sucede si combinas ácido valproico con lamotrigina?",
+    "respuesta": "El valproato inhibe fuertemente la UGT1A4 y duplica la vida media de la lamotrigina a más de 60 horas; la dosis de lamotrigina debe reducirse a la mitad."
+  },
+  {
+    "id": "fc-19",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Por qué está contraindicado el ácido valproico en mujeres jóvenes en edad reproductiva?",
+    "respuesta": "Por su alto riesgo teratogénico (10-11% de malformaciones mayores, espina bífida 1-2%) y reducción comprobada del coeficiente intelectual (CI) infantil."
+  },
+  {
+    "id": "fc-20",
+    "modulo": "Epilepsia",
+    "pregunta": "¿Cuál es la dosis de ácido fólico recomendada para mujeres con epilepsia en edad fértil?",
+    "respuesta": "4 a 5 mg/día (dosis alta, 10 veces la habitual) iniciada al menos 3 meses antes del embarazo para mitigar el riesgo de defectos del tubo neural."
+  }
+]

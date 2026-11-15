@@ -1,0 +1,172 @@
+[
+  {
+    "id": "caso-epi-01",
+    "titulo": "Niña de 7 años con desconexión episódica del entorno y punta-onda a 3 Hz",
+    "bloque": "Epilepsia • Pediatría",
+    "historiaClinica": "Escolar de 7 años es llevada a consulta por su maestra y padres, quienes refieren que durante las clases 'se queda con la mirada fija en el vacío durante 5 a 10 segundos', interrumpiendo el habla o la escritura, sin caída al suelo ni movimientos convulsivos, recuperándose de inmediato sin periodo posictal ni confusión. El electroencefalograma (EEG) revela descargas paroxísticas generalizadas y simétricas de punta-onda a 3 Hz precipitadas por la hiperventilación.",
+    "pregunta": "¿Cuál es la conducta farmacológica de 1.ª elección recomendada y qué fármaco estaría estrictamente contraindicado por riesgo de agravar las crisis?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Iniciar Carbamazepina; contraindicado administrar Etosuximida.",
+        "esCorrecta": false,
+        "justificacion": "La carbamazepina bloquea canales NaV y paradójicamente desincroniza el circuito tálamo-cortical, pudiendo precipitar un estado epiléptico de ausencias."
+      },
+      {
+        "id": "B",
+        "texto": "Iniciar Etosuximida como 1.ª elección; la Carbamazepina está contraindicada.",
+        "esCorrecta": true,
+        "justificacion": "¡Correcto! La etosuximida bloquea selectivamente los canales de calcio tipo T del tálamo responsables del ritmo a 3 Hz, siendo la droga de elección por su eficacia y menor toxicidad que el valproato. Los bloqueadores NaV puros (carbamazepina, fenitoína) empeoran las ausencias."
+      },
+      {
+        "id": "C",
+        "texto": "Iniciar Diazepam diario en mantenimiento por vía oral.",
+        "esCorrecta": false,
+        "justificacion": "Las benzodiazepinas orales no son monoterapia de mantenimiento para ausencias infantiles debido a sedación y rápido desarrollo de tolerancia."
+      },
+      {
+        "id": "D",
+        "texto": "Iniciar Fenitoína sódica a dosis de saturación.",
+        "esCorrecta": false,
+        "justificacion": "La fenitoína no tiene eficacia en crisis de ausencia y puede aumentar la frecuencia de los episodios de desconexión."
+      }
+    ],
+    "referencia": "Programa Académico FacMed p. 25; Goodman & Gilman 14.ª ed., cap. 20; Katzung 16.ª ed., cap. 24."
+  },
+  {
+    "id": "caso-epi-02",
+    "titulo": "Varón de 28 años en Estado Epiléptico Convulsivo Activo en Urgencias",
+    "bloque": "Epilepsia • Urgencias Neurológicas",
+    "historiaClinica": "Paciente masculino de 28 años con epilepsia estructural conocida es traído por paramédicos tras presentar crisis tónico-clónica generalizada continua de 12 minutos de duración sin recuperación de la conciencia. A su llegada a sala de choque: cianosis peribucal, ruidos respiratorios estertorosos, contractura tónica generalizada y salivación abundante. Signos vitales: TA 155/95 mmHg, FC 128 lpm, SatO2 86%.",
+    "pregunta": "¿Cuál es la secuencia farmacológica de rescate estandarizada (Fase 1 seguida de Fase 2)?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Infusión de Carbamazepina por sonda nasogástrica.",
+        "esCorrecta": false,
+        "justificacion": "En el estado epiléptico convulsivo activo la vía enteral está contraindicada por riesgo de aspiración y absorción lenta errática."
+      },
+      {
+        "id": "B",
+        "texto": "Fase 1: Diazepam 10 mg IV lento (o Lorazepam 4 mg IV); Fase 2 inmediata: Carga IV con Levetiracetam (60 mg/kg) o Fosfenitoína/Fenitoína (20 mg/kg).",
+        "esCorrecta": true,
+        "justificacion": "¡Correcto! En la Fase 1 (minutos 5 a 20) la benzodiacepina IV hiperpolariza de golpe mediante entrada masiva de cloruro en GABA-A. Debido a que el diazepam se redistribuye a la grasa periférica en 30-60 min, debe iniciarse inmediatamente la Fase 2 con un anticrisis de carga prolongada no sedante."
+      },
+      {
+        "id": "C",
+        "texto": "Administración de Etosuximida intravenosa.",
+        "esCorrecta": false,
+        "justificacion": "La etosuximida no tiene presentación intravenosa ni tiene indicación ni eficacia en crisis tónico-clónicas convulsivas."
+      },
+      {
+        "id": "D",
+        "texto": "Anestesia general inmediata con propofol en el minuto 5 sin probar benzodiacepinas.",
+        "esCorrecta": false,
+        "justificacion": "La anestesia con coma farmacológico se reserva para la Fase 3 (estado epiléptico refractario tras fallar Fase 1 y Fase 2)."
+      }
+    ],
+    "referencia": "Protocolo de Estado Epiléptico Neurocritical Care Society; Katzung cap. 24; Goodman & Gilman cap. 20."
+  },
+  {
+    "id": "caso-epi-03",
+    "titulo": "Mujer de 24 años con epilepsia focal y deseo de anticoncepción hormonal",
+    "bloque": "Epilepsia • Salud Femenina",
+    "historiaClinica": "Mujer de 24 años en tratamiento con Carbamazepina (400 mg c/12h) con buen control de crisis focales acude a consulta médica porque desea iniciar anticonceptivos orales combinados (etinilestradiol + levonorgestrel). Pregunta si puede tomar ambos medicamentos con seguridad.",
+    "pregunta": "¿Qué fenómeno farmacocinético ocurrirá y cuál es la recomendación terapéutica correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No hay interacción; los anticonceptivos no se metabolizan en el hígado.",
+        "esCorrecta": false,
+        "justificacion": "Los estrógenos y progestágenos son sustratos de CYP3A4 y sufren extensa glucuronidación."
+      },
+      {
+        "id": "B",
+        "texto": "La carbamazepina induce de forma potente el CYP3A4, degradando el anticonceptivo y provocando falla ovulatoria y embarazo no planeado; se debe cambiar a un método no enzimático (DIU) o cambiar el anticonvulsivo a Levetiracetam.",
+        "esCorrecta": true,
+        "justificacion": "¡Correcto! La inducción enzimática de CYP3A4 por carbamazepina acelera el aclaramiento del etinilestradiol por debajo de niveles anticonceptivos. El levetiracetam no induce citocromos y permite uso seguro de anticoncepción oral."
+      },
+      {
+        "id": "C",
+        "texto": "El anticonceptivo aumentará los niveles de carbamazepina a concentraciones tóxicas.",
+        "esCorrecta": false,
+        "justificacion": "El efecto principal no es elevación de carbamazepina, sino la destrucción metabólica acelerada del anticonceptivo hormonal."
+      },
+      {
+        "id": "D",
+        "texto": "Se debe cambiar la carbamazepina por ácido valproico de inmediato.",
+        "esCorrecta": false,
+        "justificacion": "El ácido valproico está absolutamente desaconsejado en mujeres jóvenes en edad fértil por su altísima teratogenicidad (10% de malformaciones mayores)."
+      }
+    ],
+    "referencia": "Katzung 16.ª ed., cap. 24; Goodman & Gilman cap. 20."
+  },
+  {
+    "id": "caso-parkinson-01",
+    "titulo": "Varón de 64 años con temblor de reposo asimétrico y bradicinesia progresiva",
+    "bloque": "Dopamina • Trastornos del Movimiento",
+    "historiaClinica": "Profesor jubilado que acude por notar torpeza progresiva al abotonarse la camisa, caligrafía pequeña (micrografía) y lentitud al caminar. Su cónyuge nota que arrastra el pie derecho y que presenta temblor en la mano derecha que desaparece cuando toma objetos. Al examen físico: facies hipomímica, marcha festinante y signo de la rueda dentada en extremidades superiores.",
+    "pregunta": "¿Cuál es la combinación farmacológica inicial más eficaz y cuál es el fundamento de asociar ambos principios activos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Levodopa sola; la adición de carbidopa no se recomienda en estadios iniciales.",
+        "esCorrecta": false,
+        "justificacion": "La levodopa sola sufre una descarboxilación periférica del 97-99% antes de llegar a la BHE, generando náuseas intensas y taquiarritmias por estimulación periférica."
+      },
+      {
+        "id": "B",
+        "texto": "Levodopa + Carbidopa; la carbidopa inhibe la DDC periférica aumentando la fracción central sin cruzar la BHE.",
+        "esCorrecta": true,
+        "justificacion": "¡Correcto! La carbidopa es un inhibidor suicida de la descarboxilasa periférica que no cruza la barrera hematoencefálica, multiplicando por 4 la llegada de L-DOPA al estriado y protegiendo el miocardio y el área postrema."
+      },
+      {
+        "id": "C",
+        "texto": "Haloperidol + Biperideno como primera línea antiparkinsoniana.",
+        "esCorrecta": false,
+        "justificacion": "El haloperidol es un antagonista D2 que provocaría o empeoraría gravemente el parkinsonismo."
+      },
+      {
+        "id": "D",
+        "texto": "Entacapona en monoterapia sin administrar levodopa previa.",
+        "esCorrecta": false,
+        "justificacion": "La entacapona solo inhibe la COMT; sin levodopa concomitante, carece de sustrato terapéutico eficaz."
+      }
+    ],
+    "referencia": "Katzung Farmacología Básica y Clínica, 16.ª ed., cap. 28; Goodman & Gilman 14.ª ed., cap. 18."
+  },
+  {
+    "id": "caso-esquizofrenia-01",
+    "titulo": "Joven de 21 años con crisis psicótica aguda y distonía cervical súbita tras haloperidol",
+    "bloque": "Dopamina • Psiquiatría & Toxicología",
+    "historiaClinica": "Estudiante universitario de 21 años es llevado a urgencias por presentar delirios de persecución ('el FBI interviene mi teléfono') y alucinaciones auditivas comentadoras desde hace 3 semanas. En urgencias, muy agitado, recibe una dosis de Haloperidol 5 mg IM. A las 2 horas de la inyección, el paciente presenta dolor cervical intenso, contractura espasmódica con giro de cuello forzado (tortícolis espasmódica) y desviación involuntaria de la mirada hacia arriba (crisis oculógira).",
+    "pregunta": "¿A qué se debe esta reacción adversa aguda y cuál es el tratamiento farmacológico inmediato de elección?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es una reacción alérgica anafiláctica; administrar Adrenalina subcutánea.",
+        "esCorrecta": false,
+        "justificacion": "No es una reacción alérgica; es una distonía aguda por desbalance dopamina/acetilcolina estriatal."
+      },
+      {
+        "id": "B",
+        "texto": "Distonía aguda temprana por bloqueo masivo de receptores D2 en la vía nigroestriatal; revertir inmediatamente con un anticolinérgico central como Biperideno (5 mg IM/IV) o Difenhidramina.",
+        "esCorrecta": true,
+        "justificacion": "¡Correcto! El bloqueo D2 agudo por haloperidol desinhibe a las interneuronas colinérgicas estriatales, generando un exceso de acetilcolina responsable del espasmo muscular. El biperideno bloquea los receptores muscarínicos centrales restaurando el equilibrio."
+      },
+      {
+        "id": "C",
+        "texto": "Acatisia motora; aumentar la dosis de Haloperidol al doble.",
+        "esCorrecta": false,
+        "justificacion": "Aumentar el haloperidol agravaría potencialmente la distonía hasta comprometer la vía aérea con espasmo laríngeo."
+      },
+      {
+        "id": "D",
+        "texto": "Discinesia tardía irreversible; no tiene tratamiento médico disponible.",
+        "esCorrecta": false,
+        "justificacion": "La discinesia tardía se desarrolla tras meses o años de exposición; esto ocurrió en 2 horas, siendo una distonía aguda típicamente reversible."
+      }
+    ],
+    "referencia": "Katzung Farmacología Básica y Clínica, 16.ª ed., cap. 19; Goodman & Gilman cap. 16."
+  }
+]

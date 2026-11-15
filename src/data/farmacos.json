@@ -1,0 +1,1208 @@
+[
+  {
+    "id": "fenitoina",
+    "nombre": "Fenitoína",
+    "categoria": "epilepsia",
+    "patologiaId": "epilepsia",
+    "identificacion": {
+      "nombre": "Fenitoína",
+      "sinonimos": [
+        "Difenilhidantoína",
+        "Epamin",
+        "Fosfenitoína (profármaco IV/IM)"
+      ],
+      "clase": "Hidantoína • Bloqueador de canales de sodio dependientes de voltaje (NaV)",
+      "temaPrograma": "Semana 11 • Farmacoterapia de la epilepsia (Programa FacMed p. 25)"
+    },
+    "farmacologia": {
+      "blanco": "Canales de sodio dependientes de voltaje (NaV) en conformación inactivada rápida (poro alfa).",
+      "mecanismo": "Bloqueador selectivo de canales NaV en conformación inactivada rápida con cinética dependiente de uso y voltaje. Retrasa la reactivación del canal suprimiendo descargas repetitivas de alta frecuencia.",
+      "efectosFisiopatologicos": "Suprime el Cambio Despolarizante Paroxístico (PDS) y la propagación sincrónica de trenes de potenciales de acción en el foco epileptógeno sin interferir con la actividad fisiológica basal a baja frecuencia.",
+      "usosClinicos": "Crisis focales (con o sin evolución a bilateral) y crisis tónico-clónicas generalizadas. Fase 2 del estado epiléptico convulsivo (vía IV lenta en forma de fosfenitoína/fenitoína sódica). No es eficaz en crisis de ausencia y puede agravar crisis mioclónicas."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos vía oral: 300–400 mg/día divididos en 2–3 tomas (o formulación extendida en toma única). Estado epiléptico: carga IV de 15–20 mg/kg a velocidad máxima de 50 mg/min.",
+        "poblacion": "Adultos y pediatría (ajustada por peso: 5 mg/kg/día inicial dividida en 2 tomas).",
+        "via": "Oral (cápsula/suspensión) e Intravenosa (infusión lenta / Fosfenitoína).",
+        "unidad": "mg y mg/kg.",
+        "nota": "Verificar cuadro y contexto clínico. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Ineficaz y no recomendada en crisis de ausencia y crisis mioclónicas. Contraindicaciones específicas adicionales (bloqueo auriculoventricular grave, disfunción del nódulo sinusal): No especificado en las lecturas del curso consultadas.",
+      "precauciones": "Cinética no lineal de saturación (Michaelis-Menten) a niveles terapéuticos (10–20 mcg/mL); aumentos pequeños de dosis pueden disparar la concentración plasmática a rangos tóxicos. La fosfenitoína reduce el riesgo de flebitis y síndrome del guante púrpura frente a fenitoína IV.",
+      "efectosAdversos": [
+        "Nistagmo, ataxia y diplopía (dependientes de concentración >20 mcg/mL)",
+        "Hiperplasia gingival (frecuente en uso crónico)",
+        "Hirsutismo y engrosamiento de rasgos faciales",
+        "Osteomalacia y neuropatía periférica con tratamiento prolongado",
+        "Reacciones cutáneas y Síndrome de Stevens-Johnson (asociado a alelo HLA-B*1502)"
+      ],
+      "monitorizacion": "Monitoreo de niveles séricos de fenitoína (rango terapéutico 10–20 mcg/mL). En hipoalbuminemia o uremia, medir fracción libre (rango 1–2 mcg/mL). Hemograma y pruebas de función hepática periódicas."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Ácido Valproico",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Desplazamiento competitivo de fenitoína de la albúmina plasmática e inhibición metabólica de CYP2C9.",
+        "efectoClinico": "Elevación desproporcionada de la fracción libre activa de fenitoína con neurotoxicidad.",
+        "conducta": "Medir fenitoína libre y reducir la dosis de fenitoína si aparecen síntomas cerebelosos."
+      },
+      {
+        "farmacoImplicado": "Anticonceptivos hormonales orales",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Inducción potente de CYP3A4 y UGT hepáticos por fenitoína.",
+        "efectoClinico": "Disminución de concentraciones plasmáticas de estrógenos y progestágenos con falla anticonceptiva.",
+        "conducta": "Recomendar métodos anticonceptivos no enzimáticos (ej. DIU) o evaluar otro anticrisis."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Asociada a teratogenicidad en humanos: Síndrome fetal por hidantoína (dismorfismo craneofacial, hipoplasia ungueal/digital, microcefalia y retraso psicomotor). Datos narrativos bajo norma FDA PLLR (la FDA retiró letras A/B/C/D/X). Riesgo de hemorragia neonatal por déficit de factores dependientes de vitamina K.",
+      "lactancia": "Se excreta en leche materna en concentraciones bajas (~10-20% del plasma materno); las lecturas del curso no especifican una pauta de contraindicación absoluta formal.",
+      "limitesEvidencia": "Riesgo cuantitativo individual no desglosado en el capítulo general de las lecturas obligatorias.",
+      "sistemaPLLR": "Información narrativa basada en evidencia. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman, Las bases farmacológicas de la terapéutica, 14.ª ed., cap. 20, pp. 20–25; Katzung, Farmacología básica y clínica, 16.ª ed., cap. 24, pp. 19–23, 52.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 11, p. 25.",
+      "complementoExterno": "Regulación FDA PLLR para clasificación narrativa gestacional."
+    },
+    "perlaClinica": "A concentraciones terapéuticas la eliminación pasa de primer orden a orden cero; nunca dupliques la dosis sin monitorear niveles séricos.",
+    "clase": "Hidantoína • Bloqueador NaV",
+    "dianaPrincipal": "Canales NaV en estado inactivado",
+    "mecanismo": "Bloqueo selectivo dependiente de uso de canales de sodio en conformación inactivada rápida.",
+    "dosis": "Adultos VO: 300–400 mg/día. Estado epiléptico: carga IV 15–20 mg/kg.",
+    "efectosAdversos": [
+      "Nistagmo y ataxia",
+      "Hiperplasia gingival",
+      "Hirsutismo",
+      "Osteomalacia",
+      "Stevens-Johnson"
+    ],
+    "contraindicaciones": "Ineficaz en ausencias; otras contraindicaciones: No especificado en las lecturas consultadas.",
+    "monitorizacion": "Niveles séricos (10–20 mcg/mL); en hipoalbuminemia medir fracción libre.",
+    "alertas": "Cinética de saturación no lineal (Michaelis-Menten). Ajustar con incrementos pequeños.",
+    "embarazo": "Riesgo teratogénico comprobado (síndrome fetal por hidantoína). Evaluar riesgo/beneficio bajo PLLR.",
+    "lactancia": "Pasa a leche materna en baja proporción; monitorear sedación en lactante.",
+    "fuentesTexto": "Programa p. 25; Goodman & Gilman cap. 20, pp. 20–25; Katzung cap. 24, pp. 19–23, 52."
+  },
+  {
+    "id": "carbamazepina",
+    "nombre": "Carbamazepina",
+    "categoria": "epilepsia",
+    "patologiaId": "epilepsia",
+    "identificacion": {
+      "nombre": "Carbamazepina",
+      "sinonimos": [
+        "Tegretol",
+        "CBZ"
+      ],
+      "clase": "Iminoestilbeno • Bloqueador de canales NaV",
+      "temaPrograma": "Semana 11 • Farmacoterapia de la epilepsia (Programa FacMed p. 25)"
+    },
+    "farmacologia": {
+      "blanco": "Poro del canal NaV en conformación inactivada rápida. Metabolito activo: 10,11-epóxido carbamazepina.",
+      "mecanismo": "Se une con alta afinidad al canal NaV en estado inactivado, retrasando su recuperación y prolongando el periodo refractario de neuronas con descargas paroxísticas repetitivas.",
+      "efectosFisiopatologicos": "Suprime la propagación de trenes de potenciales de acción desde el foco cortical epileptógeno.",
+      "usosClinicos": "Fármaco de 1.ª línea en crisis focales (con o sin generalización a bilateral) y neuralgia del trigémino. Puede empeorar crisis de ausencia y mioclónicas (precaución en epilepsia generalizada primaria)."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: Inicial de 100–200 mg 1–2 veces al día; incremento gradual semanal hasta 800–1200 mg/día divididos en 2–4 tomas. Niveles terapéuticos: 4–12 mcg/mL.",
+        "poblacion": "Adultos y niños (iniciar con 10–20 mg/kg/día).",
+        "via": "Oral (comprimidos, suspensión, liberación prolongada).",
+        "unidad": "mg/día.",
+        "nota": "Verificar cuadro y contexto clínico. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Precaución por tipo de crisis: puede agravar ausencias y mioclónicas. La lectura no la califica como contraindicación absoluta universal. Bloqueo AV previo y depresión de médula ósea: No especificado con detalle en las lecturas obligatorias del curso.",
+      "precauciones": "Autoinducción enzimática de su propio metabolismo por CYP3A4: su t½ cae de 36 h a 8–15 h tras 2–4 semanas, requiriendo reajuste posológico.",
+      "efectosAdversos": [
+        "Diplopía transitoria, mareo y ataxia de inicio de tratamiento",
+        "Hiponatremia euvolémica dilucional (SIADH por sensibilización a vasopresina)",
+        "Leucopenia benigna transitoria (hasta 10% de pacientes)",
+        "Reacciones dermatológicas severas / Síndrome de Stevens-Johnson (fuerte asociación con alelo HLA-B*1502)"
+      ],
+      "monitorizacion": "Monitoreo de niveles séricos (4–12 mcg/mL), hemograma completo basal y de control (leucocitos), y sodio sérico si hay letargia o confusión."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Anticonceptivos hormonales orales",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Inducción masiva de CYP3A4 hepático que acelera la degradación de etinilestradiol y progestágenos.",
+        "efectoClinico": "Falla anticonceptiva y embarazo no planeado.",
+        "conducta": "Usar métodos no hormonales (DIU) o seleccionar un anticonvulsivo no inductor como Levetiracetam."
+      },
+      {
+        "farmacoImplicado": "Clozapina",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Toxicidad hematológica sinérgica sobre precursores mieloides de la médula ósea.",
+        "efectoClinico": "Riesgo multiplicado de agranulocitosis fulminante.",
+        "conducta": "Evitar combinación simultánea; seleccionar otro estabilizador o antipsicótico."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Asociada a defectos del tubo neural (espina bífida ~1%) y anomalías craneofaciales/ungueales. Información narrativa según FDA PLLR. Indicar 4-5 mg/día de ácido fólico preconcepcional.",
+      "lactancia": "Pasa a leche materna (concentración ~20-40% del plasma materno); monitorear sedación y ganancia ponderal del lactante.",
+      "limitesEvidencia": "Riesgo cuantitativo exacto dependiente de la dosis y de politerapia concomitante.",
+      "sistemaPLLR": "Evaluación narrativa de riesgo. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman 14.ª ed., cap. 20, pp. 31–32; Katzung 16.ª ed., cap. 24, pp. 15–16.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 11, p. 25.",
+      "complementoExterno": "Guía FDA PLLR para evaluación narrativa gestacional."
+    },
+    "perlaClinica": "La autoinducción enzimática hace caer sus propios niveles séricos a las 3 semanas; si el paciente reanuda crisis sin haber faltado a la toma, no es resistencia, es autoinducción.",
+    "clase": "Iminoestilbeno • Bloqueador NaV",
+    "dianaPrincipal": "Canales NaV en conformación inactivada rápida",
+    "mecanismo": "Prolongación del periodo refractario del canal NaV; metabolito 10,11-epóxido activo.",
+    "dosis": "Adultos: 800–1200 mg/día en 2–4 tomas (iniciar con 100–200 mg 1–2 veces al día).",
+    "efectosAdversos": [
+      "Diplopía y mareo",
+      "Hiponatremia (SIADH)",
+      "Leucopenia benigna",
+      "Stevens-Johnson en HLA-B*1502"
+    ],
+    "contraindicaciones": "Precaución: puede agravar ausencias y mioclónicas. Otras: No especificado en las lecturas consultadas.",
+    "monitorizacion": "Niveles séricos (4–12 mcg/mL), hemograma basal y sodio sérico.",
+    "alertas": "Autoinductor de CYP3A4. Induce degradación de anticonceptivos orales.",
+    "embarazo": "Riesgo de defectos del tubo neural (espina bífida ~1%). Formato narrativo PLLR.",
+    "lactancia": "Pasa a leche materna en baja proporción; vigilar sedación del recién nacido.",
+    "fuentesTexto": "Programa p. 25; Goodman & Gilman cap. 20, pp. 31–32; Katzung cap. 24, pp. 15–16."
+  },
+  {
+    "id": "levetiracetam",
+    "nombre": "Levetiracetam",
+    "categoria": "epilepsia",
+    "patologiaId": "epilepsia",
+    "identificacion": {
+      "nombre": "Levetiracetam",
+      "sinonimos": [
+        "Keppra"
+      ],
+      "clase": "Pirrolidina • Modulador de la proteína vesicular SV2A",
+      "temaPrograma": "Semana 11 • Farmacoterapia de la epilepsia (Programa FacMed p. 25)"
+    },
+    "farmacologia": {
+      "blanco": "Proteína de la vesícula sináptica 2A (SV2A).",
+      "mecanismo": "Se une estereoespecíficamente a SV2A en las vesículas presinápticas, coordinando la exocitosis de neurotransmisores y disminuyendo selectivamente la liberación presináptica de glutamato durante trenes de alta frecuencia.",
+      "efectosFisiopatologicos": "Atenúa la liberación vesicular de glutamato sin interferir con la neurotransmisión excitatoria basal de baja frecuencia.",
+      "usosClinicos": "Crisis focales, crisis tónico-clónicas generalizadas primarias y crisis mioclónicas (epilepsia mioclónica juvenil). Fase 2 del estado epiléptico convulsivo (vía IV)."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: Inicial 500 mg c/12h VO o IV; titular cada 2 semanas hasta 1000–1500 mg c/12h (dosis habitual: 1000–3000 mg/día).",
+        "poblacion": "Adultos y pediatría (>1 mes a dosis de 10–30 mg/kg c/12h).",
+        "via": "Oral (tabletas, solución) e Intravenosa (infusión en 15 min).",
+        "unidad": "mg c/12h.",
+        "nota": "Verificar cuadro y función renal. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso consultadas.",
+      "precauciones": "Ajuste obligatorio de dosis según aclaramiento de creatinina (eliminación 66% renal inalterada). Precaución en pacientes con antecedentes de depresión o psicosis previa.",
+      "efectosAdversos": [
+        "Somnolencia, fatiga y astenia de inicio",
+        "Alteraciones conductuales y neuropsiquiátricas: irritabilidad, agresividad, agitación, ansiedad y cambios de humor (10-15% de pacientes)",
+        "Cefalea y mareo"
+      ],
+      "monitorizacion": "Monitoreo del aclaramiento de creatinina (Cockcroft-Gault) y valoración clínica del comportamiento y estado de ánimo."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Otros antiepilépticos / fármacos hepáticos",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Cero metabolismo por citocromos P450; no compite por unión a proteínas plasmáticas (<10%).",
+        "efectoClinico": "Ausencia de interacciones farmacocinéticas hepáticas relevantes.",
+        "conducta": "Fármaco de elección en pacientes polimedicados, hepatópatas o bajo quimioterapia."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Registros internacionales (EURAP/UK) muestran una de las tasas basales de malformaciones mayores más bajas (~2-3%, comparable a población general no expuesta). Sistema narrativo PLLR.",
+      "lactancia": "Pasa a leche materna en cantidades significativas; vigilar irritabilidad y sedación en el lactante.",
+      "limitesEvidencia": "Riesgo relativo bajo respaldado por registros prospectivos de embarazo.",
+      "sistemaPLLR": "Perfil narrativo gestacional favorable. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman 14.ª ed., cap. 20, pp. 44, 65; Katzung 16.ª ed., cap. 24, pp. 29–30, 60.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 11, p. 25.",
+      "complementoExterno": "Registros de embarazo EURAP / Regulación FDA PLLR."
+    },
+    "perlaClinica": "No toca los citocromos hepáticos: es el rey de la seguridad en polifarmacia, pero vigila la irritabilidad conductual que a veces altera al paciente.",
+    "clase": "Pirrolidina • Modulador Vesicular SV2A",
+    "dianaPrincipal": "Proteína de vesícula sináptica 2A (SV2A)",
+    "mecanismo": "Modulación de la exocitosis e inhibición de la liberación de glutamato.",
+    "dosis": "Adultos: 500 mg c/12h inicial, hasta 1000–1500 mg c/12h VO o IV.",
+    "efectosAdversos": [
+      "Somnolencia y astenia",
+      "Irritabilidad y cambios conductuales",
+      "Cefalea"
+    ],
+    "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso consultadas.",
+    "monitorizacion": "Función renal (aclaramiento de creatinina) y vigilancia del estado afectivo.",
+    "alertas": "Ajuste estricto en falla renal. No induce enzimas hepáticas.",
+    "embarazo": "Menor riesgo relativo entre anticrisis (~2-3% tasa basal). Narrativa PLLR.",
+    "lactancia": "Excreción láctea documentada; vigilar conducta en lactante.",
+    "fuentesTexto": "Programa p. 25; Goodman & Gilman cap. 20, pp. 44, 65; Katzung cap. 24, pp. 29–30, 60."
+  },
+  {
+    "id": "etosuximida",
+    "nombre": "Etosuximida",
+    "categoria": "epilepsia",
+    "patologiaId": "epilepsia",
+    "identificacion": {
+      "nombre": "Etosuximida",
+      "sinonimos": [
+        "Zarontin"
+      ],
+      "clase": "Succinimida • Bloqueador de canales de calcio tipo T",
+      "temaPrograma": "Semana 11 • Farmacoterapia de la epilepsia (Programa FacMed p. 25)"
+    },
+    "farmacologia": {
+      "blanco": "Canales de calcio de bajo umbral tipo T (CaV3.1, CaV3.2) en neuronas del tálamo.",
+      "mecanismo": "Inhibición selectiva de las corrientes de calcio de bajo umbral en neuronas talámicas de relevo y reticulares, aboliendo las descargas oscilatorias paroxísticas de espiga-onda a 3 Hz.",
+      "efectosFisiopatologicos": "Suprime el marcapasos talámico responsable de las crisis de ausencia típicas infantiles.",
+      "usosClinicos": "Fármaco de 1.ª elección exclusivo para crisis generalizadas de ausencia típicas infantiles sin crisis convulsivas asociadas. Totalmente ineficaz contra crisis focales o tónico-clónicas."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Niños y adultos: Inicial de 250–500 mg/día en 1–2 tomas; incrementar cada 4–7 días según respuesta hasta dosis habitual de 20 mg/kg/día (máximo 1500 mg/día). Rango terapéutico: 40–100 mcg/mL.",
+        "poblacion": "Población pediátrica (3 a 6 años: 250 mg/día inicial; >6 años y adultos: 500 mg/día).",
+        "via": "Oral (cápsulas o jarabe).",
+        "unidad": "mg/día y mg/kg/día.",
+        "nota": "Verificar cuadro y contexto clínico. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Ineficaz en crisis focales y tónico-clónicas generalizadas. Contraindicaciones específicas adicionales: No especificado en las lecturas del curso consultadas.",
+      "precauciones": "No utilizar como monoterapia si el paciente presenta simultáneamente crisis de ausencia y crisis tónico-clónicas generalizadas (en ese caso se prefiere Ácido Valproico o Lamotrigina).",
+      "efectosAdversos": [
+        "Molestias gastrointestinales muy frecuentes: dolor epigástrico, náuseas, vómito y anorexia",
+        "Somnolencia, letargia y mareo",
+        "Cefalea y fatiga",
+        "Erupción cutánea (raro: Stevens-Johnson) y discrasias sanguíneas idiopáticas infrecuentes"
+      ],
+      "monitorizacion": "Niveles séricos (40–100 mcg/mL) y hemograma periódico si se reportan signos de infección o sangrado."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Ácido Valproico",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "El valproato puede inhibir el metabolismo hepático de la etosuximida mediado por CYP3A4.",
+        "efectoClinico": "Elevación de concentraciones plasmáticas de etosuximida con riesgo de toxicidad gástrica y del SNC.",
+        "conducta": "Vigilar tolerancia gastrointestinal y ajustar dosis si se combinan."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Evidencia limitada de riesgo en humanos; las lecturas del curso no cuantifican el riesgo individual exacto frente a valproato. Banda didáctica de precaución bajo marco narrativo PLLR.",
+      "lactancia": "Pasa a la leche materna; las lecturas del curso no especifican datos de seguridad neonatal concluyentes.",
+      "limitesEvidencia": "Lactancia y riesgo gestacional individual no especificados con detalle en las fuentes del temario.",
+      "sistemaPLLR": "Información narrativa basada en riesgo/beneficio. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman 14.ª ed., cap. 20, pp. 34, 62; Katzung 16.ª ed., cap. 24, p. 63.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 11, p. 25.",
+      "complementoExterno": "Regulación FDA PLLR."
+    },
+    "perlaClinica": "Apaga selectivamente el oscilador talámico a 3 Hz en niños con ausencias puras, pero es inútil en convulsiones motoras.",
+    "clase": "Succinimida • Bloqueador CaV-T",
+    "dianaPrincipal": "Canales CaV tipo T talámicos (CaV3.1, CaV3.2)",
+    "mecanismo": "Inhibición de corrientes de calcio de bajo umbral en neuronas del tálamo.",
+    "dosis": "Niños y adultos: 20 mg/kg/día habitual (rango sérico 40–100 mcg/mL).",
+    "efectosAdversos": [
+      "Dolor epigástrico y náuseas",
+      "Somnolencia y mareo",
+      "Cefalea"
+    ],
+    "contraindicaciones": "Ineficaz en crisis focales y tónico-clónicas. Otras: No especificado en las lecturas consultadas.",
+    "monitorizacion": "Niveles séricos (40–100 mcg/mL) y hemograma periódico.",
+    "alertas": "Administrar con alimentos para mitigar náuseas. No cubre crisis motoras asociadas.",
+    "embarazo": "Datos limitados; banda de precaución narrativa PLLR.",
+    "lactancia": "Pasa a leche materna; seguridad neonatal no especificada en lecturas.",
+    "fuentesTexto": "Programa p. 25; Goodman & Gilman cap. 20, pp. 34, 62; Katzung cap. 24, p. 63."
+  },
+  {
+    "id": "diazepam",
+    "nombre": "Diazepam",
+    "categoria": "epilepsia",
+    "patologiaId": "epilepsia",
+    "identificacion": {
+      "nombre": "Diazepam",
+      "sinonimos": [
+        "Valium"
+      ],
+      "clase": "Benzodiazepina • Modulador alostérico positivo de GABA-A",
+      "temaPrograma": "Semana 11 • Farmacoterapia de la epilepsia (Programa FacMed p. 25)"
+    },
+    "farmacologia": {
+      "blanco": "Receptor pentamérico GABA-A (sitio alostérico BZD en interfaz subunidades alfa y gamma).",
+      "mecanismo": "Aumenta la frecuencia de apertura del canal de cloruro acoplado al receptor GABA-A en presencia de GABA endógeno, produciendo hiperpolarización neuronal inmediata.",
+      "efectosFisiopatologicos": "Hiperpolariza rápidamente el potencial de membrana (-70 mV a -85 mV) abortando la descarga sincrónica epiléptica generalizada.",
+      "usosClinicos": "Fármaco de rescate de 1.ª línea en estado epiléptico convulsivo activo (Fase 1: minuto 5 a 20) y crisis convulsivas agudas prolongadas. No se utiliza como monoterapia crónica de mantenimiento por tolerancia farmacodinámica."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Estado epiléptico en adultos: 10 mg IV lenta (2–5 mg/min), repetible cada 10–15 min hasta dosis máxima acumulada de 30 mg. Vía rectal en niños: 0.2–0.5 mg/kg si no hay vía venosa.",
+        "poblacion": "Adultos y pediatría en emergencia convulsiva.",
+        "via": "Intravenosa lenta y rectal (no recomendada la vía IM por absorción errática).",
+        "unidad": "mg (IV) y mg/kg (rectal).",
+        "nota": "Verificar cuadro y disponibilidad de soporte ventilatorio. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso consultadas.",
+      "precauciones": "Riesgo de depresión respiratoria e hipotensión con infusión intravenosa rápida. Sufre rápida redistribución a grasa periférica en 30–60 min, lo que puede causar recurrencia de crisis si no se infunde un anticrisis de carga prolongada.",
+      "efectosAdversos": [
+        "Depresión respiratoria e hipoxemia",
+        "Sedación profunda, ataxia y somnolencia",
+        "Hipotensión arterial por vasodilatación",
+        "Tolerancia farmacodinámica y dependencia con uso continuado"
+      ],
+      "monitorizacion": "Monitoreo continuo de oximetría de pulso (SatO2), frecuencia respiratoria, presión arterial y ritmo electrocardiográfico durante la infusión."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Depresores del SNC (Alcohol, Opioides, Barbitúricos)",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Efecto depresor sinérgico sobre el centro respiratorio del tronco encefálico.",
+        "efectoClinico": "Paro respiratorio y coma profundo.",
+        "conducta": "Evitar combinación; disponer de flumazenil y equipo de intubación en emergencias."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Uso de rescate justificado en emergencias por riesgo materno-fetal del estado epiléptico. En uso prolongado durante el tercer trimestre se describe síndrome de hipotonía neonatal ('floppy infant syndrome'). Formato narrativo PLLR.",
+      "lactancia": "Pasa a la leche materna y sus metabolitos activos (desmetildiazepam) tienen semividas largas; riesgo de letargia e hipotonía en el lactante.",
+      "limitesEvidencia": "Riesgo gestacional individual cuantificado: No especificado en las fuentes de texto consultadas.",
+      "sistemaPLLR": "Evaluación narrativa de emergencia. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman 14.ª ed., cap. 20, pp. 26–27, 63; Katzung 16.ª ed., cap. 24, p. 63.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 11, p. 25.",
+      "complementoExterno": "Protocolos de Estado Epiléptico Neurocritical Care Society / Regulación FDA PLLR."
+    },
+    "perlaClinica": "Apaga el fuego convulsivo en el minuto 5, pero se redistribuye a la grasa periférica en 1 hora: siempre debe asociarse a un fármaco de carga de fase 2.",
+    "clase": "Benzodiazepina • Modulador alostérico GABA-A",
+    "dianaPrincipal": "Receptor GABA-A (sitio alostérico BZD)",
+    "mecanismo": "Incremento de la frecuencia de apertura del canal de Cloro por GABA.",
+    "dosis": "Estado epiléptico: 10 mg IV lenta repetible cada 10-15 min (máx 30 mg).",
+    "efectosAdversos": [
+      "Depresión respiratoria",
+      "Sedación intensa",
+      "Hipotensión",
+      "Tolerancia"
+    ],
+    "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso consultadas.",
+    "monitorizacion": "Oximetría de pulso continua (SatO2), frecuencia respiratoria y presión arterial.",
+    "alertas": "Tener equipo de vía aérea listo. Acción corta por redistribución tisular.",
+    "embarazo": "Justificado en emergencias maternas; riesgo de hipotonía neonatal tardía bajo PLLR.",
+    "lactancia": "Metabolitos activos de vida media prolongada; vigilar sedación en lactante.",
+    "fuentesTexto": "Programa p. 25; Goodman & Gilman cap. 20, pp. 26–27, 63; Katzung cap. 24, p. 63."
+  },
+  {
+    "id": "lamotrigina",
+    "nombre": "Lamotrigina",
+    "categoria": "epilepsia",
+    "patologiaId": "epilepsia",
+    "identificacion": {
+      "nombre": "Lamotrigina",
+      "sinonimos": [
+        "Lamictal",
+        "LTG"
+      ],
+      "clase": "Feniltriazina • Bloqueador de canales NaV y modulador de glutamato",
+      "temaPrograma": "Semana 11 • Farmacoterapia de la epilepsia (Programa FacMed p. 25)"
+    },
+    "farmacologia": {
+      "blanco": "Canales de sodio dependientes de voltaje (NaV) en estado inactivado y canales de calcio presinápticos P/Q y N.",
+      "mecanismo": "Bloquea selectivamente los canales NaV en conformación inactivada rápida y suprime la liberación presináptica de los aminoácidos excitadores aspartato y glutamato en la corteza y el hipocampo.",
+      "efectosFisiopatologicos": "Reduce la hiperexcitabilidad cortical sin generar sedación profunda.",
+      "usosClinicos": "Monoterapia o coadyuvante en crisis focales, crisis tónico-clónicas generalizadas primarias, síndrome de Lennox-Gastaut y trastorno bipolar tipo I. En ausencias tiene menor eficacia que etosuximida y valproato."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "TITULACIÓN MUY LENTA OBLIGATORIA: Semanas 1 y 2: 25 mg/día; semanas 3 y 4: 50 mg/día; incrementar de 50 mg cada 1–2 semanas hasta mantenimiento habitual de 100–200 mg/día (máximo 400 mg/día). Si se combina con valproato: iniciar con 25 mg en días alternos.",
+        "poblacion": "Adultos y pediatría (ajustada por régimen concomitante).",
+        "via": "Oral (tabletas dispersables/masticables).",
+        "unidad": "mg/día.",
+        "nota": "Verificar cuadro y régimen concomitante. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso consultadas.",
+      "precauciones": "Riesgo de erupción cutánea grave (Síndrome de Stevens-Johnson / Necrólisis Epidérmica Tóxica) si se titula rápidamente o si se coadministra con ácido valproico sin reducir la dosis a más de la mitad.",
+      "efectosAdversos": [
+        "Erupción cutánea (rash máculo-papular en ~10% de pacientes)",
+        "Mareo, ataxia, cefalea y diplopía",
+        "Insomnio (a diferencia de otros anticrisis, no suele causar sedación diurna)",
+        "Náusea y visión borrosa"
+      ],
+      "monitorizacion": "Inspección clínica dermatológica estricta ante cualquier erupción. Monitoreo de niveles séricos si se añaden fármacos inductores/inhibidores o durante el embarazo."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Ácido Valproico",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Inhibición potente de la glucuronidación hepática mediada por UGT1A4.",
+        "efectoClinico": "Duplica la vida media de lamotrigina (>60 horas) disparando el riesgo de Stevens-Johnson.",
+        "conducta": "Reducir la dosis inicial de lamotrigina a la mitad y titular muy lentamente."
+      },
+      {
+        "farmacoImplicado": "Anticonceptivos hormonales con estrógenos",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Los estrógenos inducen potentemente la enzima UGT1A4.",
+        "efectoClinico": "Reducción de concentraciones séricas de lamotrigina en un 50% con recurrencia de crisis.",
+        "conducta": "Monitorear niveles y requerir aumento de dosis de lamotrigina al iniciar el anticonceptivo."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Uno de los perfiles de seguridad gestacional más favorables en los registros internacionales (~2-3% de malformaciones mayores, similar a población no expuesta). Los estrógenos gestacionales inducen UGT1A4 reduciendo sus niveles hasta en 70%, exigiendo monitoreo mensual y duplicación de dosis durante el embarazo con reducción posparto.",
+      "lactancia": "Pasa a leche materna en concentraciones moderadas; vigilar rash y somnolencia en el lactante.",
+      "limitesEvidencia": "Riesgo malformativo bajo respaldado por registros prospectivos (EURAP).",
+      "sistemaPLLR": "Formato narrativo basado en evidencia. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman 14.ª ed., cap. 20, p. 61; Katzung 16.ª ed., cap. 24, pp. 28–29, 59.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 11, p. 25.",
+      "complementoExterno": "Registros EURAP / Regulación FDA PLLR."
+    },
+    "perlaClinica": "La regla de oro es 'Start low, go slow': si se combina con valproato, corta la dosis a la mitad o arriesgas un Stevens-Johnson severo.",
+    "clase": "Feniltriazina • Multidiana",
+    "dianaPrincipal": "Canales NaV inactivados y CaV presinápticos",
+    "mecanismo": "Bloqueo dependiente de uso de NaV e inhibición de la liberación de glutamato.",
+    "dosis": "Adultos: Titular lento: sem 1-2: 25 mg/día; mantenimiento 100–200 mg/día.",
+    "efectosAdversos": [
+      "Erupción cutánea (rash)",
+      "Mareo y ataxia",
+      "Insomnio",
+      "Diplopía"
+    ],
+    "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso consultadas.",
+    "monitorizacion": "Vigilancia de piel (rash cutáneo) y niveles séricos en embarazo.",
+    "alertas": "Titulación lenta obligatoria. El valproato duplica su vida media.",
+    "embarazo": "Menor riesgo relativo entre anticrisis (~2-3%). Aclaramiento gestacional acelerado.",
+    "lactancia": "Pasa a leche materna; monitorear rash cutáneo en el lactante.",
+    "fuentesTexto": "Programa p. 25; Goodman & Gilman cap. 20, p. 61; Katzung cap. 24, pp. 28–29, 59."
+  },
+  {
+    "id": "valproato",
+    "nombre": "Ácido Valproico",
+    "categoria": "epilepsia",
+    "patologiaId": "epilepsia",
+    "identificacion": {
+      "nombre": "Ácido Valproico",
+      "sinonimos": [
+        "Valproato de sodio",
+        "Divalproex sódico",
+        "Depakene",
+        "Epival"
+      ],
+      "clase": "Ácido carboxílico ramificado • Antiepiléptico de amplio espectro multimodal",
+      "temaPrograma": "Semana 11 • Farmacoterapia de la epilepsia (Programa FacMed p. 25)"
+    },
+    "farmacologia": {
+      "blanco": "Canales NaV en estado inactivado, Canales de calcio tipo T (CaV-T) y Enzima GABA transaminasa (GABA-T).",
+      "mecanismo": "Mecanismo multimodal pleiotrópico: 1) Prolonga la inactivación de canales NaV; 2) Bloquea corrientes de calcio tipo T talámicas; 3) Aumenta los niveles de GABA cerebral al inhibir su degradación (GABA-T y SSADH) y estimular la ácido glutámico descarboxilasa (GAD); 4) Inhibe histona desacetilasas (HDAC).",
+      "efectosFisiopatologicos": "Amortiguamiento global de la excitabilidad neuronal en corteza, tálamo y ganglios basales.",
+      "usosClinicos": "Fármaco de amplísimo espectro: 1.ª línea en crisis generalizadas idiopáticas (tónico-clónicas, ausencias, mioclónicas de Janz, atónicas), crisis focales refractarias y profilaxis de migraña."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: Inicial de 10–15 mg/kg/día dividida en 2–3 tomas con alimentos; titular semanalmente 5–10 mg/kg/día hasta respuesta clínica (dosis habitual: 1000–2000 mg/día). Rango terapéutico sérico: 50–100 mcg/mL.",
+        "poblacion": "Adultos y niños mayores de 2 años.",
+        "via": "Oral (comprimidos entéricos, liberación prolongada) e Intravenosa.",
+        "unidad": "mg/kg/día y mg/día.",
+        "nota": "Verificar cuadro y función hepática. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Contraindicación en mujeres con potencial de procrear a menos que no exista otra alternativa adecuada (alta teratogenicidad). Enfermedad hepática activa o antecedentes familiares de hepatopatía grave. Trastornos del ciclo de la urea (hiperamonemia).",
+      "precauciones": "Riesgo de hepatotoxicidad fulminante (máxima en niños <2 años en politerapia), pancreatitis hemorrágica aguda y aumento de peso marcado con hiperandrogenismo.",
+      "efectosAdversos": [
+        "Hepatotoxicidad con esteatosis microvesicular por toxicidad mitocondrial",
+        "Pancreatitis aguda potencialmente mortal",
+        "Aumento ponderal, hiperinsulinemia y síndrome de ovario poliquístico (SOP)",
+        "Temblor postural fino distal en manos y alopecia transitoria",
+        "Trombocitopenia e hiperamonemia con o sin encefalopatía"
+      ],
+      "monitorizacion": "Pruebas de función hepática (transaminasas, bilirrubinas) basales y periódicas, amilasa/lipasa ante dolor abdominal, niveles séricos (50–100 mcg/mL) y biometría hemática completa (plaquetas)."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Lamotrigina",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Inhibición potente de la glucuronidación hepática mediada por UGT1A4.",
+        "efectoClinico": "Duplica la vida media de la lamotrigina con alto riesgo de necrólisis epidérmica tóxica.",
+        "conducta": "Reducir la dosis inicial de lamotrigina en más del 50%."
+      },
+      {
+        "farmacoImplicado": "Fenitoína",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Desplazamiento de fenitoína de la albúmina sérica e inhibición de CYP2C9.",
+        "efectoClinico": "Incremento de la fracción libre activa de fenitoína y toxicidad cerebelosa.",
+        "conducta": "Monitorear fenitoína libre y reducir dosis de fenitoína."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "El anticrisis más teratogénico conocido: 6–9% a 10–11% de malformaciones mayores con exposición en el primer trimestre (espina bífida 1–2%, defectos septales cardíacos, craneosinostosis). Deterioro comprobado del coeficiente intelectual (reducción de 7 a 10 puntos de CI) y mayor riesgo de trastorno del espectro autista. Información narrativa según FDA PLLR.",
+      "lactancia": "Pasa a leche materna en concentraciones bajas (~5-10%); se recomienda evaluar riesgo/beneficio clínico individual.",
+      "limitesEvidencia": "Riesgo dosis-dependiente (mayor riesgo con dosis >800 mg/día).",
+      "sistemaPLLR": "Alerta máxima narrativa y programas de prevención de embarazo. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman 14.ª ed., cap. 20, pp. 50–51, 61; Katzung 16.ª ed., cap. 24, pp. 36–37, 52–56.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 11, p. 25.",
+      "complementoExterno": "Alertas regulatorias EMA / FDA PLLR sobre teratogenicidad y neurodesarrollo."
+    },
+    "perlaClinica": "El más eficaz para casi todo tipo de crisis, pero el más peligroso en mujeres jóvenes por su comprobada teratogenicidad y caída del CI infantil.",
+    "clase": "Ácido Carboxílico • Multidiana",
+    "dianaPrincipal": "Canales NaV, CaV tipo T y Enzima GABA-T",
+    "mecanismo": "Bloqueo NaV/CaV-T e incremento del tono GABAérgico por inhibición de GABA-T.",
+    "dosis": "Adultos: Inicial 10–15 mg/kg/día con alimentos; habitual 1000–2000 mg/día (rango 50–100 mcg/mL).",
+    "efectosAdversos": [
+      "Hepatotoxicidad microvesicular",
+      "Pancreatitis aguda",
+      "Aumento de peso / SOP",
+      "Temblor distal"
+    ],
+    "contraindicaciones": "Embarazo (teratogénico humano confirmado), hepatopatía activa y trastornos del ciclo de la urea.",
+    "monitorizacion": "Pruebas de función hepática, biometría hemática (plaquetas) y niveles séricos (50–100 mcg/mL).",
+    "alertas": "Potente teratógeno y neurotóxico del desarrollo. Inhibidor de UGT y CYP2C9.",
+    "embarazo": "Alta teratogenicidad (6-11% malformaciones mayores, espina bífida, caída de CI). PLLR narrativo.",
+    "lactancia": "Excreción láctea baja; vigilar función hepática en lactante.",
+    "fuentesTexto": "Programa p. 25; Goodman & Gilman cap. 20, pp. 50–51, 61; Katzung cap. 24, pp. 36–37, 52–56."
+  },
+  {
+    "id": "levodopa-carbidopa",
+    "nombre": "Levodopa / Carbidopa",
+    "categoria": "parkinson",
+    "patologiaId": "parkinson",
+    "identificacion": {
+      "nombre": "Levodopa / Carbidopa",
+      "sinonimos": [
+        "L-DOPA + Carbidopa",
+        "Sinemet",
+        "Madopar (con benserazida)"
+      ],
+      "clase": "Precursor dopaminérgico + Inhibidor de la descarboxilasa periférica (DDC)",
+      "temaPrograma": "Semana 12 • Moduladores de la neurotransmisión dopaminérgica (Programa FacMed p. 26)"
+    },
+    "farmacologia": {
+      "blanco": "Transportador de aminoácidos neutros grandes (LAT1/SLC7A5), Dopa-descarboxilasa estriatal (AADC) y Receptores D2/D1.",
+      "mecanismo": "La levodopa cruza la BHE mediante el transportador LAT1 y es descarboxilada a dopamina en la terminal estriatal. La carbidopa inhibe de forma selectiva e irreversible la DDC periférica sin cruzar la BHE, multiplicando la fracción central de levodopa.",
+      "efectosFisiopatologicos": "Restaura la estimulación dopaminérgica de la vía directa e indirecta de los ganglios basales, aliviando la bradicinesia, la rigidez y el temblor.",
+      "usosClinicos": "Tratamiento sintomático de 1.ª línea y estándar de oro para la Enfermedad de Parkinson idiopática."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: Inicial habitual 100/25 mg 3 veces al día con ajuste progresivo semanal según respuesta motora (rango usual: 300–1000 mg/día de levodopa en tomas fraccionadas).",
+        "poblacion": "Adultos con enfermedad de Parkinson.",
+        "via": "Oral (comprimidos convencionales, liberación extendida o gel intestinal).",
+        "unidad": "mg/toma fraccionada.",
+        "nota": "Verificar cuadro y respuesta individual. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Uso concomitante con inhibidores de la MAO no selectivos dentro de 14 días (riesgo de crisis hipertensiva mortal). Glaucoma de ángulo cerrado. Hipersensibilidad confirmada. Psicosis mayor preexistente. Inbrija: asma o EPOC activa.",
+      "precauciones": "Síndrome similar al neuroléptico maligno por retirada brusca (Parkinsonian Hyperpyrexia Syndrome): retirar siempre de forma gradual. Manejo perioperatorio: continuar la medicación el día de la cirugía para evitar rebote acinético. Vigilancia dermatológica periódica por riesgo 2 a 6 veces mayor de melanoma en Parkinson. Ataques súbitos de sueño (sleep attacks) sin signos prodrómicos. Posibles falsos positivos para feocromocitoma.",
+      "efectosAdversos": [
+        "Complicaciones motoras a largo plazo (>3-5 años): fluctuaciones de fin de dosis ('wearing-off'), fenómeno 'on-off' y discinesias coreicas",
+        "Náuseas, vómito y anorexia por estimulación periférica del área postrema",
+        "Hipotensión ortostática y síncope postural",
+        "Alucinaciones visuales vívidas, delirios y confusión en adultos mayores"
+      ],
+      "monitorizacion": "Monitoreo clínico de respuesta motora, fluctuaciones on-off, discinesias coreiformes involuntarias, presión arterial ortostática, pesquisa de ataques de sueño/conductas impulsivas y examen dermatológico anual."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Inhibidores no selectivos de la MAO (ej. Fenelzina)",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Acumulación masiva de catecolaminas centrales y periféricas por inhibición simultánea de síntesis y degradación.",
+        "efectoClinico": "Crisis hipertensiva grave y tormenta simpaticomimética potencialmente mortal.",
+        "conducta": "Contraindicación expresa; suspender el IMAO al menos 14 días antes de iniciar levodopa."
+      },
+      {
+        "farmacoImplicado": "Haloperidol",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Antagonismo competitivo por receptores D2 estriatales.",
+        "efectoClinico": "Anulación del beneficio motor antiparkinsoniano con rigidez severa.",
+        "conducta": "Evitar antipsicóticos típicos en Parkinson; usar Quetiapina o Clozapina si hay psicosis."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Micromedex: May cause fetal harm (Puede causar daño fetal). Atraviesa activamente la barrera placentaria mediante transportadores de aminoácidos y es metabolizada por tejidos fetales. En estudios de reproducción animal con carbidopa/levodopa se observaron malformaciones viscerales y esqueléticas en conejos (a 7 veces la dosis humana recomendada) y disminución de crías vivas en ratas. Criterio clínico: Administrar únicamente si el beneficio materno potencial supera con claridad los riesgos fetales.",
+      "lactancia": "Calificación OMS: Evitar la lactancia. Micromedex: Infant risk cannot be ruled out. La levodopa se excreta en la leche materna humana. Al convertirse en dopamina en la hipófisis anterior, inhibe de forma potente la secreción de prolactina, pudiendo suprimir la producción de leche. Se desconoce si la carbidopa se excreta en leche humana. Se recomienda evitar la lactancia durante el tratamiento.",
+      "limitesEvidencia": "Evaluación narrativa según FDA PLLR y calificaciones toxicológicas Micromedex/OMS.",
+      "sistemaPLLR": "Información narrativa basada en riesgo clínico. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 28, pp. 2–14, 35–36.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 12, p. 26.",
+      "complementoExterno": "Micromedex DrugDex, FDA PLLR y Temario FacMed UNAM."
+    },
+    "perlaClinica": "La carbidopa es el escudo periférico que impide que la levodopa se destruya en sangre antes de cruzar la barrera hematoencefálica.",
+    "clase": "Precursor dopaminérgico + Inhibidor DDC",
+    "dianaPrincipal": "Transportador LAT1 / Enzima AADC / Receptores D2/D1",
+    "mecanismo": "Conversión a dopamina central mediada por AADC estriatal tras transporte BHE vía LAT1.",
+    "dosis": "Adultos: Inicial 100/25 mg c/8h oral con titulación progresiva según respuesta motora.",
+    "efectosAdversos": [
+      "Discinesias tardías",
+      "Fluctuaciones on-off",
+      "Náuseas",
+      "Hipotensión ortostática",
+      "Alucinaciones"
+    ],
+    "contraindicaciones": "Inhibidores de la MAO no selectivos dentro de 14 días; glaucoma de ángulo cerrado; hipersensibilidad; psicosis mayor.",
+    "monitorizacion": "Control de fluctuaciones motoras, discinesias, presión ortostática y examen dermatológico anual.",
+    "alertas": "No suspender bruscamente por riesgo de síndrome hiperpirético dopaminérgico. Precaución con Inbrija en asma/EPOC.",
+    "embarazo": "Micromedex: May cause fetal harm. Cruza placenta; malformaciones viscerales/esqueléticas en conejos a 7x dosis humana. Usar solo si beneficio supera riesgo.",
+    "lactancia": "OMS: Evitar la lactancia. Se excreta en leche humana e inhibe prolactina, suprimiendo la lactogénesis.",
+    "fuentesTexto": "Programa p. 26; Katzung cap. 28, pp. 2–14, 35–36."
+  },
+  {
+    "id": "pramipexol",
+    "nombre": "Pramipexol",
+    "categoria": "parkinson",
+    "patologiaId": "parkinson",
+    "identificacion": {
+      "nombre": "Pramipexol",
+      "sinonimos": [
+        "Mirapex"
+      ],
+      "clase": "Agonista dopaminérgico no ergolínico con selectividad D3/D2",
+      "temaPrograma": "Semana 12 • Moduladores de la neurotransmisión dopaminérgica (Programa FacMed p. 26)"
+    },
+    "farmacologia": {
+      "blanco": "Receptores Dopaminérgicos D2, D3 y D4 (mayor afinidad por D3 > D2).",
+      "mecanismo": "Agonista dopaminérgico directo no ergótico; el temario especifica receptores D2, D3 y D4. Estimula los receptores postsinápticos estriatales sin requerir transformación metabólica presináptica.",
+      "efectosFisiopatologicos": "Restaura la inhibición sobre la vía indirecta motora estriatal reduciendo la hipocinesia.",
+      "usosClinicos": "Monoterapia para Parkinson leve (retrasando el uso de levodopa y discinesias a largo plazo) o coadyuvante en fluctuaciones motoras. Síndrome de piernas inquietas."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: Iniciar 0.125 mg 3 veces al día (o 0.25 mg tres veces al día según cuadro); duplicar gradualmente cada semana hasta rango usual de 1.5–4.5 mg/día en 3 tomas.",
+        "poblacion": "Adultos con Parkinson o piernas inquietas.",
+        "via": "Oral (comprimidos convencionales o liberación prolongada una vez al día).",
+        "unidad": "mg tres veces al día.",
+        "nota": "Verificar cuadro y tolerancia. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Hipersensibilidad previa confirmada al fármaco. Formulación de liberación prolongada (Pramipexol ER) contraindicada con ClCr <30 mL/min o hemodiálisis. Desaconsejado fuertemente en psicosis mayor o cuadros paranoides activos. Formulación ER contraindicada en Síndrome de Piernas Inquietas (SPI/RLS).",
+      "precauciones": "Retirada escalonada obligatoria para prevenir el potencialmente letal Parkinsonian Hyperpyrexia Syndrome y el Síndrome de Abstinencia a Agonistas Dopaminérgicos (DAWS: apatía profunda, pánico, fatiga severa y dolor no respondedor a levodopa). Mantener el día de la cirugía (manejo perioperatorio). Competencia renal de transporte catiónico (OCT) con cimetidina. Ataques súbitos de sueño (sleep attacks) al conducir. Trastornos severos del control de impulsos (ludopatía, hipersexualidad, compras). Examen dermatológico periódico por melanoma.",
+      "efectosAdversos": [
+        "Somnolencia diurna excesiva y episodios de sueño súbito ('sleep attacks')",
+        "Trastornos del control de impulsos por afinidad con receptor límbico D3",
+        "Náuseas y vómito",
+        "Hipotensión postural y mareo",
+        "Edema periférico maleolar no cardiogénico"
+      ],
+      "monitorizacion": "Pesquisa activa en cada consulta de conductas impulsivas/adictivas (preguntar a familiares), evaluación de somnolencia al conducir, presión arterial ortostática, función renal (creatinina y ClCr) y evaluación dermatológica periódica."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Cimetidina / Fármacos catiónicos renales",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Competencia por la secreción tubular renal activa.",
+        "efectoClinico": "Elevación de concentraciones plasmáticas de pramipexol hasta en 50%.",
+        "conducta": "Vigilar signos de toxicidad dopaminérgica y ajustar dosis si se combinan."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Micromedex: May cause fetal harm (Puede causar daño fetal). Paso transplacentario desconocido en humanos. En modelos animales (ratas) a dosis equivalentes o superiores a la máxima humana causó inhibición completa de la implantación embrionaria, pérdida y resorción embrionaria completa e inhibición del crecimiento postnatal secundaria a la marcada supresión de prolactina. Criterio de uso restrictivo: administrar únicamente si el beneficio clínico materno supera con claridad el riesgo potencial fetal.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Se desconoce si pasa a la leche materna humana (en ratas se concentra 3 a 6 veces más que en plasma). Al actuar como potente agonista dopaminérgico D2/D3, inhibe la secreción de prolactina en la mujer y puede suprimir por completo la lactogénesis y la producción de leche materna. Se desaconseja la lactancia durante el tratamiento.",
+      "limitesEvidencia": "Evaluación narrativa según FDA PLLR y clasificaciones Micromedex.",
+      "sistemaPLLR": "Información narrativa basada en riesgo clínico. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 28, pp. 15–16, 35.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 12, p. 26.",
+      "complementoExterno": "Micromedex DrugDex, FDA PLLR y Temario FacMed UNAM."
+    },
+    "perlaClinica": "Excelente en pacientes jóvenes para retrasar discinesias por levodopa, pero vigila si de pronto se vuelve comprador compulsivo o ludópata por estimulación D3 límbica.",
+    "clase": "Agonista dopaminérgico D3/D2 no ergolínico",
+    "dianaPrincipal": "Receptores Dopaminérgicos D3, D2 y D4",
+    "mecanismo": "Agonista dopaminérgico directo no ergótico sin dependencia de neuronas presinápticas.",
+    "dosis": "Adultos: Inicial 0.125-0.25 mg c/8h oral con titulación semanal hasta 1.5–4.5 mg/día.",
+    "efectosAdversos": [
+      "Somnolencia súbita",
+      "Control de impulsos alterado",
+      "Náuseas",
+      "Edema periférico"
+    ],
+    "contraindicaciones": "Hipersensibilidad; Pramipexol ER con ClCr <30 mL/min o hemodiálisis; ER contraindicado en piernas inquietas; psicosis activa.",
+    "monitorizacion": "Vigilancia de ataques de sueño, conducta impulsiva (D3 límbico), aclaramiento renal y piel.",
+    "alertas": "Ajuste obligatorio en falla renal (eliminación 90% renal inalterada). Retiro gradual estricto por riesgo de DAWS y síndrome hiperpirético.",
+    "embarazo": "Micromedex: May cause fetal harm. Inhibición de implantación y reabsorción embrionaria en ratas por supresión de prolactina; usar solo si beneficio supera riesgo.",
+    "lactancia": "Micromedex: Infant risk cannot be ruled out. Inhibe prolactina y suprime activamente la lactogénesis; se desaconseja amamantar.",
+    "fuentesTexto": "Programa p. 26; Katzung cap. 28, pp. 15–16, 35."
+  },
+  {
+    "id": "entacapona",
+    "nombre": "Entacapona",
+    "categoria": "parkinson",
+    "patologiaId": "parkinson",
+    "identificacion": {
+      "nombre": "Entacapona",
+      "sinonimos": [
+        "Comtan",
+        "Stalevo (combinación fija con Levodopa/Carbidopa)"
+      ],
+      "clase": "Inhibidor selectivo y reversible de la COMT periférica (complementario)",
+      "temaPrograma": "Semana 12 • Fármaco complementario del temario de Parkinson"
+    },
+    "farmacologia": {
+      "blanco": "Enzima Catecol-O-Metiltransferasa (COMT) en tejidos periféricos.",
+      "mecanismo": "Inhibe reversiblemente la enzima COMT en el intestino y sangre, bloqueando la degradación de levodopa a 3-O-metildopa (3-OMD), prolongando la vida media de levodopa y aumentando su paso al SNC.",
+      "efectosFisiopatologicos": "Suaviza las concentraciones plasmáticas de levodopa evitando los valles motores.",
+      "usosClinicos": "Coadyuvante exclusivo asociado a Levodopa/Carbidopa en pacientes con fenómeno de deterioro de fin de dosis ('wearing-off'). Totalmente ineficaz si se administra sola sin levodopa."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: 200 mg administrados concomitantemente con cada dosis de Levodopa/Carbidopa (máximo 1600–2000 mg/día).",
+        "poblacion": "Adultos con Parkinson bajo levodopa fluctuante.",
+        "via": "Oral.",
+        "unidad": "mg por toma conjunta.",
+        "nota": "Verificar cuadro y dosis de levodopa. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas consultadas.",
+      "precauciones": "Puede potenciar las discinesias y náuseas por levodopa (requiere reducir la dosis de levodopa en un 10-25%). Provoca coloración marrón-naranja inocua de la orina.",
+      "efectosAdversos": [
+        "Aumento de discinesias inducidas por levodopa",
+        "Náuseas y dolor abdominal",
+        "Coloración marrón-naranja inofensiva de la orina",
+        "Diarrea tardía explosiva (puede ocurrir semanas después)"
+      ],
+      "monitorizacion": "Vigilancia de discinesias motoras, diarrea persistente y aclaración al paciente sobre el color de la orina."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Levodopa / Carbidopa",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Inhibición de la vía metabólica periférica alternativa de COMT.",
+        "efectoClinico": "Aumento del 40-50% en el área bajo la curva (AUC) de levodopa.",
+        "conducta": "Asociación terapéutica complementaria oficial; reducir dosis de levodopa si hay discinesias."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "No especificado en las lecturas consultadas. Formato narrativo bajo marco FDA PLLR.",
+      "lactancia": "No especificado en las lecturas consultadas.",
+      "limitesEvidencia": "Datos de seguridad gestacional y láctea no desglosados en el capítulo obligatorio.",
+      "sistemaPLLR": "Evaluación narrativa de riesgo. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 28, pp. 19–20, 36.",
+      "programaOficial": "Temario oficial FacMed (módulo complementario de moduladores dopaminérgicos).",
+      "complementoExterno": "Regulación FDA PLLR."
+    },
+    "perlaClinica": "Fármaco complementario: no tiene acción antiparkinsoniana propia; solo sirve para escoltar y prolongar la vida de la levodopa.",
+    "clase": "Inhibidor selectivo de COMT periférica (complementario)",
+    "dianaPrincipal": "Enzima COMT periférica",
+    "mecanismo": "Inhibición de la degradación periférica de levodopa a 3-O-metildopa.",
+    "dosis": "Adultos: 200 mg con cada toma de Levodopa/Carbidopa (máximo 1600-2000 mg/día).",
+    "efectosAdversos": [
+      "Potenciación de discinesias",
+      "Orina color naranja",
+      "Diarrea tardía",
+      "Náuseas"
+    ],
+    "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas consultadas.",
+    "monitorizacion": "Vigilancia clínica de discinesias y peso/hidratación ante diarrea.",
+    "alertas": "Avisar al paciente sobre la tinción naranja de la orina. Ineficaz sin levodopa.",
+    "embarazo": "No especificado en las lecturas de esta semana. Narrativa PLLR.",
+    "lactancia": "No especificado en las lecturas de esta semana.",
+    "fuentesTexto": "Katzung cap. 28, pp. 19–20, 36."
+  },
+  {
+    "id": "rasagilina",
+    "nombre": "Rasagilina",
+    "categoria": "parkinson",
+    "patologiaId": "parkinson",
+    "identificacion": {
+      "nombre": "Rasagilina",
+      "sinonimos": [
+        "Azilect"
+      ],
+      "clase": "Inhibidor irreversible y selectivo de la monoaminooxidasa tipo B (MAO-B)",
+      "temaPrograma": "Semana 12 • Moduladores de la neurotransmisión dopaminérgica (Programa FacMed p. 26)"
+    },
+    "farmacologia": {
+      "blanco": "Monoaminooxidasa tipo B (MAO-B) mitocondrial estriatal.",
+      "mecanismo": "Inhibe selectivamente la enzima MAO-B en el cuerpo estriado, bloqueando la degradación oxidativa de la dopamina; a dosis mayores puede perder selectividad e inhibir MAO-A.",
+      "efectosFisiopatologicos": "Aumenta y prolonga la concentración sináptica de dopamina en los ganglios basales.",
+      "usosClinicos": "Adyuvante a levodopa en enfermedad de Parkinson con fluctuaciones de respuesta motora. Puede suavizar la respuesta; la lectura advierte que no debe presentarse como sustituto equivalente a levodopa."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: 0.5 a 1 mg una vez al día por vía oral como adyuvante a carbidopa-levodopa.",
+        "poblacion": "Adultos con Parkinson.",
+        "via": "Oral.",
+        "unidad": "mg/día en toma única.",
+        "nota": "Verificar cuadro y comorbilidades. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Uso conjunto con otros IMAO (incluidos otros inhibidores de MAO-B). Uso con analgésicos opioides (meperidina, tramadol, metadona, propoxifeno: síndrome serotoninérgico fatal). Ciclobenzaprina y hierba de San Juan. Dextrometorfano (episodios psicóticos). Insuficiencia hepática moderada a severa (Child-Pugh 7 a 15).",
+      "precauciones": "Periodos de lavado obligatorios: 14 días antes de iniciar opioides o antidepresivos; 5 semanas tras suspender fluoxetina. No exceder 1 mg/día (máx 0.5 mg/día en insuficiencia hepática Child-Pugh 5-6 o si se coadministra con inhibidores potentes de CYP1A2 como ciprofloxacino). Retirada escalonada para evitar cuadro similar a SNM. Evitar alimentos con tiramina >150 mg.",
+      "efectosAdversos": [
+        "Aumento de efectos dopaminérgicos de levodopa: discinesias y náusea",
+        "Cefalea y dispepsia",
+        "Alteraciones del sueño y cambios mentales leves",
+        "Hipotensión ortostática"
+      ],
+      "monitorizacion": "Presión arterial (hipotensión ortostática en los primeros 2 meses y control de hipertensión si se excede 1 mg/día), síntomas motores/discinesias, somnolencia diurna y enzimas hepáticas basales."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Antidepresivos ISRS / Tricíclicos",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Alteración del metabolismo y recaptura de serotonina.",
+        "efectoClinico": "Riesgo de síndrome serotoninérgico tóxico (calificado como teórico en las lecturas).",
+        "conducta": "Precaución extrema; vigilar síntomas autonómicos y neuromusculares."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Micromedex: Fetal risk cannot be ruled out (No se puede descartar riesgo fetal). Paso transplacentario desconocido en humanos; sin efectos adversos en ratas a 30x la dosis terapéutica humana. Usar durante la gestación únicamente si la condición clínica materna justifica con claridad el riesgo potencial para el feto.",
+      "lactancia": "Micromedex: Milk effects are possible. Se desconoce si pasa a la leche materna humana. En estudios animales inhibe la secreción de prolactina por acción dopaminérgica, por lo que puede suprimir la lactogénesis y la producción de leche. Precaución extrema o valorar cese de la lactancia si el fármaco es indispensable.",
+      "limitesEvidencia": "Evaluación narrativa según FDA PLLR y clasificaciones Micromedex.",
+      "sistemaPLLR": "Información narrativa basada en riesgo clínico. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 28, pp. 18–19, 25–26, 36.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 12, p. 26.",
+      "complementoExterno": "Micromedex DrugDex, FDA PLLR y Temario FacMed UNAM."
+    },
+    "perlaClinica": "La lectura no confirma un efecto neuroprotector modificador de la enfermedad concluyente; su beneficio es primordialmente sintomático adyuvante.",
+    "clase": "Inhibidor selectivo de MAO-B",
+    "dianaPrincipal": "Enzima mitocondrial MAO-B",
+    "mecanismo": "Inhibición irreversible y selectiva de la degradación oxidativa de dopamina.",
+    "dosis": "Adultos: 0.5 a 1 mg una vez al día VO como adyuvante a levodopa.",
+    "efectosAdversos": [
+      "Aumento de discinesias por levodopa",
+      "Náuseas",
+      "Cefalea",
+      "Hipotensión"
+    ],
+    "contraindicaciones": "Otros IMAO; opioides (meperidina, tramadol, metadona); ciclobenzaprina; hierba de San Juan; dextrometorfano; insuficiencia hepática Child-Pugh 7–15.",
+    "monitorizacion": "Control de presión ortostática, fluctuaciones motoras y enzimas hepáticas basales.",
+    "alertas": "No exceder 1 mg/día (pérdida de selectividad MAO-B y riesgo hipertensivo). Reducir a 0.5 mg/día con ciprofloxacino.",
+    "embarazo": "Micromedex: Fetal risk cannot be ruled out. Paso transplacentario desconocido en humanos; usar solo si el beneficio clínico justifica el riesgo.",
+    "lactancia": "Micromedex: Milk effects are possible. Puede suprimir la producción láctea por inhibición de prolactina; precaución extrema.",
+    "fuentesTexto": "Programa p. 26; Katzung cap. 28, pp. 18–19, 25–26, 36."
+  },
+  {
+    "id": "selegilina",
+    "nombre": "Selegilina",
+    "categoria": "parkinson",
+    "patologiaId": "parkinson",
+    "identificacion": {
+      "nombre": "Selegilina",
+      "sinonimos": [
+        "L-deprenilo",
+        "Eldepryl",
+        "Emsam"
+      ],
+      "clase": "Inhibidor irreversible y selectivo de la monoaminooxidasa tipo B (MAO-B)",
+      "temaPrograma": "Semana 12 • Moduladores de la neurotransmisión dopaminérgica (Programa FacMed p. 26)"
+    },
+    "farmacologia": {
+      "blanco": "Monoaminooxidasa tipo B (MAO-B) mitocondrial estriatal.",
+      "mecanismo": "Inhibe selectivamente MAO-B en el esquema terapéutico del temario; a dosis mayores la selectividad puede perderse.",
+      "efectosFisiopatologicos": "Retrasa la degradación de dopamina sináptica en los ganglios basales.",
+      "usosClinicos": "Coadyuvante a levodopa para prolongar o suavizar la respuesta en Parkinson. El texto refiere que puede ser menos potente que rasagilina y tiene efecto menor como monoterapia."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Adultos: El texto refiere 5 mg con el desayuno y 5 mg con la comida; tomarla tarde puede causar insomnio debido a metabolitos anfetamínicos.",
+        "poblacion": "Adultos con Parkinson.",
+        "via": "Oral.",
+        "unidad": "mg dos veces al día.",
+        "nota": "Verificar cuadro y horario. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Uso concomitante con analgésicos opioides (meperidina, tramadol, metadona, propoxifeno: toxicidad SNC grave, hiperpirexia y colapso cardiovascular mortal). Uso con antidepresivos (ISRS, IRSN, tricíclicos, otros IMAO, hierba de San Juan: síndrome serotoninérgico fatal). Feocromocitoma. Menores de 12 años (parche transdérmico). Insuficiencia hepática severa (Child-Pugh >9) o renal terminal para Zelapar (tableta orodispersable). Fenilcetonuria (Zelapar contiene aspartamo).",
+      "precauciones": "Periodos de lavado obligatorios: 14 días tras suspender selegilina antes de iniciar opioides o antidepresivos; 5 semanas (35 días) tras suspender fluoxetina antes de iniciar selegilina. Restricción de tiramina si se sobrepasan 10 mg/día orales o con parches de 9-12 mg/24 h. Administrar segunda dosis oral con el almuerzo (máx 14:00 h) y nunca por la noche por insomnio (metabolitos anfetamínicos). Retirada gradual para evitar cuadro similar a SNM.",
+      "efectosAdversos": [
+        "Insomnio marcado si se administra tarde en el día (por metabolismo a L-anfetamina y L-metanfetamina)",
+        "Potenciación de discinesias y náuseas asociadas a levodopa",
+        "Hipotensión ortostática",
+        "Confusión o cambios mentales en adultos mayores"
+      ],
+      "monitorizacion": "Monitoreo de presión arterial (hipotensión ortostática en ancianos y riesgo de hipertensión), calidad del sueño/insomnio, discinesias inducidas por levodopa y función hepática/renal."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Antidepresivos ISRS / Tricíclicos",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Aumento del tono serotoninérgico central.",
+        "efectoClinico": "Riesgo teórico de síndrome serotoninérgico.",
+        "conducta": "Precaución y vigilancia clínica de hiperreflexia o temblor."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Micromedex: May cause fetal harm (Puede causar daño fetal). En modelos animales se evidenció toxicidad en el desarrollo embriofetal a dosis altas (retraso en la osificación esquelética, disminución de peso fetal y aumento de reabsorciones postimplantación). Existe riesgo materno de crisis hipertensiva con compromiso hemodinámico útero-placentario adverso. Administrar únicamente si el beneficio materno justifica el riesgo fetal.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Se desconoce si pasa a la leche materna humana. En estudios preclínicos con ratas lactantes, las concentraciones en leche fueron de 5 a 15 veces superiores a las concentraciones plasmáticas maternas, con retraso ponderal en las crías. Se aconseja suspender la lactancia materna durante el tratamiento y hasta 5 días después de parches transdérmicos o 7 días después de la vía oral.",
+      "limitesEvidencia": "Evaluación narrativa según FDA PLLR y clasificaciones Micromedex.",
+      "sistemaPLLR": "Información narrativa basada en riesgo clínico. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 28, pp. 18–19, 36, 39.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 12, p. 26.",
+      "complementoExterno": "Micromedex DrugDex, FDA PLLR y Temario FacMed UNAM."
+    },
+    "perlaClinica": "La lectura especifica desayuno y comida, nunca por la noche: sus metabolitos anfetamínicos quitan el sueño si se toma tarde.",
+    "clase": "Inhibidor selectivo de MAO-B",
+    "dianaPrincipal": "Enzima mitocondrial MAO-B",
+    "mecanismo": "Inhibición selectiva de MAO-B; metabolizada a derivados anfetamínicos.",
+    "dosis": "Adultos: 5 mg con desayuno y 5 mg con comida (evitar en la noche).",
+    "efectosAdversos": [
+      "Insomnio",
+      "Potenciación de discinesias",
+      "Náuseas",
+      "Hipotensión ortostática"
+    ],
+    "contraindicaciones": "Opioides (meperidina, tramadol, metadona); antidepresivos (ISRS, IRSN, tricíclicos, IMAO); feocromocitoma; menores de 12 años (parche); daño hepático severo.",
+    "monitorizacion": "Control de insomnio, presión arterial, función hepática/renal y respuesta motora.",
+    "alertas": "Administrar máximo hasta el mediodía (almuerzo) para evitar insomnio anfetamínico. Lavado de 5 semanas tras fluoxetina.",
+    "embarazo": "Micromedex: May cause fetal harm. Retraso de osificación y reabsorciones en animales; riesgo materno de crisis hipertensiva.",
+    "lactancia": "Micromedex: Infant risk cannot be ruled out. En animales concentración láctea 5 a 15 veces superior al plasma; evitar lactancia durante y 5-7 días tras retiro.",
+    "fuentesTexto": "Programa p. 26; Katzung cap. 28, pp. 18–19, 36, 39."
+  },
+  {
+    "id": "haloperidol",
+    "nombre": "Haloperidol",
+    "categoria": "esquizofrenia",
+    "patologiaId": "esquizofrenia",
+    "identificacion": {
+      "nombre": "Haloperidol",
+      "sinonimos": [
+        "Haldol"
+      ],
+      "clase": "Butirofenona • Antipsicótico típico de 1.ª generación de alta potencia",
+      "temaPrograma": "Semana 12 • Fármacos antipsicóticos (Programa FacMed p. 26)"
+    },
+    "farmacologia": {
+      "blanco": "Receptor dopaminérgico D2 postsináptico.",
+      "mecanismo": "Antagonista competitivo de alta afinidad por receptores D2 en las vías mesolímbica y mesocortical; el temario lo clasifica como antipsicótico típico.",
+      "efectosFisiopatologicos": "Reduce la neurotransmisión dopaminérgica mesolímbica suprimiendo síntomas psicóticos positivos; el bloqueo simultáneo en la vía nigroestriatal precipita síntomas extrapiramidales (EPS).",
+      "usosClinicos": "Esquizofrenia (fase aguda y mantenimiento); otras indicaciones del capítulo incluyen manía aguda, agitación y delirium."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Cuadro de Katzung incluye intervalo oral adulto de 2.5–30 mg/día (habitual 2.5–15 mg/día en tomas divididas). Formas IM y decanoato de depósito para mantenimiento.",
+        "poblacion": "Adultos con esquizofrenia o agitación psicomotriz.",
+        "via": "Oral (tabletas, solución), Intramuscular (aguda o decanoato).",
+        "unidad": "mg/día.",
+        "nota": "Verificar cuadro, formulación y contexto clínico antes de emplear. No individualizar dosis desde esta plataforma."
+      },
+      "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso.",
+      "precauciones": "Alto riesgo de síntomas extrapiramidales tempranos y discinesia tardía irreversible. La lectura advierte prolongación de QTc y taquicardia ventricular con haloperidol intravenoso (no usar vía IV según tabla de farmacología clínica citada).",
+      "efectosAdversos": [
+        "Parkinsonismo farmacológico, acatisia, distonía aguda y otros síntomas extrapiramidales (EPS)",
+        "Discinesia tardía con uso crónico",
+        "Hiperprolactinemia por bloqueo en vía tuberoinfundibular (amenorrea, galactorrea)",
+        "Riesgo de Síndrome Neuroléptico Maligno (SNM)",
+        "Riesgo de prolongación del intervalo QTc con formulación IV"
+      ],
+      "monitorizacion": "Vigilancia clínica estrecha de síntomas extrapiramidales y tolerabilidad motora; estrategia individual de ECG/laboratorio: No especificado en las lecturas."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Levodopa / Agonistas dopaminérgicos",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Antagonismo competitivo directo a nivel del receptor D2 estriatal.",
+        "efectoClinico": "Anulación mutua de efectos; empeoramiento del parkinsonismo.",
+        "conducta": "Evitar combinación simultánea."
+      },
+      {
+        "farmacoImplicado": "Fármacos que prolongan el intervalo QT (Macrólidos, Antiarrítmicos)",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Bloqueo sinérgico de canales de potasio hERG en el miocardio.",
+        "efectoClinico": "Riesgo de arritmias ventriculares graves (Torsades de Pointes).",
+        "conducta": "Evitar vía IV y monitorear ECG basal y electrolitos."
+      },
+      {
+        "farmacoImplicado": "Risperidona",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Doble bloqueo dopaminérgico D2 aditivo, bloqueo alfa-1 y carga sedante/anticolinérgica sobre el SNC.",
+        "efectoClinico": "Mayor riesgo de síndrome neuroléptico maligno (SNM), sedación, hipotensión ortostática con caídas, hiperprolactinemia marcada (amenorrea/galactorrea), deterioro cognitivo y mayor mortalidad/ictus en ancianos con demencia.",
+        "conducta": "Evitar polifarmacia antipsicótica rutinaria. Evitar en psicosis asociada a demencia en ancianos (Boxed Warning)."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Atraviesa la barrera placentaria de forma significativa (relación en sangre de cordón umbilical/materna documentada de 0.65 a 0.66). La exposición materna durante el tercer trimestre se asocia con un riesgo elevado de síntomas extrapiramidales y/o síndrome de abstinencia neonatal tras el parto (agitación, temblores, hipertonía, hipotonía, somnolencia, dificultad respiratoria y trastornos de la alimentación). Criterio clínico: no se recomienda de rutina en el embarazo; su uso se restringe a situaciones donde el beneficio materno justifique claramente el riesgo potencial para el feto.",
+      "lactancia": "Se excreta en leche materna; vigilar somnolencia, sedación y síntomas motores en el lactante.",
+      "limitesEvidencia": "Riesgo neonatal bien documentado por bloqueo D2 y abstinencia en tercer trimestre; evaluación narrativa FDA PLLR.",
+      "sistemaPLLR": "Información narrativa basada en riesgo clínico perinatal. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 19, pp. 9, 12, 21, 24, 38, 52.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 12, p. 26.",
+      "complementoExterno": "Regulación FDA PLLR, Micromedex y guías perinatales."
+    },
+    "perlaClinica": "El bloqueo D2 nigroestriatal potente puede causar parkinsonismo farmacológico e hiperprolactinemia; evitar la vía intravenosa por riesgo de prolongación del QT.",
+    "clase": "Butirofenona • Antipsicótico típico D2",
+    "dianaPrincipal": "Receptor dopaminérgico D2",
+    "mecanismo": "Antagonismo competitivo de alta potencia sobre receptores D2 mesolímbicos y estriatales.",
+    "dosis": "Adultos: 2.5–30 mg/día oral (cuadro Katzung); formas IM disponibles.",
+    "efectosAdversos": [
+      "Síntomas extrapiramidales (EPS)",
+      "Distonía aguda",
+      "Acatisia",
+      "Hiperprolactinemia",
+      "Riesgo QT IV"
+    ],
+    "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas del curso.",
+    "monitorizacion": "Vigilancia clínica de EPS y tolerabilidad; esquema de laboratorio: No especificado.",
+    "alertas": "Evitar vía IV por riesgo de prolongación de QT y arritmias ventriculares.",
+    "embarazo": "Paso placentario significativo (ratio cordón/materna 0.66). Riesgo de síntomas extrapiramidales y abstinencia neonatal en tercer trimestre. Uso restringido a estricto beneficio materno.",
+    "lactancia": "Se excreta en leche materna; monitorizar sedación y síntomas motores en el recién nacido.",
+    "fuentesTexto": "Programa p. 26; Katzung cap. 19, pp. 9, 12, 21, 24, 38, 52."
+  },
+  {
+    "id": "risperidona",
+    "nombre": "Risperidona",
+    "categoria": "esquizofrenia",
+    "patologiaId": "esquizofrenia",
+    "identificacion": {
+      "nombre": "Risperidona",
+      "sinonimos": [
+        "Risperdal"
+      ],
+      "clase": "Benzisoxazol • Antipsicótico atípico dual D2 y 5-HT2A",
+      "temaPrograma": "Semana 12 • Fármacos antipsicóticos (Programa FacMed p. 26)"
+    },
+    "farmacologia": {
+      "blanco": "Receptores Dopaminérgicos D2 y Serotoninérgicos 5-HT2A.",
+      "mecanismo": "El temario la incluye entre antagonistas D2 y 5-HT2A; el antagonismo 5-HT2A promueve la liberación de dopamina en el estriado y la corteza, relacionándose con menor riesgo de síntomas extrapiramidales que con antagonismo D2 potente puro.",
+      "efectosFisiopatologicos": "Control de síntomas positivos por bloqueo D2 y modulación de síntomas negativos y afectivos por bloqueo 5-HT2A.",
+      "usosClinicos": "Esquizofrenia en adultos y adolescentes; el capítulo también describe otras indicaciones (manía bipolar, irritabilidad en autismo)."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Cuadro del capítulo: 2–10 mg/día para esquizofrenia en adultos (habitual 4–6 mg/día en 1–2 tomas); presentaciones orales y de depósito.",
+        "poblacion": "Adultos y adolescentes.",
+        "via": "Oral (tabletas, solución, tabletas de desintegración oral ODT) y formas de depósito IM.",
+        "unidad": "mg/día.",
+        "nota": "Verificar cuadro y vía. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas.",
+      "precauciones": "A dosis superiores a 6 mg/día el riesgo de síntomas extrapiramidales aumenta significativamente, perdiendo su perfil de baja inducción motora.",
+      "efectosAdversos": [
+        "Hiperprolactinemia marcada (amenorrea, galactorrea, ginecomastia)",
+        "Síntomas extrapiramidales dosis-dependientes (>6 mg/día)",
+        "Aumento de peso y riesgo metabólico moderado",
+        "Sedación e hipotensión postural"
+      ],
+      "monitorizacion": "Peso corporal, glucemia basal y lípidos en seguimiento de antipsicóticos; valorar niveles de prolactina sérica si se presentan síntomas endocrinos."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Fármacos inductores / inhibidores de CYP2D6",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Metabolizada por CYP2D6 a 9-hidroxirisperidona (paliperidona), ambos activos.",
+        "efectoClinico": "Inhibidores como fluoxetina pueden elevar la concentración activa total.",
+        "conducta": "Vigilancia metabólica y clínica de clase en tratamiento prolongado."
+      },
+      {
+        "farmacoImplicado": "Haloperidol",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Doble bloqueo dopaminérgico D2 aditivo, bloqueo adrenérgico alfa-1 y carga sedante/anticolinérgica sobre el SNC.",
+        "efectoClinico": "Mayor riesgo de síndrome neuroléptico maligno (SNM), sedación profunda, hipotensión ortostática con caídas, hiperprolactinemia marcada (amenorrea/galactorrea), deterioro cognitivo y mayor mortalidad/ictus en ancianos con demencia.",
+        "conducta": "Evitar polifarmacia antipsicótica rutinaria. Evitar en psicosis asociada a demencia en ancianos (Boxed Warning)."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Clasificado en Micromedex con advertencia de que 'puede causar daño fetal'. Atraviesa la placenta con una penetración del 49.2% (relación cordón umbilical/plasma materno para 9-hidroxirisperidona de 0.49). Estudios observacionales y registros no muestran asociación clara con malformaciones mayores o abortos espontáneos, aunque una cohorte de Medicaid (n=9258) observó un ligero incremento de riesgo de malformaciones mayores (RR 1.26; IC 95%: 1.02–1.56) y cardíacas (RR 1.26; IC 95%: 0.88–1.81) en expuestas en primer trimestre. En el tercer trimestre aumenta el riesgo de síntomas extrapiramidales y síndrome de abstinencia/descontinuación neonatal (hipertonía, hipotonía, temblores, somnolencia, distrés respiratorio, succión débil). Recomendaciones ACOG: tamizaje temprano de diabetes gestacional; inscribir en el National Pregnancy Registry for Atypical Antipsychotics; si la paciente ya está estable, priorizar continuar a la menor dosis eficaz antes de suspender bruscamente (lo cual triplica el riesgo de recaída materna).",
+      "lactancia": "Se excreta en leche materna con una dosis infantil relativa de 2.3% a 4.7%. Compatible en general si es indispensable, requiriendo monitoreo estrecho de sedación y síntomas motores en el lactante.",
+      "limitesEvidencia": "Riesgo evaluado mediante cohortes observacionales y registros prospectivos; narrativa basada en riesgo FDA PLLR.",
+      "sistemaPLLR": "Información narrativa basada en riesgo clínico perinatal y lactancia. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 19, pp. 13, 23–24, 48, 51, 54, 73.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 12, p. 26.",
+      "complementoExterno": "Regulación FDA PLLR, Micromedex, Cohorte Medicaid y Guías ACOG."
+    },
+    "perlaClinica": "Risperidona figura entre los antipsicóticos atípicos con mayor propensión a elevar la prolactina por bloqueo D2 en la eminencia media hipofisaria.",
+    "clase": "Antipsicótico atípico D2 / 5-HT2A",
+    "dianaPrincipal": "Receptores D2 y 5-HT2A",
+    "mecanismo": "Antagonismo dual D2 y 5-HT2A con menor propensión a EPS a dosis bajas.",
+    "dosis": "Adultos: 2–10 mg/día oral (cuadro capítulo); habitual 4–6 mg/día.",
+    "efectosAdversos": [
+      "Hiperprolactinemia",
+      "EPS dosis-dependientes",
+      "Aumento de peso",
+      "Sedación"
+    ],
+    "contraindicaciones": "Contraindicaciones específicas: No especificado en las lecturas consultadas.",
+    "monitorizacion": "Peso, glucemia y lípidos basales; prolactina ante síntomas endocrinos.",
+    "alertas": "A dosis >6 mg/día aumenta el riesgo de EPS similar a un antipsicótico típico.",
+    "embarazo": "Paso placentario del 49%. Riesgo de síntomas extrapiramidales y abstinencia neonatal en tercer trimestre. Guías ACOG: tamizaje de diabetes gestacional y mantener menor dosis eficaz.",
+    "lactancia": "Pasa a leche materna (dosis infantil relativa 2.3%-4.7%); compatible vigilando sedación y tono motor.",
+    "fuentesTexto": "Programa p. 26; Katzung cap. 19, pp. 13, 23–24, 48, 51, 54, 73."
+  },
+  {
+    "id": "clozapina",
+    "nombre": "Clozapina",
+    "categoria": "esquizofrenia",
+    "patologiaId": "esquizofrenia",
+    "identificacion": {
+      "nombre": "Clozapina",
+      "sinonimos": [
+        "Leponex",
+        "Clozaril"
+      ],
+      "clase": "Dibenzodiazepina • Antipsicótico atípico multirreceptor",
+      "temaPrograma": "Semana 12 • Fármacos antipsicóticos (Programa FacMed p. 26)"
+    },
+    "farmacologia": {
+      "blanco": "Receptores D2 y 5-HT2A; perfil multirreceptor (D4, 5-HT2C, alfa1, H1).",
+      "mecanismo": "El temario la clasifica como antagonista D2/5-HT2A. El texto describe un antagonismo D2 débil con rápida disociación ('fast-off') y potente antagonismo 5-HT2A, lo que minimiza la ocupación estriatal D2 y los síntomas extrapiramidales.",
+      "efectosFisiopatologicos": "Alta eficacia antipsicótica con supresión de síntomas positivos y negativos sin elevación mantenida de prolactina ni discinesia tardía.",
+      "usosClinicos": "Esquizofrenia resistente al tratamiento (respuesta documentada del 40–60% tras fallar otros antipsicóticos) y reducción comprobada del riesgo de conducta suicida en esquizofrenia."
+    },
+    "usoSeguro": {
+      "dosis": {
+        "texto": "Cuadro de Katzung: 200–900 mg/día oral para esquizofrenia; iniciar siempre a dosis bajas (12.5–25 mg/día) con titulación lenta y progresiva.",
+        "poblacion": "Adultos con esquizofrenia resistente.",
+        "via": "Oral (comprimidos, solución oral).",
+        "unidad": "mg/día.",
+        "nota": "Verificar cuadro y recuento hematológico. No calcular pautas terapéuticas individuales desde esta plataforma."
+      },
+      "contraindicaciones": "Katzung la identifica expresamente como CONTRAINDICADA durante la lactancia por riesgo de neutropenia, sedación profunda y convulsiones en el lactante. Antecedentes de agranulocitosis inducida por clozapina o trastornos de médula ósea. Otras contraindicaciones: No especificado en las lecturas.",
+      "precauciones": "Riesgo de agranulocitosis (1-2%), convulsiones dosis-dependientes, miocarditis/miocardiopatía aguda y estreñimiento severo que puede progresar a íleo paralítico fatal.",
+      "efectosAdversos": [
+        "Neutropenia grave y agranulocitosis potencialmente mortal",
+        "Efectos metabólicos marcados: aumento de peso severo, hiperglucemia y dislipidemia",
+        "Sedación profunda e hipotensión ortostática",
+        "Sialorrea nocturna paradójica y estreñimiento importante"
+      ],
+      "monitorizacion": "Vigilancia hematológica obligatoria con Recuento Absoluto de Neutrófilos (ANC/RAN): basal, semanal durante los primeros 6 meses, luego quincenal y mensual. Monitoreo basal y de seguimiento de peso, glucemia/HbA1c y lípidos séricos."
+    },
+    "interacciones": [
+      {
+        "farmacoImplicado": "Carbamazepina / Agentes mielosupresores",
+        "tipoFarmaco": "Fármaco del temario",
+        "mecanismo": "Citotoxicidad sinérgica sobre precursores mieloides hematopoyéticos.",
+        "efectoClinico": "Riesgo multiplicado de agranulocitosis mortal.",
+        "conducta": "Contraindicación expresa; no coadministrar con carbamazepina."
+      },
+      {
+        "farmacoImplicado": "Humo de tabaco (Hidrocarburos policíclicos)",
+        "tipoFarmaco": "Acompañante externo al programa",
+        "mecanismo": "Inducción potente de CYP1A2 hepático (vía principal de degradación de clozapina).",
+        "efectoClinico": "Disminución de niveles de clozapina; si el paciente cesa el tabaco abruptamente, los niveles se duplican.",
+        "conducta": "Ajustar dosis según hábito tabáquico y monitorear concentraciones plasmáticas."
+      }
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Clasificado en Micromedex con advertencia de que 'se ha demostrado daño fetal'; uso en el embarazo únicamente si es estrictamente indispensable. Atraviesa la placenta de manera activa (líquido amniótico relación 0.56; sangre de cordón 0.49), acumulándose en el plasma fetal a concentraciones superiores a las maternas por mayor fijación a albúmina fetal y atrapamiento iónico. Alto riesgo de inducir diabetes mellitus gestacional (macrosomía, distocia de hombros, asfixia). La exposición en el tercer trimestre induce síndrome neonatal con síntomas extrapiramidales y abstinencia (floppy infant syndrome, hipertonía, temblor, distrés respiratorio). A nivel neuroconductual temprano, lactantes expuestos muestran puntuaciones más bajas en escalas de Bayley (BSID-III), labilidad y trastornos del sueño a los 2 y 6 meses. Manejo clínico: tamizaje continuo de diabetes gestacional y monitoreo hematológico estricto (ANC) materno y neonatal.",
+      "lactancia": "Paso muy elevado a la leche humana con un ratio leche/plasma de 3.19 por su alta liposolubilidad. SE DESACONSEJA FORMALMENTE LA LACTANCIA MATERNA debido a reportes de sedación marcada, letargia y riesgo potencial de agranulocitosis / neutropenia neonatal.",
+      "limitesEvidencia": "Daño fetal demostrado en cohortes y registros; lactancia contraindicada por paso masivo a leche y toxicidad hematológica.",
+      "sistemaPLLR": "Advertencia expresa de no uso en lactancia materna y daño fetal demostrado. Ref: https://www.fda.gov/drugs/labeling-information-drug-products/pregnancy-and-lactation-labeling-drugs-final-rule"
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Katzung 16.ª ed., cap. 19, pp. 13, 20, 22, 31–32, 50–53, 55, 72.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 12, p. 26.",
+      "complementoExterno": "Regulación FDA PLLR, Micromedex, Escalas Bayley BSID-III y registros de monitoreo hematológico."
+    },
+    "perlaClinica": "Excepcional por su eficacia en esquizofrenia resistente y reducción del suicidio, pero la vigilancia hematológica del recuento de neutrófilos es rigurosamente obligatoria.",
+    "clase": "Antipsicótico atípico multirreceptor",
+    "dianaPrincipal": "Receptores D2 y 5-HT2A (perfil multirreceptor)",
+    "mecanismo": "Antagonismo D2 débil 'fast-off' y potente antagonismo 5-HT2A con mínimo riesgo motor.",
+    "dosis": "Adultos: 200–900 mg/día oral (cuadro Katzung); titulación lenta obligatoria.",
+    "efectosAdversos": [
+      "Agranulocitosis / neutropenia",
+      "Aumento de peso severo",
+      "Sedación",
+      "Sialorrea",
+      "Estreñimiento"
+    ],
+    "contraindicaciones": "Contraindicada formalmente durante la lactancia (ratio leche/plasma 3.19, riesgo de agranulocitosis y sedación neonatal). ANC <1500/mcL (<1000 en BEN).",
+    "monitorizacion": "Vigilancia hematológica obligatoria (RAN/ANC) regular y perfil metabólico.",
+    "alertas": "Agranulocitosis letal potencial. Suspender de inmediato si neutrófilos caen.",
+    "embarazo": "Paso placentario activo con acumulación fetal. Alto riesgo de diabetes gestacional y complicaciones neonatales/neuroconductuales. Usar solo si es indispensable.",
+    "lactancia": "DESACONSEJADA FORMALMENTE (ratio leche/plasma 3.19; riesgo de agranulocitosis neonatal y sedación profunda).",
+    "fuentesTexto": "Programa p. 26; Katzung cap. 19, pp. 13, 20, 22, 31–32, 50–53, 55, 72."
+  }
+]
