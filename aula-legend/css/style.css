@@ -173,3 +173,43 @@ nav a {
     animation: none !important;
   }
 }
+
+
+/* ==========================================================================
+   FOOTER UNIVERSAL - ACADEMIA ARCANA & JOVAN.M3D
+   ========================================================================== */
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background-color: rgba(21, 32, 50, 0.7);
+  border: 1px solid rgba(153, 143, 129, 0.2);
+  color: #d0c5b5;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover {
+  background-color: rgba(67, 226, 210, 0.15);
+  border-color: #43e2d2;
+  color: #43e2d2;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(67, 226, 210, 0.35);
+}
+
+.footer-badge-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(200, 170, 110, 0.2), rgba(67, 226, 210, 0.15));
+  border: 1px solid rgba(229, 197, 135, 0.4);
+  color: #e5c587;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
