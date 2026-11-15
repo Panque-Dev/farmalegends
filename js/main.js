@@ -39,6 +39,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Navegación compacta para teléfonos y tabletas.
+  const header = document.querySelector('header');
+  if (header) {
+    const menuItems = [
+      ['Aula Magna', 'index.html', 'aula-magna'],
+      ['Compendio farmacológico', 'medicamentos.html', 'compendio-farmacologico'],
+      ['Laboratorio de simulación', 'receptores.html', 'laboratorio-de-simulacion'],
+      ['Dosis y recetario', 'dosis-y-recetario.html', 'dosis-y-recetario'],
+      ['Casos clínicos', 'casos-clínicos.html', 'casos-clinicos'],
+      ['Epilepsia', 'epilepsia.html', 'farmalegends-epilepsia'],
+      ['Parkinson y esquizofrenia', 'dopamina.html', 'moduladores-dopaminergicos']
+    ];
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'mobile-nav-toggle';
+    toggle.setAttribute('aria-label', 'Abrir navegación del aula');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', 'mobile-aula-nav');
+    toggle.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">menu</span>';
+
+    const mobileNav = document.createElement('nav');
+    mobileNav.id = 'mobile-aula-nav';
+    mobileNav.className = 'mobile-aula-nav';
+    mobileNav.setAttribute('aria-label', 'Navegación principal');
+    menuItems.forEach(([label, href, path]) => {
+      const link = document.createElement('a');
+      link.href = href;
+      link.textContent = label;
+      link.dataset.path = path;
+      if (path === activeKey) {
+        link.setAttribute('aria-current', 'page');
+        link.classList.add('is-active');
+      }
+      mobileNav.appendChild(link);
+    });
+    header.appendChild(toggle);
+    document.body.appendChild(mobileNav);
+
+    const closeMenu = () => {
+      mobileNav.dataset.open = 'false';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir navegación del aula');
+      toggle.querySelector('span').textContent = 'menu';
+    };
+    toggle.addEventListener('click', () => {
+      const open = mobileNav.dataset.open !== 'true';
+      mobileNav.dataset.open = String(open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Cerrar navegación del aula' : 'Abrir navegación del aula');
+      toggle.querySelector('span').textContent = open ? 'close' : 'menu';
+    });
+    mobileNav.addEventListener('click', event => {
+      if (event.target.closest('a')) closeMenu();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeMenu();
+    });
+    document.addEventListener('click', event => {
+      if (!header.contains(event.target) && !mobileNav.contains(event.target)) closeMenu();
+    });
+  }
+
   // Barras de progreso declaradas como datos en el HTML, no como estilos en línea.
   document.querySelectorAll('[data-progress]').forEach(bar => {
     const progress = Number(bar.dataset.progress);
