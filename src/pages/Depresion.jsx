@@ -88,9 +88,42 @@ export default function Depresion() {
           </div>
 
           <article className="rounded-2xl bg-[#152032] border border-[#c8aa6e]/35 p-5 sm:p-6 space-y-3">
-            <h2 className="font-display text-xl font-bold text-[#e5c587]">Embarazo y lactancia: alcance de las lecturas</h2>
-            <p className="text-sm text-[#d0c5b5] leading-relaxed">Goodman &amp; Gilman describe una posible asociación de clase de los ISRS con hipertensión pulmonar persistente neonatal, con aumento absoluto pequeño, y señala más complicaciones perinatales con venlafaxina. No proporciona en esos pasajes una estimación individual completa para cada fármaco; lactancia y datos específicos de mirtazapina no quedan cubiertos en las lecturas consultadas. Se deja indicado como pendiente, sin completar con datos externos.</p>
-            <p className="text-[11px] text-[#d0c5b5]/70">Fuente: Goodman &amp; Gilman, 14.ª ed., cap. 18, PDF p. 22. Las categorías históricas FDA A/B/C/D/X no deben asignarse como clasificación vigente; la FDA las reemplazó por secciones narrativas de riesgo. <a className="text-[#43e2d2] underline" href="https://www.fda.gov/drugs/labeling-information-drug-products/questions-and-answers-pregnancy-and-lactation-labeling-rule" target="_blank" rel="noreferrer">Ver regla PLLR de la FDA</a>.</p>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h2 className="font-display text-xl font-bold text-[#e5c587]">Embarazo y lactancia: Consenso Clínico y Normativa PLLR</h2>
+              <span className="text-[10px] px-2 py-0.5 rounded bg-[#43e2d2]/15 text-[#43e2d2] font-semibold border border-[#43e2d2]/30">Micromedex &amp; Guías ACOG</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+              <div className="p-3 rounded-xl bg-[#081325] border border-[#ffb4ab]/30 space-y-1.5">
+                <strong className="text-[#ffb4ab] block font-bold">Fluoxetina (ISRS)</strong>
+                <p className="text-[#d0c5b5] text-[11px] leading-relaxed">
+                  <strong>Embarazo:</strong> <em>Fetal harm has been demonstrated</em> (Micromedex). Atraviesa placenta; en 3.er trimestre asocia síndrome de adaptación neonatal deficiente y HPPRN. Mantener a menor dosis si ya estaba estable (ACOG).
+                </p>
+                <p className="text-[#ffdad6] text-[11px] leading-relaxed">
+                  <strong>Lactancia:</strong> <em>Infant risk cannot be ruled out</em>. RID elevado de hasta <strong>14.6%</strong> (&gt;10%). De inicio se prefieren sertralina o paroxetina.
+                </p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#081325] border border-[#c8aa6e]/35 space-y-1.5">
+                <strong className="text-[#e5c587] block font-bold">Venlafaxina (IRSN)</strong>
+                <p className="text-[#d0c5b5] text-[11px] leading-relaxed">
+                  <strong>Embarazo:</strong> <em>May cause fetal harm</em> (Micromedex). Atraviesa placenta; abstinencia neonatal severa y distrés en 3.er trimestre tardío. Fármaco de 2.ª línea tras ISRS (ACOG).
+                </p>
+                <p className="text-[#d0c5b5] text-[11px] leading-relaxed">
+                  <strong>Lactancia:</strong> <em>Infant risk cannot be ruled out</em>. Paso relevante a leche (ratio 1.8–3.2) con RID de <strong>6.4% a 8.8%</strong>; vigilar sedación y succión.
+                </p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#081325] border border-[#43e2d2]/30 space-y-1.5">
+                <strong className="text-[#43e2d2] block font-bold">Mirtazapina (NaSSA)</strong>
+                <p className="text-[#d0c5b5] text-[11px] leading-relaxed">
+                  <strong>Embarazo:</strong> <em>May cause fetal harm</em> (Micromedex). Sin asociación concluyente con teratogenia mayor. Alternativa de 2.ª línea si fallan ISRS.
+                </p>
+                <p className="text-[#43e2d2] text-[11px] leading-relaxed">
+                  <strong>Lactancia:</strong> <em>Compatible / Low infant risk</em>. Excelente perfil con RID de solo <strong>0.6% a 2.8%</strong> (&lt;10%) y niveles indetectables en lactante.
+                </p>
+              </div>
+            </div>
+            <p className="text-[11px] text-[#d0c5b5]/70 pt-1">
+              Las categorías históricas de letras FDA (A, B, C, D, X) están obsoletas desde 2015. El etiquetado oficial se rige por la regla narrativa <strong>PLLR (Pregnancy and Lactation Labeling Rule)</strong> de la FDA, evaluando el balance riesgo-beneficio materno-fetal individualizado.
+            </p>
           </article>
         </section>
       )}

@@ -513,6 +513,60 @@ export default function FichaFarmaco({ farmaco }) {
                   )}
                 </div>
               )}
+              {deepLook.precauciones.sindromeSerotoninergico && (
+                <div className="p-2.5 rounded-lg bg-[#93000a]/20 border border-[#ffb4ab]/40 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Riesgo de Síndrome Serotoninérgico:</strong>
+                  {deepLook.precauciones.sindromeSerotoninergico}
+                </div>
+              )}
+              {deepLook.precauciones.hipertension && (
+                <div className="p-2 rounded-lg bg-[#93000a]/10 border border-[#93000a]/30 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Control Estricto de Presión Arterial:</strong>
+                  {deepLook.precauciones.hipertension}
+                </div>
+              )}
+              {deepLook.precauciones.agranulocitosis && (
+                <div className="p-2.5 rounded-lg bg-[#93000a]/20 border border-[#ffb4ab]/40 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Vigilancia de Agranulocitosis / Neutropenia (Fiebre/Odinofagia):</strong>
+                  {deepLook.precauciones.agranulocitosis}
+                </div>
+              )}
+              {deepLook.precauciones.glaucoma && (
+                <div className="p-2 rounded-lg bg-[#111c2e] border border-[#ffb4ab]/30 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Riesgo de Glaucoma de Ángulo Cerrado (Midriasis):</strong>
+                  {deepLook.precauciones.glaucoma}
+                </div>
+              )}
+              {deepLook.precauciones.virajeMania && (
+                <div className="p-2 rounded-lg bg-[#111c2e] border border-[#e5c587]/30 text-[#d0c5b5]">
+                  <strong className="text-[#e5c587] block">Viraje a Manía / Trastorno Bipolar:</strong>
+                  {deepLook.precauciones.virajeMania}
+                </div>
+              )}
+              {deepLook.precauciones.beers && (
+                <div className="p-2 rounded-lg bg-[#152032] border border-[#c8aa6e]/30 text-[#d0c5b5]">
+                  <strong className="text-[#e5c587] block">Criterios de Beers / Geriatría (Caídas &amp; SIADH):</strong>
+                  {deepLook.precauciones.beers}
+                </div>
+              )}
+              {deepLook.precauciones.pediatrico && (
+                <div className="p-2 rounded-lg bg-[#152032] border border-[#43e2d2]/30 text-[#d0c5b5]">
+                  <strong className="text-[#43e2d2] block">Vigilancia Pediátrica:</strong>
+                  {deepLook.precauciones.pediatrico}
+                </div>
+              )}
+              {deepLook.precauciones.interaccionClonidina && (
+                <div className="p-2 rounded-lg bg-[#93000a]/20 border border-[#ffb4ab]/40 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Interacción Crítica con Clonidina:</strong>
+                  {deepLook.precauciones.interaccionClonidina}
+                </div>
+              )}
+              {deepLook.precauciones.depresionSNC && (
+                <div className="p-2 rounded-lg bg-[#111c2e] border border-[#ffb4ab]/30 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Depresión Aditiva del SNC (Alcohol / Benzodiazepinas):</strong>
+                  {deepLook.precauciones.depresionSNC}
+                </div>
+              )}
               {deepLook.precauciones.interaccionesClave && (
                 <p className="p-2 rounded-lg bg-[#93000a]/15 text-[#ffdad6] border border-[#ffb4ab]/30">
                   <strong className="text-[#ffb4ab]">Alerta Crítica:</strong> {deepLook.precauciones.interaccionesClave}
@@ -587,6 +641,36 @@ export default function FichaFarmaco({ farmaco }) {
                 <div className="p-2 rounded-lg bg-[#111c2e] border border-[#4d463a]/30">
                   <strong className="text-[#43e2d2] block">Eje Endocrino / Prolactina:</strong>
                   {deepLook.reaccionesAdversas.endocrinasMetabolicas}
+                </div>
+              )}
+              {deepLook.reaccionesAdversas.sexuales && (
+                <div className="p-2 rounded-lg bg-[#111c2e] border border-[#ffb4ab]/30 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Disfunción Sexual (5-HT2):</strong>
+                  {deepLook.reaccionesAdversas.sexuales}
+                </div>
+              )}
+              {deepLook.reaccionesAdversas.discontinuacion && (
+                <div className="p-2 rounded-lg bg-[#93000a]/20 border border-[#ffb4ab]/40 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Síndrome de Discontinuación / Abstinencia ("Brain Zaps"):</strong>
+                  {deepLook.reaccionesAdversas.discontinuacion}
+                </div>
+              )}
+              {deepLook.reaccionesAdversas.sedacionApetito && (
+                <div className="p-2 rounded-lg bg-[#111c2e] border border-[#c8aa6e]/30 text-[#d0c5b5]">
+                  <strong className="text-[#e5c587] block">Sedación Profunda &amp; Ganancia Ponderal / Apetito (H1):</strong>
+                  {deepLook.reaccionesAdversas.sedacionApetito}
+                </div>
+              )}
+              {deepLook.reaccionesAdversas.psiquiatricas && (
+                <div className="p-2 rounded-lg bg-[#111c2e] border border-[#ffb4ab]/30 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Psiquiátricas &amp; Boxed Warning (Riesgo Suicida &lt;25 años / Insomnio):</strong>
+                  {deepLook.reaccionesAdversas.psiquiatricas}
+                </div>
+              )}
+              {deepLook.reaccionesAdversas.neurologicasAutonomicas && (
+                <div className="p-2 rounded-lg bg-[#111c2e] border border-[#4d463a]/30 text-[#d0c5b5]">
+                  <strong className="text-[#43e2d2] block">Neurológicas &amp; Autonómicas (Diaforesis &amp; Convulsiones):</strong>
+                  {deepLook.reaccionesAdversas.neurologicasAutonomicas}
                 </div>
               )}
               {deepLook.reaccionesAdversas.anticolinergicas && (

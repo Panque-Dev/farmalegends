@@ -1212,50 +1212,87 @@
     "patologiaId": "depresion",
     "identificacion": {
       "nombre": "Fluoxetina",
-      "sinonimos": ["Prozac"],
-      "clase": "ISRS • inhibidor selectivo de SERT",
+      "sinonimos": [
+        "Prozac",
+        "Sarafem",
+        "Symbyax (en comb. con olanzapina)"
+      ],
+      "clase": "ISRS • Inhibidor selectivo del transportador SERT",
       "temaPrograma": "Semana 13 • Moduladores serotoninérgicos y noradrenérgicos (Programa FacMed p. 27)"
     },
     "farmacologia": {
-      "blanco": "Transportador de serotonina (SERT).",
-      "mecanismo": "Inhibe selectivamente la recaptación neuronal de serotonina y aumenta su disponibilidad sináptica; tiene poco efecto directo sobre NET.",
-      "efectosFisiopatologicos": "El aumento sináptico de serotonina ocurre pronto, pero la respuesta clínica plena tarda semanas e involucra adaptaciones posteriores de señalización y plasticidad; no se explica solo por una deficiencia simple de monoaminas.",
-      "usosClinicos": "Depresión mayor. Las lecturas también describen usos de clase para otros trastornos, pero el programa de esta semana se centra en depresión.",
-      "farmacocinetica": "Biodisponibilidad oral aproximada de 70%; semivida de 48–72 h y metabolito activo norfluoxetina con semivida prolongada (aprox. 180 h en tabla). Metabolismo hepático; inhibe CYP2D6. La persistencia de norfluoxetina reduce síntomas de retirada, pero prolonga interacciones y periodos de lavado."
+      "blanco": "Transportador de serotonina presináptico (SERT).",
+      "mecanismo": "Inhibe selectivamente la recaptación neuronal presináptica de serotonina (5-HT) en la hendidura sináptica sin afinidad por receptores muscarínicos, H1 o alfa-1 adrenérgicos. Desensibiliza autorreceptores 5-HT1A.",
+      "efectosFisiopatologicos": "El aumento sináptico de serotonina ocurre pronto, pero la respuesta clínica plena tarda de 4 a 5 semanas debido a adaptaciones neuroplásticas (BDNF) y desensibilización de autorreceptores somatodendríticos.",
+      "usosClinicos": "Trastorno Depresivo Mayor (adultos y niños >=8 años [aprobado FDA]); Trastorno Obsesivo-Compulsivo (adultos y niños >=7 años [aprobado FDA]); Bulimia Nerviosa (adultos, 60 mg/día); Trastorno de Pánico; Trastorno Disfórico Premenstrual (Sarafem); Depresión Bipolar I (Symbyax).",
+      "farmacocinetica": "Biodisponibilidad oral ~100%; Tmax 6–8 h. Vd amplio, unión a proteínas 95%. Metabolismo hepático CYP2D6 a norfluoxetina (metabolito activo equipotente). Inhibidor potente de CYP2D6. t1/2: fluoxetina 4–6 días; norfluoxetina 4–16 días ('autolavado' protector contra abstinencia, pero exige lavado estricto de 5 semanas antes de IMAOs). Eliminación renal 60% y fecal 12%. Hemodiálisis ineficaz."
     },
     "usoSeguro": {
-      "dosis": {"texto": "Rango documentado en el cuadro del capítulo: 20–80 mg/día por vía oral.", "poblacion": "Adultos; individualizar según respuesta y tolerabilidad.", "via": "Oral.", "unidad": "mg/día.", "nota": "Rango didáctico de la lectura, no pauta individual de tratamiento."},
-      "contraindicaciones": "No combinar con inhibidores de la monoaminooxidasa (IMAO) ni dentro del periodo de lavado indicado en las lecturas por riesgo de síndrome serotoninérgico. Revisar interacciones antes de combinar con fármacos metabolizados por CYP2D6.",
-      "precauciones": "Puede causar al inicio náusea, inquietud o insomnio; vigilar disfunción sexual y cambios clínicos. Su semivida larga hace que las interacciones persistan después de suspenderla.",
-      "monitorizacion": "Respuesta clínica, tolerabilidad, síntomas serotoninérgicos en combinaciones de riesgo y presión arterial/contexto clínico según comorbilidades. La lectura no prescribe una batería de laboratorio rutinaria específica."
+      "dosis": {
+        "texto": "TDM y TOC: 20 mg/día matutinos iniciales (rango 20–80 mg/día). Pediátrico TDM (>=8 años): 10–20 mg/día. Pediátrico TOC (>=7 años): 10–60 mg/día. Bulimia: 60 mg/día. Formulación semanal: 90 mg/semana.",
+        "poblacion": "Adultos y pediátricos (>=8 años en TDM; >=7 años en TOC).",
+        "via": "Oral (cápsulas, tabletas, solución oral, liberación semanal).",
+        "unidad": "mg/día o mg/semana.",
+        "nota": "Administrar preferentemente por la mañana con el desayuno para evitar insomnio y náuseas."
+      },
+      "contraindicaciones": "Uso simultáneo con IMAOs (incluyendo selegilina, rasagilina, linezolid, azul de metileno) o dentro de 14 días tras suspenderlos; lavado obligatorio de al menos 5 semanas (35 días) tras suspender fluoxetina antes de iniciar un IMAO. Coadministración con pimozida o tioridazina (arritmias ventriculares letales por bloqueo CYP2D6 y prolongación de QTc). Hipersensibilidad confirmada.",
+      "precauciones": "Riesgo de Síndrome Serotoninérgico (triada: alteración mental, inestabilidad autonómica e hiperreflexia/clonus); glaucoma de ángulo cerrado por midriasis; viraje a manía en trastorno bipolar; Criterios de Beers en adultos mayores (riesgo de caídas, ataxia y fracturas; SIADH/hiponatremia grave, vigilar sodio); sangrado gastrointestinal por depleción de serotonina intraplaquetaria (sinergia con AINEs/aspirina); Black Box Warning de ideación suicida en <25 años.",
+      "monitorizacion": "Respuesta clínica y estado de ánimo, vigilancia estrecha de ideación suicida en las primeras semanas en menores de 25 años, sodio sérico en adultos mayores o con diuréticos, curva pondoestatural en niños, ECG para intervalo QTc si coexisten factores de riesgo cardiovascular."
     },
     "interacciones": [
-      {"farmacoImplicado": "IMAO (incluidos selegilina o rasagilina)", "tipoFarmaco": "Interacción con fármaco externo o de otro módulo", "mecanismo": "Exceso de actividad serotoninérgica por combinación de fármacos serotoninérgicos con inhibición de MAO.", "efectoClinico": "Riesgo de síndrome serotoninérgico grave.", "conducta": "Evitar la combinación y respetar los periodos de lavado descritos para cada agente."},
-      {"farmacoImplicado": "Risperidona y otros sustratos de CYP2D6", "tipoFarmaco": "Fármaco del temario / acompañante", "mecanismo": "La fluoxetina inhibe CYP2D6 y puede elevar la exposición a sustratos de esta enzima.", "efectoClinico": "Posible aumento de concentraciones y efectos adversos del fármaco concomitante.", "conducta": "Revisar la interacción y vigilar respuesta y efectos adversos; la lectura no aporta un ajuste universal."}
+      {
+        "farmacoImplicado": "IMAO (incluidos selegilina, rasagilina, linezolid)",
+        "tipoFarmaco": "Fármacos del temario / acompañantes",
+        "mecanismo": "Exceso masivo de actividad serotoninérgica por combinación de inhibidor de SERT con bloqueo catabólico de MAO.",
+        "efectoClinico": "Riesgo inminente de Síndrome Serotoninérgico fulminante y potencialmente mortal.",
+        "conducta": "Contraindicación absoluta. Respetar 14 días de lavado tras suspender IMAO y 5 semanas (35 días) tras suspender fluoxetina antes de iniciar IMAO."
+      },
+      {
+        "farmacoImplicado": "Sustratos de CYP2D6 (Risperidona, Haloperidol, Betabloqueadores, Tricíclicos)",
+        "tipoFarmaco": "Fármacos del temario y cardiovasculares",
+        "mecanismo": "Fluoxetina y norfluoxetina son inhibidores potentes de CYP2D6.",
+        "efectoClinico": "Aumento drástico de concentraciones plasmáticas (2.5 a 9 veces) y toxicidad del fármaco concomitante.",
+        "conducta": "Reducir dosis del sustrato y monitorizar estrechamente efectos adversos. Contraindicado con pimozida y tioridazina por QTc largo letal."
+      },
+      {
+        "farmacoImplicado": "AINEs y Antiagregantes plaquetarios (Aspirina)",
+        "tipoFarmaco": "Analgésicos y antitrombóticos",
+        "mecanismo": "Depleción de serotonina intraplaquetaria por bloqueo de SERT sumada a inhibición de COX plaquetaria.",
+        "efectoClinico": "Multiplicación del riesgo de hemorragia digestiva alta y sangrado mucocutáneo.",
+        "conducta": "Uso con extrema precaución; considerar gastroprotección con inhibidor de bomba de protones (IBP)."
+      }
     ],
     "embarazoYLactancia": {
-      "embarazo": "La lectura describe una posible asociación de los ISRS como clase con hipertensión pulmonar persistente neonatal, con incremento absoluto pequeño; no cuantifica aquí un riesgo específico de fluoxetina. No asignar categoría FDA por letra.",
-      "lactancia": "No especificado para fluoxetina en las lecturas del curso consultadas.",
-      "limitesEvidencia": "La lectura resume señal de clase para ISRS, no una estimación individual de riesgo para fluoxetina ni una recomendación personalizada.",
-      "sistemaPLLR": "Registrar el riesgo con narrativa y fuentes actuales; las letras A/B/C/D/X no son el formato vigente de la FDA para etiquetado de prescripción."
+      "embarazo": "Micromedex: Fetal harm has been demonstrated. Atraviesa placenta y se distribuye en tejidos fetales. Exposición en 3.er trimestre: síndrome de mala adaptación neonatal / descontinuación (dificultad respiratoria, hipotonía, temblores, hipoglucemia) y riesgo de HPPRN. Guías ACOG: Si la paciente ya estaba estable con fluoxetina antes de concebir, mantener a menor dosis eficaz; la suspensión abrupta incrementa drásticamente el riesgo de recaída materna. Sin categorías por letra obsoletas.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Fluoxetina y norfluoxetina se excretan en leche materna en concentraciones superiores a otros ISRS, con una Dosis Infantil Relativa (RID) de hasta 14.6% (>10%). Se han reportado cólicos, irritabilidad y diarrea en lactantes. Si se inicia en lactancia, preferir sertralina o paroxetina (RID <3%); si ya la tomaba en el embarazo con éxito, se puede continuar vigilando estrechamente al neonato.",
+      "limitesEvidencia": "Estudios epidemiológicos y metaanálisis ajustados no demuestran un incremento concluyente de malformaciones mayores anatómicas sobre el riesgo basal poblacional.",
+      "sistemaPLLR": "Evaluación narrativa de riesgo-beneficio materno-fetal conforme a la normativa PLLR de la FDA."
     },
     "fuentes": {
-      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung, 16.ª ed., cap. 30, PDF pp. 8, 15–16, 31, 35.",
+      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18; Katzung, 16.ª ed., cap. 30; FDA Prescribing Information; Micromedex; Guías ACOG.",
       "programaOficial": "Programa Académico de Farmacología, Semana 13, p. 27.",
-      "complementoExterno": "Ninguno añadido en esta ficha."
+      "complementoExterno": "Monografía clínica oficial FacMed UNAM jovan.m3d."
     },
-    "perlaClinica": "La norfluoxetina prolonga la semivida funcional: puede reducir síntomas de retirada, pero también prolongar interacciones tras suspender el fármaco.",
-    "clase": "ISRS • inhibidor selectivo de SERT",
-    "dianaPrincipal": "Transportador de serotonina SERT",
-    "mecanismo": "Inhibe selectivamente SERT y aumenta la serotonina disponible en la sinapsis.",
-    "dosis": "Adultos: 20–80 mg/día por vía oral (rango del cuadro de lectura).",
-    "efectosAdversos": ["Náusea y otros síntomas gastrointestinales", "Inquietud o insomnio al inicio", "Disfunción sexual", "Síndrome serotoninérgico en combinaciones de riesgo"],
-    "contraindicaciones": "Evitar combinación con IMAO y respetar periodo de lavado; riesgo de síndrome serotoninérgico.",
-    "monitorizacion": "Respuesta, tolerabilidad e interacciones; vigilar síntomas serotoninérgicos cuando haya combinación de riesgo.",
-    "alertas": "Inhibidor potente de CYP2D6; semivida prolongada de fluoxetina/norfluoxetina.",
-    "embarazo": "La lectura señala una posible señal de clase ISRS; riesgo específico de fluoxetina no cuantificado.",
-    "lactancia": "No especificado en las lecturas consultadas.",
-    "fuentesTexto": "Programa p. 27; Goodman & Gilman cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung cap. 30, PDF pp. 8, 15–16, 31, 35."
+    "perlaClinica": "Único ISRS con aprobación FDA en TDM (>=8 años) y TOC (>=7 años) pediátrico. Su metabolito norfluoxetina tiene semivida de hasta 16 días: proporciona un 'autolavado' que minimiza el síndrome de abstinencia si se olvida una toma, pero exige esperar 5 semanas completas (35 días) antes de iniciar un IMAO.",
+    "clase": "ISRS • Inhibidor selectivo del transportador SERT",
+    "dianaPrincipal": "Transportador de serotonina presináptico (SERT)",
+    "mecanismo": "Inhibe selectivamente SERT presináptico, aumentando la permanencia de 5-HT en la sinapsis y desensibilizando autorreceptores 5-HT1A; sin afinidad por receptores muscarínicos, H1 o alfa-1.",
+    "dosis": "Adultos: 20–80 mg/día (inicial 20 mg/día matutina). Pediátrico TDM (>=8 años): 10–20 mg/día. Pediátrico TOC (>=7 años): 10–60 mg/día. Bulimia: 60 mg/día. Semanal: 90 mg/semana.",
+    "efectosAdversos": [
+      "Náusea y vómito iniciales (20-25%)",
+      "Insomnio (hasta 30%) y nerviosismo/agitación",
+      "Disfunción sexual (retraso eyaculatorio, anorgasmia)",
+      "Pérdida de peso inicial y anorexia",
+      "Hiponatremia y SIADH (en ancianos)",
+      "Prolongación del intervalo QTc",
+      "Riesgo de sangrado digestivo (depleción plaquetaria de 5-HT)"
+    ],
+    "contraindicaciones": "IMAOs concomitantes o dentro de 14 días; lavado obligatorio de 5 semanas antes de iniciar IMAO; coadministración con pimozida o tioridazina (arritmias letales); hipersensibilidad.",
+    "monitorizacion": "Ideación suicida en <25 años (primeras semanas), sodio sérico en ancianos, curva de crecimiento en niños, ECG si hay factores de riesgo cardiovascular.",
+    "alertas": "Boxed Warning de ideación suicida en <25 años. Lavado estricto de 5 semanas antes de iniciar IMAO. Inhibidor potente de CYP2D6.",
+    "embarazo": "Micromedex: Fetal harm has been demonstrated. Síndrome de mala adaptación neonatal y riesgo de HPPRN en 3.er trimestre. ACOG: mantener a menor dosis si ya estaba estable.",
+    "lactancia": "Micromedex: Infant risk cannot be ruled out. RID hasta 14.6% (>10%); vigilar irritabilidad y diarrea en lactante. Preferir sertralina si se inicia de novo.",
+    "fuentesTexto": "Programa FacMed p. 27; Goodman & Gilman cap. 18; Katzung cap. 30; FDA Prescribing Information; Micromedex; Guías ACOG."
   },
   {
     "id": "venlafaxina",
@@ -1264,50 +1301,86 @@
     "patologiaId": "depresion",
     "identificacion": {
       "nombre": "Venlafaxina",
-      "sinonimos": ["Effexor"],
-      "clase": "IRSN • inhibidor de SERT y NET",
+      "sinonimos": [
+        "Effexor",
+        "Effexor XR"
+      ],
+      "clase": "IRSN • Inhibidor de la recaptación de serotonina y noradrenalina",
       "temaPrograma": "Semana 13 • Moduladores serotoninérgicos y noradrenérgicos (Programa FacMed p. 27)"
     },
     "farmacologia": {
-      "blanco": "Transportadores de serotonina (SERT) y noradrenalina (NET).",
-      "mecanismo": "Inhibe la recaptación de serotonina y noradrenalina; el bloqueo de NET adquiere mayor relevancia al aumentar la dosis.",
-      "efectosFisiopatologicos": "Aumenta la neurotransmisión serotoninérgica y noradrenérgica. Como con otros antidepresivos, la respuesta máxima tarda semanas y no se explica solo por el aumento inmediato de monoaminas.",
-      "usosClinicos": "Depresión mayor. La lectura describe además aplicaciones de la clase IRSN en trastornos de ansiedad y dolor, según el fármaco y la indicación.",
-      "farmacocinetica": "Biodisponibilidad oral aproximada de 45%; semivida del compuesto de 8–11 h y metabolito activo de 9–13 h según tabla. Se metaboliza principalmente por CYP2D6 a desvenlafaxina; la lectura la describe como sustrato y no como inhibidor importante de CYP."
+      "blanco": "Transportador de serotonina (SERT) y transportador de noradrenalina (NET).",
+      "mecanismo": "Inhibe la recaptación presináptica de serotonina y noradrenalina con selectividad dosis-dependiente: a <150 mg/día predomina SERT; a >150–225 mg/día se suma NET. Su metabolito O-desmetilvenlafaxina (ODV) es igualmente activo en ambos blancos. Sin afinidad por receptores muscarínicos, H1 o alfa-1.",
+      "efectosFisiopatologicos": "Aumenta la disponibilidad de serotonina y noradrenalina en corteza prefrontal, hipocampo y vías moduladoras del dolor descendente. A nivel periférico, el tono simpático noradrenérgico eleva la resistencia vascular y el gasto cardiaco.",
+      "usosClinicos": "Trastorno Depresivo Mayor (adultos, IR y XR); Trastorno de Ansiedad Generalizada (adultos, solo XR); Trastorno de Ansiedad Social (adultos, XR); Trastorno de Pánico (adultos, XR). Sin aprobación pediátrica por la FDA.",
+      "farmacocinetica": "Buena absorción oral; biodisponibilidad moderada por primer paso hepático; alimentos no alteran biodisponibilidad global. Estado de equilibrio en 3 días. Vd ~7.5 L/kg. Unión a proteínas muy baja (27% venlafaxina, 30% ODV). Hepático extenso vía CYP2D6 a O-desmetilvenlafaxina (ODV) y CYP3A4. Reducir dosis 50% en insuficiencia hepática. t1/2: venlafaxina 5 h, ODV 11 h. Eliminación renal 85%. Reducir dosis 50% en TFG < 30 mL/min. Hemodiálisis ineficaz."
     },
     "usoSeguro": {
-      "dosis": {"texto": "Rango documentado en el cuadro del capítulo: 75–225 mg/día por vía oral.", "poblacion": "Adultos; individualizar según respuesta y formulación.", "via": "Oral; existen formulaciones de liberación inmediata y extendida.", "unidad": "mg/día.", "nota": "Rango didáctico de la lectura, no pauta individual de tratamiento."},
-      "contraindicaciones": "No combinar con IMAO ni dentro del periodo de lavado indicado por riesgo de síndrome serotoninérgico.",
-      "precauciones": "La presión arterial puede aumentar con dosis altas, particularmente con formulación de liberación inmediata. La semivida relativamente corta aumenta la posibilidad de síntomas de discontinuación si se interrumpe bruscamente.",
-      "monitorizacion": "Presión arterial, respuesta clínica, efectos adversos y síntomas de discontinuación."
+      "dosis": {
+        "texto": "TDM: 75 mg/día iniciales (en 2-3 tomas para IR o toma única para XR); incremento progresivo de 75 mg/día cada 4 o más días hasta 225 mg/día (máximo 375 mg/día en pacientes hospitalizados graves). TAG, TAS y Pánico: 75 mg/día XR (iniciando con 37.5 mg/día en pánico).",
+        "poblacion": "Adultos exclusivamente. No aprobada en pacientes pediátricos.",
+        "via": "Oral (cápsulas XR con alimentos preferentemente por la mañana).",
+        "unidad": "mg/día.",
+        "nota": "Administrar siempre con alimentos para reducir náuseas. No triturar ni masticar cápsulas XR."
+      },
+      "contraindicaciones": "Uso simultáneo con IMAOs o dentro de los 14 días posteriores a suspender un IMAO; periodo de lavado obligatorio de al menos 7 días tras suspender venlafaxina antes de iniciar un IMAO. Hipersensibilidad confirmada a venlafaxina, desvenlafaxina o excipientes.",
+      "precauciones": "Monitoreo estricto y continuo de la presión arterial (induce hipertensión arterial diastólica sostenida dosis-dependiente, especialmente a >225 mg/día); síndrome de discontinuación severo ('brain zaps', vértigo, náuseas, parestesias, hasta en el 78% si se omite una dosis); síndrome serotoninérgico; glaucoma de ángulo cerrado por midriasis; viraje a manía en trastorno bipolar; Criterios de Beers en ancianos (caídas, hiponatremia/SIADH); Black Box Warning por suicidio en <25 años.",
+      "monitorizacion": "Presión arterial y frecuencia cardiaca basales y periódicas; electrolitos séricos (sodio) en ancianos o uso de diuréticos; vigilancia estrecha de ideación suicida en jóvenes; función renal y hepática."
     },
     "interacciones": [
-      {"farmacoImplicado": "IMAO (incluidos selegilina o rasagilina)", "tipoFarmaco": "Interacción con fármaco externo o de otro módulo", "mecanismo": "Aumento excesivo de actividad serotoninérgica al combinar IRSN con inhibición de MAO.", "efectoClinico": "Riesgo de síndrome serotoninérgico grave.", "conducta": "Evitar la combinación y respetar los periodos de lavado indicados en las fuentes."},
-      {"farmacoImplicado": "Fármacos serotoninérgicos", "tipoFarmaco": "Acompañante externo al programa", "mecanismo": "Suma de actividad serotoninérgica.", "efectoClinico": "Puede aumentar toxicidad serotoninérgica.", "conducta": "Revisar cada combinación y vigilar signos de toxicidad; la lectura no define un ajuste universal."}
+      {
+        "farmacoImplicado": "IMAO (incluyendo linezolid y azul de metileno)",
+        "tipoFarmaco": "Fármacos del temario / acompañantes",
+        "mecanismo": "Inhibición dual de recaptación de 5-HT y NE combinada con bloqueo del catabolismo de monoaminas.",
+        "efectoClinico": "Riesgo de Síndrome Serotoninérgico severo, crisis hipertensiva y colapso cardiovascular fatal.",
+        "conducta": "Contraindicado absolutamente. Lavado de 14 días tras IMAO y 7 días tras suspender venlafaxina antes de iniciar IMAO."
+      },
+      {
+        "farmacoImplicado": "Fármacos serotoninérgicos (Triptanos, Tramadol, Fentanilo, Litio)",
+        "tipoFarmaco": "Analgésicos y moduladores afectivos",
+        "mecanismo": "Estimulación aditiva sobre vías serotoninérgicas centrales y periféricas.",
+        "efectoClinico": "Potenciación del riesgo de Síndrome Serotoninérgico.",
+        "conducta": "Evitar combinación o vigilar estrechamente signos neuromusculares y autonómicos."
+      },
+      {
+        "farmacoImplicado": "Antihipertensivos",
+        "tipoFarmaco": "Fármacos cardiovasculares",
+        "mecanismo": "El aumento del tono noradrenérgico periférico por bloqueo de NET contrarresta el efecto hipotensor.",
+        "efectoClinico": "Pérdida de control tensional o requerimiento de mayor dosis de antihipertensivo.",
+        "conducta": "Medir TA regularmente y reajustar tratamiento antihipertensivo si es necesario."
+      }
     ],
     "embarazoYLactancia": {
-      "embarazo": "Goodman & Gilman señala mayor riesgo de complicaciones perinatales con venlafaxina, sin cuantificarlo ni desglosar aquí los desenlaces. No asignar categoría FDA por letra.",
-      "lactancia": "No especificado para venlafaxina en las lecturas del curso consultadas.",
-      "limitesEvidencia": "La lectura indica una señal perinatal, pero no ofrece una estimación de riesgo individual ni una pauta para decidir tratamiento.",
-      "sistemaPLLR": "Registrar el riesgo con narrativa y fuentes actuales; las letras A/B/C/D/X no son el formato vigente de la FDA para etiquetado de prescripción."
+      "embarazo": "Micromedex: May cause fetal harm. Atraviesa placenta hacia circulación fetal. Exposición en 3.er trimestre tardío: síndrome de mala adaptación neonatal / abstinencia severa (temblores, hipotonía/hipertonía, distrés respiratorio, convulsiones, hospitalización prolongada en UCIN), riesgo de HPPRN y prolongación de QTc neonatal. Guías ACOG: Fármaco de segunda línea tras ISRS; mantener a menor dosis eficaz si la paciente ya estaba estable para evitar recaídas maternas.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Excreción significativa en leche materna (ratio leche/plasma 1.8 a 3.2); Dosis Infantil Relativa (RID) del 6.4% al 8.8% (cercana al límite de seguridad del 10%). Se han documentado casos de letargo e hipotonía en el lactante. Si se inicia en lactancia, preferir alternativas con menor RID (sertralina); si se mantiene, monitorear sedación y ganancia ponderal del bebé.",
+      "limitesEvidencia": "Sin aumento concluyente de malformaciones mayores anatómicas en cohortes epidemiológicas ajustadas.",
+      "sistemaPLLR": "Evaluación narrativa beneficio-riesgo según lineamientos PLLR de la FDA."
     },
     "fuentes": {
-      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung, 16.ª ed., cap. 30, PDF pp. 9, 15–16, 31, 35–36.",
+      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18; Katzung, 16.ª ed., cap. 30; FDA Prescribing Information; Micromedex; Guías ACOG.",
       "programaOficial": "Programa Académico de Farmacología, Semana 13, p. 27.",
-      "complementoExterno": "Ninguno añadido en esta ficha."
+      "complementoExterno": "Monografía clínica oficial FacMed UNAM jovan.m3d."
     },
-    "perlaClinica": "Además de vigilar tolerabilidad serotoninérgica, revisa la presión arterial con dosis altas y evita una suspensión abrupta.",
-    "clase": "IRSN • inhibidor de SERT y NET",
+    "perlaClinica": "Efecto dual dosis-dependiente: actúa como ISRS a <150 mg/día y recluta NET a >150–225 mg/día. Es el antidepresivo con mayor riesgo de hipertensión arterial diastólica y con el síndrome de descontinuación más severo del mercado ('brain zaps' en hasta 78% de pacientes por su semivida corta de 5 h).",
+    "clase": "IRSN • Inhibidor de la recaptación de serotonina y noradrenalina",
     "dianaPrincipal": "Transportadores SERT y NET",
-    "mecanismo": "Inhibe la recaptación de serotonina y noradrenalina; el efecto noradrenérgico aumenta con la dosis.",
-    "dosis": "Adultos: 75–225 mg/día por vía oral (rango del cuadro de lectura).",
-    "efectosAdversos": ["Náusea y malestar gastrointestinal", "Insomnio y cefalea", "Disfunción sexual", "Aumento de presión arterial con dosis altas", "Síntomas de discontinuación"],
-    "contraindicaciones": "Evitar combinación con IMAO y respetar periodo de lavado; riesgo de síndrome serotoninérgico.",
-    "monitorizacion": "Presión arterial, respuesta clínica y síntomas de discontinuación.",
-    "alertas": "Interrupción brusca puede producir síntomas de discontinuación; vigilar presión arterial a dosis altas.",
-    "embarazo": "La lectura señala mayor riesgo de complicaciones perinatales; sin estimación específica.",
-    "lactancia": "No especificado en las lecturas consultadas.",
-    "fuentesTexto": "Programa p. 27; Goodman & Gilman cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung cap. 30, PDF pp. 9, 15–16, 31, 35–36."
+    "mecanismo": "Inhibición dual dependiente de dosis de SERT (<150 mg/día) y NET (>150–225 mg/día), aumentando serotonina y noradrenalina sin bloquear receptores muscarínicos, H1 o alfa-1.",
+    "dosis": "Adultos: 75–225 mg/día en formulación XR con alimentos (máximo 375 mg/día hospitalario). Sin uso pediátrico.",
+    "efectosAdversos": [
+      "Hipertensión arterial sostenida dosis-dependiente (diastólica)",
+      "Síndrome de discontinuación severo con 'brain zaps' (hasta 78%)",
+      "Náusea y vómito frecuentes al inicio (>25%)",
+      "Diaforesis profusa / sudores nocturnos (hasta 19%)",
+      "Disfunción sexual (retraso eyaculatorio, anorgasmia)",
+      "Taquicardia sinusal y palpitaciones",
+      "Hiponatremia y SIADH (en ancianos)"
+    ],
+    "contraindicaciones": "IMAOs concomitantes o dentro de 14 días; lavado de 7 días antes de iniciar IMAO; hipersensibilidad a venlafaxina o desvenlafaxina.",
+    "monitorizacion": "Presión arterial periódica obligatoria, frecuencia cardiaca, sodio sérico en adultos mayores, ideación suicida en <25 años.",
+    "alertas": "Monitorear presión arterial regularmente. Retirada ultralenta obligatoria para prevenir 'brain zaps'. Mayor letalidad en sobredosis (ensanchamiento QRS, rescate con bicarbonato de sodio). Boxed Warning suicidio <25 años.",
+    "embarazo": "Micromedex: May cause fetal harm. Síndrome de abstinencia neonatal severo en 3.er trimestre y riesgo de HPPRN. Segunda línea según ACOG.",
+    "lactancia": "Micromedex: Infant risk cannot be ruled out. RID 6.4–8.8%; pasa a leche materna en ratio 1.8–3.2. Monitorear sedación e hipotonía en el lactante.",
+    "fuentesTexto": "Programa FacMed p. 27; Goodman & Gilman cap. 18; Katzung cap. 30; FDA Prescribing Information; Micromedex; Guías ACOG."
   },
   {
     "id": "mirtazapina",
@@ -1316,49 +1389,85 @@
     "patologiaId": "depresion",
     "identificacion": {
       "nombre": "Mirtazapina",
-      "sinonimos": ["Remeron"],
-      "clase": "Antidepresivo tetracíclico • antagonista α₂ y 5-HT₂/5-HT₃",
+      "sinonimos": [
+        "Remeron",
+        "Remeron SolTab"
+      ],
+      "clase": "NaSSA • Antagonista alfa-2 adrenérgico, 5-HT2 y 5-HT3",
       "temaPrograma": "Semana 13 • Moduladores serotoninérgicos y noradrenérgicos (Programa FacMed p. 27)"
     },
     "farmacologia": {
-      "blanco": "Receptores α₂-adrenérgicos presinápticos y receptores serotoninérgicos 5-HT₂/5-HT₃; también antagoniza receptores H₁.",
-      "mecanismo": "Antagoniza receptores α₂ presinápticos y aumenta la liberación noradrenérgica y serotoninérgica; bloquea receptores 5-HT₂/5-HT₃ y H₁. No actúa como inhibidor de SERT/NET.",
-      "efectosFisiopatologicos": "Modula la liberación de noradrenalina y serotonina mediante autorreceptores presinápticos; el antagonismo H₁ contribuye a sedación y aumento del apetito.",
-      "usosClinicos": "Depresión mayor; las lecturas señalan que su perfil sedante puede ser útil cuando coexisten insomnio y depresión.",
-      "farmacocinetica": "Biodisponibilidad oral aproximada de 50%; semivida de 20–40 h. Metabolismo hepático por CYP2D6, CYP3A4 y CYP1A2; generalmente se administra por la noche por su efecto sedante."
+      "blanco": "Autorreceptores y heterorreceptores alfa-2 adrenérgicos presinápticos; receptores postsinápticos 5-HT2, 5-HT3 e histaminérgicos H1.",
+      "mecanismo": "Bloquea autorreceptores y heterorreceptores presinápticos alfa-2 adrenérgicos inhibitorios, desinhibiendo la liberación de noradrenalina y serotonina. Bloquea selectivamente receptores postsinápticos 5-HT2 (evitando disfunción sexual y ansiedad) y 5-HT3 (evitando náuseas y vómito), redirigiendo la serotonina a 5-HT1A. Ejerce un potente antagonismo histaminérgico H1 (sedación y aumento de peso) y antagonismo moderado alfa-1.",
+      "efectosFisiopatologicos": "Desinhibición de la liberación monoaminérgica sin inhibir SERT ni NET. Potente inducción del sueño y aumento del apetito/peso por antagonismo H1 y 5-HT2C. Libre de náuseas y disfunción sexual.",
+      "usosClinicos": "Trastorno Depresivo Mayor en adultos (15–45 mg/día al acostarse, Remeron y SolTab). Sin aprobación pediátrica por la FDA. Usos off-label de alta relevancia: insomnio en depresión (7.5–15 mg), reversión de disfunción sexual inducida por ISRS, caquexia/anorexia por cáncer o geriátrica, náuseas por quimioterapia, acatisia por neurolépticos.",
+      "farmacocinetica": "Biodisponibilidad oral ~50% (primer paso). Tmax 2 h. SolTab se disuelve en saliva sin agua. Vd ~107 L, unión a proteínas plasmáticas 85%. Metabolismo hepático extenso vía CYP2D6, CYP1A2 y CYP3A4 hacia desmetilmirtazapina. Tabaquismo induce CYP1A2 y reduce niveles de mirtazapina. t1/2: 20–40 h (promedio 37 h en mujeres, 26 h en hombres; dosis única nocturna). Excreción renal 75% y fecal 15%. Hemodiálisis ineficaz."
     },
     "usoSeguro": {
-      "dosis": {"texto": "Rango documentado en el cuadro del capítulo: 15–45 mg/día por vía oral.", "poblacion": "Adultos; individualizar según respuesta y tolerabilidad.", "via": "Oral.", "unidad": "mg/día.", "nota": "Rango didáctico de la lectura, no pauta individual de tratamiento."},
-      "contraindicaciones": "No combinar con IMAO; revisar periodos de lavado y riesgo serotoninérgico.",
-      "precauciones": "La somnolencia, aumento del apetito y del peso son efectos frecuentes descritos en la lectura. Puede sumarse sedación con alcohol, benzodiacepinas u otros depresores del SNC.",
-      "monitorizacion": "Respuesta clínica, somnolencia y cambios de apetito/peso; revisar interacciones con fármacos que afectan CYP2D6, CYP3A4 o CYP1A2."
+      "dosis": {
+        "texto": "TDM: Dosis inicial de 15 mg/día administrados por la noche antes de acostarse; incremento progresivo a 30 y hasta 45 mg/día a intervalos no menores de 1-2 semanas. Insomnio / Anorexia (off-label): 7.5 a 15 mg nocturnos.",
+        "poblacion": "Adultos exclusivamente. No aprobada en pacientes pediátricos.",
+        "via": "Oral (tabletas convencionales o desintegrables SolTab al acostarse).",
+        "unidad": "mg/día.",
+        "nota": "Dosis de 7.5 a 15 mg son paradójicamente más sedantes que 30 a 45 mg debido al predominio del bloqueo H1 a dosis bajas."
+      },
+      "contraindicaciones": "Uso concomitante con IMAOs o dentro de los 14 días posteriores a suspender un IMAO; periodo de lavado obligatorio de al menos 14 días tras suspender mirtazapina antes de iniciar un IMAO por riesgo de síndrome serotoninérgico mortal. Hipersensibilidad a mirtazapina o excipientes.",
+      "precauciones": "Vigilancia de Agranulocitosis / Neutropenia severa (ANC < 500/mcL en 0.1%): suspender de inmediato y solicitar biometría hemática ante fiebre, dolor de garganta u odinofagia; interacción farmacodinámica crítica con clonidina (antagonismo alfa-2 con riesgo de crisis hipertensiva); depresión aditiva severa del SNC con alcohol y benzodiazepinas; glaucoma de ángulo cerrado; fenilcetonuria (SolTab contiene aspartamo/fenilalanina); Criterios de Beers en adultos mayores (sedación profunda, caídas, fracturas, hiponatremia/SIADH); Boxed Warning de ideación suicida en <25 años.",
+      "monitorizacion": "Aparición de fiebre o dolor de garganta (biometría hemática urgente por neutropenia/agranulocitosis); peso corporal, índice de masa corporal y perfil lipídico (colesterol y triglicéridos); sodio sérico en adultos mayores; ideación suicida en jóvenes."
     },
     "interacciones": [
-      {"farmacoImplicado": "Alcohol y benzodiacepinas", "tipoFarmaco": "Acompañante externo al programa", "mecanismo": "Suma de efectos depresores del sistema nervioso central con el antagonismo H₁ de mirtazapina.", "efectoClinico": "Aumento de sedación y deterioro de alerta.", "conducta": "Advertir sobre sedación aditiva y revisar el uso concomitante."},
-      {"farmacoImplicado": "Inhibidores o inductores de CYP2D6, CYP3A4 o CYP1A2", "tipoFarmaco": "Acompañante externo al programa", "mecanismo": "Cambios en el metabolismo hepático de mirtazapina.", "efectoClinico": "Posible cambio en la exposición al fármaco.", "conducta": "Revisar la combinación; la lectura no aporta un ajuste universal."}
+      {
+        "farmacoImplicado": "IMAO (incluyendo selegilina, rasagilina, linezolid)",
+        "tipoFarmaco": "Fármacos del temario / acompañantes",
+        "mecanismo": "Desinhibición de liberación de 5-HT y NE combinada con bloqueo del catabolismo de monoaminas.",
+        "efectoClinico": "Riesgo de Síndrome Serotoninérgico grave y crisis hipertensiva potencialmente fatal.",
+        "conducta": "Contraindicación absoluta. Respetar 14 días de lavado tanto antes como después de mirtazapina."
+      },
+      {
+        "farmacoImplicado": "Clonidina",
+        "tipoFarmaco": "Antihipertensivo agonista alfa-2 central",
+        "mecanismo": "La mirtazapina bloquea directamente los receptores alfa-2 adrenérgicos presinápticos centrales.",
+        "efectoClinico": "Antagonismo directo del efecto hipotensor de la clonidina con posible crisis o urgencia hipertensiva de rebote.",
+        "conducta": "Evitar coadministración; monitorear estrechamente la presión arterial si coexisten."
+      },
+      {
+        "farmacoImplicado": "Alcohol, Benzodiazepinas y Sedantes del SNC",
+        "tipoFarmaco": "Depresores del SNC",
+        "mecanismo": "Potenciación aditiva sobre la neurotransmisión GABAérgica y antagonismo histaminérgico H1.",
+        "efectoClinico": "Deterioro psicomotor severo, sedación profunda y riesgo de caídas o accidentes.",
+        "conducta": "Advertir explícitamente al paciente evitar alcohol y ajustar sedantes concomitantes."
+      }
     ],
     "embarazoYLactancia": {
-      "embarazo": "No especificado para mirtazapina en las lecturas del curso consultadas. No asignar categoría FDA por letra.",
-      "lactancia": "No especificado para mirtazapina en las lecturas del curso consultadas.",
-      "limitesEvidencia": "Las lecturas consultadas no aportan una conclusión específica de embarazo o lactancia para mirtazapina.",
-      "sistemaPLLR": "Completar con una fuente específica si se solicita; no inferir seguridad reproductiva a partir de su mecanismo o de datos de clase."
+      "embarazo": "Micromedex: May cause fetal harm. Atraviesa placenta. No se ha demostrado aumento significativo de malformaciones congénitas mayores en cohortes observacionales. La exposición en 3.er trimestre puede producir síndrome de adaptación neonatal deficiente / síntomas de retirada (hipotonía, dificultad respiratoria, temblores). Guías ACOG: Fármaco de segunda línea en el embarazo si fracasan los ISRS o si la paciente ya estaba estable con mirtazapina.",
+      "lactancia": "Micromedex: Compatible / Low infant risk (Compatible / Riesgo infantil bajo). Excreción láctea sumamente baja (ratio leche/plasma 1.1); Dosis Infantil Relativa (RID) del 0.6% al 2.8% (muy inferior al 10%). Niveles indetectables en plasma del lactante y sin efectos adversos reportados en estudios prospectivos. De elección en lactancia si la madre requiere este perfil farmacológico.",
+      "limitesEvidencia": "Evidencia clínica sólida que descarta teratogenia mayor y confirma seguridad en lactancia.",
+      "sistemaPLLR": "Evaluación narrativa beneficio-riesgo materno-neonatal conforme al sistema PLLR de la FDA."
     },
     "fuentes": {
-      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18, PDF pp. 6, 11, 16–18, 22, 25; Katzung, 16.ª ed., cap. 30, PDF pp. 12, 15, 17, 19, 36, 40.",
+      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18; Katzung, 16.ª ed., cap. 30; FDA Prescribing Information; Micromedex; Guías ACOG.",
       "programaOficial": "Programa Académico de Farmacología, Semana 13, p. 27.",
-      "complementoExterno": "Ninguno añadido en esta ficha."
+      "complementoExterno": "Monografía clínica oficial FacMed UNAM jovan.m3d."
     },
-    "perlaClinica": "Su antagonismo H₁ ayuda a explicar el perfil sedante y el aumento del apetito; no confundirlo con un inhibidor de recaptación.",
-    "clase": "Antidepresivo tetracíclico • antagonista α₂ y 5-HT₂/5-HT₃",
-    "dianaPrincipal": "Receptores α₂-adrenérgicos, 5-HT₂/5-HT₃ y H₁",
-    "mecanismo": "Antagoniza α₂ presinápticos, aumenta liberación de NE/5-HT y bloquea receptores 5-HT₂/5-HT₃ y H₁.",
-    "dosis": "Adultos: 15–45 mg/día por vía oral (rango del cuadro de lectura).",
-    "efectosAdversos": ["Somnolencia", "Aumento del apetito", "Aumento de peso", "Mareo"],
-    "contraindicaciones": "Evitar combinación con IMAO; consultar los periodos de lavado de las lecturas.",
-    "monitorizacion": "Respuesta, somnolencia, apetito y peso; revisar interacciones metabólicas.",
-    "alertas": "La sedación puede sumarse con alcohol y benzodiacepinas.",
-    "embarazo": "No especificado en las lecturas consultadas.",
-    "lactancia": "No especificado en las lecturas consultadas.",
-    "fuentesTexto": "Programa p. 27; Goodman & Gilman cap. 18, PDF pp. 6, 11, 16–18, 22, 25; Katzung cap. 30, PDF pp. 12, 15, 17, 19, 36, 40."
+    "perlaClinica": "La paradoja sedante: a 7.5–15 mg es profundamente sedante por bloqueo H1 puro; a 30–45 mg la desinhibición noradrenérgica contrarresta la somnolencia. Por su bloqueo postsináptico de 5-HT2 y 5-HT3, prácticamente no produce disfunción sexual ni náuseas. Cuidado: puede causar agranulocitosis (0.1%, instruir reporte de odinofagia/fiebre) e interacciona peligrosamente con clonidina.",
+    "clase": "NaSSA • Antagonista alfa-2 adrenérgico, 5-HT2 y 5-HT3",
+    "dianaPrincipal": "Receptores presinápticos alfa-2, postsinápticos 5-HT2/5-HT3 e histaminérgicos H1",
+    "mecanismo": "Desinhibe liberación de noradrenalina y serotonina bloqueando autorreceptores/heterorreceptores alfa-2 presinápticos; bloquea 5-HT2, 5-HT3 y H1 sin inhibir recaptación (SERT/NET).",
+    "dosis": "Adultos: 15–45 mg/día en toma única al acostarse (Remeron / SolTab). Off-label insomnio: 7.5–15 mg. Sin uso pediátrico.",
+    "efectosAdversos": [
+      "Somnolencia y sedación profunda (54%)",
+      "Aumento pronunciado del apetito/hiperfagia y ganancia ponderal (12%, >=7% de peso)",
+      "Xerostomía (25%) y estreñimiento (13%)",
+      "Dislipidemia (elevación de colesterol y triglicéridos >=500 mg/dL)",
+      "Hipotensión ortostática y mareo (~1%)",
+      "Agranulocitosis y neutropenia severa (ANC <500/mcL en 0.1%)",
+      "Hiponatremia y SIADH (en ancianos)"
+    ],
+    "contraindicaciones": "IMAOs concomitantes o dentro de 14 días; lavado de 14 días antes de iniciar IMAO; hipersensibilidad a mirtazapina.",
+    "monitorizacion": "Reporte inmediato de fiebre/odinofagia (biometría hemática para descartar neutropenia/agranulocitosis); peso corporal y lípidos séricos; sodio sérico en adultos mayores.",
+    "alertas": "Agranulocitosis potencial: suspender si hay fiebre o dolor de garganta. Evitar combinación con clonidina (crisis hipertensiva). Sedación aditiva severa con alcohol y benzodiacepinas. Boxed Warning suicidio <25 años.",
+    "embarazo": "Micromedex: May cause fetal harm. Sin aumento concluyente de malformaciones mayores; adaptación neonatal deficiente en 3.er trimestre. Segunda línea en embarazo (ACOG).",
+    "lactancia": "Micromedex: Compatible / Low infant risk. RID mínimo de 0.6–2.8% (<10%); niveles indetectables en lactante y sin efectos adversos. Muy seguro en lactancia.",
+    "fuentesTexto": "Programa FacMed p. 27; Goodman & Gilman cap. 18; Katzung cap. 30; FDA Prescribing Information; Micromedex; Guías ACOG."
   }
 ]

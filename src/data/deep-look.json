@@ -840,5 +840,338 @@
       "Interacción crítica con el tabaco: Los hidrocarburos del humo inducen fuertemente CYP1A2; si un paciente hospitalizado deja de fumar, los niveles séricos de clozapina pueden duplicarse en pocos días y desencadenar convulsiones y colapso cardiovascular.",
       "Contraindicación de epinefrina: Ante choque o hipotensión severa inducida por clozapina, la epinefrina está formalmente contraindicada porque el bloqueo alfa-1 desenmascara la vasodilatación beta-2, profundizando el colapso vascular. El vasopresor de elección es norepinefrina."
     ]
+  },
+  {
+    "farmacoId": "fluoxetina",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Fluoxetina (ISRS Prototipo)",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Prácticamente 100% por vía oral. Los alimentos retrasan ligeramente la velocidad de absorción sin alterar la cantidad total absorbida.",
+      "tmax": "6 a 8 horas tras la administración oral de formulaciones de liberación inmediata.",
+      "inicioYDuracion": "El aumento sináptico de serotonina ocurre en horas, pero la respuesta clínica antidepresiva máxima requiere de 4 a 5 semanas debido a adaptaciones neuroplásticas (BDNF) y desensibilización de autorreceptores somatodendríticos 5-HT1A.",
+      "distribucion": "Volumen de distribución (Vd) sumamente amplio (distribución tisular extensa y alta liposolubilidad). Unión a proteínas plasmáticas muy elevada (~95%, principalmente a albúmina y glucoproteína ácida alfa-1). Atraviesa activamente barrera placentaria y hematoencefálica.",
+      "metabolismo": "Metabolismo hepático extenso mediado por citocromo P450, predominantemente CYP2D6 (y en menor medida CYP2C9 y CYP2C19). Se desmetila a norfluoxetina, metabolito activo equipotente en el bloqueo de SERT. Fluoxetina y norfluoxetina son inhibidores potentes de CYP2D6 e inhibidores moderados de CYP2C19 y CYP3A4, provocando interacciones farmacocinéticas críticas con sustratos de CYP2D6 (betabloqueadores, antipsicóticos como risperidona/haloperidol, antiarrítmicos y tricíclicos).",
+      "vidaMedia": "Semivida de eliminación bifásica ultralarga: fluoxetina en dosificación crónica de 4 a 6 días (1 a 3 días tras dosis única); norfluoxetina de 4 a 16 días. Brinda un efecto protector de 'autolavado' contra síntomas de retirada brusca, pero exige un periodo de lavado obligatorio de al menos 5 semanas (35 días) antes de iniciar un IMAO.",
+      "eliminacion": "Renal predominante (60%, con solo 2.5% a 5% como fármaco inalterado y 10% como norfluoxetina libre; el resto como glucurónidos conjugados) y fecal (12%). La hemodiálisis y hemoperfusión no son eficaces por su alto Vd y unión proteica del 95%.",
+      "ventanaTerapeutica": "Rango de dosificación habitual: 20 a 80 mg/día (dosis inicial 20 mg/día matutina). Formulación semanal de liberación retardada: 90 mg/semana. Monitorización de niveles plasmáticos no requerida de rutina salvo sospecha de toxicidad o interacciones complejas."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Inhibidor selectivo del transportador de serotonina presináptico (SERT), prototipo de los ISRS.",
+      "efectoTerapeutico": "Bloquea la recaptación presináptica neuronal de serotonina (5-HT) en el SNC, incrementando la concentración y tiempo de residencia de la serotonina en la hendidura sináptica. Promueve la desensibilización de autorreceptores inhibitorios 5-HT1A somatodendríticos y 5-HT1D terminales, amplificando la neurotransmisión fásica y tónica.",
+      "reaccionesTipoA": "Estimulación de receptores 5-HT2A y 5-HT2C (insomnio, agitación psicomotriz, ansiedad inicial y disfunción sexual: anorgasmia, retraso eyaculatorio); estimulación de receptores 5-HT3 en área postrema y tubo digestivo (náusea, vómito, diarrea, anorexia). Disminución del peso corporal inicial por saciedad serotoninérgica hipotalámica.",
+      "interferenciaOtrosReceptores": {
+        "selectividad": "Carece de afinidad significativa por receptores colinérgicos muscarínicos, histaminérgicos H1 o alfa-1 adrenérgicos a dosis terapéuticas, evitando sedación, hipotensión ortostática y boca seca severa de los antidepresivos tricíclicos.",
+        "dopaminergicos": "A dosis elevadas ejerce un débil antagonismo de receptores 5-HT2C que puede desinhibir levemente la liberación de dopamina y noradrenalina en corteza prefrontal, confiriendo un perfil ligeramente energizante/activador."
+      },
+      "canalesIonicosCardiacos": "Bloqueo de canales de potasio dependientes de voltaje cardiacos (hERG/IKr) a dosis terapéuticas altas y supraterapéuticas, asociándose a prolongación del intervalo QTc (QTcF >= 450 ms), riesgo de Torsades de Pointes y arritmias ventriculares."
+    },
+    "farmacodinamiaAvanzada": {
+      "autolavadoYRetiro": "La prolongadísima semivida de la norfluoxetina (hasta 16 días) genera un autodescenso plasmático gradual espontáneo si el paciente omite dosis, lo que confiere la menor tasa de síndrome de discontinuación de todos los ISRS (14% vs 66% con paroxetina). Sin embargo, esto retrasa la eliminación completa del fármaco, exigiendo 5 semanas completas de lavado antes de administrar IMAOs para prevenir un síndrome serotoninérgico fatal.",
+      "deplecionSerotoninaPlaquetaria": "Las plaquetas no sintetizan serotonina y dependen exclusivamente del transportador SERT para captarla de la circulación. El bloqueo crónico del SERT por fluoxetina vacía las reservas intraplaquetarias de 5-HT, comprometiendo la agregación plaquetaria y multiplicando el riesgo de hemorragia gastrointestinal cuando se coadministra con AINEs, aspirina o anticoagulantes."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Trastorno Depresivo Mayor (TDM)",
+        "poblacion": "Adultos (agudo y mantenimiento) y pacientes pediátricos de 8 años en adelante (aprobación explícita FDA).",
+        "criterio": "ISRS de primera línea; de elección en niños y adolescentes por contar con sólida evidencia de eficacia y aprobación pediátrica regulatoria."
+      },
+      {
+        "indicacion": "Trastorno Obsesivo-Compulsivo (TOC)",
+        "poblacion": "Adultos y pacientes pediátricos de 7 años en adelante (aprobación formal FDA).",
+        "criterio": "Fármaco de primera línea; suele requerir dosis en el rango superior (40 a 80 mg/día)."
+      },
+      {
+        "indicacion": "Bulimia Nerviosa",
+        "poblacion": "Adultos con atracones y vómito autoinducido moderado a severo.",
+        "criterio": "Único antidepresivo aprobado específicamente por la FDA para bulimia nerviosa (dosis diana de 60 mg/día por la mañana)."
+      },
+      {
+        "indicacion": "Trastorno de Pánico (con o sin agorafobia)",
+        "poblacion": "Adultos.",
+        "criterio": "Iniciar con 10 mg/día para evitar la exacerbación paradójica inicial de ansiedad por hipersensibilidad autonómica."
+      },
+      {
+        "indicacion": "Trastorno Disfórico Premenstrual (TDPM)",
+        "poblacion": "Mujeres adultas (bajo nombre comercial Sarafem).",
+        "criterio": "Eficaz en pauta continua diaria (20 mg/día) o intermitente limitada a la fase lútea (14 días previos a la menstruación)."
+      },
+      {
+        "indicacion": "Depresión Bipolar I y Depresión Resistente",
+        "poblacion": "Adultos y adolescentes >= 10 años en combinación fija con Olanzapina (Symbyax).",
+        "criterio": "Aprobado para episodios depresivos en trastorno bipolar I y depresión unipolar resistente a monoterapia previa."
+      }
+    ],
+    "precauciones": {
+      "sindromeSerotoninergico": "Riesgo vital por hiperactividad serotoninérgica. Triada clásica: alteración mental (agitación, delirio, confusión), inestabilidad autonómica (diaforesis, taquicardia, hipertermia, labilidad tensional) e hiperreactividad neuromuscular (hiperreflexia, clonus espontáneo o inducible, mioclonías y temblor). Riesgo exponencial si se combina con triptanos, tramadol, fentanilo, litio o hierba de San Juan.",
+      "glaucoma": "Midriasis pasiva secundaria al tono serotoninérgico/anticolinérgico leve; riesgo de desencadenar ataque agudo de glaucoma de ángulo cerrado en pacientes con ángulos camerulares estrechos no operados.",
+      "virajeMania": "Inducción potencial de episodios maníacos o hipomaníacos en pacientes con trastorno bipolar no diagnosticado; realizar tamizaje previo exhaustivo.",
+      "beers": "Criterios de Beers en adultos mayores: evitar combinación con 3 o más fármacos activos en SNC por alto riesgo de caídas, ataxia y fracturas óseas. Monitoreo estricto de sodio sérico por riesgo elevado de hiponatremia y SIADH (especialmente en combinación con diuréticos tiazídicos).",
+      "interaccionesClave": "Inhibición potente de CYP2D6: eleva de forma masiva concentraciones plasmáticas de antidepresivos tricíclicos, antipsicóticos (haloperidol, risperidona), antiarrítmicos (flecainida, propafenona) y betabloqueadores (metoprolol). Contraindicación absoluta con pimozida o tioridazina por riesgo de Torsades de Pointes fatal.",
+      "pediatrico": "Vigilar desaceleración pondoestatural leve (~1.1 cm en talla y 1.1 kg en peso frente a placebo en estudios de 19 semanas) e incremento paradójico de ideación suicida (Black Box Warning en menores de 25 años)."
+    },
+    "reaccionesAdversas": {
+      "gastrointestinales": "Náusea y vómito muy frecuentes al inicio (20% a 25%), diarrea, dispepsia, dolor abdominal y xerostomía.",
+      "sexuales": "Disfunción sexual frecuente mediada por receptores 5-HT2: retraso o ausencia de eyaculación y disfunción eréctil en hombres; anorgasmia o retraso orgásmico y disminución de libido en mujeres (2% a 7% reportado formalmente, hasta >30% en encuestas activas).",
+      "discontinuacion": "Síndrome de descontinuación de muy baja frecuencia (apenas 14% vs 66% con paroxetina) debido al autodescenso gradual de norfluoxetina ('autolavado' intrínseco).",
+      "psiquiatricas": "Insomnio (hasta 30%), ansiedad e inquietud motora inicial (efecto activador), cefalea, temblor fino. Boxed Warning: ideación y conducta suicida en niños, adolescentes y adultos jóvenes (<25 años).",
+      "endocrinasMetabolicas": "Pérdida de peso inicial y anorexia (saciedad serotoninérgica), hiponatremia secundaria a SIADH en ancianos, labilidad glucémica en diabéticos (hipoglucemia durante tratamiento, hiperglucemia al suspender).",
+      "cardiovasculares": "Prolongación del intervalo QTc, arritmias ventriculares y riesgo aumentado de hemorragia digestiva/equimosis por depleción de serotonina intraplaquetaria (sinergia lesiva con AINEs o aspirina)."
+    },
+    "contraindicaciones": [
+      "Uso concomitante con inhibidores de la monoaminooxidasa (IMAOs), incluyendo selegilina, rasagilina, linezolid y azul de metileno IV, o dentro de los 14 días posteriores a suspender un IMAO.",
+      "Periodo de lavado obligatorio de al menos 5 semanas (35 días) tras descontinuar fluoxetina antes de iniciar cualquier tratamiento con un IMAO, debido a la vida media prolongada de la norfluoxetina.",
+      "Coadministración con pimozida o tioridazina (la inhibición de CYP2D6 eleva sus niveles plasmáticos produciendo prolongación grave del QTc y arritmias ventriculares potencialmente mortales).",
+      "Hipersensibilidad confirmada a la fluoxetina o a cualquiera de los excipientes de la fórmula."
+    ],
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "Fetal harm has been demonstrated (Se ha demostrado daño fetal).",
+      "pasoTransplacentario": "Atraviesa libremente la barrera placentaria y se distribuye ampliamente en los tejidos fetales.",
+      "evidenciaTeratogenica": "Los estudios epidemiológicos generales y metaanálisis no demuestran un incremento marcado o consistente de malformaciones congénitas mayores o defectos cardiacos estructurales aislados en análisis ajustados, aunque algunas cohortes han sugerido incrementos marginales de defectos septales.",
+      "complicacionesNeonatales": "La exposición materna durante el tercer trimestre se asocia con síndrome de mala adaptación neonatal / descontinuación (dificultad respiratoria, hipotonía, hipertonía, temblores, irritabilidad, cianosis, hipoglucemia y llanto continuo) que puede requerir ingreso en UCIN. Se describe además un incremento del riesgo relativo de Hipertensión Pulmonar Persistente del Recién Nacido (HPPRN).",
+      "recomendacionesClinicas": "Guías ACOG: Si una mujer ya se encuentra adecuadamente controlada con fluoxetina antes de concebir, se recomienda mantener el fármaco a la menor dosis eficaz; la suspensión abrupta incrementa drásticamente el riesgo de recaída depresiva mayor materna. Evitar cambios innecesarios de antidepresivo.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Fluoxetina y norfluoxetina se excretan en la leche materna en concentraciones significativamente mayores que otros ISRS, alcanzando una Dosis Infantil Relativa (RID) de hasta 14.6% (superando el límite de seguridad del 10%). Se han detectado niveles séricos en lactantes con reportes de cólicos, diarrea, irritabilidad y somnolencia. Si se va a iniciar un antidepresivo durante la lactancia, se prefieren sertralina o paroxetina (RID < 3%); si la madre ya tomaba fluoxetina con excelente respuesta durante el embarazo, se puede continuar vigilando estrechamente al lactante."
+    },
+    "toxicologia": {
+      "mecanismo": "Hiperactividad serotoninérgica masiva en SNC y receptores periféricos, bloqueo de canales de potasio cardiacos IKr con prolongación del QTc y depresión del sistema nervioso central.",
+      "manifestaciones": {
+        "levesModeradas": "Somnolencia, náusea, vómito, taquicardia sinusal, temblores, midriasis y mareo.",
+        "severasMortales": "Prolongación extrema del intervalo QTc, arritmias ventriculares (Torsades de Pointes), convulsiones tónico-clónicas generalizadas, coma y Síndrome Serotoninérgico fulminante con hipertermia maligna y colapso cardiovascular."
+      },
+      "manejoSoporte": [
+        "No existe antídoto específico para la intoxicación por fluoxetina.",
+        "Asegurar permeabilidad de la vía aérea, oxigenación y asistencia ventilatoria si existe depresión del sensorio.",
+        "Monitorización electrocardiográfica continua obligatoria para vigilar el intervalo QTc y detectar arritmias ventriculares.",
+        "Manejo agresivo del Síndrome Serotoninérgico: administración intravenosa de benzodiazepinas (diazepam o lorazepam) para controlar la agitación, el clonus y las convulsiones.",
+        "Enfriamiento externo intensivo y relajación neuromuscular en hipertermia severa. En casos moderados a severos refractarios a benzodiazepinas, considerar el antagonista de receptores 5-HT2 ciproheptadina por sonda nasogástrica (12 mg iniciales seguidos de 2 mg cada 2 horas).",
+        "Las técnicas de eliminación extracorpórea (hemodiálisis, hemoperfusión, diuresis forzada) son totalmente inútiles debido al inmenso volumen de distribución tisular y a la fijación a proteínas del 95%."
+      ]
+    },
+    "perlasClinicas": [
+      "Aprobación pediátrica selectiva: Es el único ISRS con aprobación formal de la FDA tanto para Trastorno Depresivo Mayor (a partir de los 8 años) como para TOC (a partir de los 7 años).",
+      "El fenómeno del 'autolavado': Gracias a la semivida de hasta 16 días de la norfluoxetina, el olvido ocasional de una dosis no produce síndrome de discontinuación (solo 14% de síntomas de retirada), lo que beneficia a pacientes con adherencia irregular.",
+      "La regla de las 5 semanas: Debido a la persistencia tisular de la norfluoxetina, es obligatorio esperar un mínimo de 35 días (5 semanas) tras suspender fluoxetina antes de iniciar cualquier IMAO para evitar un síndrome serotoninérgico fatal.",
+      "Inhibición enzimática crítica: La fluoxetina es un potente inhibidor del CYP2D6; si se asocia con risperidona, betabloqueadores o antiarrítmicos, puede duplicar o triplicar sus niveles plasmáticos y desencadenar toxicidad farmacológica.",
+      "Lactancia vs Embarazo: Aunque es segura para mantener en el embarazo si ya existía estabilidad clínica previa, en lactancia exclusiva de inicio se prefiere sertralina debido a que la fluoxetina tiene un RID elevado de hasta 14.6%."
+    ]
+  },
+  {
+    "farmacoId": "venlafaxina",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Venlafaxina (IRSN Prototipo)",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Buena absorción gastrointestinal; biodisponibilidad sistémica con efecto de primer paso hepático moderado. Los alimentos no alteran la biodisponibilidad pero reducen las náuseas.",
+      "tmax": "Formulación convencional IR: 2 a 3 horas; formulación de liberación prolongada XR: 5.5 a 6 horas. Concentraciones en estado de equilibrio (steady-state): se alcanzan en 3 días.",
+      "inicioYDuracion": "Efecto sobre la recaptación inmediato; la respuesta clínica antidepresiva y ansiolítica se consolida entre las 2 y 4 semanas.",
+      "distribucion": "Volumen de distribución (Vd) amplio (~7.5 L/kg) con gran penetración tisular. Unión a proteínas plasmáticas muy baja: apenas 27% para venlafaxina y 30% para su metabolito activo ODV (desvenlafaxina).",
+      "metabolismo": "Metabolismo hepático extenso vía CYP2D6 hacia O-desmetilvenlafaxina (ODV o desvenlafaxina), metabolito activo equipotente en el bloqueo de SERT y NET; y vía CYP3A4 hacia N-desmetilvenlafaxina. En insuficiencia hepática leve a moderada el aclaramiento cae 50% y en cirrosis severa >=50%, exigiendo reducir la dosis a la mitad.",
+      "vidaMedia": "Semivida plasmática corta: venlafaxina ~5 horas; O-desmetilvenlafaxina (ODV) ~11 horas. Esta vida media corta explica su altísima propensión al síndrome de discontinuación severo si se omite una dosis.",
+      "eliminacion": "Eliminación renal primaria (~85% de la dosis excretada en orina como ODV libre/conjugada y fármaco inalterado); eliminación fecal mínima (~2%). En insuficiencia renal con TFG < 30 mL/min o hemodiálisis, la dosis diaria debe reducirse un 50%.",
+      "ventanaTerapeutica": "Rango terapéutico habitual: 75 a 225 mg/día (máximo 375 mg/día en pacientes hospitalizados graves). Dosis <150 mg/día bloquea casi exclusivamente SERT; >150-225 mg/día recluta inhibición robusta de NET."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Inhibidor del transportador de serotonina (SERT) y del transportador de noradrenalina (NET), prototipo de los IRSN.",
+      "efectoTerapeutico": "Aumenta simultáneamente los niveles sinápticos de serotonina y noradrenalina en corteza prefrontal, hipocampo y sistema límbico, modulando el estado de ánimo, la energía, la vigilia y los circuitos del dolor descendente espinal.",
+      "reaccionesTipoA": "Efectos noradrenérgicos periféricos y centrales: elevación sostenida de la presión arterial diastólica supina, taquicardia sinusal, diaforesis profusa y temblor. Efectos serotoninérgicos: náuseas iniciales, vómito, disfunción sexual (retraso eyaculatorio, anorgasmia) y cefalea.",
+      "interferenciaOtrosReceptores": {
+        "selectividad": "Carece de afinidad significativa por receptores colinérgicos muscarínicos, histaminérgicos H1 o alfa-1 adrenérgicos, evitando la sedación masiva, aumento ponderal antihistamínico e hipotensión ortostática propios de los antidepresivos tricíclicos.",
+        "dosisDependencia": "Comportamiento dual dosis-dependiente: a dosis bajas (<150 mg/día) actúa como un ISRS potente; a dosis medias-altas (>150 a 225 mg/día) añade un bloqueo significativo del NET, estimulando el tono simpático central y periférico."
+      },
+      "canalesIonicosCardiacos": "A dosis elevadas o en intoxicación aguda, bloquea canales rápidos de sodio miocárdicos (ensanchamiento del complejo QRS) y canales de potasio hERG (prolongación del intervalo QTc), produciendo cardiotoxicidad con arritmias ventriculares letales, bloqueo de conducción y asistolia."
+    },
+    "farmacodinamiaAvanzada": {
+      "sindromeDiscontinuacionBrainZaps": "Debido a su semivida corta (5 h para venlafaxina y 11 h para ODV), la interrupción abrupta o la omisión de una sola toma provoca una caída súbita de monoaminas que desencadena el síndrome de discontinuación más severo de los antidepresivos (hasta en el 78% de los pacientes). Se caracteriza por sensaciones de choque eléctrico en la cabeza ('brain zaps'), vértigo incapacitante, náusea intensa, parestesias e insomnio. Exige una reducción ultralenta a lo largo de semanas o meses.",
+      "hipertensionArterialDosisDependiente": "La inhibición potente del transportador NET incrementa la disponibilidad de noradrenalina en las uniones neuroefectoras vasculares y cardiacas, estimulando receptores alfa-1 y beta-1. Esto genera un aumento dosis-dependiente de la presión arterial media y diastólica supina, que se manifiesta clínicamente con mayor intensidad a dosis >225 mg/día."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Trastorno Depresivo Mayor (TDM)",
+        "poblacion": "Adultos en formulaciones de liberación inmediata (IR) y liberación prolongada (XR).",
+        "criterio": "IRSN de primera línea, especialmente valioso en depresión con síntomas de anhedonia, fatiga, retraso psicomotor o dolor crónico comórbido."
+      },
+      {
+        "indicacion": "Trastorno de Ansiedad Generalizada (TAG)",
+        "poblacion": "Adultos exclusivamente en formulación XR.",
+        "criterio": "Aprobado para tratamiento agudo y a largo plazo de los síntomas psíquicos y somáticos de la ansiedad."
+      },
+      {
+        "indicacion": "Trastorno de Ansiedad Social (Fobia Social)",
+        "poblacion": "Adultos en formulación XR.",
+        "criterio": "Reduce la evitación fóbica y la hiperactividad autonómica ante situaciones sociales."
+      },
+      {
+        "indicacion": "Trastorno de Pánico",
+        "poblacion": "Adultos con o sin agorafobia en formulación XR.",
+        "criterio": "Disminuye la frecuencia y severidad de las crisis de pánico; iniciar a dosis bajas (37.5 mg/día) para mitigar la ansiedad inicial."
+      },
+      {
+        "indicacion": "Población Pediátrica",
+        "poblacion": "Niños y adolescentes menores de 18 años.",
+        "criterio": "NO cuenta con aprobación formal de la FDA para ninguna indicación en pacientes pediátricos (mayor riesgo de ideación suicida y falta de eficacia concluyente)."
+      }
+    ],
+    "precauciones": {
+      "hipertension": "Monitoreo estricto y periódico de la presión arterial: la venlafaxina induce elevación sostenida dosis-dependiente de la tensión arterial (especialmente a >225 mg/día). Debe medirse la TA basal antes de iniciar; la hipertensión no controlada es una contraindicación relativa temporal hasta normalizar cifras.",
+      "sindromeSerotoninergico": "Riesgo vital potenciado al asociar otros agentes serotoninérgicos (triptanos, tramadol, fentanilo, litio, hierba de San Juan). Vigilar rigurosamente signos neuromusculares y autonómicos.",
+      "glaucoma": "Midriasis inducida por tono noradrenérgico/serotoninérgico; vigilar en pacientes con sospecha de ángulo estrecho.",
+      "virajeMania": "Riesgo comprobado de inducir viraje a manía/hipomanía en pacientes con trastorno bipolar no diagnosticado.",
+      "beers": "Criterios de Beers en adultos mayores: riesgo de caídas por ataxia o hipotensión ortostática paradójica, y riesgo marcado de SIADH/hiponatremia (controlar electrólitos séricos basales y periódicos).",
+      "interaccionesClave": "Sustrato primario de CYP2D6; metabolizadores lentos o inhibidores concomitantes de CYP2D6 elevan la relación venlafaxina/ODV aumentando la susceptibilidad a efectos adversos cardiovasculares."
+    },
+    "reaccionesAdversas": {
+      "cardiovasculares": "Hipertensión arterial sostenida dosis-dependiente (elevación de TA diastólica supina), taquicardia sinusal, palpitaciones, prolongación del intervalo QTc, casos reportados de miocardiopatía de Takotsubo y arritmias ventriculares.",
+      "discontinuacion": "Síndrome de retirada extremadamente frecuente (hasta 78%) y severo tras suspensión brusca: sensaciones de choque eléctrico craneal ('brain zaps'), vértigo, náuseas, vómitos, parestesias, cefalea, insomnio y labilidad emocional severa.",
+      "gastrointestinales": "Náusea y vómito muy frecuentes al inicio (>25%), sequedad bucal (xerostomía: 15% a 22%) y estreñimiento (9% a 15%).",
+      "sexuales": "Disfunción sexual marcada: retardo o aneyaculación y disfunción eréctil en hombres; anorgasmia y disminución de la libido en mujeres.",
+      "neurologicasAutonomicas": "Diaforesis profusa (hasta 19%, con sudores nocturnos intensos), somnolencia (15% a 26%), insomnio, astenia, mareo, temblor fino y disminución del umbral convulsivo (~0.3%).",
+      "endocrinasMetabolicas": "Hiponatremia y SIADH (ancianos), elevación de colesterol sérico y riesgo de sangrado anormal (equimosis, hemorragia gastrointestinal) por alteración plaquetaria."
+    },
+    "contraindicaciones": [
+      "Uso concomitante con inhibidores de la monoaminooxidasa (IMAOs), incluyendo linezolid y azul de metileno IV, o dentro de los 14 días posteriores a suspender un IMAO.",
+      "Periodo de lavado obligatorio de al menos 7 días tras suspender la venlafaxina antes de iniciar cualquier tratamiento con un IMAO.",
+      "Hipersensibilidad confirmada a la venlafaxina, al metabolito activo desvenlafaxina o a cualquiera de los componentes de la fórmula."
+    ],
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "May cause fetal harm (Puede causar daño fetal).",
+      "pasoTransplacentario": "Atraviesa la placenta hacia la circulación fetal.",
+      "evidenciaTeratogenica": "Los estudios de cohortes epidemiológicas no han documentado un incremento consistente o concluyente de malformaciones teratogénicas mayores en comparación con la población basal general.",
+      "complicacionesNeonatales": "La exposición materna en el tercer trimestre tardío se asocia con un síndrome de adaptación neonatal deficiente / abstinencia severa (temblores, hipotonía o hipertonía, distrés respiratorio, convulsiones, hipotermia, dificultad en la succión y hospitalización prolongada en UCIN). Riesgo de Hipertensión Pulmonar Persistente del Recién Nacido (HPPRN) y prolongación del QTc neonatal.",
+      "recomendacionesClinicas": "Guías ACOG: Fármaco de segunda línea durante la gestación (se prefieren ISRS como sertralina o citalopram). Si la paciente ya se encuentra en remisión clínica estable con venlafaxina antes del embarazo, se aconseja mantenerla a la menor dosis eficaz, dado que la descontinuación o cambio genera un altísimo riesgo de recaída psiquiátrica materna.",
+      "lactancia": "Micromedex: Infant risk cannot be ruled out. Venlafaxina y su metabolito activo ODV pasan significativamente a la leche humana con un ratio leche/plasma elevado de 1.8 a 3.2. La Dosis Infantil Relativa (RID) calculada se ubica entre 6.4% y 8.8% (muy cercana al umbral de preocupación del 10%). Se han documentado casos de letargo, hipotonía y pérdida de peso en lactantes. Si se inicia antidepresivo en lactancia, se prefieren alternativas con menor RID (sertralina); si se mantiene venlafaxina, monitorizar estrechamente succión, tono y sedación en el bebé."
+    },
+    "toxicologia": {
+      "mecanismo": "Toxicidad cardiovascular mixta por bloqueo de canales de sodio miocárdicos (similar a antidepresivos tricíclicos con ensanchamiento de QRS), bloqueo de canales de potasio hERG (prolongación de QTc), sobreestimulación noradrenérgica masiva y exceso serotoninérgico en SNC.",
+      "manifestaciones": {
+        "levesModeradas": "Taquicardia sinusal, somnolencia, náuseas, vómitos, midriasis y mareo.",
+        "severasMortales": "Cardiotoxicidad potencialmente fatal: ensanchamiento del complejo QRS (>100-120 ms), prolongación del QTc, Torsades de Pointes, arritmias ventriculares letales, hipotensión refractaria, asistolia, crisis convulsivas tónico-clónicas refractarias, coma y Síndrome Serotoninérgico grave con rabdomiólisis."
+      },
+      "manejoSoporte": [
+        "No existe antídoto específico para la venlafaxina.",
+        "Asegurar permeabilidad inmediata de la vía aérea, soporte ventilatorio y oxigenoterapia.",
+        "Monitorización electrocardiográfica continua prioritaria con medición seriada de intervalos QRS y QTc.",
+        "Cardiotoxicidad / Ensanchamiento del QRS: Administración intravenosa urgente de bicarbonato de sodio en bolo (1-2 mEq/kg) repetible hasta estrechar el complejo QRS y elevar el pH sérico a 7.45-7.55.",
+        "Convulsiones y síndrome serotoninérgico: Tratamiento intensivo con benzodiazepinas IV (diazepam o lorazepam); enfriamiento activo externo ante hipertermia.",
+        "Las técnicas de depuración extracorpórea (hemodiálisis y hemoperfusión) no tienen ninguna utilidad debido a su gran volumen de distribución de 7.5 L/kg."
+      ]
+    },
+    "perlasClinicas": [
+      "Selectividad dosis-dependiente: A dosis <150 mg/día actúa prácticamente como un ISRS; sólo al superar los 150 a 225 mg/día recluta un bloqueo significativo del NET, aportando el componente noradrenérgico.",
+      "Riesgo cardiovascular distintivo: Es el antidepresivo con mayor propensión a elevar de manera sostenida la presión arterial diastólica supina dosis-dependiente; requiere toma periódica de TA.",
+      "El flagelo de los 'Brain Zaps': La omisión de una sola dosis puede detonar en cuestión de horas sensaciones angustiantes de choques eléctricos en la cabeza y mareo incapacitante (hasta en el 78% de pacientes), exigiendo una descontinuación escalonada extraordinariamente lenta.",
+      "Letalidad en sobredosis: A diferencia de los ISRS (que rara vez son mortales en monoterapia), la sobredosis de venlafaxina puede ser fatal por bloqueo de canales de sodio cardiacos que ensanchan el QRS; el manejo de rescate requiere bicarbonato de sodio IV.",
+      "Sin aprobación pediátrica: La FDA no aprueba su uso en niños ni adolescentes debido al incremento demostrado de ideación y conducta suicida sin un beneficio terapéutico concluyente."
+    ]
+  },
+  {
+    "farmacoId": "mirtazapina",
+    "titulo": "Inmersión Molecular & Monografía Clínica: Mirtazapina (NaSSA Prototipo)",
+    "farmacocineticaDetallada": {
+      "biodisponibilidad": "Buena absorción gastrointestinal; biodisponibilidad oral aproximada del 50% debido a metabolismo de primer paso hepático.",
+      "tmax": "Rápido, aproximadamente 2 horas postdosis. Las tabletas desintegrables oralmente (SolTab) se disuelven en la saliva en segundos sin necesidad de agua.",
+      "inicioYDuracion": "El efecto sedante y orexígeno (inducción del sueño y aumento del apetito) es casi inmediato (desde la primera noche); la remisión del cuadro afectivo depresivo se alcanza entre las 2 y 4 semanas.",
+      "distribucion": "Volumen de distribución (Vd) amplio (~107 L) con alta liposolubilidad y penetración en el SNC. Unión a proteínas plasmáticas elevada (~85%, principalmente a albúmina).",
+      "metabolismo": "Metabolismo hepático extenso vía desmetilación e hidroxilación seguidas de glucuronidación. Enzimas principales: CYP2D6, CYP1A2 y CYP3A4. Su metabolito principal, la desmetilmirtazapina, es farmacológicamente activo pero con mucha menor potencia. Interacción relevante con tabaco: los hidrocarburos aromáticos del humo inducen CYP1A2 y reducen sustancialmente los niveles plasmáticos de mirtazapina en fumadores.",
+      "vidaMedia": "Prolongada, de 20 a 40 horas (promedio de 37 horas en mujeres y 26 horas en hombres), lo que permite su posología cómoda en toma única diaria antes de dormir.",
+      "eliminacion": "Eliminación predominantemente renal (75%) en forma de metabolitos conjugados e inactivos, y fecal (15%). En insuficiencia renal o hepática moderada a grave el aclaramiento cae entre 30% y 50%.",
+      "ventanaTerapeutica": "Rango posológico aprobado: 15 a 45 mg/día administrados por la noche antes de acostarse. Dosis de inicio habitual: 15 mg/día; incremento a intervalos no menores de 1-2 semanas."
+    },
+    "mecanismoAccion": {
+      "dianaPrincipal": "Antagonista de autorreceptores y heterorreceptores presinápticos alfa-2 adrenérgicos inhibitorios, y antagonista selectivo postsináptico de receptores serotoninérgicos 5-HT2 y 5-HT3, con potente antagonismo histaminérgico H1 (NaSSA).",
+      "efectoTerapeutico": "Al bloquear los autorreceptores alfa-2 adrenérgicos presinápticos, 'desinhibe' la liberación de noradrenalina; al bloquear los heterorreceptores alfa-2 en terminales serotoninérgicas, desinhibe simultáneamente la liberación de serotonina. Incrementa marcadamente la neurotransmisión fásica noradrenérgica y serotoninérgica sin inhibir el SERT ni el NET.",
+      "reaccionesTipoA": "Somnolencia profunda y sedación marcada por potente antagonismo H1; hiperfagia y aumento notable de peso corporal por bloqueo conjunto H1 y 5-HT2C; xerostomía y estreñimiento por bloqueo colinérgico leve y modulaciones autonómicas.",
+      "interferenciaOtrosReceptores": {
+        "serotoninergicos5HT2_5HT3": "Al bloquear directamente los receptores postsinápticos 5-HT2 y 5-HT3, toda la serotonina liberada estimula selectivamente los receptores 5-HT1A. Esto previene la disfunción sexual (anorgasmia/disfunción eréctil mediada por 5-HT2) y las náuseas/vómito (mediadas por 5-HT3) típicas de los ISRS.",
+        "histaminergicoH1": "Afinidad altísima por receptores H1 (superior a su afinidad por receptores alfa-2 o 5-HT), desencadenando sedación intensa y aumento sustancial del apetito/peso.",
+        "alfa1Adrenergico": "Antagonismo moderado de receptores alfa-1 periféricos, responsable ocasional de hipotensión ortostática y mareo postural.",
+        "enantiomeros": "Diferenciación estereoselectiva: el enantiómero S(+) bloquea con preferencia los receptores alfa-2 y 5-HT2; el enantiómero R(-) bloquea selectivamente los receptores 5-HT3."
+      },
+      "canalesIonicosCardiacos": "Bajo potencial arritmogénico en monoterapia a dosis clínicas; a dosis masivas o en combinaciones de riesgo puede producir prolongación del QTc y Torsades de Pointes."
+    },
+    "farmacodinamiaAvanzada": {
+      "paradojaSedacionDosisDependiente": "A dosis bajas (7.5 a 15 mg/día) predomina de manera casi exclusiva el potentísimo antagonismo antihistamínico H1, generando una sedación muy intensa y marcada estimulación del apetito. A dosis más elevadas (30 a 45 mg/día), el incremento sustancial del tono noradrenérgico central (por desinhibición alfa-2 presináptica) contrarresta parcialmente el efecto sedante H1, haciendo que paradójicamente el paciente experimente menor somnolencia diurna.",
+      "agranulocitosisIdiosincratica": "En aproximadamente el 0.1% a 0.2% de los pacientes tratados puede desencadenar neutropenia severa o agranulocitosis reversible (conteo absoluto de neutrófilos ANC < 500/mcL). Exige educar al paciente para suspender el fármaco y consultar a urgencias de inmediato si presenta fiebre inexplicable, dolor de garganta u odinofagia."
+    },
+    "usosClinicos": [
+      {
+        "indicacion": "Trastorno Depresivo Mayor (TDM)",
+        "poblacion": "Adultos en tabletas orales y tabletas desintegrables (SolTab) a dosis de 15 a 45 mg/día al acostarse.",
+        "criterio": "Antidepresivo de primera línea; de particular valor clínico en pacientes deprimidos con insomnio severo, pérdida marcada de peso/anorexia o disfunción sexual previa con ISRS."
+      },
+      {
+        "indicacion": "Población Pediátrica",
+        "poblacion": "Niños y adolescentes menores de 18 años.",
+        "criterio": "NO cuenta con aprobación formal de la FDA para pacientes pediátricos (eficacia no demostrada y riesgo de ideación suicida)."
+      },
+      {
+        "indicacion": "Insomnio en Depresión (Uso Off-label)",
+        "poblacion": "Adultos (dosis de 7.5 a 15 mg al acostarse).",
+        "criterio": "Aprovecha la profunda sedación inducida por el bloqueo H1 para restaurar la arquitectura del sueño sin riesgo de dependencia."
+      },
+      {
+        "indicacion": "Disfunción Sexual por ISRS (Uso Off-label)",
+        "poblacion": "Pacientes que desarrollaron anorgasmia o pérdida de libido con ISRS/IRSN.",
+        "criterio": "Sustituir el tratamiento o coadministrar 15 mg/día para revertir la disfunción sexual gracias a su antagonismo directo de receptores 5-HT2."
+      },
+      {
+        "indicacion": "Caquexia / Anorexia y Profilaxis Antiemética (Uso Off-label)",
+        "poblacion": "Pacientes oncológicos o geriátricos con desnutrición severa.",
+        "criterio": "Estimulación orexígena (H1 y 5-HT2C) y control de náuseas refractarias mediante bloqueo 5-HT3."
+      },
+      {
+        "indicacion": "Acatisia por Antipsicóticos (Uso Off-label)",
+        "poblacion": "Pacientes con acatisia motora aguda inducida por neurolépticos.",
+        "criterio": "Dosis de 15 mg/día mitiga la inquietud motora por antagonismo 5-HT2A central."
+      }
+    ],
+    "precauciones": {
+      "agranulocitosis": "Vigilancia estricta de Agranulocitosis / Neutropenia severa (ANC < 500/mcL en 0.1%): instruir al paciente a suspender de inmediato el fármaco y acudir a urgencias para biometría hemática completa si presenta fiebre súbita, odinofagia (dolor de garganta), úlceras orales o signos de infección.",
+      "sindromeSerotoninergico": "Riesgo de síndrome serotoninérgico si se asocia con IMAOs o combinaciones complejas de fármacos serotoninérgicos.",
+      "interaccionClonidina": "Interacción farmacodinámica directa con clonidina: la mirtazapina bloquea receptores alfa-2 adrenérgicos, neutralizando el mecanismo antihipertensivo central de la clonidina y pudiendo desencadenar crisis hipertensiva severa.",
+      "depresionSNC": "Potenciación severa del deterioro psicomotor y sedación al combinarse con alcohol, benzodiazepinas u otros hipnóticos sedantes.",
+      "glaucoma": "Midriasis secundaria leve; precaución en pacientes con glaucoma de ángulo cerrado.",
+      "fenilcetonuria": "Las formulaciones de tabletas desintegrables oralmente (SolTab) contienen fenilalanina (aspartamo), contraindicadas en pacientes con fenilcetonuria.",
+      "beers": "Criterios de Beers en adultos mayores: somnolencia pronunciada con alto riesgo de caídas y fracturas; monitoreo de sodio sérico por riesgo de SIADH/hiponatremia."
+    },
+    "reaccionesAdversas": {
+      "sedacionApetito": "Somnolencia y sedación profunda en el 54% de los pacientes (frente al 18% con placebo). Aumento de apetito/hiperfagia muy marcado (12%) con incremento ponderal significativo >= 7% del peso corporal en el 7.5% de pacientes por antagonismo H1 y 5-HT2C.",
+      "endocrinasMetabolicas": "Dislipidemia relevante: elevación de colesterol sérico en 15% (>=20% sobre límite) y de triglicéridos séricos en 6% (niveles >=500 mg/dL). Hiponatremia / SIADH en ancianos.",
+      "gastrointestinales": "Xerostomía (boca seca en 25%) y estreñimiento (13%). Notablemente, la incidencia de náusea y vómito es bajísima debido al bloqueo intrínseco de receptores 5-HT3.",
+      "hematologicas": "Agranulocitosis y neutropenia severa (0.1% a 0.2%): caída de neutrófilos por debajo de 500/mcL con fiebre y odinofagia; requiere descontinuación inmediata.",
+      "cardiovasculares": "Hipotensión ortostática y edema periférico (~1%) por antagonismo alfa-1. Prolongación del intervalo QTc en casos de sobredosis o coadministración de fármacos arritmogénicos.",
+      "sexuales": "Prácticamente nula incidencia de disfunción sexual (e incluso la revierte) debido al bloqueo de receptores 5-HT2.",
+      "discontinuacion": "Síndrome de retirada de intensidad leve a moderada tras suspensión brusca: náusea, mareo, cefalea, ansiedad y parestesias; se aconseja descenso gradual."
+    },
+    "contraindicaciones": [
+      "Uso concomitante con inhibidores de la monoaminooxidasa (IMAOs), incluyendo linezolid y azul de metileno IV, o dentro de los 14 días posteriores a suspender un IMAO.",
+      "Periodo de lavado obligatorio de al menos 14 días tras suspender la mirtazapina antes de iniciar cualquier tratamiento con un IMAO, por riesgo de síndrome serotoninérgico fatal.",
+      "Hipersensibilidad confirmada a la mirtazapina o a cualquiera de los excipientes de la formulación."
+    ],
+    "embarazoYPerinatal": {
+      "clasificacionMicromedex": "May cause fetal harm (Puede causar daño fetal).",
+      "pasoTransplacentario": "Atraviesa la placenta hacia la circulación fetal.",
+      "evidenciaTeratogenica": "Los estudios observacionales prospectivos y registros de teratología no han demostrado un incremento estadísticamente significativo o concluyente de malformaciones congénitas mayores ni defectos estructurales específicos en comparación con la tasa basal poblacional.",
+      "complicacionesNeonatales": "La exposición materna en el tercer trimestre avanzado puede provocar síndrome de adaptación neonatal deficiente / síntomas de retirada (irritabilidad, temblores, hipotonía, dificultad respiratoria e hipoglucemia neonatal transitoria).",
+      "recomendacionesClinicas": "Guías ACOG: Alternativa de segunda línea en la gestación si fracasan los ISRS o si la paciente ya contaba con excelente control psicopatológico previo con mirtazapina antes del embarazo, evitando descompensaciones psiquiátricas graves por suspensión.",
+      "lactancia": "Micromedex: Compatible / Low infant risk (Compatible / Riesgo infantil bajo). Excreción en leche materna sumamente baja con un ratio leche/plasma de ~1.1 y una Dosis Infantil Relativa (RID) de apenas 0.6% a 2.8% (muy inferior al límite de seguridad del 10%). Las concentraciones plasmáticas en el lactante son prácticamente indetectables y los estudios prospectivos no han reportado efectos adversos en lactantes amamantados. Es uno de los antidepresivos de mayor seguridad durante la lactancia."
+    },
+    "toxicologia": {
+      "mecanismo": "Depresión moderada del sistema nervioso central por potente antagonismo histaminérgico H1; bajo potencial de cardiotoxicidad o neurotoxicidad epileptógena en monoterapia en comparación con venlafaxina o antidepresivos tricíclicos.",
+      "manifestaciones": {
+        "levesModeradas": "Somnolencia marcada, letargia, mareo, visión borrosa y taquicardia sinusal leve.",
+        "severasMortales": "Estupor, coma superficial, hipotensión moderada y en dosis masivas o ingestas mixtas prolongación del intervalo QTc y Torsades de Pointes. Rara vez induce convulsiones graves o colapso vascular refractario en monofármaco."
+      },
+      "manejoSoporte": [
+        "No existe antídoto específico para la mirtazapina.",
+        "Asegurar vía aérea permeable, ventilación y oxigenación adecuada si existe estupor o coma.",
+        "Monitorización electrocardiográfica continua para evaluar el intervalo QTc y detectar arritmias ventriculares.",
+        "Expansión cautelosa con cristaloides intravenosos si se documenta hipotensión ortostática o vasodilatación mediada por alfa-1.",
+        "Administración de benzodiazepinas IV si se presentan signos de excitación paradójica o hiperreactividad neuromuscular.",
+        "Las medidas de depuración extracorpórea (hemodiálisis y hemoperfusión) no tienen ninguna utilidad debido a su alto volumen de distribución tisular y a su unión a proteínas del 85%."
+      ]
+    },
+    "perlasClinicas": [
+      "La paradoja sedante de la dosis: A dosis bajas (7.5 a 15 mg) es sumamente sedante por bloqueo H1 puro; a dosis altas (30 a 45 mg) el aumento del tono noradrenérgico contrarresta la somnolencia diurna.",
+      "Sin disfunción sexual ni náuseas: A diferencia de los ISRS, su bloqueo directo de los receptores 5-HT2 previene la anorgasmia y la pérdida de libido (e incluso las revierte), y el bloqueo 5-HT3 previene las náuseas y el vómito.",
+      "Alerta por Agranulocitosis (ANC < 500/mcL): Ocurre en ~0.1% de pacientes en las primeras semanas; debe instruirse al paciente a consultar y realizarse biometría hemática de inmediato si presenta dolor de garganta (odinofagia), úlceras bucales o fiebre súbita.",
+      "Interacción crítica con Clonidina: Al ser un antagonista alfa-2 presináptico, cancela el efecto simpaticolítico antihipertensivo de la clonidina, pudiendo detonar crisis hipertensiva severa.",
+      "Seguridad sobresaliente en Lactancia: Con una Dosis Infantil Relativa (RID) mínima de 0.6% a 2.8% (muy inferior al 10%), es un antidepresivo categorizado como plenamente compatible con la lactancia materna según Micromedex."
+    ]
   }
 ]
