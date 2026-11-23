@@ -110,5 +110,29 @@
     "opciones": ["Niños menores de 2 años en politerapia antiepiléptica", "Adultos mayores de 65 años en monoterapia", "Mujeres posmenopáusicas"],
     "correcta": 0,
     "explicacion": "El riesgo de falla hepática mortal por esteatosis microvesicular por valproato es máximo en menores de 2 años en politerapia. Goodman & Gilman cap. 20, p. 50."
+  },
+  {
+    "id": "quiz-depresion-01",
+    "tema": "Depresión",
+    "pregunta": "¿Cuál es el blanco principal de la fluoxetina?",
+    "opciones": ["Transportador de serotonina (SERT)", "Transportador de noradrenalina (NET) exclusivamente", "Receptor α₂ presináptico"],
+    "correcta": 0,
+    "explicacion": "La fluoxetina es un ISRS: inhibe selectivamente SERT. Katzung 16.ª ed., cap. 30, PDF p. 8."
+  },
+  {
+    "id": "quiz-depresion-02",
+    "tema": "Depresión",
+    "pregunta": "¿Qué precaución se destaca para venlafaxina con dosis altas?",
+    "opciones": ["Hipertensión relacionada con dosis", "Agranulocitosis como efecto frecuente", "Bloqueo irreversible de MAO-B"],
+    "correcta": 0,
+    "explicacion": "La lectura describe elevación de presión arterial con venlafaxina, especialmente a dosis altas y con formulación inmediata. Goodman & Gilman 14.ª ed., cap. 18, PDF p. 22."
+  },
+  {
+    "id": "quiz-depresion-03",
+    "tema": "Depresión",
+    "pregunta": "¿Qué mecanismo ayuda a explicar la sedación de mirtazapina?",
+    "opciones": ["Antagonismo de receptores H₁", "Inhibición de SV2A", "Bloqueo de canales Naᵥ"],
+    "correcta": 0,
+    "explicacion": "Mirtazapina antagoniza receptores H₁; las lecturas relacionan este perfil con sedación. Katzung 16.ª ed., cap. 30, PDF pp. 17, 40."
   }
 ]

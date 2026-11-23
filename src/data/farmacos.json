@@ -1204,5 +1204,161 @@
     "embarazo": "Paso placentario activo con acumulación fetal. Alto riesgo de diabetes gestacional y complicaciones neonatales/neuroconductuales. Usar solo si es indispensable.",
     "lactancia": "DESACONSEJADA FORMALMENTE (ratio leche/plasma 3.19; riesgo de agranulocitosis neonatal y sedación profunda).",
     "fuentesTexto": "Programa p. 26; Katzung cap. 19, pp. 13, 20, 22, 31–32, 50–53, 55, 72."
+  },
+  {
+    "id": "fluoxetina",
+    "nombre": "Fluoxetina",
+    "categoria": "depresion",
+    "patologiaId": "depresion",
+    "identificacion": {
+      "nombre": "Fluoxetina",
+      "sinonimos": ["Prozac"],
+      "clase": "ISRS • inhibidor selectivo de SERT",
+      "temaPrograma": "Semana 13 • Moduladores serotoninérgicos y noradrenérgicos (Programa FacMed p. 27)"
+    },
+    "farmacologia": {
+      "blanco": "Transportador de serotonina (SERT).",
+      "mecanismo": "Inhibe selectivamente la recaptación neuronal de serotonina y aumenta su disponibilidad sináptica; tiene poco efecto directo sobre NET.",
+      "efectosFisiopatologicos": "El aumento sináptico de serotonina ocurre pronto, pero la respuesta clínica plena tarda semanas e involucra adaptaciones posteriores de señalización y plasticidad; no se explica solo por una deficiencia simple de monoaminas.",
+      "usosClinicos": "Depresión mayor. Las lecturas también describen usos de clase para otros trastornos, pero el programa de esta semana se centra en depresión.",
+      "farmacocinetica": "Biodisponibilidad oral aproximada de 70%; semivida de 48–72 h y metabolito activo norfluoxetina con semivida prolongada (aprox. 180 h en tabla). Metabolismo hepático; inhibe CYP2D6. La persistencia de norfluoxetina reduce síntomas de retirada, pero prolonga interacciones y periodos de lavado."
+    },
+    "usoSeguro": {
+      "dosis": {"texto": "Rango documentado en el cuadro del capítulo: 20–80 mg/día por vía oral.", "poblacion": "Adultos; individualizar según respuesta y tolerabilidad.", "via": "Oral.", "unidad": "mg/día.", "nota": "Rango didáctico de la lectura, no pauta individual de tratamiento."},
+      "contraindicaciones": "No combinar con inhibidores de la monoaminooxidasa (IMAO) ni dentro del periodo de lavado indicado en las lecturas por riesgo de síndrome serotoninérgico. Revisar interacciones antes de combinar con fármacos metabolizados por CYP2D6.",
+      "precauciones": "Puede causar al inicio náusea, inquietud o insomnio; vigilar disfunción sexual y cambios clínicos. Su semivida larga hace que las interacciones persistan después de suspenderla.",
+      "monitorizacion": "Respuesta clínica, tolerabilidad, síntomas serotoninérgicos en combinaciones de riesgo y presión arterial/contexto clínico según comorbilidades. La lectura no prescribe una batería de laboratorio rutinaria específica."
+    },
+    "interacciones": [
+      {"farmacoImplicado": "IMAO (incluidos selegilina o rasagilina)", "tipoFarmaco": "Interacción con fármaco externo o de otro módulo", "mecanismo": "Exceso de actividad serotoninérgica por combinación de fármacos serotoninérgicos con inhibición de MAO.", "efectoClinico": "Riesgo de síndrome serotoninérgico grave.", "conducta": "Evitar la combinación y respetar los periodos de lavado descritos para cada agente."},
+      {"farmacoImplicado": "Risperidona y otros sustratos de CYP2D6", "tipoFarmaco": "Fármaco del temario / acompañante", "mecanismo": "La fluoxetina inhibe CYP2D6 y puede elevar la exposición a sustratos de esta enzima.", "efectoClinico": "Posible aumento de concentraciones y efectos adversos del fármaco concomitante.", "conducta": "Revisar la interacción y vigilar respuesta y efectos adversos; la lectura no aporta un ajuste universal."}
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "La lectura describe una posible asociación de los ISRS como clase con hipertensión pulmonar persistente neonatal, con incremento absoluto pequeño; no cuantifica aquí un riesgo específico de fluoxetina. No asignar categoría FDA por letra.",
+      "lactancia": "No especificado para fluoxetina en las lecturas del curso consultadas.",
+      "limitesEvidencia": "La lectura resume señal de clase para ISRS, no una estimación individual de riesgo para fluoxetina ni una recomendación personalizada.",
+      "sistemaPLLR": "Registrar el riesgo con narrativa y fuentes actuales; las letras A/B/C/D/X no son el formato vigente de la FDA para etiquetado de prescripción."
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung, 16.ª ed., cap. 30, PDF pp. 8, 15–16, 31, 35.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 13, p. 27.",
+      "complementoExterno": "Ninguno añadido en esta ficha."
+    },
+    "perlaClinica": "La norfluoxetina prolonga la semivida funcional: puede reducir síntomas de retirada, pero también prolongar interacciones tras suspender el fármaco.",
+    "clase": "ISRS • inhibidor selectivo de SERT",
+    "dianaPrincipal": "Transportador de serotonina SERT",
+    "mecanismo": "Inhibe selectivamente SERT y aumenta la serotonina disponible en la sinapsis.",
+    "dosis": "Adultos: 20–80 mg/día por vía oral (rango del cuadro de lectura).",
+    "efectosAdversos": ["Náusea y otros síntomas gastrointestinales", "Inquietud o insomnio al inicio", "Disfunción sexual", "Síndrome serotoninérgico en combinaciones de riesgo"],
+    "contraindicaciones": "Evitar combinación con IMAO y respetar periodo de lavado; riesgo de síndrome serotoninérgico.",
+    "monitorizacion": "Respuesta, tolerabilidad e interacciones; vigilar síntomas serotoninérgicos cuando haya combinación de riesgo.",
+    "alertas": "Inhibidor potente de CYP2D6; semivida prolongada de fluoxetina/norfluoxetina.",
+    "embarazo": "La lectura señala una posible señal de clase ISRS; riesgo específico de fluoxetina no cuantificado.",
+    "lactancia": "No especificado en las lecturas consultadas.",
+    "fuentesTexto": "Programa p. 27; Goodman & Gilman cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung cap. 30, PDF pp. 8, 15–16, 31, 35."
+  },
+  {
+    "id": "venlafaxina",
+    "nombre": "Venlafaxina",
+    "categoria": "depresion",
+    "patologiaId": "depresion",
+    "identificacion": {
+      "nombre": "Venlafaxina",
+      "sinonimos": ["Effexor"],
+      "clase": "IRSN • inhibidor de SERT y NET",
+      "temaPrograma": "Semana 13 • Moduladores serotoninérgicos y noradrenérgicos (Programa FacMed p. 27)"
+    },
+    "farmacologia": {
+      "blanco": "Transportadores de serotonina (SERT) y noradrenalina (NET).",
+      "mecanismo": "Inhibe la recaptación de serotonina y noradrenalina; el bloqueo de NET adquiere mayor relevancia al aumentar la dosis.",
+      "efectosFisiopatologicos": "Aumenta la neurotransmisión serotoninérgica y noradrenérgica. Como con otros antidepresivos, la respuesta máxima tarda semanas y no se explica solo por el aumento inmediato de monoaminas.",
+      "usosClinicos": "Depresión mayor. La lectura describe además aplicaciones de la clase IRSN en trastornos de ansiedad y dolor, según el fármaco y la indicación.",
+      "farmacocinetica": "Biodisponibilidad oral aproximada de 45%; semivida del compuesto de 8–11 h y metabolito activo de 9–13 h según tabla. Se metaboliza principalmente por CYP2D6 a desvenlafaxina; la lectura la describe como sustrato y no como inhibidor importante de CYP."
+    },
+    "usoSeguro": {
+      "dosis": {"texto": "Rango documentado en el cuadro del capítulo: 75–225 mg/día por vía oral.", "poblacion": "Adultos; individualizar según respuesta y formulación.", "via": "Oral; existen formulaciones de liberación inmediata y extendida.", "unidad": "mg/día.", "nota": "Rango didáctico de la lectura, no pauta individual de tratamiento."},
+      "contraindicaciones": "No combinar con IMAO ni dentro del periodo de lavado indicado por riesgo de síndrome serotoninérgico.",
+      "precauciones": "La presión arterial puede aumentar con dosis altas, particularmente con formulación de liberación inmediata. La semivida relativamente corta aumenta la posibilidad de síntomas de discontinuación si se interrumpe bruscamente.",
+      "monitorizacion": "Presión arterial, respuesta clínica, efectos adversos y síntomas de discontinuación."
+    },
+    "interacciones": [
+      {"farmacoImplicado": "IMAO (incluidos selegilina o rasagilina)", "tipoFarmaco": "Interacción con fármaco externo o de otro módulo", "mecanismo": "Aumento excesivo de actividad serotoninérgica al combinar IRSN con inhibición de MAO.", "efectoClinico": "Riesgo de síndrome serotoninérgico grave.", "conducta": "Evitar la combinación y respetar los periodos de lavado indicados en las fuentes."},
+      {"farmacoImplicado": "Fármacos serotoninérgicos", "tipoFarmaco": "Acompañante externo al programa", "mecanismo": "Suma de actividad serotoninérgica.", "efectoClinico": "Puede aumentar toxicidad serotoninérgica.", "conducta": "Revisar cada combinación y vigilar signos de toxicidad; la lectura no define un ajuste universal."}
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "Goodman & Gilman señala mayor riesgo de complicaciones perinatales con venlafaxina, sin cuantificarlo ni desglosar aquí los desenlaces. No asignar categoría FDA por letra.",
+      "lactancia": "No especificado para venlafaxina en las lecturas del curso consultadas.",
+      "limitesEvidencia": "La lectura indica una señal perinatal, pero no ofrece una estimación de riesgo individual ni una pauta para decidir tratamiento.",
+      "sistemaPLLR": "Registrar el riesgo con narrativa y fuentes actuales; las letras A/B/C/D/X no son el formato vigente de la FDA para etiquetado de prescripción."
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung, 16.ª ed., cap. 30, PDF pp. 9, 15–16, 31, 35–36.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 13, p. 27.",
+      "complementoExterno": "Ninguno añadido en esta ficha."
+    },
+    "perlaClinica": "Además de vigilar tolerabilidad serotoninérgica, revisa la presión arterial con dosis altas y evita una suspensión abrupta.",
+    "clase": "IRSN • inhibidor de SERT y NET",
+    "dianaPrincipal": "Transportadores SERT y NET",
+    "mecanismo": "Inhibe la recaptación de serotonina y noradrenalina; el efecto noradrenérgico aumenta con la dosis.",
+    "dosis": "Adultos: 75–225 mg/día por vía oral (rango del cuadro de lectura).",
+    "efectosAdversos": ["Náusea y malestar gastrointestinal", "Insomnio y cefalea", "Disfunción sexual", "Aumento de presión arterial con dosis altas", "Síntomas de discontinuación"],
+    "contraindicaciones": "Evitar combinación con IMAO y respetar periodo de lavado; riesgo de síndrome serotoninérgico.",
+    "monitorizacion": "Presión arterial, respuesta clínica y síntomas de discontinuación.",
+    "alertas": "Interrupción brusca puede producir síntomas de discontinuación; vigilar presión arterial a dosis altas.",
+    "embarazo": "La lectura señala mayor riesgo de complicaciones perinatales; sin estimación específica.",
+    "lactancia": "No especificado en las lecturas consultadas.",
+    "fuentesTexto": "Programa p. 27; Goodman & Gilman cap. 18, PDF pp. 6, 16–17, 22, 24–25; Katzung cap. 30, PDF pp. 9, 15–16, 31, 35–36."
+  },
+  {
+    "id": "mirtazapina",
+    "nombre": "Mirtazapina",
+    "categoria": "depresion",
+    "patologiaId": "depresion",
+    "identificacion": {
+      "nombre": "Mirtazapina",
+      "sinonimos": ["Remeron"],
+      "clase": "Antidepresivo tetracíclico • antagonista α₂ y 5-HT₂/5-HT₃",
+      "temaPrograma": "Semana 13 • Moduladores serotoninérgicos y noradrenérgicos (Programa FacMed p. 27)"
+    },
+    "farmacologia": {
+      "blanco": "Receptores α₂-adrenérgicos presinápticos y receptores serotoninérgicos 5-HT₂/5-HT₃; también antagoniza receptores H₁.",
+      "mecanismo": "Antagoniza receptores α₂ presinápticos y aumenta la liberación noradrenérgica y serotoninérgica; bloquea receptores 5-HT₂/5-HT₃ y H₁. No actúa como inhibidor de SERT/NET.",
+      "efectosFisiopatologicos": "Modula la liberación de noradrenalina y serotonina mediante autorreceptores presinápticos; el antagonismo H₁ contribuye a sedación y aumento del apetito.",
+      "usosClinicos": "Depresión mayor; las lecturas señalan que su perfil sedante puede ser útil cuando coexisten insomnio y depresión.",
+      "farmacocinetica": "Biodisponibilidad oral aproximada de 50%; semivida de 20–40 h. Metabolismo hepático por CYP2D6, CYP3A4 y CYP1A2; generalmente se administra por la noche por su efecto sedante."
+    },
+    "usoSeguro": {
+      "dosis": {"texto": "Rango documentado en el cuadro del capítulo: 15–45 mg/día por vía oral.", "poblacion": "Adultos; individualizar según respuesta y tolerabilidad.", "via": "Oral.", "unidad": "mg/día.", "nota": "Rango didáctico de la lectura, no pauta individual de tratamiento."},
+      "contraindicaciones": "No combinar con IMAO; revisar periodos de lavado y riesgo serotoninérgico.",
+      "precauciones": "La somnolencia, aumento del apetito y del peso son efectos frecuentes descritos en la lectura. Puede sumarse sedación con alcohol, benzodiacepinas u otros depresores del SNC.",
+      "monitorizacion": "Respuesta clínica, somnolencia y cambios de apetito/peso; revisar interacciones con fármacos que afectan CYP2D6, CYP3A4 o CYP1A2."
+    },
+    "interacciones": [
+      {"farmacoImplicado": "Alcohol y benzodiacepinas", "tipoFarmaco": "Acompañante externo al programa", "mecanismo": "Suma de efectos depresores del sistema nervioso central con el antagonismo H₁ de mirtazapina.", "efectoClinico": "Aumento de sedación y deterioro de alerta.", "conducta": "Advertir sobre sedación aditiva y revisar el uso concomitante."},
+      {"farmacoImplicado": "Inhibidores o inductores de CYP2D6, CYP3A4 o CYP1A2", "tipoFarmaco": "Acompañante externo al programa", "mecanismo": "Cambios en el metabolismo hepático de mirtazapina.", "efectoClinico": "Posible cambio en la exposición al fármaco.", "conducta": "Revisar la combinación; la lectura no aporta un ajuste universal."}
+    ],
+    "embarazoYLactancia": {
+      "embarazo": "No especificado para mirtazapina en las lecturas del curso consultadas. No asignar categoría FDA por letra.",
+      "lactancia": "No especificado para mirtazapina en las lecturas del curso consultadas.",
+      "limitesEvidencia": "Las lecturas consultadas no aportan una conclusión específica de embarazo o lactancia para mirtazapina.",
+      "sistemaPLLR": "Completar con una fuente específica si se solicita; no inferir seguridad reproductiva a partir de su mecanismo o de datos de clase."
+    },
+    "fuentes": {
+      "lecturaPrincipal": "Goodman & Gilman, 14.ª ed., cap. 18, PDF pp. 6, 11, 16–18, 22, 25; Katzung, 16.ª ed., cap. 30, PDF pp. 12, 15, 17, 19, 36, 40.",
+      "programaOficial": "Programa Académico de Farmacología, Semana 13, p. 27.",
+      "complementoExterno": "Ninguno añadido en esta ficha."
+    },
+    "perlaClinica": "Su antagonismo H₁ ayuda a explicar el perfil sedante y el aumento del apetito; no confundirlo con un inhibidor de recaptación.",
+    "clase": "Antidepresivo tetracíclico • antagonista α₂ y 5-HT₂/5-HT₃",
+    "dianaPrincipal": "Receptores α₂-adrenérgicos, 5-HT₂/5-HT₃ y H₁",
+    "mecanismo": "Antagoniza α₂ presinápticos, aumenta liberación de NE/5-HT y bloquea receptores 5-HT₂/5-HT₃ y H₁.",
+    "dosis": "Adultos: 15–45 mg/día por vía oral (rango del cuadro de lectura).",
+    "efectosAdversos": ["Somnolencia", "Aumento del apetito", "Aumento de peso", "Mareo"],
+    "contraindicaciones": "Evitar combinación con IMAO; consultar los periodos de lavado de las lecturas.",
+    "monitorizacion": "Respuesta, somnolencia, apetito y peso; revisar interacciones metabólicas.",
+    "alertas": "La sedación puede sumarse con alcohol y benzodiacepinas.",
+    "embarazo": "No especificado en las lecturas consultadas.",
+    "lactancia": "No especificado en las lecturas consultadas.",
+    "fuentesTexto": "Programa p. 27; Goodman & Gilman cap. 18, PDF pp. 6, 11, 16–18, 22, 25; Katzung cap. 30, PDF pp. 12, 15, 17, 19, 36, 40."
   }
 ]

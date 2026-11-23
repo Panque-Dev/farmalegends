@@ -6,6 +6,7 @@ export default function Navbar() {
     { name: 'Aula Magna', path: '/' },
     { name: 'Dopamina & Psicosis', path: '/dopamina' },
     { name: 'Epilepsia & Canales', path: '/epilepsia' },
+    { name: 'Depresión', path: '/depresion' },
     { name: 'Dosis & Recetario', path: '/recetario' },
     { name: 'Casos Clínicos', path: '/casos-clinicos' },
   ];
@@ -60,7 +61,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#111c2e] border border-[#4d463a]/40 text-xs text-[#d0c5b5]">
               <span className="w-2 h-2 rounded-full bg-[#43e2d2] animate-pulse"></span>
-              <span className="font-mono text-[11px] text-[#e5c587]">React SPA</span>
+              <span className="font-mono text-[11px] text-[#e5c587]">panquecito reading</span>
             </div>
           </div>
 

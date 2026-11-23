@@ -113,5 +113,53 @@
     ],
     "conducta": "Evitar la combinación rutinaria de dos antipsicóticos. Evitar esta combinación en ancianos con psicosis asociada a demencia (Boxed Warning por ictus y muerte). En transiciones, realizar titulación cruzada gradual y monitorizar temperatura, rigidez muscular, presión ortostática, estado cognitivo y prolactina sérica.",
     "fuentes": "Katzung 16.ª ed., cap. 19, pp. 20–25, 48–54; FDA Boxed Warning; Criterios AGS Beers."
+  },
+  {
+    "id": "fluoxetina-imao",
+    "farmacoA": "Fluoxetina",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "IMAO (incluye selegilina/rasagilina)",
+    "tipoFarmacoB": "Interacción de alto riesgo; IMAO no listado en esta semana",
+    "severidad": "Combinación contraindicada • Riesgo serotoninérgico",
+    "mecanismo": "La inhibición de recaptación de serotonina se combina con inhibición de su degradación por MAO.",
+    "consecuencia": "Puede producir síndrome serotoninérgico grave, con alteraciones cognitivas, autonómicas y neuromusculares.",
+    "conducta": "Evitar la combinación y respetar los periodos de lavado específicos descritos para los fármacos implicados.",
+    "fuentes": "Goodman & Gilman 14.ª ed., cap. 18, PDF pp. 24–25, 36–37; Katzung 16.ª ed., cap. 30, PDF pp. 35–36."
+  },
+  {
+    "id": "venlafaxina-imao",
+    "farmacoA": "Venlafaxina",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "IMAO (incluye selegilina/rasagilina)",
+    "tipoFarmacoB": "Interacción de alto riesgo; IMAO no listado en esta semana",
+    "severidad": "Combinación contraindicada • Riesgo serotoninérgico",
+    "mecanismo": "La inhibición dual de SERT/NET se combina con la reducción de degradación de monoaminas por MAO.",
+    "consecuencia": "Riesgo de toxicidad serotoninérgica grave.",
+    "conducta": "Evitar la combinación y respetar los periodos de lavado específicos descritos para los fármacos implicados.",
+    "fuentes": "Goodman & Gilman 14.ª ed., cap. 18, PDF pp. 24–25, 36–37; Katzung 16.ª ed., cap. 30, PDF pp. 35–36."
+  },
+  {
+    "id": "fluoxetina-risperidona",
+    "farmacoA": "Fluoxetina",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Risperidona",
+    "tipoFarmacoB": "Fármaco del temario (semana 12)",
+    "severidad": "Interacción farmacocinética • Revisar y vigilar",
+    "mecanismo": "La fluoxetina inhibe CYP2D6, una vía que participa en el metabolismo de risperidona.",
+    "consecuencia": "Puede aumentar la exposición a risperidona y el riesgo de efectos adversos relacionados.",
+    "conducta": "Revisar la combinación, vigilar respuesta y efectos adversos; las lecturas no dan un ajuste universal de dosis.",
+    "fuentes": "Goodman & Gilman 14.ª ed., cap. 18, PDF pp. 24–25; Katzung 16.ª ed., cap. 30, PDF p. 35."
+  },
+  {
+    "id": "mirtazapina-depresores-snc",
+    "farmacoA": "Mirtazapina",
+    "tipoFarmacoA": "Fármaco del temario",
+    "farmacoB": "Alcohol o benzodiacepinas",
+    "tipoFarmacoB": "Acompañantes externos al programa",
+    "severidad": "Precaución • Sedación aditiva",
+    "mecanismo": "Los efectos sedantes de mirtazapina pueden sumarse a los de otros depresores del sistema nervioso central.",
+    "consecuencia": "Aumento de somnolencia y deterioro de alerta.",
+    "conducta": "Revisar coadministración y advertir sobre sedación aditiva.",
+    "fuentes": "Katzung 16.ª ed., cap. 30, PDF pp. 17, 36."
   }
 ]

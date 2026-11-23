@@ -104,7 +104,29 @@ export default function Inicio() {
             </div>
           </Link>
 
-          {/* Module 3: Casos Clínicos */}
+          {/* Module 3: Depresión */}
+          <Link
+            to="/depresion"
+            className="group rounded-2xl bg-[#152032] border border-[#4d463a]/40 p-6 hover:border-[#c8aa6e] hover:shadow-[0_4px_25px_rgba(200,170,110,0.2)] transition-all flex flex-col justify-between"
+          >
+            <div className="space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#202a3d] border border-[#e5c587]/30 flex items-center justify-center text-[#e5c587] group-hover:scale-110 group-hover:border-[#43e2d2] group-hover:text-[#43e2d2] transition-all">
+                <span className="material-symbols-outlined text-[28px]">mood</span>
+              </div>
+              <h3 className="font-display text-xl font-bold text-[#e5c587] group-hover:text-white transition-colors">
+                Depresión: ISRS, IRSN &amp; mirtazapina
+              </h3>
+              <p className="text-xs text-[#d0c5b5] leading-relaxed">
+                Fisiopatología, SERT/NET, farmacocinética, seguridad, interacciones y repaso activo de los tres fármacos de la semana 13.
+              </p>
+            </div>
+            <div className="mt-5 pt-3 border-t border-[#4d463a]/20 flex items-center justify-between text-xs text-[#43e2d2]">
+              <span>Repasar antidepresivos</span>
+              <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </div>
+          </Link>
+
+          {/* Module 4: Casos Clínicos */}
           <Link
             to="/casos-clinicos"
             className="group rounded-2xl bg-[#152032] border border-[#4d463a]/40 p-6 hover:border-[#c8aa6e] hover:shadow-[0_4px_25px_rgba(200,170,110,0.2)] transition-all flex flex-col justify-between"

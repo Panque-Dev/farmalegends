@@ -110,5 +110,20 @@
         "explicacion": "Durante el embarazo, la inducción estrogénica de la enzima UGT1A4 hace caer los niveles de lamotrigina hasta un 70%, requiriendo monitoreo mensual y duplicación de dosis para prevenir crisis gestacionales."
       }
     ]
+  },
+  {
+    "id": "depresion",
+    "titulo": "Depresión: circuitos monoaminérgicos y adaptación de la señalización",
+    "sistema": "Sistema nervioso central • redes serotoninérgicas y noradrenérgicas",
+    "etiopatogenia": {
+      "lesionCentral": "La depresión es un trastorno heterogéneo; las lecturas usan la neurotransmisión serotoninérgica y noradrenérgica para explicar blancos farmacológicos, pero advierten que la hipótesis monoaminérgica no explica por sí sola la enfermedad ni el retraso terapéutico.",
+      "adaptacion": "Los antidepresivos pueden modificar pronto la disponibilidad de monoaminas, mientras el beneficio máximo suele tardar semanas; se proponen adaptaciones de receptores y señalización y cambios en factores neurotróficos como parte de esa demora.",
+      "blancos": "Fluoxetina inhibe SERT; venlafaxina inhibe SERT y NET; mirtazapina antagoniza receptores α₂ presinápticos y receptores serotoninérgicos seleccionados."
+    },
+    "racionalTerapeutico": [
+      {"objetivo": "Aumentar señal serotoninérgica mediante bloqueo de recaptación", "farmacos": ["fluoxetina"], "explicacion": "La inhibición de SERT eleva serotonina sináptica; el efecto inmediato no equivale a respuesta clínica completa."},
+      {"objetivo": "Aumentar señal serotoninérgica y noradrenérgica", "farmacos": ["venlafaxina"], "explicacion": "El bloqueo de SERT y NET favorece ambos sistemas; la presión arterial y la discontinuación requieren atención."},
+      {"objetivo": "Modular liberación de monoaminas y receptores 5-HT", "farmacos": ["mirtazapina"], "explicacion": "El antagonismo α₂ aumenta liberación de NE/5-HT; el bloqueo H₁ contribuye a sedación y aumento del apetito."}
+    ]
   }
 ]

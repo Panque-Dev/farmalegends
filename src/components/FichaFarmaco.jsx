@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import deepLookData from '../data/deep-look.json';
 import explainData from '../data/explain.json';
 
@@ -7,6 +8,21 @@ export default function FichaFarmaco({ farmaco }) {
   const [showDeepLook, setShowDeepLook] = useState(false);
   const [showExplain, setShowExplain] = useState(false);
   const [deepTab, setDeepTab] = useState('pk');
+
+  // Bloqueo de scroll y cierre con tecla Escape cuando la ventana flotante está abierta
+  useEffect(() => {
+    if (!showDeepLook) return;
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setShowDeepLook(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [showDeepLook]);
 
   // Datos vinculados de deep-look y explain
   const deepLook = deepLookData.find((d) => d.farmacoId === farmaco.id);
@@ -161,11 +177,12 @@ export default function FichaFarmaco({ farmaco }) {
 
         {deepLook && (
           <button
-            onClick={() => setShowDeepLook(!showDeepLook)}
-            className="flex-1 py-1.5 px-3 rounded-lg bg-[#202a3d] hover:bg-[#2b3548] text-[#43e2d2] border border-[#43e2d2]/30 text-xs font-semibold tracking-wide flex items-center justify-center gap-1.5 transition-all"
+            onClick={() => setShowDeepLook(true)}
+            className="flex-1 py-1.5 px-3 rounded-lg bg-[#202a3d] hover:bg-[#2b3548] text-[#43e2d2] border border-[#43e2d2]/40 text-xs font-semibold tracking-wide flex items-center justify-center gap-1.5 transition-all shadow-[0_0_10px_rgba(67,226,210,0.1)] hover:shadow-[0_0_15px_rgba(67,226,210,0.25)]"
+            title="Abrir ventana flotante con la monografía molecular y clínica avanzada"
           >
             <span className="material-symbols-outlined text-[15px]">biotech</span>
-            {showDeepLook ? 'Cerrar Deep Look' : 'Deep Look'}
+            Deep Look
           </button>
         )}
 
@@ -208,44 +225,80 @@ export default function FichaFarmaco({ farmaco }) {
         </div>
       )}
 
-      {/* Panel Deep Look Expandido */}
-      {showDeepLook && deepLook && (
-        <div className="p-4 rounded-xl bg-[#040e20] border border-[#43e2d2]/40 text-xs space-y-3.5 animate-fadeIn">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-[#4d463a]/30">
-            <span className="font-display font-bold text-[#43e2d2]">{deepLook.titulo}</span>
-            <span className="text-[10px] text-[#e5c587] font-mono uppercase">Monografía Molecular Avanzada</span>
-          </div>
+      {/* Ventana Flotante Modal Deep Look */}
+      {showDeepLook && deepLook && createPortal(
+        <div 
+          className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-5 md:p-6 bg-black/80 backdrop-blur-md animate-fadeIn"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setShowDeepLook(false);
+          }}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className="relative w-full max-w-4xl max-h-[90vh] bg-[#081325] border border-[#43e2d2]/40 rounded-2xl shadow-[0_10px_50px_rgba(0,0,0,0.9),0_0_30px_rgba(67,226,210,0.15)] flex flex-col overflow-hidden animate-scaleUp">
+            
+            {/* Cabecera de la Ventana Flotante */}
+            <div className="flex items-center justify-between px-5 py-4 bg-[#0a162b] border-b border-[#4d463a]/40 shrink-0">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-[#111c2e] border border-[#43e2d2]/40 text-[#43e2d2] flex items-center justify-center shadow-[0_0_15px_rgba(67,226,210,0.25)] shrink-0">
+                  <span className="material-symbols-outlined text-[22px]">biotech</span>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <h3 className="font-display font-bold text-base sm:text-lg text-[#e5c587]">
+                      {deepLook.titulo}
+                    </h3>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#43e2d2]/15 text-[#43e2d2] border border-[#43e2d2]/30 font-bold uppercase tracking-wider">
+                      {farmaco.clase}
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-[#d0c5b5]/70 block font-mono">
+                    {farmaco.nombre} • Monografía Molecular &amp; Clínica Avanzada
+                  </span>
+                </div>
+              </div>
 
-          {/* Subnavegador de Secciones si existen datos extendidos */}
-          {deepLook.mecanismoAccion && (
-            <div className="flex items-center gap-1 overflow-x-auto pb-1 border-b border-[#4d463a]/25 text-[11px]">
-              {[
-                { id: 'pk', label: '⏱️ Farmacocinética' },
-                { id: 'mecanismo', label: '🔬 Mecanismo & Dianas' },
-                { id: 'usos', label: '🎯 Usos Clínicos' },
-                { id: 'precauciones', label: '⚠️ Precauciones & Beers' },
-                { id: 'reacciones', label: '⚡ Reacciones Adversas' },
-                { id: 'embarazo', label: '🤰 Gestación & Lactancia' },
-                { id: 'contraindicaciones', label: '🚫 Contraindicaciones' },
-                { id: 'toxicologia', label: '🧪 Toxicología & Rescate' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setDeepTab(tab.id)}
-                  className={`px-2.5 py-1 rounded-lg font-semibold whitespace-nowrap transition-all ${
-                    deepTab === tab.id
-                      ? 'bg-[#43e2d2] text-[#040e20] font-bold'
-                      : 'bg-[#152032] text-[#d0c5b5] hover:text-[#43e2d2]'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
+              <button
+                onClick={() => setShowDeepLook(false)}
+                className="w-9 h-9 rounded-xl bg-[#152032] hover:bg-[#93000a]/30 text-[#d0c5b5] hover:text-[#ffdad6] border border-[#4d463a]/40 hover:border-[#ffb4ab]/40 flex items-center justify-center transition-all shrink-0"
+                title="Cerrar ventana (Esc)"
+              >
+                <span className="material-symbols-outlined text-[20px]">close</span>
+              </button>
             </div>
-          )}
 
-          {/* Contenido según pestaña o vista estándar */}
-          {(!deepLook.mecanismoAccion || deepTab === 'pk') && (
+            {/* Subnavegador de Secciones si existen datos extendidos */}
+            {deepLook.mecanismoAccion && (
+              <div className="px-5 py-2.5 bg-[#0b172a] border-b border-[#4d463a]/30 flex items-center gap-1.5 overflow-x-auto text-[11px] shrink-0">
+                {[
+                  { id: 'pk', label: '⏱️ Farmacocinética' },
+                  { id: 'mecanismo', label: '🔬 Mecanismo & Dianas' },
+                  { id: 'usos', label: '🎯 Usos Clínicos' },
+                  { id: 'precauciones', label: '⚠️ Precauciones & Beers' },
+                  { id: 'reacciones', label: '⚡ Reacciones Adversas' },
+                  { id: 'embarazo', label: '🤰 Gestación & Lactancia' },
+                  { id: 'contraindicaciones', label: '🚫 Contraindicaciones' },
+                  { id: 'toxicologia', label: '🧪 Toxicología & Rescate' }
+                ].map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setDeepTab(tab.id)}
+                    className={`px-3 py-1.5 rounded-lg font-semibold whitespace-nowrap transition-all ${
+                      deepTab === tab.id
+                        ? 'bg-[#43e2d2] text-[#040e20] font-bold shadow-[0_0_12px_rgba(67,226,210,0.35)]'
+                        : 'bg-[#152032] text-[#d0c5b5] hover:text-[#43e2d2] hover:bg-[#1a2942]'
+                    }`}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Cuerpo de la Ventana Flotante (Scrollable) */}
+            <div className="p-5 sm:p-6 overflow-y-auto space-y-4 text-xs flex-1">
+              {/* Contenido según pestaña o vista estándar */}
+              {(!deepLook.mecanismoAccion || deepTab === 'pk') && (
             <div className="space-y-2 text-[#d0c5b5] text-[11px]">
               {deepLook.farmacocineticaDetallada && (
                 <>
@@ -662,17 +715,35 @@ export default function FichaFarmaco({ farmaco }) {
             </div>
           )}
 
-          {deepLook.perlasClinicas && (
-            <div className="pt-2 border-t border-[#4d463a]/30">
-              <span className="font-bold text-[#e5c587] block mb-1">Perlas Clínicas:</span>
-              <ul className="list-disc list-inside space-y-1 text-[#d8e2fc] text-[11px]">
-                {deepLook.perlasClinicas.map((perla, idx) => (
-                  <li key={idx}>{perla}</li>
-                ))}
-              </ul>
+              {deepLook.perlasClinicas && (
+                <div className="pt-3 border-t border-[#4d463a]/30">
+                  <span className="font-bold text-[#e5c587] block mb-1">Perlas Clínicas:</span>
+                  <ul className="list-disc list-inside space-y-1 text-[#d8e2fc] text-[11px]">
+                    {deepLook.perlasClinicas.map((perla, idx) => (
+                      <li key={idx}>{perla}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
-          )}
-        </div>
+
+            {/* Pie de la Ventana Flotante */}
+            <div className="px-5 py-3 bg-[#0a162b] border-t border-[#4d463a]/40 flex items-center justify-between text-xs text-[#d0c5b5]/70 shrink-0">
+              <span className="font-mono text-[11px] hidden sm:inline">
+                Lecturas Oficiales FacMed • Guías ACOG • FDA PLLR • Micromedex
+              </span>
+              <button
+                onClick={() => setShowDeepLook(false)}
+                className="ml-auto px-4 py-1.5 rounded-lg bg-[#152032] hover:bg-[#202a3d] text-[#e5c587] hover:text-white border border-[#c8aa6e]/40 text-xs font-semibold transition-all flex items-center gap-1.5"
+              >
+                <span className="material-symbols-outlined text-[16px]">close</span>
+                Cerrar Ventana
+              </button>
+            </div>
+
+          </div>
+        </div>,
+        document.body
       )}
 
       {/* Panel Fisiopatología (Explain) Expandido */}

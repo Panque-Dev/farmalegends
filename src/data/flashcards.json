@@ -118,5 +118,23 @@
     "modulo": "Epilepsia",
     "pregunta": "¿Cuál es la dosis de ácido fólico recomendada para mujeres con epilepsia en edad fértil?",
     "respuesta": "4 a 5 mg/día (dosis alta, 10 veces la habitual) iniciada al menos 3 meses antes del embarazo para mitigar el riesgo de defectos del tubo neural."
+  },
+  {
+    "id": "fc-depresion-01",
+    "modulo": "Depresión",
+    "pregunta": "¿Qué transportador inhibe principalmente la fluoxetina?",
+    "respuesta": "SERT, el transportador neuronal de serotonina."
+  },
+  {
+    "id": "fc-depresion-02",
+    "modulo": "Depresión",
+    "pregunta": "¿Qué transportadores bloquea la venlafaxina?",
+    "respuesta": "SERT y NET; aumenta la neurotransmisión serotoninérgica y noradrenérgica."
+  },
+  {
+    "id": "fc-depresion-03",
+    "modulo": "Depresión",
+    "pregunta": "¿Qué receptores antagoniza mirtazapina y qué efecto clínico ayuda a explicar H₁?",
+    "respuesta": "Antagoniza α₂ presinápticos, 5-HT₂/5-HT₃ y H₁; el antagonismo H₁ contribuye a la sedación."
   }
 ]

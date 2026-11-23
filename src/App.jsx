@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Inicio from './pages/Inicio';
 import Dopamina from './pages/Dopamina';
 import Epilepsia from './pages/Epilepsia';
+import Depresion from './pages/Depresion';
 import Recetario from './pages/Recetario';
 import CasosClinicos from './pages/CasosClinicos';
 
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="/" element={<Inicio />} />
             <Route path="/dopamina" element={<Dopamina />} />
             <Route path="/epilepsia" element={<Epilepsia />} />
+            <Route path="/depresion" element={<Depresion />} />
             <Route path="/recetario" element={<Recetario />} />
             <Route path="/casos-clinicos" element={<CasosClinicos />} />
           </Routes>
