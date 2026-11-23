@@ -373,6 +373,18 @@ export default function FichaFarmaco({ farmaco }) {
               {deepLook.mecanismoAccion.interferenciaOtrosReceptores && (
                 <div className="p-2.5 rounded-lg bg-[#111c2e] border border-[#4d463a]/30 space-y-1">
                   <strong className="text-[#43e2d2] block mb-1">Afinidad e Interferencia con Otros Receptores:</strong>
+                  {deepLook.mecanismoAccion.interferenciaOtrosReceptores.selectividad && (
+                    <p><strong className="text-[#43e2d2]">Selectividad de Clase:</strong> {deepLook.mecanismoAccion.interferenciaOtrosReceptores.selectividad}</p>
+                  )}
+                  {deepLook.mecanismoAccion.interferenciaOtrosReceptores.dosisDependencia && (
+                    <p><strong className="text-[#f59e0b]">Selectividad Dosis-Dependiente (SERT/NET):</strong> {deepLook.mecanismoAccion.interferenciaOtrosReceptores.dosisDependencia}</p>
+                  )}
+                  {deepLook.mecanismoAccion.interferenciaOtrosReceptores.serotoninergicos5HT2_5HT3 && (
+                    <p><strong className="text-[#e5c587]">Bloqueo 5-HT₂ y 5-HT₃ (Protección Sexual y Antiemética):</strong> {deepLook.mecanismoAccion.interferenciaOtrosReceptores.serotoninergicos5HT2_5HT3}</p>
+                  )}
+                  {deepLook.mecanismoAccion.interferenciaOtrosReceptores.enantiomeros && (
+                    <p><strong className="text-[#43e2d2]">Diferenciación Enantiomérica S(+) vs R(-):</strong> {deepLook.mecanismoAccion.interferenciaOtrosReceptores.enantiomeros}</p>
+                  )}
                   {deepLook.mecanismoAccion.interferenciaOtrosReceptores.dopaminergicosD1D4 && (
                     <p><strong className="text-[#e5c587]">D1 y D4 (Selectividad):</strong> {deepLook.mecanismoAccion.interferenciaOtrosReceptores.dopaminergicosD1D4}</p>
                   )}
@@ -392,8 +404,44 @@ export default function FichaFarmaco({ farmaco }) {
               )}
               {deepLook.mecanismoAccion.canalesIonicosCardiacos && (
                 <p className="p-2 rounded-lg bg-[#93000a]/15 text-[#ffdad6] border border-[#ffb4ab]/30">
-                  <strong className="text-[#ffb4ab]">Canales Cardíacos (IKr / hERG):</strong> {deepLook.mecanismoAccion.canalesIonicosCardiacos}
+                  <strong className="text-[#ffb4ab]">Canales Cardíacos (IKr / hERG / NaV):</strong> {deepLook.mecanismoAccion.canalesIonicosCardiacos}
                 </p>
+              )}
+              {deepLook.farmacodinamiaAvanzada?.autolavadoYRetiro && (
+                <div className="p-2 rounded-lg bg-[#152032] border border-[#43e2d2]/30 text-[#d8e2fc]">
+                  <strong className="text-[#43e2d2] block">Cinética de 'Autolavado' vs Regla de las 5 Semanas:</strong>
+                  {deepLook.farmacodinamiaAvanzada.autolavadoYRetiro}
+                </div>
+              )}
+              {deepLook.farmacodinamiaAvanzada?.deplecionSerotoninaPlaquetaria && (
+                <div className="p-2 rounded-lg bg-[#93000a]/15 border border-[#ffb4ab]/30 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Depleción de Serotonina Intraplaquetaria &amp; Sangrado:</strong>
+                  {deepLook.farmacodinamiaAvanzada.deplecionSerotoninaPlaquetaria}
+                </div>
+              )}
+              {deepLook.farmacodinamiaAvanzada?.sindromeDiscontinuacionBrainZaps && (
+                <div className="p-2 rounded-lg bg-[#93000a]/20 border border-[#ffb4ab]/40 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Síndrome de Discontinuación Severo ("Brain Zaps"):</strong>
+                  {deepLook.farmacodinamiaAvanzada.sindromeDiscontinuacionBrainZaps}
+                </div>
+              )}
+              {deepLook.farmacodinamiaAvanzada?.hipertensionArterialDosisDependiente && (
+                <div className="p-2 rounded-lg bg-[#93000a]/15 border border-[#ffb4ab]/30 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Hipertensión Arterial Diastólica Dosis-Dependiente (NET):</strong>
+                  {deepLook.farmacodinamiaAvanzada.hipertensionArterialDosisDependiente}
+                </div>
+              )}
+              {deepLook.farmacodinamiaAvanzada?.paradojaSedacionDosisDependiente && (
+                <div className="p-2 rounded-lg bg-[#152032] border border-[#e5c587]/30 text-[#d0c5b5]">
+                  <strong className="text-[#e5c587] block">La Paradoja Sedante Dosis-Dependiente (H₁ vs Noradrenalina):</strong>
+                  {deepLook.farmacodinamiaAvanzada.paradojaSedacionDosisDependiente}
+                </div>
+              )}
+              {deepLook.farmacodinamiaAvanzada?.agranulocitosisIdiosincratica && (
+                <div className="p-2 rounded-lg bg-[#93000a]/20 border border-[#ffb4ab]/40 text-[#ffdad6]">
+                  <strong className="text-[#ffb4ab] block">Agranulocitosis Idiosincrática (ANC &lt; 500/mcL):</strong>
+                  {deepLook.farmacodinamiaAvanzada.agranulocitosisIdiosincratica}
+                </div>
               )}
               {deepLook.farmacodinamiaAvanzada?.ocupacionReceptores && (
                 <p><strong className="text-[#43e2d2]">Ocupación de Receptores:</strong> {deepLook.farmacodinamiaAvanzada.ocupacionReceptores}</p>

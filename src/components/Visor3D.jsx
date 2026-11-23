@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 
 export default function Visor3D({ defaultCategory = 'todos' }) {
   const [categoriaActiva, setCategoriaActiva] = useState(defaultCategory);
-  const [farmacoActivo, setFarmacoActivo] = useState('levodopa-carbidopa');
+  const [farmacoActivo, setFarmacoActivo] = useState(
+    defaultCategory === 'depresion' ? 'fluoxetina' :
+    defaultCategory === 'epilepsia' ? 'fenitoina' :
+    defaultCategory === 'esquizofrenia' ? 'haloperidol' :
+    'levodopa-carbidopa'
+  );
   const [farmacoSecundario, setFarmacoSecundario] = useState('ninguno');
   const [modoZoom, setModoZoom] = useState('sinapsis'); // 'sinapsis' | 'poro-canal' | 'transporte'
 
@@ -330,6 +335,92 @@ export default function Visor3D({ defaultCategory = 'todos' }) {
       };
     }
 
+    // Combinaciones de Depresión (Semana 13 FacMed)
+    if (
+      (farmacoActual.id === 'fluoxetina' && ['selegilina', 'rasagilina'].includes(farmacoSec.id)) ||
+      (['selegilina', 'rasagilina'].includes(farmacoActual.id) && farmacoSec.id === 'fluoxetina')
+    ) {
+      return {
+        tipo: 'Síndrome Serotoninérgico Fulminante & Letal',
+        severidad: 'Contraindicación Absoluta • Lavado Obligatorio de 5 Semanas',
+        color: '#ffb4ab',
+        descripcion: 'La coadministración de fluoxetina (inhibidor SERT) con un IMAO bloquea tanto la recaptación como la degradación enzimática de serotonina, detonando una tormenta serotoninérgica potencialmente mortal (hipertermia, clonus, convulsiones y colapso cardiovascular). Es obligatorio esperar al menos 5 semanas (35 días) tras suspender fluoxetina antes de iniciar un IMAO.'
+      };
+    }
+
+    if (
+      (farmacoActual.id === 'venlafaxina' && ['selegilina', 'rasagilina'].includes(farmacoSec.id)) ||
+      (['selegilina', 'rasagilina'].includes(farmacoActual.id) && farmacoSec.id === 'venlafaxina')
+    ) {
+      return {
+        tipo: 'Síndrome Serotoninérgico & Crisis Hipertensiva Severa',
+        severidad: 'Contraindicación Absoluta • Lavado Obligatorio de 7 a 14 Días',
+        color: '#ffb4ab',
+        descripcion: 'Doble riesgo letal: la inhibición simultánea de SERT y NET combinada con el bloqueo catabólico de MAO provoca hipertermia maligna, clonus e hipertensión maligna fulminante por exceso sináptico de serotonina y noradrenalina. Requiere lavado mínimo de 7 días tras venlafaxina y 14 días tras IMAO.'
+      };
+    }
+
+    if (
+      (farmacoActual.id === 'mirtazapina' && ['selegilina', 'rasagilina'].includes(farmacoSec.id)) ||
+      (['selegilina', 'rasagilina'].includes(farmacoActual.id) && farmacoSec.id === 'mirtazapina')
+    ) {
+      return {
+        tipo: 'Síndrome Serotoninérgico Potencialmente Mortal',
+        severidad: 'Contraindicación Absoluta • Lavado Obligatorio de 14 Días',
+        color: '#ffb4ab',
+        descripcion: 'La desinhibición de liberación de serotonina por bloqueo de heterorreceptores alfa-2 sumada a la inhibición del catabolismo de monoaminas por el IMAO genera toxicidad serotoninérgica grave. Requiere al menos 14 días de lavado tras suspender mirtazapina.'
+      };
+    }
+
+    if (
+      (farmacoActual.id === 'fluoxetina' && ['risperidona', 'haloperidol'].includes(farmacoSec.id)) ||
+      (['risperidona', 'haloperidol'].includes(farmacoActual.id) && farmacoSec.id === 'fluoxetina')
+    ) {
+      return {
+        tipo: 'Inhibición Farmacocinética Potente de CYP2D6',
+        severidad: 'Interacción Crítica • Aumento de 2.5 a 9 Veces en Exposición',
+        color: '#ffb4ab',
+        descripcion: 'Fluoxetina y norfluoxetina son inhibidores potentes de CYP2D6, enzima clave para el aclaramiento de risperidona y haloperidol. Elevan masivamente los niveles séricos libres de los antipsicóticos, disparando el riesgo de parkinsonismo severo, distonías agudas, acatisia y prolongación del intervalo QTc.'
+      };
+    }
+
+    if (
+      (farmacoActual.id === 'venlafaxina' && farmacoSec.id === 'mirtazapina') ||
+      (farmacoActual.id === 'mirtazapina' && farmacoSec.id === 'venlafaxina')
+    ) {
+      return {
+        tipo: 'Sinergia Monoaminérgica Cuádruple ("California Rocket Fuel")',
+        severidad: 'Combinación Racional en Depresión Severa Refractaria',
+        color: '#43e2d2',
+        descripcion: 'Sinergia terapéutica de alto poder: venlafaxina bloquea la recaptación de SERT y NET, mientras que mirtazapina desinhibe la liberación presináptica mediante bloqueo alfa-2 y bloquea los receptores 5-HT2 y 5-HT3, previniendo la disfunción sexual y las náuseas inducidas por el exceso de serotonina. Vigilar presión arterial y riesgo serotoninérgico.'
+      };
+    }
+
+    if (
+      (farmacoActual.id === 'mirtazapina' && farmacoSec.id === 'diazepam') ||
+      (farmacoActual.id === 'diazepam' && farmacoSec.id === 'mirtazapina')
+    ) {
+      return {
+        tipo: 'Depresión Sinergista Profunda del SNC',
+        severidad: 'Precaución Mayor • Criterios de Beers en Adultos Mayores',
+        color: '#ffb4ab',
+        descripcion: 'La combinación del potente antagonismo histaminérgico H1 de mirtazapina con la modulación alostérica GABA-A de diazepam produce sedación extrema, ataxia, deterioro psicomotor pronunciado y alto riesgo de caídas y fracturas en ancianos.'
+      };
+    }
+
+    if (
+      (farmacoActual.id === 'fluoxetina' && ['carbamazepina', 'fenitoina', 'valproato'].includes(farmacoSec.id)) ||
+      (['carbamazepina', 'fenitoina', 'valproato'].includes(farmacoActual.id) && farmacoSec.id === 'fluoxetina')
+    ) {
+      return {
+        tipo: 'Interacción Metabólica Compleja Hepática',
+        severidad: 'Alerta Farmacocinética • Monitorear Niveles Plasmáticos',
+        color: '#ffb4ab',
+        descripcion: 'Los inductores enzimáticos como carbamazepina o fenitoína aceleran el metabolismo de fluoxetina, mientras que la inhibición de CYP2C9/2C19 por fluoxetina puede elevar las concentraciones séricas de fenitoína o valproato hasta rangos de toxicidad.'
+      };
+    }
+
+
     return {
       tipo: 'Co-administración Evaluada',
       severidad: 'Sin antagonismo ortostérico directo reportado en el temario',
@@ -348,7 +439,7 @@ export default function Visor3D({ defaultCategory = 'todos' }) {
         <div>
           <div className="flex items-center gap-2">
             <span className="text-[10px] font-bold uppercase tracking-widest text-[#43e2d2] font-mono">
-              Interacción Molecular 3D • 14 Fármacos Oficiales
+              Interacción Molecular 3D • 17 Fármacos Oficiales
             </span>
             <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#c8aa6e]/15 text-[#e5c587] font-bold border border-[#c8aa6e]/30">
               FacMed Temario Oficial
@@ -358,7 +449,7 @@ export default function Visor3D({ defaultCategory = 'todos' }) {
             Simulador 3D: Dianas Moleculares &amp; Biofísica Sináptica
           </h2>
           <p className="text-xs text-[#d0c5b5] mt-1 max-w-3xl font-headline">
-            Explora la interacción tridimensional fármaco-diana dividida por <strong>Parkinson</strong>, <strong>Esquizofrenia</strong> y <strong>Epilepsias</strong>.
+            Explora la interacción tridimensional fármaco-diana dividida por <strong>Parkinson</strong>, <strong>Esquizofrenia</strong>, <strong>Epilepsias</strong> y <strong>Depresión</strong>.
           </p>
         </div>
 
@@ -443,6 +534,20 @@ export default function Visor3D({ defaultCategory = 'todos' }) {
             }`}
           >
             <span>⚡ Epilepsias (7)</span>
+          </button>
+
+          <button
+            onClick={() => {
+              setCategoriaActiva('depresion');
+              if (farmacoActual.categoria !== 'depresion') setFarmacoActivo('fluoxetina');
+            }}
+            className={`px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 whitespace-nowrap ${
+              categoriaActiva === 'depresion'
+                ? 'bg-[#10b981]/20 text-[#34d399] border border-[#34d399] shadow-[0_0_15px_rgba(52,211,153,0.3)]'
+                : 'bg-[#081325] text-[#d0c5b5] hover:text-[#34d399] border border-[#4d463a]/40'
+            }`}
+          >
+            <span>🌱 Depresión (3)</span>
           </button>
         </div>
 
@@ -559,6 +664,75 @@ export default function Visor3D({ defaultCategory = 'todos' }) {
               <text x="18" y="16" fill="#e5c587" fontSize="9" fontWeight="bold" textAnchor="middle">DAT</text>
             </g>
 
+            {/* Transportador SERT Presináptico (Fluoxetina & Venlafaxina) */}
+            <g transform="translate(245, 140)">
+              <rect
+                width="44"
+                height="38"
+                rx="6"
+                fill={['fluoxetina', 'venlafaxina'].includes(farmacoActivo) ? '#43e2d2' : '#152032'}
+                stroke="#43e2d2"
+                strokeWidth={['fluoxetina', 'venlafaxina'].includes(farmacoActivo) ? '3' : '1.5'}
+              />
+              <text x="22" y="24" fill={['fluoxetina', 'venlafaxina'].includes(farmacoActivo) ? '#040e20' : '#43e2d2'} fontSize="10" fontWeight="bold" textAnchor="middle" className="font-mono">
+                SERT
+              </text>
+              {['fluoxetina', 'venlafaxina'].includes(farmacoActivo) && (
+                <g>
+                  <rect x="2" y="-13" width="40" height="13" rx="3" fill="#93000a" stroke="#ffb4ab" strokeWidth="1" />
+                  <text x="22" y="-3" fill="#ffdad6" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                    BLOQ
+                  </text>
+                </g>
+              )}
+            </g>
+
+            {/* Transportador NET Presináptico (Venlafaxina) */}
+            <g transform="translate(295, 155)">
+              <rect
+                width="40"
+                height="36"
+                rx="6"
+                fill={farmacoActivo === 'venlafaxina' ? '#f59e0b' : '#152032'}
+                stroke="#f59e0b"
+                strokeWidth={farmacoActivo === 'venlafaxina' ? '3' : '1.5'}
+              />
+              <text x="20" y="22" fill={farmacoActivo === 'venlafaxina' ? '#040e20' : '#f59e0b'} fontSize="10" fontWeight="bold" textAnchor="middle" className="font-mono">
+                NET
+              </text>
+              {farmacoActivo === 'venlafaxina' && (
+                <g>
+                  <rect x="1" y="-13" width="38" height="13" rx="3" fill="#93000a" stroke="#ffb4ab" strokeWidth="1" />
+                  <text x="20" y="-3" fill="#ffdad6" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                    &gt;150mg
+                  </text>
+                </g>
+              )}
+            </g>
+
+            {/* Autorreceptor / Heterorreceptor Presináptico alfa-2 (Mirtazapina) */}
+            <g transform="translate(485, 155)">
+              <rect
+                width="48"
+                height="34"
+                rx="6"
+                fill={farmacoActivo === 'mirtazapina' ? '#e5c587' : '#152032'}
+                stroke="#e5c587"
+                strokeWidth={farmacoActivo === 'mirtazapina' ? '3' : '1.5'}
+              />
+              <text x="24" y="21" fill={farmacoActivo === 'mirtazapina' ? '#040e20' : '#e5c587'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
+                α₂-Presin
+              </text>
+              {farmacoActivo === 'mirtazapina' && (
+                <g>
+                  <rect x="-8" y="-14" width="64" height="13" rx="3" fill="#00c6b7" stroke="#43e2d2" strokeWidth="1" />
+                  <text x="24" y="-4" fill="#040e20" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                    DESINHIBE 5HT/NA
+                  </text>
+                </g>
+              )}
+            </g>
+
             {/* Hendidura Sináptica Central */}
             <text x="140" y="260" fill="#e5c587" fontSize="12" fontWeight="bold" letterSpacing="1" className="font-mono">
               HENDIDURA SINÁPTICA (~20 nm)
@@ -590,8 +764,68 @@ export default function Visor3D({ defaultCategory = 'todos' }) {
               MEMBRANA POSTSINÁPTICA SOMATO-DENDRÍTICA
             </text>
 
+            {/* Moléculas libres de neurotransmisores en la hendidura */}
+            {['fluoxetina', 'venlafaxina', 'mirtazapina'].includes(farmacoActivo) && (
+              <g>
+                <circle cx="370" cy="235" r="4" fill="#43e2d2" filter="url(#ligandGlow)" />
+                <text x="370" y="246" fill="#43e2d2" fontSize="7" fontWeight="bold" textAnchor="middle">5-HT</text>
+                <circle cx="415" cy="245" r="4" fill="#43e2d2" filter="url(#ligandGlow)" />
+                <text x="415" y="256" fill="#43e2d2" fontSize="7" fontWeight="bold" textAnchor="middle">5-HT</text>
+                <circle cx="465" cy="238" r="4" fill="#43e2d2" filter="url(#ligandGlow)" />
+                <text x="465" y="249" fill="#43e2d2" fontSize="7" fontWeight="bold" textAnchor="middle">5-HT</text>
+              </g>
+            )}
+            {['venlafaxina', 'mirtazapina'].includes(farmacoActivo) && (
+              <g>
+                <circle cx="335" cy="245" r="4" fill="#f59e0b" filter="url(#ligandGlow)" />
+                <text x="335" y="256" fill="#f59e0b" fontSize="7" fontWeight="bold" textAnchor="middle">NE</text>
+                <circle cx="495" cy="248" r="4" fill="#f59e0b" filter="url(#ligandGlow)" />
+                <text x="495" y="259" fill="#f59e0b" fontSize="7" fontWeight="bold" textAnchor="middle">NE</text>
+              </g>
+            )}
+
+            {/* Receptor 5-HT1A Postsináptico (Diana Terapéutica) */}
+            <g transform="translate(190, 310)">
+              <rect
+                width="50"
+                height="32"
+                rx="6"
+                fill={['fluoxetina', 'venlafaxina', 'mirtazapina'].includes(farmacoActivo) ? '#43e2d2' : '#152032'}
+                stroke="#43e2d2"
+                strokeWidth={['fluoxetina', 'venlafaxina', 'mirtazapina'].includes(farmacoActivo) ? '3' : '1.5'}
+              />
+              <text x="25" y="20" fill={['fluoxetina', 'venlafaxina', 'mirtazapina'].includes(farmacoActivo) ? '#040e20' : '#43e2d2'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
+                5-HT1A
+              </text>
+              {['fluoxetina', 'venlafaxina', 'mirtazapina'].includes(farmacoActivo) && (
+                <text x="25" y="44" fill="#43e2d2" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                  ↑ ANTIDEPRESIVO
+                </text>
+              )}
+            </g>
+
+            {/* Receptores Adrenérgicos beta-1 / alfa-1 (Venlafaxina) */}
+            <g transform="translate(255, 300)">
+              <rect
+                width="52"
+                height="32"
+                rx="6"
+                fill={farmacoActivo === 'venlafaxina' ? '#f59e0b' : '#152032'}
+                stroke="#f59e0b"
+                strokeWidth={farmacoActivo === 'venlafaxina' ? '3' : '1.5'}
+              />
+              <text x="26" y="20" fill={farmacoActivo === 'venlafaxina' ? '#040e20' : '#f59e0b'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
+                β₁ / α₁
+              </text>
+              {farmacoActivo === 'venlafaxina' && (
+                <text x="26" y="44" fill="#ffb4ab" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                  ↑ PRESIÓN ART.
+                </text>
+              )}
+            </g>
+
             {/* Receptores Dopaminérgicos D2 / D3 (Haloperidol, Pramipexol, Levodopa) */}
-            <g transform="translate(360, 275)">
+            <g transform="translate(325, 280)">
               <rect
                 width="50"
                 height="32"
@@ -600,54 +834,116 @@ export default function Visor3D({ defaultCategory = 'todos' }) {
                 stroke={farmacoActual.color}
                 strokeWidth={['pramipexol', 'haloperidol', 'risperidona', 'clozapina', 'levodopa-carbidopa'].includes(farmacoActivo) ? '3' : '1.5'}
               />
-              <text x="25" y="20" fill={['pramipexol', 'haloperidol', 'risperidona', 'clozapina', 'levodopa-carbidopa'].includes(farmacoActivo) ? '#040e20' : '#e5c587'} fontSize="11" fontWeight="bold" textAnchor="middle" className="font-mono">
+              <text x="25" y="20" fill={['pramipexol', 'haloperidol', 'risperidona', 'clozapina', 'levodopa-carbidopa'].includes(farmacoActivo) ? '#040e20' : '#e5c587'} fontSize="10" fontWeight="bold" textAnchor="middle" className="font-mono">
                 D2 / D3
               </text>
             </g>
 
-            {/* Receptor 5-HT2A Cortical (Risperidona / Clozapina) */}
-            <g transform="translate(440, 275)">
+            {/* Receptor 5-HT2 Postsináptico */}
+            <g transform="translate(390, 275)">
               <rect
                 width="52"
                 height="32"
                 rx="6"
-                fill={['risperidona', 'clozapina'].includes(farmacoActivo) ? '#ff8c93' : '#152032'}
-                stroke="#ff8c93"
-                strokeWidth={['risperidona', 'clozapina'].includes(farmacoActivo) ? '3' : '1.5'}
+                fill={
+                  farmacoActivo === 'mirtazapina' ? '#e5c587' :
+                  ['fluoxetina', 'venlafaxina'].includes(farmacoActivo) ? '#ff8c93' :
+                  ['risperidona', 'clozapina'].includes(farmacoActivo) ? '#ff8c93' : '#152032'
+                }
+                stroke={farmacoActivo === 'mirtazapina' ? '#e5c587' : '#ff8c93'}
+                strokeWidth={['mirtazapina', 'fluoxetina', 'venlafaxina', 'risperidona', 'clozapina'].includes(farmacoActivo) ? '3' : '1.5'}
               />
-              <text x="26" y="20" fill={['risperidona', 'clozapina'].includes(farmacoActivo) ? '#040e20' : '#ff8c93'} fontSize="10" fontWeight="bold" textAnchor="middle" className="font-mono">
-                5-HT2A
+              <text x="26" y="20" fill={['mirtazapina', 'fluoxetina', 'venlafaxina', 'risperidona', 'clozapina'].includes(farmacoActivo) ? '#040e20' : '#ff8c93'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
+                5-HT2
               </text>
+              {farmacoActivo === 'mirtazapina' && (
+                <text x="26" y="44" fill="#e5c587" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                  🛡️ CERO DISF. SEX
+                </text>
+              )}
+              {['fluoxetina', 'venlafaxina'].includes(farmacoActivo) && (
+                <text x="26" y="44" fill="#ffb4ab" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                  ⚠️ DISFUNCIÓN SEX
+                </text>
+              )}
+            </g>
+
+            {/* Receptor 5-HT3 Postsináptico */}
+            <g transform="translate(460, 280)">
+              <rect
+                width="50"
+                height="32"
+                rx="6"
+                fill={
+                  farmacoActivo === 'mirtazapina' ? '#e5c587' :
+                  ['fluoxetina', 'venlafaxina'].includes(farmacoActivo) ? '#ffb4ab' : '#152032'
+                }
+                stroke={farmacoActivo === 'mirtazapina' ? '#e5c587' : '#ffb4ab'}
+                strokeWidth={['mirtazapina', 'fluoxetina', 'venlafaxina'].includes(farmacoActivo) ? '3' : '1.5'}
+              />
+              <text x="25" y="20" fill={['mirtazapina', 'fluoxetina', 'venlafaxina'].includes(farmacoActivo) ? '#040e20' : '#ffb4ab'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
+                5-HT3
+              </text>
+              {farmacoActivo === 'mirtazapina' && (
+                <text x="25" y="44" fill="#e5c587" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                  🛡️ CERO NÁUSEAS
+                </text>
+              )}
+              {['fluoxetina', 'venlafaxina'].includes(farmacoActivo) && (
+                <text x="25" y="44" fill="#ffdad6" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                  ⚠️ NÁUSEAS
+                </text>
+              )}
             </g>
 
             {/* Receptor GABA-A Postsináptico de Cl- (Diazepam / Valproato) */}
-            <g transform="translate(540, 280)">
+            <g transform="translate(530, 285)">
               <rect
-                width="55"
-                height="34"
-                rx="7"
+                width="52"
+                height="32"
+                rx="6"
                 fill={['diazepam', 'valproato'].includes(farmacoActivo) ? '#34d399' : '#152032'}
                 stroke="#34d399"
                 strokeWidth={['diazepam', 'valproato'].includes(farmacoActivo) ? '3' : '1.5'}
               />
-              <text x="27.5" y="21" fill={['diazepam', 'valproato'].includes(farmacoActivo) ? '#040e20' : '#34d399'} fontSize="10" fontWeight="bold" textAnchor="middle" className="font-mono">
+              <text x="26" y="20" fill={['diazepam', 'valproato'].includes(farmacoActivo) ? '#040e20' : '#34d399'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
                 GABA-A
               </text>
             </g>
 
             {/* Canal de Calcio Talámico CaV-T (Etosuximida) */}
-            <g transform="translate(630, 290)">
+            <g transform="translate(600, 295)">
               <rect
-                width="50"
+                width="48"
                 height="32"
                 rx="6"
                 fill={['etosuximida', 'valproato'].includes(farmacoActivo) ? '#818cf8' : '#152032'}
                 stroke="#818cf8"
                 strokeWidth={['etosuximida', 'valproato'].includes(farmacoActivo) ? '3' : '1.5'}
               />
-              <text x="25" y="20" fill={['etosuximida', 'valproato'].includes(farmacoActivo) ? '#040e20' : '#818cf8'} fontSize="10" fontWeight="bold" textAnchor="middle" className="font-mono">
+              <text x="24" y="20" fill={['etosuximida', 'valproato'].includes(farmacoActivo) ? '#040e20' : '#818cf8'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
                 CaV-T
               </text>
+            </g>
+
+            {/* Receptor H1 Postsináptico (Mirtazapina) */}
+            <g transform="translate(665, 310)">
+              <rect
+                width="46"
+                height="32"
+                rx="6"
+                fill={farmacoActivo === 'mirtazapina' ? '#ffb4ab' : '#152032'}
+                stroke="#ffb4ab"
+                strokeWidth={farmacoActivo === 'mirtazapina' ? '3' : '1.5'}
+              />
+              <text x="23" y="20" fill={farmacoActivo === 'mirtazapina' ? '#040e20' : '#ffb4ab'} fontSize="9" fontWeight="bold" textAnchor="middle" className="font-mono">
+                H1
+              </text>
+              {farmacoActivo === 'mirtazapina' && (
+                <text x="23" y="44" fill="#ffdad6" fontSize="7" fontWeight="bold" textAnchor="middle" className="font-mono">
+                  💤 SEDACIÓN
+                </text>
+              )}
             </g>
 
             {/* Molécula del Fármaco Activo Interactuando en 3D (Animación de Enlace) */}

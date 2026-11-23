@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Visor3D from '../components/Visor3D';
 import FichaFarmaco from '../components/FichaFarmaco';
 import farmacosData from '../data/farmacos.json';
 import interaccionesData from '../data/interacciones.json';
@@ -7,6 +8,7 @@ import flashcardsData from '../data/flashcards.json';
 
 const tabs = [
   { id: 'guia', label: 'Guía de repaso', icon: 'menu_book' },
+  { id: 'interactivo', label: 'Esquema Sináptico 3D', icon: 'view_in_ar' },
   { id: 'farmacos', label: 'Compendio de fármacos', icon: 'medication' },
   { id: 'interacciones', label: 'Interacciones', icon: 'sync_alt' },
   { id: 'estudio', label: 'Estudio activo', icon: 'psychology' }
@@ -125,6 +127,66 @@ export default function Depresion() {
               Las categorías históricas de letras FDA (A, B, C, D, X) están obsoletas desde 2015. El etiquetado oficial se rige por la regla narrativa <strong>PLLR (Pregnancy and Lactation Labeling Rule)</strong> de la FDA, evaluando el balance riesgo-beneficio materno-fetal individualizado.
             </p>
           </article>
+        </section>
+      )}
+
+      {activeTab === 'interactivo' && (
+        <section className="space-y-6">
+          <Visor3D defaultCategory="depresion" />
+
+          {/* Tarjetas Didácticas de Interacción de Mecanismos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="p-5 rounded-2xl bg-[#152032] border border-[#43e2d2]/40 space-y-3 shadow-lg">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#43e2d2]/15 text-[#43e2d2] font-bold border border-[#43e2d2]/30 uppercase">
+                  ISRS Prototipo
+                </span>
+                <span className="text-[10px] text-[#d0c5b5]/70 font-mono">Diana: SERT</span>
+              </div>
+              <h3 className="font-display text-lg font-bold text-[#e5c587]">Fluoxetina: Desensibilización 5-HT₁A &amp; Autolavado</h3>
+              <p className="text-xs text-[#d0c5b5] leading-relaxed">
+                Bloquea selectivamente el transportador presináptico SERT impidiendo la recaptación de serotonina. La acumulación sináptica desensibiliza los autorreceptores somatodendríticos 5-HT₁A a las 4-5 semanas.
+              </p>
+              <div className="pt-2 border-t border-[#4d463a]/30 space-y-1.5 text-[11px]">
+                <p><strong className="text-[#43e2d2]">Aprobación Pediátrica:</strong> Único aprobado en TDM (≥8 años) y TOC (≥7 años).</p>
+                <p><strong className="text-[#ffb4ab]">Regla de las 5 semanas:</strong> Norfluoxetina t½ hasta 16 días exige lavado de 35 días antes de iniciar IMAOs para evitar síndrome serotoninérgico fatal.</p>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-[#152032] border border-[#f59e0b]/40 space-y-3 shadow-lg">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#f59e0b]/15 text-[#f59e0b] font-bold border border-[#f59e0b]/30 uppercase">
+                  IRSN Prototipo
+                </span>
+                <span className="text-[10px] text-[#d0c5b5]/70 font-mono">Diana: SERT &amp; NET</span>
+              </div>
+              <h3 className="font-display text-lg font-bold text-[#e5c587]">Venlafaxina: Selectividad Dosis-Dependiente</h3>
+              <p className="text-xs text-[#d0c5b5] leading-relaxed">
+                Inhibe SERT y NET de forma graduada: a &lt;150 mg/día predomina SERT; a &gt;150–225 mg/día recluta NET. Su metabolito ODV comparte esta acción dual.
+              </p>
+              <div className="pt-2 border-t border-[#4d463a]/30 space-y-1.5 text-[11px]">
+                <p><strong className="text-[#f59e0b]">Alerta Tensional:</strong> Elevación sostenida de la presión arterial diastólica supina por tono noradrenérgico periférico.</p>
+                <p><strong className="text-[#ffb4ab]">"Brain Zaps":</strong> Semivida corta (~5 h) causa síndrome de discontinuación severo (hasta 78%) con choques eléctricos craneales.</p>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-[#152032] border border-[#e5c587]/40 space-y-3 shadow-lg">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#c8aa6e]/15 text-[#e5c587] font-bold border border-[#c8aa6e]/30 uppercase">
+                  NaSSA Prototipo
+                </span>
+                <span className="text-[10px] text-[#d0c5b5]/70 font-mono">Diana: α₂ + 5-HT₂/₃ + H₁</span>
+              </div>
+              <h3 className="font-display text-lg font-bold text-[#e5c587]">Mirtazapina: Desinhibición &amp; Protección Sexual/GI</h3>
+              <p className="text-xs text-[#d0c5b5] leading-relaxed">
+                Bloquea autorreceptores presinápticos α₂ desinhibiendo la liberación de NA y 5-HT. Al bloquear postsinápticamente 5-HT₂ y 5-HT₃, redirige la serotonina a 5-HT₁A.
+              </p>
+              <div className="pt-2 border-t border-[#4d463a]/30 space-y-1.5 text-[11px]">
+                <p><strong className="text-[#43e2d2]">Ventaja Clínica:</strong> Cero disfunción sexual (bloqueo 5-HT₂) y cero náuseas/vómito (bloqueo 5-HT₃).</p>
+                <p><strong className="text-[#ffdad6]">Paradoja H₁ &amp; Agranulocitosis:</strong> Más sedante a 7.5–15 mg que a 30–45 mg. Vigilar fiebre/odinofagia por agranulocitosis (0.1%).</p>
+              </div>
+            </div>
+          </div>
         </section>
       )}
 
